@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "delicate_dyes:block/sacramento_candle_cake"
+    },
+    "lit=true": {
+      "model": "delicate_dyes:block/sacramento_candle_cake_lit"
+    }
+  }
+}

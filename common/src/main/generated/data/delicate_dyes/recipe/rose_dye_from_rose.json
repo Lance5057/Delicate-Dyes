@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "rose_dye",
+  "ingredients": [
+    {
+      "item": "delicate_dyes:rose"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "delicate_dyes:rose_dye"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_rose": {
+      "conditions": {
+        "items": [
+          {
+            "items": "delicate_dyes:blue_rose"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:sky_dye_from_blue_rose"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blue_rose"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:sky_dye_from_blue_rose"
+    ]
+  }
+}
