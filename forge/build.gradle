@@ -3,6 +3,10 @@ plugins {
     id 'net.neoforged.moddev.legacyforge'
 }
 
+base {
+    archivesName = "${mod_name}-forge-${minecraft_version}"
+}
+
 mixin {
     add(sourceSets.main, "${mod_id}.refmap.json")
 
@@ -42,8 +46,6 @@ legacyForge {
         }
     }
 }
-
-sourceSets.main.resources.srcDir 'src/generated/resources'
 
 dependencies {
     compileOnly project(":common")

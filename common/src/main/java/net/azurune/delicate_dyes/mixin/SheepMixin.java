@@ -66,39 +66,39 @@ public abstract class SheepMixin extends Animal implements Shearable {
         }
     }
 
-//    /**
-//     * @reason Allowing >16 unique dye colors (128)
-//     * @author ADudeCalledLeo
-//     */
+    /**
+     * @reason Allowing >16 unique dye colors (128)
+     * @author ADudeCalledLeo
+     */
     @Overwrite
     public DyeColor getColor() {
         byte b = entityData.get(DATA_WOOL_ID);
         return DyeColor.byId(b & 0x7F);
     }
 
-//    /**
-//     * @reason Allowing >16 unique dye colors (128)
-//     * @author ADudeCalledLeo
-//     */
+    /**
+     * @reason Allowing >16 unique dye colors (128)
+     * @author ADudeCalledLeo
+     */
     @Overwrite
     public void setColor(DyeColor color) {
         byte b = entityData.get(DATA_WOOL_ID);
         entityData.set(DATA_WOOL_ID, (byte) ((b & 0x80) | color.getId() % 0x7F));
     }
 
-//    /**
-//     * @reason Allowing >16 unique dye colors (128)
-//     * @author ADudeCalledLeo
-//     */
+    /**
+     * @reason Allowing >16 unique dye colors (128)
+     * @author ADudeCalledLeo
+     */
     @Overwrite
     public boolean isSheared() {
         return (entityData.get(DATA_WOOL_ID) & 0x80) != 0;
     }
 
-//    /**
-//     * @reason Allowing >16 unique dye colors (128)
-//     * @author ADudeCalledLeo
-//     */
+    /**
+     * @reason Allowing >16 unique dye colors (128)
+     * @author ADudeCalledLeo
+     */
     @Overwrite
     public void setSheared(boolean sheared) {
         byte b = entityData.get(DATA_WOOL_ID);

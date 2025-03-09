@@ -167,7 +167,6 @@ public class DDBlocks {
         if (flags.length > 0) {
             properties = properties.requiredFeatures(flags);
         }
-
         return new FlowerPotBlock(block.get(), properties);
     }
 

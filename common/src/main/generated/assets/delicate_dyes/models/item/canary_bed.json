@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/template_bed",
+  "textures": {
+    "particle": "delicate_dyes:block/canary_wool"
+  }
+}

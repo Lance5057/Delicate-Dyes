@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "delicate_dyes:block/wasabi_candle_cake"
+    },
+    "lit=true": {
+      "model": "delicate_dyes:block/wasabi_candle_cake_lit"
+    }
+  }
+}

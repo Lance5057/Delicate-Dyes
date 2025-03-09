@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "delicate_dyes:wasabi_bed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wasabi_wool": {
+      "conditions": {
+        "items": [
+          {
+            "items": "delicate_dyes:wasabi_wool"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wasabi_wool"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "delicate_dyes:wasabi_bed"
+    ]
+  }
+}

@@ -3,6 +3,7 @@ package net.azurune.delicate_dyes.registry;
 import net.azurune.delicate_dyes.platform.Services;
 import net.azurune.delicate_dyes.util.DDDyeValues;
 import net.azurune.delicate_dyes.util.DDProperties;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BannerItem;
 import net.minecraft.world.item.BedItem;
 import net.minecraft.world.item.DyeItem;
