@@ -1,6 +1,6 @@
 package net.azurune.delicate_dyes;
 
-import net.azurune.delicate_dyes.registry.DDBlocks;
+import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

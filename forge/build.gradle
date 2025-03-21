@@ -14,6 +14,10 @@ mixin {
     config("${mod_id}.forge.mixins.json")
 }
 
+repositories {
+    maven { url = "https://cursemaven.com" }
+}
+
 legacyForge {
     version = "${minecraft_version}-${forge_version}"
 
@@ -33,7 +37,7 @@ legacyForge {
         }
         data {
             data()
-            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('../common/src/generated/resources/').getAbsolutePath(), '--existing', file('../common/src/main/resources/').getAbsolutePath()
         }
         server {
             server()
@@ -50,6 +54,8 @@ legacyForge {
 dependencies {
     compileOnly project(":common")
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
+    //RUNICLIB
+    modImplementation "curse.maven:runiclib-880879:6329449"
 }
 
 jar {
@@ -57,4 +63,10 @@ jar {
     manifest.attributes([
             "MixinConfigs": "${mod_id}.mixins.json,${mod_id}.forge.mixins.json"
     ])
+}
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
+sourceSets.main.resources {
+    srcDir project(":common").file('src/main/generated/').getAbsolutePath()
 }

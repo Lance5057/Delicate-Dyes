@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "id": "mod_id",
+    "id": "delicate_dyes",
     "version": "${version}",
     "name": "${mod_name}",
     "description": "${description}",
@@ -8,8 +8,8 @@
         "${mod_author}"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "*",
+        "sources": "*"
     },
     "license": "${license}",
     "icon": "icon.png",
@@ -33,7 +33,8 @@
         "fabricloader": ">=0.14",
         "fabric": "*",
         "minecraft": "${minecraft_version}",
-        "java": ">=17"
+        "java": ">=17",
+        "runiclib": ">=4.1.0"
     },
     "suggests": {
         "another-mod": "*"

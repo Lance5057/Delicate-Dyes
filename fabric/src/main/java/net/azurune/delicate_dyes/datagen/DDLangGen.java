@@ -1,7 +1,7 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.registry.DDBlocks;
-import net.azurune.delicate_dyes.registry.DDItems;
+import net.azurune.delicate_dyes.core.registry.DDBlocks;
+import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 
@@ -12,12 +12,20 @@ public class DDLangGen extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder build) {
+        //MISC
+        build.add("itemgroup.delicate_dyes", "Delicate Dyes");
+
         //BLOCKS
         build.add(DDBlocks.ROSE.get(), "Rose");
         build.add(DDBlocks.RED_ROSE.get(), "Red Rose");
         build.add(DDBlocks.BLUE_ROSE.get(), "Blue Rose");
         build.add(DDBlocks.WHITE_ROSE.get(), "White Rose");
 
+        //ITEMS
+        build.add(DDItems.BLUEBERRIES.get(), "Blueberries");
+        build.add(DDItems.BLUEBERRY_PIE.get(), "Blueberry Pie");
+
+        //DYED BLOCKS
         build.add(DDBlocks.CORAL_WOOL.get(), "Coral Wool");
         build.add(DDBlocks.CORAL_CARPET.get(), "Coral Carpet");
         build.add(DDBlocks.CORAL_STAINED_GLASS.get(), "Coral Stained Glass");
@@ -114,7 +122,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.ROSE_CANDLE_CAKE.get(), "Rose Candle Cake");
         //build.add(DDBlocks.ROSE_SHULKER_BOX.get(), "Rose Shulker Box");
 
-        //ITEMS
+        //DYED ITEMS
         build.add(DDItems.CORAL_DYE.get(), "Coral Dye");
         build.add(DDItems.CANARY_DYE.get(), "Canary Dye");
         build.add(DDItems.WASABI_DYE.get(), "Wasabi Dye");
@@ -141,12 +149,6 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDItems.BLURPLE_BANNER.get(), "Blurple Banner");
         build.add(DDItems.SANGRIA_BANNER.get(), "Sangria Banner");
         build.add(DDItems.ROSE_BANNER.get(), "Rose Banner");
-
-        build.add(DDItems.BLUEBERRIES.get(), "Blueberries");
-        build.add(DDItems.BLUEBERRY_PIE.get(), "Blueberry Pie");
-
-        //MISC
-        build.add("itemgroup.delicate_dyes", "Delicate Dyes");
 
         //COLOR
         build.add("color.minecraft.coral", "Coral");

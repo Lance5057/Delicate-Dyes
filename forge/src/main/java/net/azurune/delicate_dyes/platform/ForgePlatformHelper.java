@@ -1,6 +1,6 @@
 package net.azurune.delicate_dyes.platform;
 
-import net.azurune.delicate_dyes.platform.services.IPlatformHelper;
+import net.azurune.delicate_dyes.core.platform.services.IPlatformHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLLoader;
 

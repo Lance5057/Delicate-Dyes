@@ -127,5 +127,9 @@ publishing {
         maven {
             url System.getenv('local_maven_url')
         }
+
+        maven {
+            url "https://cursemaven.com"
+        }
     }
 }

@@ -1,6 +1,6 @@
 package net.azurune.delicate_dyes.platform;
 
-import net.azurune.delicate_dyes.platform.services.IPlatformHelper;
+import net.azurune.delicate_dyes.core.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class FabricPlatformHelper implements IPlatformHelper {

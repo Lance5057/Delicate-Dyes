@@ -1,7 +1,7 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.registry.DDBlocks;
-import net.azurune.delicate_dyes.registry.DDItems;
+import net.azurune.delicate_dyes.core.registry.DDBlocks;
+import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.models.BlockModelGenerators;
