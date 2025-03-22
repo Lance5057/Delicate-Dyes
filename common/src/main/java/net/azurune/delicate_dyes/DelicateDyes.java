@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes;
 
+import net.azurune.delicate_dyes.core.init.DDRegistries;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDCreativeTabs;
 import net.azurune.delicate_dyes.core.registry.DDItems;
@@ -15,6 +16,7 @@ public class DelicateDyes {
         DDBlocks.loadBlocks();
         DDItems.loadItems();
         DDCreativeTabs.loadCreativeTabs();
+        DDRegistries.loadRegistries();
     }
 
     public static ResourceLocation modid(String id) {
