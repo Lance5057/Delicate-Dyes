@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "delicate_dyes:wasabi_terracotta"
+  },
+  "result": "delicate_dyes:wasabi_glazed_terracotta"
+}

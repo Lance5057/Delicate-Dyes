@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "bed",
+  "ingredients": [
+    {
+      "item": "delicate_dyes:blurple_dye"
+    },
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "result": {
+    "item": "delicate_dyes:blurple_bed"
+  }
+}

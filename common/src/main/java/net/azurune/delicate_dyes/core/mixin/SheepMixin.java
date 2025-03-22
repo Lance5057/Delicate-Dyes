@@ -1,7 +1,11 @@
 package net.azurune.delicate_dyes.core.mixin;
+import net.azurune.delicate_dyes.DelicateDyes;
+import net.azurune.delicate_dyes.common.util.DDUtil;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Shearable;
@@ -28,26 +32,25 @@ public abstract class SheepMixin extends Animal implements Shearable {
         super(EntityType.SHEEP, null);
         throw new AssertionError();
     }
-//TODO: update to 1.20 (code from delicate dyes 1.21)
 
-//    @Inject(method = "getDefaultLootTable", at = @At("HEAD"), cancellable = true)
-//    private void delicateDyes$getDefaultLootTable(CallbackInfoReturnable<ResourceKey<LootTable>> cir) {
-//        ResourceKey key;
-//        if (!this.isSheared() && getColor().getId() > DDUtil.getDyeCount()) {
-//            switch (this.getColor().getId()) {
-//                case 16 -> key = DDLootTables.CORAL_SHEEP_ENTITY;
-//                case 17 -> key = DDLootTables.CANARY_SHEEP_ENTITY;
-//                case 18 -> key = DDLootTables.WASABI_SHEEP_ENTITY;
-//                case 19 -> key = DDLootTables.SACRAMENTO_SHEEP_ENTITY;
-//                case 20 -> key = DDLootTables.SKY_SHEEP_ENTITY;
-//                case 21 -> key = DDLootTables.BLURPLE_SHEEP_ENTITY;
-//                case 22 -> key = DDLootTables.SANGRIA_SHEEP_ENTITY;
-//                case 23 -> key = DDLootTables.ROSE_SHEEP_ENTITY;
-//                default -> throw new MatchException(null, null);
-//            }
-//            cir.setReturnValue(key);
-//        }
-//    }
+    @Inject(method = "getDefaultLootTable", at = @At("HEAD"), cancellable = true)
+    private void delicateDyes$getDefaultLootTable(CallbackInfoReturnable<ResourceLocation> cir) {
+        ResourceLocation key;
+        if (!this.isSheared() && getColor().getId() > DDUtil.getDyeCount()) {
+            switch (this.getColor().getId() + DDUtil.getDyeCount()) {
+                case 1 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/coral");
+                case 2 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/canary");
+                case 3 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/wasabi");
+                case 4 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sacramento");
+                case 5 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sky");
+                case 6 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/blurple");
+                case 7 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sangria");
+                case 8 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/rose");
+                default -> throw new IllegalStateException("Unexpected value: " + this.getColor().getId());
+            }
+            cir.setReturnValue(key);
+        }
+    }
 
     static {
         ITEM_BY_DYE.put(DDDyeValues.CORAL, DDBlocks.CORAL_WOOL.get());

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "delicate_dyes:blueberries"
+    },
+    {
+      "tag": "delicate_dyes:blueberries"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "delicate_dyes:blueberry_pie"
+  }
+}

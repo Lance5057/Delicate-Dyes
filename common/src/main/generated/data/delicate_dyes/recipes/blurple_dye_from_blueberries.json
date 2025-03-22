@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "blurple_dye",
+  "ingredients": [
+    {
+      "item": "delicate_dyes:blueberries"
+    }
+  ],
+  "result": {
+    "item": "delicate_dyes:blurple_dye"
+  }
+}

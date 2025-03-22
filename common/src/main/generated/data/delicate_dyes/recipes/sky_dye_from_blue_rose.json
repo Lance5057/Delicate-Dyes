@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "sky_dye",
+  "ingredients": [
+    {
+      "item": "delicate_dyes:blue_rose"
+    }
+  ],
+  "result": {
+    "item": "delicate_dyes:sky_dye"
+  }
+}
