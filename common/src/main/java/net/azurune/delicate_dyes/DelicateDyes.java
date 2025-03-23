@@ -24,7 +24,10 @@ public class DelicateDyes {
     }
 
     //TODO: MISC - Implement around 1 misc feature for each dye so they are obtainable in a non-intrusive way
-    //TODO: RECIPES - Special wool recipes, special bed recipes, special shulker box recipes
+    //TODO: FIX SHULKERS - Drop in creative mode, shulker dye mixing
     //TODO: POI - Villagers move towards custom beds
     //TODO: COMPAT - With as many mods as possible (proper todo soon)
+
+    //TODO (future)
+    //TODO: Proper custom special dye recipes for wool/beds/shulker boxes
 }

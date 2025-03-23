@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "shulker",
+  "ingredients": [
+    {
+      "item": "delicate_dyes:sacramento_dye"
+    },
+    {
+      "tag": "delicate_dyes:shulker_boxes"
+    }
+  ],
+  "result": {
+    "item": "delicate_dyes:sacramento_shulker_box"
+  }
+}

@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -26,11 +27,42 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
         appendSmallFlowers();
         appendFoxFood();
         appendBlueberries();
+        appendShulkerBoxes();
     }
 
     public void appendBlueberries() {
         getOrCreateTagBuilder(DDTags.Items.BLUEBERRIES)
                 .add(DDItems.BLUEBERRIES.get())
+        ;
+    }
+
+    public void appendShulkerBoxes() {
+        getOrCreateTagBuilder(DDTags.Items.SHULKER_BOXES)
+                .add(DDBlocks.CORAL_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.CANARY_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.WASABI_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.SACRAMENTO_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.SKY_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.BLURPLE_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.SANGRIA_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.ROSE_SHULKER_BOX.get().asItem())
+
+                .add(Items.RED_SHULKER_BOX)
+                .add(Items.ORANGE_SHULKER_BOX)
+                .add(Items.YELLOW_SHULKER_BOX)
+                .add(Items.LIME_SHULKER_BOX)
+                .add(Items.GREEN_SHULKER_BOX)
+                .add(Items.CYAN_SHULKER_BOX)
+                .add(Items.LIGHT_BLUE_SHULKER_BOX)
+                .add(Items.BLUE_SHULKER_BOX)
+                .add(Items.PURPLE_SHULKER_BOX)
+                .add(Items.MAGENTA_SHULKER_BOX)
+                .add(Items.PINK_SHULKER_BOX)
+                .add(Items.BROWN_SHULKER_BOX)
+                .add(Items.WHITE_SHULKER_BOX)
+                .add(Items.LIGHT_GRAY_SHULKER_BOX)
+                .add(Items.GRAY_SHULKER_BOX)
+                .add(Items.BLACK_SHULKER_BOX)
         ;
     }
 

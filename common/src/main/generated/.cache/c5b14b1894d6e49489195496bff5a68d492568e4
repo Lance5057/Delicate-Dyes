@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-22T21:02:11.9045529	Delicate Dyes/Tags for minecraft:item
+// 1.20.1	2025-03-23T02:01:24.7307994	Delicate Dyes/Tags for minecraft:item
 e4c4698be7567f3949fae7247edda9af186af918 data\minecraft\tags\items\fox_food.json
 d5155634892e1c8e137831a5fc21d457f91a8460 data\minecraft\tags\items\terracotta.json
 c3ca401e33e6ffc89ce3e4f9815252973c76cbb0 data\minecraft\tags\items\candles.json
@@ -8,3 +8,4 @@ fdb054a384caea092cdfe425f4f527019b924683 data\minecraft\tags\items\wool.json
 d217daf16e0647fb4970268ce104370bc26f7deb data\delicate_dyes\tags\items\blueberries.json
 324b70585848e5292f78dcb8b81d9baf8d36bcac data\minecraft\tags\items\wool_carpets.json
 25073bd46ac954d4c52916542423145605b80de9 data\minecraft\tags\items\beds.json
+d0e0a735029be020b510b23bd6d836015520d3d5 data\delicate_dyes\tags\items\shulker_boxes.json

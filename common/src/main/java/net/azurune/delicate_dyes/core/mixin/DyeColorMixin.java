@@ -17,9 +17,7 @@ import java.util.Arrays;
 
 @Mixin(DyeColor.class)
 public class DyeColorMixin {
-
-    @Mutable
-    @Shadow @Final private static DyeColor[] $VALUES;
+    @Mutable @Shadow @Final private static DyeColor[] $VALUES;
 
     @Invoker("<init>")
     private static DyeColor delicateDyes$init(String dyeId, int ordinal, int id, String name, int entityColor, MapColor mapColor, int fireworkColor, int signColor) {

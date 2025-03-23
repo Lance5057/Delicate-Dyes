@@ -218,18 +218,167 @@ public class DDRecipeGen extends FabricRecipeProvider {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DDItems.BLUEBERRY_PIE.get())
                 .requires(DDTags.Items.BLUEBERRIES).requires(DDTags.Items.BLUEBERRIES).requires(Items.SUGAR).requires(Items.EGG)
                 .unlockedBy("has_blueberries", VanillaRecipeProvider.has(DDTags.Items.BLUEBERRIES)).save(output);
+
+        shulkerFromTag(output, DDBlocks.CORAL_SHULKER_BOX.get(), DDItems.CORAL_DYE.get(), "coral_shulker_box");
+        shulkerFromTag(output, DDBlocks.CANARY_SHULKER_BOX.get(), DDItems.CANARY_DYE.get(), "canary_shulker_box");
+        shulkerFromTag(output, DDBlocks.WASABI_SHULKER_BOX.get(), DDItems.WASABI_DYE.get(), "wasabi_shulker_box");
+        shulkerFromTag(output, DDBlocks.SACRAMENTO_SHULKER_BOX.get(), DDItems.SACRAMENTO_DYE.get(), "sacramento_shulker_box");
+        shulkerFromTag(output, DDBlocks.SKY_SHULKER_BOX.get(), DDItems.SKY_DYE.get(), "sky_shulker_box");
+        shulkerFromTag(output, DDBlocks.BLURPLE_SHULKER_BOX.get(), DDItems.BLURPLE_DYE.get(), "blurple_shulker_box");
+        shulkerFromTag(output, DDBlocks.SANGRIA_SHULKER_BOX.get(), DDItems.SANGRIA_DYE.get(), "sangria_shulker_box");
+        shulkerFromTag(output, DDBlocks.ROSE_SHULKER_BOX.get(), DDItems.ROSE_DYE.get(), "rose_shulker_box");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CORAL_DYE.get())
+                .requires(Items.RED_DYE).requires(Items.ORANGE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_orange_dye", VanillaRecipeProvider.has(Items.ORANGE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("coral_dye").save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CORAL_DYE.get())
+                .requires(Items.RED_DYE).requires(Items.YELLOW_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_yellow_dye", VanillaRecipeProvider.has(Items.YELLOW_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("coral_dye").save(output, "coral_dye" + "_from_bits");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CANARY_DYE.get())
+                .requires(Items.RED_DYE).requires(Items.ORANGE_DYE)
+                .unlockedBy("has_yellow_dye", VanillaRecipeProvider.has(Items.YELLOW_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("canary_dye").save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.WASABI_DYE.get())
+                .requires(Items.LIME_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_lime_dye", VanillaRecipeProvider.has(Items.LIME_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("wasabi_dye").save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.WASABI_DYE.get())
+                .requires(Items.LIME_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_lime_dye", VanillaRecipeProvider.has(Items.LIME_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("wasabi_dye").save(output, "wasabi_dye" + "_from_bits");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SACRAMENTO_DYE.get())
+                .requires(Items.GREEN_DYE).requires(Items.CYAN_DYE)
+                .unlockedBy("has_green_dye", VanillaRecipeProvider.has(Items.GREEN_DYE))
+                .unlockedBy("has_cyan_dye", VanillaRecipeProvider.has(Items.CYAN_DYE))
+                .group("sacramento_dye").save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SACRAMENTO_DYE.get())
+                .requires(Items.BLUE_DYE).requires(Items.GREEN_DYE).requires(Items.GREEN_DYE)
+                .unlockedBy("has_green_dye", VanillaRecipeProvider.has(Items.GREEN_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .group("sacramento_dye").save(output, "sacramento_dye" + "_from_bits");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SKY_DYE.get())
+                .requires(Items.LIGHT_BLUE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_light_blue_dye", VanillaRecipeProvider.has(Items.LIGHT_BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("sky_dye").save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SKY_DYE.get())
+                .requires(Items.BLUE_DYE).requires(Items.WHITE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("sky_dye").save(output, "sky_dye" + "_from_bits");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.BLURPLE_DYE.get())
+                .requires(Items.BLUE_DYE).requires(Items.PURPLE_DYE)
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .group("blurple_dye").save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.BLURPLE_DYE.get())
+                .requires(Items.BLUE_DYE).requires(Items.BLUE_DYE).requires(Items.RED_DYE)
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .group("blurple_dye").save(output, "blurple_dye" + "_from_bits");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get())
+                .requires(Items.PURPLE_DYE).requires(Items.MAGENTA_DYE).requires(Items.BLACK_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_black_dye", VanillaRecipeProvider.has(Items.BLACK_DYE))
+                .group("sangria_dye").save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get())
+                .requires(Items.BLUE_DYE).requires(Items.RED_DYE).requires(Items.MAGENTA_DYE).requires(Items.BLACK_DYE)
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_black_dye", VanillaRecipeProvider.has(Items.BLACK_DYE))
+                .group("sangria_dye").save(output, "sangria_dye" + "_from_bits");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get())
+                .requires(Items.PURPLE_DYE).requires(Items.BLACK_DYE)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.PINK_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_pink_dye", VanillaRecipeProvider.has(Items.PINK_DYE))
+                .group("sangria_dye").save(output, "sangria_dye" + "_from_bits1");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get())
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.BLACK_DYE)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.PINK_DYE)
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_pink_dye", VanillaRecipeProvider.has(Items.PINK_DYE))
+                .group("sangria_dye").save(output, "sangria_dye" + "_from_bits2");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get())
+                .requires(Items.PURPLE_DYE).requires(Items.BLACK_DYE)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.WHITE_DYE).requires(Items.RED_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("sangria_dye").save(output, "sangria_dye" + "_from_bits3");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get())
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.BLACK_DYE)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.WHITE_DYE).requires(Items.RED_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("sangria_dye").save(output, "sangria_dye" + "_from_bits4");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.ROSE_DYE.get())
+                .requires(Items.RED_DYE).requires(Items.PINK_DYE)
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_pink_dye", VanillaRecipeProvider.has(Items.PINK_DYE))
+                .group("rose_dye").save(output);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.ROSE_DYE.get())
+                .requires(Items.RED_DYE).requires(Items.PINK_DYE)
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("rose_dye").save(output, "rose_dye" + "_from_bits");
     }
 
     //crappy work around for special recipes
-    public static void woolFromTag(Consumer<FinishedRecipe> recipeOutput, ItemLike dyedWool, ItemLike dye, String fileName) {
+    public static void woolFromTag(Consumer<FinishedRecipe> recipeOutput, ItemLike dyedWool, ItemLike dye, String id) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, dyedWool)
                 .requires(dye).requires(ItemTags.WOOL)
-                .group("wool").unlockedBy(RecipeProvider.getHasName(dye), RecipeProvider.has(dye)).save(recipeOutput, fileName + "_from_dye");
+                .group("wool").unlockedBy(RecipeProvider.getHasName(dye), RecipeProvider.has(dye)).save(recipeOutput, id + "_from_dye");
     }
 
-    public static void bedFromTag(Consumer<FinishedRecipe> recipeOutput, ItemLike dyedBed, ItemLike dye, String fileName) {
+    public static void bedFromTag(Consumer<FinishedRecipe> recipeOutput, ItemLike dyedBed, ItemLike dye, String id) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, dyedBed)
                 .requires(dye).requires(ItemTags.BEDS)
-                .group("bed").unlockedBy(RecipeProvider.getHasName(dye), RecipeProvider.has(dye)).save(recipeOutput, fileName + "_from_dye");
+                .group("bed").unlockedBy(RecipeProvider.getHasName(dye), RecipeProvider.has(dye)).save(recipeOutput, id + "_from_dye");
+    }
+
+    public static void shulkerFromTag(Consumer<FinishedRecipe> recipeOutput, ItemLike dyedShulker, ItemLike dye, String id) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, dyedShulker)
+                .requires(dye).requires(DDTags.Items.SHULKER_BOXES)
+                .group("shulker").unlockedBy(RecipeProvider.getHasName(dye), RecipeProvider.has(dye)).save(recipeOutput, id + "_from_dye");
     }
 }
