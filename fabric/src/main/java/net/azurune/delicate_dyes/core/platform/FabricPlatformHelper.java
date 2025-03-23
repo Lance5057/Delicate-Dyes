@@ -1,4 +1,4 @@
-package net.azurune.delicate_dyes.platform;
+package net.azurune.delicate_dyes.core.platform;
 
 import net.azurune.delicate_dyes.core.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;

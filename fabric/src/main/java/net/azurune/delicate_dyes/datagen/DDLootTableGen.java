@@ -28,7 +28,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.CORAL_BANNER.get(), createBannerDrop(DDBlocks.CORAL_BANNER.get()));
         add(DDBlocks.CORAL_WALL_BANNER.get(), createBannerDrop(DDBlocks.CORAL_WALL_BANNER.get()));
         add(DDBlocks.CORAL_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
-        //add(DDBlocks.CORAL_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.CORAL_SHULKER_BOX.get()));
+        add(DDBlocks.CORAL_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.CORAL_SHULKER_BOX.get()));
 
         //CANARY
         dropSelf(DDBlocks.CANARY_WOOL.get());
@@ -44,7 +44,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.CANARY_BANNER.get(), createBannerDrop(DDBlocks.CANARY_BANNER.get()));
         add(DDBlocks.CANARY_WALL_BANNER.get(), createBannerDrop(DDBlocks.CANARY_WALL_BANNER.get()));
         add(DDBlocks.CANARY_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
-        //add(DDBlocks.CANARY_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.CANARY_SHULKER_BOX.get()));
+        add(DDBlocks.CANARY_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.CANARY_SHULKER_BOX.get()));
 
         //WASABI
         dropSelf(DDBlocks.WASABI_WOOL.get());
@@ -60,7 +60,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.WASABI_BANNER.get(), createBannerDrop(DDBlocks.WASABI_BANNER.get()));
         add(DDBlocks.WASABI_WALL_BANNER.get(), createBannerDrop(DDBlocks.WASABI_WALL_BANNER.get()));
         add(DDBlocks.WASABI_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
-        //add(DDBlocks.WASABI_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.WASABI_SHULKER_BOX.get()));
+        add(DDBlocks.WASABI_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.WASABI_SHULKER_BOX.get()));
 
         //SACRAMENTO
         dropSelf(DDBlocks.SACRAMENTO_WOOL.get());
@@ -76,7 +76,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.SACRAMENTO_BANNER.get(), createBannerDrop(DDBlocks.SACRAMENTO_BANNER.get()));
         add(DDBlocks.SACRAMENTO_WALL_BANNER.get(), createBannerDrop(DDBlocks.SACRAMENTO_WALL_BANNER.get()));
         add(DDBlocks.SACRAMENTO_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
-        //add(DDBlocks.SACRAMENTO_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.SACRAMENTO_SHULKER_BOX.get()));
+        add(DDBlocks.SACRAMENTO_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.SACRAMENTO_SHULKER_BOX.get()));
 
         //SKY
         dropSelf(DDBlocks.SKY_WOOL.get());
@@ -92,7 +92,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.SKY_BANNER.get(), createBannerDrop(DDBlocks.SKY_BANNER.get()));
         add(DDBlocks.SKY_WALL_BANNER.get(), createBannerDrop(DDBlocks.SKY_WALL_BANNER.get()));
         add(DDBlocks.SKY_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
-        //add(DDBlocks.SKY_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.SKY_SHULKER_BOX.get()));
+        add(DDBlocks.SKY_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.SKY_SHULKER_BOX.get()));
 
         //BLURPLE
         dropSelf(DDBlocks.BLURPLE_WOOL.get());
@@ -108,7 +108,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.BLURPLE_BANNER.get(), createBannerDrop(DDBlocks.BLURPLE_BANNER.get()));
         add(DDBlocks.BLURPLE_WALL_BANNER.get(), createBannerDrop(DDBlocks.BLURPLE_WALL_BANNER.get()));
         add(DDBlocks.BLURPLE_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
-        //add(DDBlocks.BLURPLE_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.BLURPLE_SHULKER_BOX.get()));
+        add(DDBlocks.BLURPLE_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.BLURPLE_SHULKER_BOX.get()));
 
         //SANGRIA
         dropSelf(DDBlocks.SANGRIA_WOOL.get());
@@ -124,7 +124,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.SANGRIA_BANNER.get(), createBannerDrop(DDBlocks.SANGRIA_BANNER.get()));
         add(DDBlocks.SANGRIA_WALL_BANNER.get(), createBannerDrop(DDBlocks.SANGRIA_WALL_BANNER.get()));
         add(DDBlocks.SANGRIA_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
-        //add(DDBlocks.SANGRIA_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.SANGRIA_SHULKER_BOX.get()));
+        add(DDBlocks.SANGRIA_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.SANGRIA_SHULKER_BOX.get()));
 
         //ROSE
         dropSelf(DDBlocks.ROSE_WOOL.get());
@@ -140,7 +140,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.ROSE_BANNER.get(), createBannerDrop(DDBlocks.ROSE_BANNER.get()));
         add(DDBlocks.ROSE_WALL_BANNER.get(), createBannerDrop(DDBlocks.ROSE_WALL_BANNER.get()));
         add(DDBlocks.ROSE_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
-        //add(DDBlocks.ROSE_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.ROSE_SHULKER_BOX.get()));
+        add(DDBlocks.ROSE_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.ROSE_SHULKER_BOX.get()));
 
         //MISC CONTENT
         dropSelf(DDBlocks.ROSE.get());

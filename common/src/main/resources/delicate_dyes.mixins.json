@@ -11,6 +11,7 @@
     "ShulkerBoxBlockMixin"
   ],
   "client": [
+    "ShulkerBoxRendererMixin"
   ],
   "server": [],
   "injectors": {

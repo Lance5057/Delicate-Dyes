@@ -2,6 +2,7 @@ package net.azurune.delicate_dyes.core.mixin;
 
 import net.minecraft.world.level.block.BannerBlock;
 import net.minecraft.world.level.block.BedBlock;
+import net.minecraft.world.level.block.ShulkerBoxBlock;
 import net.minecraft.world.level.block.WallBannerBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -25,8 +26,8 @@ public class BlockEntityTypeMixin {
             cir.setReturnValue(true);
         }
 
-//        if (entityType == BlockEntityType.SHULKER_BOX && state.getBlock() instanceof DDShulkerBoxBlock) {
-//            cir.setReturnValue(true);
-//        }
+        if (entityType == BlockEntityType.SHULKER_BOX && state.getBlock() instanceof ShulkerBoxBlock) {
+            cir.setReturnValue(true);
+        }
     }
 }

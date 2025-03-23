@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes;
 
+import net.azurune.delicate_dyes.common.ForgeItemGroupAdditions;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -18,6 +19,7 @@ public class ForgeDelicateDyes {
         DelicateDyes.init();
 
         modEventBus.addListener(this::clientSetup);
+        modEventBus.addListener(ForgeItemGroupAdditions::buildCreativeTabs);
     }
 
     @SubscribeEvent

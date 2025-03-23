@@ -35,7 +35,7 @@ public class DDModelGen extends FabricModelProvider {
                 .createWithoutBlockItem(DDBlocks.CORAL_BED.get());
 
         generator.createBedItem(DDBlocks.CORAL_BED.get(), DDBlocks.CORAL_WOOL.get());
-        //generator.createShulkerBox(DDBlocks.CORAL_SHULKER_BOX.get());
+        generator.createShulkerBox(DDBlocks.CORAL_SHULKER_BOX.get());
 
         //CANARY
         generator.createFullAndCarpetBlocks(DDBlocks.CANARY_WOOL.get(), DDBlocks.CANARY_CARPET.get());
@@ -54,7 +54,7 @@ public class DDModelGen extends FabricModelProvider {
                 .createWithoutBlockItem(DDBlocks.CANARY_BED.get());
 
         generator.createBedItem(DDBlocks.CANARY_BED.get(), DDBlocks.CANARY_WOOL.get());
-        //generator.createShulkerBox(DDBlocks.CANARY_SHULKER_BOX.get());
+        generator.createShulkerBox(DDBlocks.CANARY_SHULKER_BOX.get());
 
         //WASABI
         generator.createFullAndCarpetBlocks(DDBlocks.WASABI_WOOL.get(), DDBlocks.WASABI_CARPET.get());
@@ -73,7 +73,7 @@ public class DDModelGen extends FabricModelProvider {
                 .createWithoutBlockItem(DDBlocks.WASABI_BED.get());
 
         generator.createBedItem(DDBlocks.WASABI_BED.get(), DDBlocks.WASABI_WOOL.get());
-        //generator.createShulkerBox(DDBlocks.WASABI_SHULKER_BOX.get());
+        generator.createShulkerBox(DDBlocks.WASABI_SHULKER_BOX.get());
 
         //SACRAMENTO
         generator.createFullAndCarpetBlocks(DDBlocks.SACRAMENTO_WOOL.get(), DDBlocks.SACRAMENTO_CARPET.get());
@@ -92,7 +92,7 @@ public class DDModelGen extends FabricModelProvider {
                 .createWithoutBlockItem(DDBlocks.SACRAMENTO_BED.get());
 
         generator.createBedItem(DDBlocks.SACRAMENTO_BED.get(), DDBlocks.SACRAMENTO_WOOL.get());
-        //generator.createShulkerBox(DDBlocks.SACRAMENTO_SHULKER_BOX.get());
+        generator.createShulkerBox(DDBlocks.SACRAMENTO_SHULKER_BOX.get());
 
         //SKY
         generator.createFullAndCarpetBlocks(DDBlocks.SKY_WOOL.get(), DDBlocks.SKY_CARPET.get());
@@ -111,7 +111,7 @@ public class DDModelGen extends FabricModelProvider {
                 .createWithoutBlockItem(DDBlocks.SKY_BED.get());
 
         generator.createBedItem(DDBlocks.SKY_BED.get(), DDBlocks.SKY_WOOL.get());
-        //generator.createShulkerBox(DDBlocks.SKY_SHULKER_BOX.get());
+        generator.createShulkerBox(DDBlocks.SKY_SHULKER_BOX.get());
 
         //BLURPLE
         generator.createFullAndCarpetBlocks(DDBlocks.BLURPLE_WOOL.get(), DDBlocks.BLURPLE_CARPET.get());
@@ -130,7 +130,7 @@ public class DDModelGen extends FabricModelProvider {
                 .createWithoutBlockItem(DDBlocks.BLURPLE_BED.get());
 
         generator.createBedItem(DDBlocks.BLURPLE_BED.get(), DDBlocks.BLURPLE_WOOL.get());
-        //generator.createShulkerBox(DDBlocks.BLURPLE_SHULKER_BOX.get());
+        generator.createShulkerBox(DDBlocks.BLURPLE_SHULKER_BOX.get());
 
         //SANGRIA
         generator.createFullAndCarpetBlocks(DDBlocks.SANGRIA_WOOL.get(), DDBlocks.SANGRIA_CARPET.get());
@@ -149,7 +149,7 @@ public class DDModelGen extends FabricModelProvider {
                 .createWithoutBlockItem(DDBlocks.SANGRIA_BED.get());
 
         generator.createBedItem(DDBlocks.SANGRIA_BED.get(), DDBlocks.SANGRIA_WOOL.get());
-        //generator.createShulkerBox(DDBlocks.SANGRIA_SHULKER_BOX.get());
+        generator.createShulkerBox(DDBlocks.SANGRIA_SHULKER_BOX.get());
 
         //ROSE
         generator.createFullAndCarpetBlocks(DDBlocks.ROSE_WOOL.get(), DDBlocks.ROSE_CARPET.get());
@@ -168,7 +168,7 @@ public class DDModelGen extends FabricModelProvider {
                 .createWithoutBlockItem(DDBlocks.ROSE_BED.get());
 
         generator.createBedItem(DDBlocks.ROSE_BED.get(), DDBlocks.ROSE_WOOL.get());
-        //generator.createShulkerBox(DDBlocks.ROSE_SHULKER_BOX.get());
+        generator.createShulkerBox(DDBlocks.ROSE_SHULKER_BOX.get());
 
         //MISC CONTENT
         generator.createPlant(DDBlocks.ROSE.get(), DDBlocks.POTTED_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);

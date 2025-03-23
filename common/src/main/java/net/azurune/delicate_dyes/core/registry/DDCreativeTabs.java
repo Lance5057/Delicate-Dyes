@@ -23,7 +23,7 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.CORAL_GLAZED_TERRACOTTA.get());
                         entry.accept(DDBlocks.CORAL_STAINED_GLASS.get());
                         entry.accept(DDBlocks.CORAL_STAINED_GLASS_PANE.get());
-                        //entry.accept(DDBlocks.CORAL_SHULKER_BOX.get());
+                        entry.accept(DDBlocks.CORAL_SHULKER_BOX.get());
                         entry.accept(DDItems.CORAL_BED.get());
                         entry.accept(DDBlocks.CORAL_CANDLE.get());
                         entry.accept(DDItems.CORAL_BANNER.get());
@@ -38,7 +38,7 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.CANARY_GLAZED_TERRACOTTA.get());
                         entry.accept(DDBlocks.CANARY_STAINED_GLASS.get());
                         entry.accept(DDBlocks.CANARY_STAINED_GLASS_PANE.get());
-                        //entry.accept(DDBlocks.CANARY_SHULKER_BOX.get());
+                        entry.accept(DDBlocks.CANARY_SHULKER_BOX.get());
                         entry.accept(DDItems.CANARY_BED.get());
                         entry.accept(DDBlocks.CANARY_CANDLE.get());
                         entry.accept(DDItems.CANARY_BANNER.get());
@@ -53,7 +53,7 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.WASABI_GLAZED_TERRACOTTA.get());
                         entry.accept(DDBlocks.WASABI_STAINED_GLASS.get());
                         entry.accept(DDBlocks.WASABI_STAINED_GLASS_PANE.get());
-                        //entry.accept(DDBlocks.WASABI_SHULKER_BOX.get());
+                        entry.accept(DDBlocks.WASABI_SHULKER_BOX.get());
                         entry.accept(DDItems.WASABI_BED.get());
                         entry.accept(DDBlocks.WASABI_CANDLE.get());
                         entry.accept(DDItems.WASABI_BANNER.get());
@@ -68,7 +68,7 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.SACRAMENTO_GLAZED_TERRACOTTA.get());
                         entry.accept(DDBlocks.SACRAMENTO_STAINED_GLASS.get());
                         entry.accept(DDBlocks.SACRAMENTO_STAINED_GLASS_PANE.get());
-                        //entry.accept(DDBlocks.SACRAMENTO_SHULKER_BOX.get());
+                        entry.accept(DDBlocks.SACRAMENTO_SHULKER_BOX.get());
                         entry.accept(DDItems.SACRAMENTO_BED.get());
                         entry.accept(DDBlocks.SACRAMENTO_CANDLE.get());
                         entry.accept(DDItems.SACRAMENTO_BANNER.get());
@@ -83,7 +83,7 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.SKY_GLAZED_TERRACOTTA.get());
                         entry.accept(DDBlocks.SKY_STAINED_GLASS.get());
                         entry.accept(DDBlocks.SKY_STAINED_GLASS_PANE.get());
-                        //entry.accept(DDBlocks.SKY_SHULKER_BOX.get());
+                        entry.accept(DDBlocks.SKY_SHULKER_BOX.get());
                         entry.accept(DDItems.SKY_BED.get());
                         entry.accept(DDBlocks.SKY_CANDLE.get());
                         entry.accept(DDItems.SKY_BANNER.get());
@@ -98,7 +98,7 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.BLURPLE_GLAZED_TERRACOTTA.get());
                         entry.accept(DDBlocks.BLURPLE_STAINED_GLASS.get());
                         entry.accept(DDBlocks.BLURPLE_STAINED_GLASS_PANE.get());
-                        //entry.accept(DDBlocks.BLURPLE_SHULKER_BOX.get());
+                        entry.accept(DDBlocks.BLURPLE_SHULKER_BOX.get());
                         entry.accept(DDItems.BLURPLE_BED.get());
                         entry.accept(DDBlocks.BLURPLE_CANDLE.get());
                         entry.accept(DDItems.BLURPLE_BANNER.get());
@@ -113,7 +113,7 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.SANGRIA_GLAZED_TERRACOTTA.get());
                         entry.accept(DDBlocks.SANGRIA_STAINED_GLASS.get());
                         entry.accept(DDBlocks.SANGRIA_STAINED_GLASS_PANE.get());
-                        //entry.accept(DDBlocks.SANGRIA_SHULKER_BOX.get());
+                        entry.accept(DDBlocks.SANGRIA_SHULKER_BOX.get());
                         entry.accept(DDItems.SANGRIA_BED.get());
                         entry.accept(DDBlocks.SANGRIA_CANDLE.get());
                         entry.accept(DDItems.SANGRIA_BANNER.get());
@@ -128,7 +128,7 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.ROSE_GLAZED_TERRACOTTA.get());
                         entry.accept(DDBlocks.ROSE_STAINED_GLASS.get());
                         entry.accept(DDBlocks.ROSE_STAINED_GLASS_PANE.get());
-                        //entry.accept(DDBlocks.ROSE_SHULKER_BOX.get());
+                        entry.accept(DDBlocks.ROSE_SHULKER_BOX.get());
                         entry.accept(DDItems.ROSE_BED.get());
                         entry.accept(DDBlocks.ROSE_CANDLE.get());
                         entry.accept(DDItems.ROSE_BANNER.get());

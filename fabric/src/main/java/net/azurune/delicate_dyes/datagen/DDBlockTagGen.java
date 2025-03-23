@@ -54,42 +54,42 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
                 .add(DDBlocks.CORAL_TERRACOTTA.get())
                 .add(DDBlocks.CORAL_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.CORAL_CONCRETE.get())
-                //.add(DDBlocks.CORAL_SHULKER_BOX.get())
+                .add(DDBlocks.CORAL_SHULKER_BOX.get())
 
                 .add(DDBlocks.CANARY_TERRACOTTA.get())
                 .add(DDBlocks.CANARY_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.CANARY_CONCRETE.get())
-                //.add(DDBlocks.CANARY_SHULKER_BOX.get())
+                .add(DDBlocks.CANARY_SHULKER_BOX.get())
 
                 .add(DDBlocks.WASABI_TERRACOTTA.get())
                 .add(DDBlocks.WASABI_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.WASABI_CONCRETE.get())
-                //.add(DDBlocks.WASABI_SHULKER_BOX.get())
+                .add(DDBlocks.WASABI_SHULKER_BOX.get())
 
                 .add(DDBlocks.SACRAMENTO_TERRACOTTA.get())
                 .add(DDBlocks.SACRAMENTO_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.SACRAMENTO_CONCRETE.get())
-                //.add(DDBlocks.SACRAMENTO_SHULKER_BOX.get())
+                .add(DDBlocks.SACRAMENTO_SHULKER_BOX.get())
 
                 .add(DDBlocks.SKY_TERRACOTTA.get())
                 .add(DDBlocks.SKY_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.SKY_CONCRETE.get())
-                //.add(DDBlocks.SKY_SHULKER_BOX.get())
+                .add(DDBlocks.SKY_SHULKER_BOX.get())
 
                 .add(DDBlocks.BLURPLE_TERRACOTTA.get())
                 .add(DDBlocks.BLURPLE_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.BLURPLE_CONCRETE.get())
-                //.add(DDBlocks.BLURPLE_SHULKER_BOX.get())
+                .add(DDBlocks.BLURPLE_SHULKER_BOX.get())
 
                 .add(DDBlocks.SANGRIA_TERRACOTTA.get())
                 .add(DDBlocks.SANGRIA_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.SANGRIA_CONCRETE.get())
-                //.add(DDBlocks.SANGRIA_SHULKER_BOX.get())
+                .add(DDBlocks.SANGRIA_SHULKER_BOX.get())
 
                 .add(DDBlocks.ROSE_TERRACOTTA.get())
                 .add(DDBlocks.ROSE_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.ROSE_CONCRETE.get())
-                //.add(DDBlocks.ROSE_SHULKER_BOX.get())
+                .add(DDBlocks.ROSE_SHULKER_BOX.get())
         ;
     }
 
@@ -138,14 +138,14 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
 
     public void appendShulkerBoxes() {
         getOrCreateTagBuilder(BlockTags.SHULKER_BOXES)
-                //.add(DDBlocks.CORAL_SHULKER_BOX.get())
-                //.add(DDBlocks.CANARY_SHULKER_BOX.get())
-                //.add(DDBlocks.WASABI_SHULKER_BOX.get())
-                //.add(DDBlocks.SACRAMENTO_SHULKER_BOX.get())
-                //.add(DDBlocks.SKY_SHULKER_BOX.get())
-                //.add(DDBlocks.BLURPLE_SHULKER_BOX.get())
-                //.add(DDBlocks.SANGRIA_SHULKER_BOX.get())
-                //.add(DDBlocks.ROSE_SHULKER_BOX.get())
+                .add(DDBlocks.CORAL_SHULKER_BOX.get())
+                .add(DDBlocks.CANARY_SHULKER_BOX.get())
+                .add(DDBlocks.WASABI_SHULKER_BOX.get())
+                .add(DDBlocks.SACRAMENTO_SHULKER_BOX.get())
+                .add(DDBlocks.SKY_SHULKER_BOX.get())
+                .add(DDBlocks.BLURPLE_SHULKER_BOX.get())
+                .add(DDBlocks.SANGRIA_SHULKER_BOX.get())
+                .add(DDBlocks.ROSE_SHULKER_BOX.get())
         ;
     }
 

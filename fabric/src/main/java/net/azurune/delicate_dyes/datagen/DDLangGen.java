@@ -36,7 +36,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.CORAL_CONCRETE_POWDER.get(), "Coral Concrete Powder");
         build.add(DDBlocks.CORAL_CANDLE.get(), "Coral Candle");
         build.add(DDBlocks.CORAL_CANDLE_CAKE.get(), "Coral Candle Cake");
-        //build.add(DDBlocks.CORAL_SHULKER_BOX.get(), "Coral Shulker Box");
+        build.add(DDBlocks.CORAL_SHULKER_BOX.get(), "Coral Shulker Box");
 
         build.add(DDBlocks.CANARY_WOOL.get(), "Canary Wool");
         build.add(DDBlocks.CANARY_CARPET.get(), "Canary Carpet");
@@ -48,7 +48,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.CANARY_CONCRETE_POWDER.get(), "Canary Concrete Powder");
         build.add(DDBlocks.CANARY_CANDLE.get(), "Canary Candle");
         build.add(DDBlocks.CANARY_CANDLE_CAKE.get(), "Canary Candle Cake");
-        //build.add(DDBlocks.CANARY_SHULKER_BOX.get(), "Canary Shulker Box");
+        build.add(DDBlocks.CANARY_SHULKER_BOX.get(), "Canary Shulker Box");
 
         build.add(DDBlocks.WASABI_WOOL.get(), "Wasabi Wool");
         build.add(DDBlocks.WASABI_CARPET.get(), "Wasabi Carpet");
@@ -60,7 +60,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.WASABI_CONCRETE_POWDER.get(), "Wasabi Concrete Powder");
         build.add(DDBlocks.WASABI_CANDLE.get(), "Wasabi Candle");
         build.add(DDBlocks.WASABI_CANDLE_CAKE.get(), "Wasabi Candle Cake");
-        //build.add(DDBlocks.WASABI_SHULKER_BOX.get(), "Wasabi Shulker Box");
+        build.add(DDBlocks.WASABI_SHULKER_BOX.get(), "Wasabi Shulker Box");
 
         build.add(DDBlocks.SACRAMENTO_WOOL.get(), "Sacramento Wool");
         build.add(DDBlocks.SACRAMENTO_CARPET.get(), "Sacramento Carpet");
@@ -72,7 +72,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.SACRAMENTO_CONCRETE_POWDER.get(), "Sacramento Concrete Powder");
         build.add(DDBlocks.SACRAMENTO_CANDLE.get(), "Sacramento Candle");
         build.add(DDBlocks.SACRAMENTO_CANDLE_CAKE.get(), "Sacramento Candle Cake");
-        //build.add(DDBlocks.SACRAMENTO_SHULKER_BOX.get(), "Sacramento Shulker Box");
+        build.add(DDBlocks.SACRAMENTO_SHULKER_BOX.get(), "Sacramento Shulker Box");
 
         build.add(DDBlocks.SKY_WOOL.get(), "Sky Wool");
         build.add(DDBlocks.SKY_CARPET.get(), "Sky Carpet");
@@ -84,7 +84,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.SKY_CONCRETE_POWDER.get(), "Sky Concrete Powder");
         build.add(DDBlocks.SKY_CANDLE.get(), "Sky Candle");
         build.add(DDBlocks.SKY_CANDLE_CAKE.get(), "Sky Candle Cake");
-        //build.add(DDBlocks.SKY_SHULKER_BOX.get(), "Sky Shulker Box");
+        build.add(DDBlocks.SKY_SHULKER_BOX.get(), "Sky Shulker Box");
 
         build.add(DDBlocks.BLURPLE_WOOL.get(), "Blurple Wool");
         build.add(DDBlocks.BLURPLE_CARPET.get(), "Blurple Carpet");
@@ -96,7 +96,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.BLURPLE_CONCRETE_POWDER.get(), "Blurple Concrete Powder");
         build.add(DDBlocks.BLURPLE_CANDLE.get(), "Blurple Candle");
         build.add(DDBlocks.BLURPLE_CANDLE_CAKE.get(), "Blurple Candle Cake");
-        //build.add(DDBlocks.BLURPLE_SHULKER_BOX.get(), "Blurple Shulker Box");
+        build.add(DDBlocks.BLURPLE_SHULKER_BOX.get(), "Blurple Shulker Box");
 
         build.add(DDBlocks.SANGRIA_WOOL.get(), "Sangria Wool");
         build.add(DDBlocks.SANGRIA_CARPET.get(), "Sangria Carpet");
@@ -108,7 +108,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.SANGRIA_CONCRETE_POWDER.get(), "Sangria Concrete Powder");
         build.add(DDBlocks.SANGRIA_CANDLE.get(), "Sangria Candle");
         build.add(DDBlocks.SANGRIA_CANDLE_CAKE.get(), "Sangria Candle Cake");
-        //build.add(DDBlocks.SANGRIA_SHULKER_BOX.get(), "Sangria Shulker Box");
+        build.add(DDBlocks.SANGRIA_SHULKER_BOX.get(), "Sangria Shulker Box");
 
         build.add(DDBlocks.ROSE_WOOL.get(), "Rose Wool");
         build.add(DDBlocks.ROSE_CARPET.get(), "Rose Carpet");
@@ -120,7 +120,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.ROSE_CONCRETE_POWDER.get(), "Rose Concrete Powder");
         build.add(DDBlocks.ROSE_CANDLE.get(), "Rose Candle");
         build.add(DDBlocks.ROSE_CANDLE_CAKE.get(), "Rose Candle Cake");
-        //build.add(DDBlocks.ROSE_SHULKER_BOX.get(), "Rose Shulker Box");
+        build.add(DDBlocks.ROSE_SHULKER_BOX.get(), "Rose Shulker Box");
 
         //DYED ITEMS
         build.add(DDItems.CORAL_DYE.get(), "Coral Dye");
@@ -149,6 +149,8 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDItems.BLURPLE_BANNER.get(), "Blurple Banner");
         build.add(DDItems.SANGRIA_BANNER.get(), "Sangria Banner");
         build.add(DDItems.ROSE_BANNER.get(), "Rose Banner");
+
+        //YAPPING TOOLTIPS COMPAT //TODO A
 
         //COLOR
         build.add("color.minecraft.coral", "Coral");

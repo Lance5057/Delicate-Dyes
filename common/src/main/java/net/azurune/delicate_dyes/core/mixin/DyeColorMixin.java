@@ -31,7 +31,7 @@ public class DyeColorMixin {
         ArrayList<DyeColor> dyes = new ArrayList<>(Arrays.asList($VALUES));
 
         dyes.add(delicateDyes$init("CORAL", DDUtil.getDyeCount() + 1, DDUtil.getDyeCount() + 1, "coral", 0xff6565, MapColor.RAW_IRON, 0xff6565, 0xff6565));
-        dyes.add(delicateDyes$init("CANARY", DDUtil.getDyeCount() + 2, DDUtil.getDyeCount() + 2, "canary", 0xf3ff79, MapColor.COLOR_YELLOW, 0xf3ff79, 0xf3ff79));
+        dyes.add(delicateDyes$init("CANARY", DDUtil.getDyeCount() + 2, DDUtil.getDyeCount() + 2, "canary", 0xf3e37c, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c));
         dyes.add(delicateDyes$init("WASABI", DDUtil.getDyeCount() + 3, DDUtil.getDyeCount() + 3, "wasabi", 0x8ecc70, MapColor.TERRACOTTA_LIGHT_GREEN, 0x8ecc70, 0x8ecc70));
         dyes.add(delicateDyes$init("SACRAMENTO", DDUtil.getDyeCount() + 4, DDUtil.getDyeCount() + 4, "sacramento", 0x437a6a, MapColor.COLOR_CYAN, 0x437a6a, 0x437a6a));
         dyes.add(delicateDyes$init("SKY", DDUtil.getDyeCount() + 5, DDUtil.getDyeCount() + 5, "sky", 0x97ebf2, MapColor.COLOR_LIGHT_BLUE, 0x97ebf2, 0x97ebf2));

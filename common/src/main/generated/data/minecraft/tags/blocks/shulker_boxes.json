@@ -1,4 +1,13 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "delicate_dyes:coral_shulker_box",
+    "delicate_dyes:canary_shulker_box",
+    "delicate_dyes:wasabi_shulker_box",
+    "delicate_dyes:sacramento_shulker_box",
+    "delicate_dyes:sky_shulker_box",
+    "delicate_dyes:blurple_shulker_box",
+    "delicate_dyes:sangria_shulker_box",
+    "delicate_dyes:rose_shulker_box"
+  ]
 }

@@ -25,6 +25,6 @@ public class DelicateDyes {
 
     //TODO: MISC - Implement around 1 misc feature for each dye so they are obtainable in a non-intrusive way
     //TODO: RECIPES - Special wool recipes, special bed recipes, special shulker box recipes
-    //TODO: SHULKER BOXES - Implement custom dye shulker boxes
+    //TODO: POI - Villagers move towards custom beds
     //TODO: COMPAT - With as many mods as possible (proper todo soon)
 }
