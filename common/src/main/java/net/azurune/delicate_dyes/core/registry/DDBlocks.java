@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.core.registry;
 
 import net.azurune.delicate_dyes.DelicateDyes;
+import net.azurune.delicate_dyes.common.block.BlueberryBushBlock;
 import net.azurune.delicate_dyes.common.block.DDCandleCakeBlock;
 import net.azurune.delicate_dyes.common.block.DDShulkerBoxBlock;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
@@ -155,6 +156,8 @@ public class DDBlocks {
 
     public static final Supplier<Block> WHITE_ROSE = register("white_rose", () -> new FlowerBlock(MobEffects.INVISIBILITY, 10, DDProperties.BlockP.WHITE_ROSE), true);
     public static final Supplier<Block> POTTED_WHITE_ROSE = register("potted_white_rose", () -> flowerPot(WHITE_ROSE), false);
+
+    public static final Supplier<Block> BLUEBERRY_BUSH = register("blueberry_bush", () -> new BlueberryBushBlock(DDProperties.BlockP.BLUEBERRY_BUSH), false);
 
     private static Supplier<Block> register(String id, Supplier<Block> block, boolean hasItem) {
         return Services.REGISTRY.registerBlock(DelicateDyes.MOD_ID, id, block, hasItem);

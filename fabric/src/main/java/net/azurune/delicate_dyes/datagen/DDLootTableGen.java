@@ -1,11 +1,22 @@
 package net.azurune.delicate_dyes.datagen;
 
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
+import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.properties.BedPart;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 public class DDLootTableGen extends FabricBlockLootTableProvider {
     public DDLootTableGen(FabricDataOutput dataOutput) {
@@ -151,5 +162,11 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         dropPottedContents(DDBlocks.POTTED_RED_ROSE.get());
         dropPottedContents(DDBlocks.POTTED_BLUE_ROSE.get());
         dropPottedContents(DDBlocks.POTTED_WHITE_ROSE.get());
+
+        add(DDBlocks.BLUEBERRY_BUSH.get(), (block) -> applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool()
+                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(DDBlocks.BLUEBERRY_BUSH.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3)))
+                .add(LootItem.lootTableItem(DDItems.BLUEBERRIES.get())).apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F))).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))).withPool(LootPool.lootPool()
+                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(DDBlocks.BLUEBERRY_BUSH.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2)))
+                .add(LootItem.lootTableItem(DDItems.BLUEBERRIES.get())).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))));
     }
 }

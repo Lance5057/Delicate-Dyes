@@ -15,6 +15,7 @@ public class DDProperties {
         public static final BlockBehaviour.Properties RED_ROSE = BlockBehaviour.Properties.copy(Blocks.RED_TULIP);
         public static final BlockBehaviour.Properties BLUE_ROSE = BlockBehaviour.Properties.copy(Blocks.BLUE_ORCHID);
         public static final BlockBehaviour.Properties WHITE_ROSE = BlockBehaviour.Properties.copy(Blocks.WHITE_TULIP);
+        public static final BlockBehaviour.Properties BLUEBERRY_BUSH = BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH);
 
         //DYEABLE BLOCKS
         public static final BlockBehaviour.Properties WOOL = BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL);

@@ -20,6 +20,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.RED_ROSE.get(), "Red Rose");
         build.add(DDBlocks.BLUE_ROSE.get(), "Blue Rose");
         build.add(DDBlocks.WHITE_ROSE.get(), "White Rose");
+        build.add(DDBlocks.BLUEBERRY_BUSH.get(), "Blueberry Bush");
 
         //ITEMS
         build.add(DDItems.BLUEBERRIES.get(), "Blueberries");
@@ -150,7 +151,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDItems.SANGRIA_BANNER.get(), "Sangria Banner");
         build.add(DDItems.ROSE_BANNER.get(), "Rose Banner");
 
-        //YAPPING TOOLTIPS COMPAT //TODO A
+        //YAPPING TOOLTIPS COMPAT //TODO ADD
 
         //COLOR
         build.add("color.minecraft.coral", "Coral");

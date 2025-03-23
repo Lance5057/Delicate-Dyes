@@ -12,6 +12,8 @@ public class DDFeatures {
         public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_BLUE_ROSE = createKey("patch_blue_rose");
         public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_WHITE_ROSE = createKey("patch_white_rose");
 
+        public static final ResourceKey<ConfiguredFeature<?, ?>> PATCH_BLUEBERRY_BUSH = createKey("patch_blueberry_bush");
+
         public static ResourceKey<ConfiguredFeature<?, ?>> createKey(String id) {
             return ResourceKey.create(Registries.CONFIGURED_FEATURE, DelicateDyes.modid(id));
         }
@@ -21,6 +23,8 @@ public class DDFeatures {
         public static final ResourceKey<PlacedFeature> PATCH_ROSE = createKey("patch_rose");
         public static final ResourceKey<PlacedFeature> PATCH_BLUE_ROSE = createKey("patch_blue_rose");
         public static final ResourceKey<PlacedFeature> PATCH_WHITE_ROSE = createKey("patch_white_rose");
+
+        public static final ResourceKey<PlacedFeature> PATCH_BLUEBERRY_BUSH = createKey("patch_blueberry_bush");
 
         public static ResourceKey<PlacedFeature> createKey(String id) {
             return ResourceKey.create(Registries.PLACED_FEATURE, DelicateDyes.modid(id));

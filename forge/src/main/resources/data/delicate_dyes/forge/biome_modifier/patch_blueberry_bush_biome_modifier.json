@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": [
+    "delicate_dyes:patch_blueberry_bush"
+  ],
+  "step": "vegetal_decoration"
+}

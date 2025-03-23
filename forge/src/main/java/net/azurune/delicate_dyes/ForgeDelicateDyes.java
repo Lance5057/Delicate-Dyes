@@ -51,5 +51,6 @@ public class ForgeDelicateDyes {
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_RED_ROSE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_BLUE_ROSE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_WHITE_ROSE.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDBlocks.BLUEBERRY_BUSH.get(), RenderType.cutout());
     }
 }

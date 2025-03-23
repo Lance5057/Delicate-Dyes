@@ -6,10 +6,17 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.models.BlockModelGenerators;
 import net.minecraft.data.models.ItemModelGenerators;
+import net.minecraft.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.data.models.blockstates.PropertyDispatch;
+import net.minecraft.data.models.blockstates.Variant;
+import net.minecraft.data.models.blockstates.VariantProperties;
 import net.minecraft.data.models.model.ModelLocationUtils;
 import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.data.models.model.TextureMapping;
 import net.minecraft.data.models.model.TexturedModel;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 public class DDModelGen extends FabricModelProvider {
     public DDModelGen(FabricDataOutput output) {
@@ -175,6 +182,13 @@ public class DDModelGen extends FabricModelProvider {
         generator.createPlant(DDBlocks.RED_ROSE.get(), DDBlocks.POTTED_RED_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
         generator.createPlant(DDBlocks.BLUE_ROSE.get(), DDBlocks.POTTED_BLUE_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
         generator.createPlant(DDBlocks.WHITE_ROSE.get(), DDBlocks.POTTED_WHITE_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
+
+        generator.createSimpleFlatItemModel(Items.SWEET_BERRIES);
+
+        generator.blockStateOutput.accept(MultiVariantGenerator.multiVariant(DDBlocks.BLUEBERRY_BUSH.get())
+                .with(PropertyDispatch.property(BlockStateProperties.AGE_3).generate((integer) -> Variant.variant()
+                        .with(VariantProperties.MODEL, generator.createSuffixedVariant(DDBlocks.BLUEBERRY_BUSH.get(), "_stage" + integer,
+                                ModelTemplates.CROSS, TextureMapping::cross)))));
     }
 
     @Override

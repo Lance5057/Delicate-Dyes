@@ -4,10 +4,7 @@ import net.azurune.delicate_dyes.DelicateDyes;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.azurune.delicate_dyes.common.util.DDProperties;
 import net.azurune.runiclib.core.platform.Services;
-import net.minecraft.world.item.BannerItem;
-import net.minecraft.world.item.BedItem;
-import net.minecraft.world.item.DyeItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 
 import java.util.function.Supplier;
 
@@ -53,7 +50,7 @@ public class DDItems {
     public static final Supplier<Item> ROSE_BED = register("rose_bed", () -> new BedItem(DDBlocks.ROSE_BED.get(), DDProperties.ItemP.GENERIC_1));
 
     //MISC CONTENT
-    public static final Supplier<Item> BLUEBERRIES = register("blueberries", () -> new Item(DDProperties.ItemP.BLUEBERRIES));
+    public static final Supplier<Item> BLUEBERRIES = register("blueberries", () -> new ItemNameBlockItem(DDBlocks.BLUEBERRY_BUSH.get(), DDProperties.ItemP.BLUEBERRIES));
     public static final Supplier<Item> BLUEBERRY_PIE = register("blueberry_pie", () -> new Item(DDProperties.ItemP.BLUEBERRY_PIE));
 
     private static Supplier<Item> register(String id, Supplier<Item> item) {

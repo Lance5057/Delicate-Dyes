@@ -39,5 +39,6 @@ public class FabricDelicateDyesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.POTTED_RED_ROSE.get(), RenderType.cutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.POTTED_BLUE_ROSE.get(), RenderType.cutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.POTTED_WHITE_ROSE.get(), RenderType.cutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.BLUEBERRY_BUSH.get(), RenderType.cutout());
     }
 }
