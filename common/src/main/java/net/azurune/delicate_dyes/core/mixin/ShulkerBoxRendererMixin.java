@@ -8,7 +8,11 @@ import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -18,12 +22,29 @@ public class ShulkerBoxRendererMixin {
 
     @Shadow @Final public static ResourceLocation SHULKER_SHEET;
 
-    static { //TODO: open up for compat with other mods
-        SHULKER_TEXTURE_LOCATION = Stream.of(
-                "white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray",
-                        "cyan", "purple", "blue", "brown", "green", "red", "black",
+    @Inject(method = "<clinit>", at = @At("TAIL"))
+    private static void delicateDyes$clinit(CallbackInfo ci) {
+        var loc = new ArrayList<>(SHULKER_TEXTURE_LOCATION);
+        String shulker_path = "entity/shulker/shulker_";
 
-                "coral", "canary", "wasabi", "sacramento", "sky", "blurple", "sangria", "rose")
-                .map((color) -> new Material(SHULKER_SHEET, new ResourceLocation("entity/shulker/shulker_" + color))).collect(ImmutableList.toImmutableList());
+        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "coral")));
+        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "canary")));
+        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "wasabi")));
+        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "sacramento")));
+        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "sky")));
+        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "blurple")));
+        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "sangria")));
+        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "rose")));
+
+        SHULKER_TEXTURE_LOCATION = List.copyOf(loc);
     }
+
+//    static {
+//        SHULKER_TEXTURE_LOCATION = Stream.of(
+//                "white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray",
+//                        "cyan", "purple", "blue", "brown", "green", "red", "black",
+//
+//                "coral", "canary", "wasabi", "sacramento", "sky", "blurple", "sangria", "rose")
+//                .map((color) -> new Material(SHULKER_SHEET, new ResourceLocation("entity/shulker/shulker_" + color))).collect(ImmutableList.toImmutableList());
+//    }
 }

@@ -4,7 +4,6 @@ import net.azurune.delicate_dyes.common.util.DDUtil;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
@@ -13,6 +12,7 @@ import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.Level;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
@@ -25,30 +25,40 @@ import java.util.Map;
 
 @Mixin(Sheep.class)
 public abstract class SheepMixin extends Animal implements Shearable {
+    protected SheepMixin(EntityType<? extends Animal> entityType, Level level) {
+        super(entityType, level);
+    }
+
     @Shadow @Final private static EntityDataAccessor<Byte> DATA_WOOL_ID;
     @Shadow @Final private static Map<DyeColor, ItemLike> ITEM_BY_DYE;
 
-    private SheepMixin() {
-        super(EntityType.SHEEP, null);
-        throw new AssertionError();
-    }
-
     @Inject(method = "getDefaultLootTable", at = @At("HEAD"), cancellable = true)
     private void delicateDyes$getDefaultLootTable(CallbackInfoReturnable<ResourceLocation> cir) {
-        ResourceLocation key;
         if (!this.isSheared() && getColor().getId() > DDUtil.getDyeCount()) {
-            switch (this.getColor().getId() + DDUtil.getDyeCount()) {
-                case 1 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/coral");
-                case 2 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/canary");
-                case 3 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/wasabi");
-                case 4 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sacramento");
-                case 5 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sky");
-                case 6 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/blurple");
-                case 7 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sangria");
-                case 8 -> key = new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/rose");
-                default -> throw new IllegalStateException("Unexpected value: " + this.getColor().getId());
+            if (this.getColor() == DDDyeValues.CORAL) {
+                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/coral"));
             }
-            cir.setReturnValue(key);
+            if (this.getColor() == DDDyeValues.CANARY) {
+                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/canary"));
+            }
+            if (this.getColor() == DDDyeValues.WASABI) {
+                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/wasabi"));
+            }
+            if (this.getColor() == DDDyeValues.SACRAMENTO) {
+                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sacramento"));
+            }
+            if (this.getColor() == DDDyeValues.SKY) {
+                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sky"));
+            }
+            if (this.getColor() == DDDyeValues.BLURPLE) {
+                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/blurple"));
+            }
+            if (this.getColor() == DDDyeValues.SANGRIA) {
+                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sangria"));
+            }
+            if (this.getColor() == DDDyeValues.ROSE) {
+                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/rose"));
+            }
         }
     }
 
