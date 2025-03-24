@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blue_dye": {
+    "has_cyan_dye": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:blue_dye"
+              "minecraft:cyan_dye"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_green_dye",
-      "has_blue_dye",
+      "has_cyan_dye",
       "has_the_recipe"
     ]
   ],

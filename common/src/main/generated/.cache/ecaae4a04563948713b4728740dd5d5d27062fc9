@@ -1,6 +1,6 @@
-// 1.20.1	2025-03-23T03:24:52.4174777	Delicate Dyes/Tags for minecraft:block
-fdb054a384caea092cdfe425f4f527019b924683 data\minecraft\tags\blocks\wool.json
+// 1.20.1	2025-03-24T01:07:34.4187005	Delicate Dyes/Tags for minecraft:block
 18df6b43d4dafe5282a9fbbe2e35d8e54c985a67 data\minecraft\tags\blocks\beds.json
+fdb054a384caea092cdfe425f4f527019b924683 data\minecraft\tags\blocks\wool.json
 3b13c46b535d2c93f04f7815c7cdcad4bbf11bae data\minecraft\tags\blocks\shulker_boxes.json
 c3ca401e33e6ffc89ce3e4f9815252973c76cbb0 data\minecraft\tags\blocks\candles.json
 57f6798a6033549c52d44d18e67ff1d64123610e data\minecraft\tags\blocks\small_flowers.json

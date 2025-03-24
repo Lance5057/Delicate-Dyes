@@ -4,19 +4,16 @@
   "group": "sangria_dye",
   "ingredients": [
     {
-      "item": "minecraft:purple_dye"
-    },
-    {
-      "item": "minecraft:black_dye"
+      "item": "minecraft:blue_dye"
     },
     {
       "item": "minecraft:red_dye"
     },
     {
-      "item": "minecraft:blue_dye"
+      "item": "minecraft:magenta_dye"
     },
     {
-      "item": "minecraft:pink_dye"
+      "item": "minecraft:black_dye"
     }
   ],
   "result": {

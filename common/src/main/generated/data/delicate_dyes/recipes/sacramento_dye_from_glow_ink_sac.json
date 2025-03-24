@@ -4,10 +4,7 @@
   "group": "sacramento_dye",
   "ingredients": [
     {
-      "item": "minecraft:green_dye"
-    },
-    {
-      "item": "minecraft:cyan_dye"
+      "item": "minecraft:glow_ink_sac"
     }
   ],
   "result": {

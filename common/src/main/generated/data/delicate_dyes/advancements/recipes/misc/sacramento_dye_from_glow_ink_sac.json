@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_blueberries": {
+    "has_glow_ink_sac": {
       "conditions": {
         "items": [
           {
             "items": [
-              "delicate_dyes:blueberries"
+              "minecraft:glow_ink_sac"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:blurple_dye_from_blueberries"
+        "recipe": "minecraft:sacramento_dye_from_glow_ink_sac"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_blueberries",
+      "has_glow_ink_sac",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:blurple_dye_from_blueberries"
+      "minecraft:sacramento_dye_from_glow_ink_sac"
     ]
   },
   "sends_telemetry_event": false

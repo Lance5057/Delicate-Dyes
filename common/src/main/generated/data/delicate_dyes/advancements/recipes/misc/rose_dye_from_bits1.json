@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lime_dye": {
+    "has_red_dye": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:lime_dye"
+              "minecraft:red_dye"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "delicate_dyes:wasabi_dye"
+        "recipe": "minecraft:rose_dye_from_bits1"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -34,14 +34,14 @@
   },
   "requirements": [
     [
-      "has_lime_dye",
+      "has_red_dye",
       "has_white_dye",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "delicate_dyes:wasabi_dye"
+      "minecraft:rose_dye_from_bits1"
     ]
   },
   "sends_telemetry_event": false

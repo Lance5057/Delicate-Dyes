@@ -4,10 +4,7 @@
   "group": "sky_dye",
   "ingredients": [
     {
-      "item": "minecraft:blue_dye"
-    },
-    {
-      "item": "minecraft:white_dye"
+      "item": "minecraft:light_blue_dye"
     },
     {
       "item": "minecraft:white_dye"

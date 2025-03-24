@@ -1,18 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_orange_dye": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:orange_dye"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_red_dye": {
       "conditions": {
         "items": [
@@ -27,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "delicate_dyes:coral_dye"
+        "recipe": "minecraft:coral_dye_from_bits1"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -42,19 +30,31 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_yellow_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:yellow_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
       "has_red_dye",
-      "has_orange_dye",
+      "has_yellow_dye",
       "has_white_dye",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "delicate_dyes:coral_dye"
+      "minecraft:coral_dye_from_bits1"
     ]
   },
   "sends_telemetry_event": false
