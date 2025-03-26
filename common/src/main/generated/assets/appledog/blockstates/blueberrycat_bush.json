@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "appledog:block/blueberrycat_bush_stage0"
+    },
+    "age=1": {
+      "model": "appledog:block/blueberrycat_bush_stage1"
+    },
+    "age=2": {
+      "model": "appledog:block/blueberrycat_bush_stage2"
+    },
+    "age=3": {
+      "model": "appledog:block/blueberrycat_bush_stage3"
+    }
+  }
+}

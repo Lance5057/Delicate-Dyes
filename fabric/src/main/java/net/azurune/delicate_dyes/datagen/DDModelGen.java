@@ -1,5 +1,7 @@
 package net.azurune.delicate_dyes.datagen;
 
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -183,11 +185,15 @@ public class DDModelGen extends FabricModelProvider {
         generator.createPlant(DDBlocks.BLUE_ROSE.get(), DDBlocks.POTTED_BLUE_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
         generator.createPlant(DDBlocks.WHITE_ROSE.get(), DDBlocks.POTTED_WHITE_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
 
-        generator.createSimpleFlatItemModel(Items.SWEET_BERRIES);
-
         generator.blockStateOutput.accept(MultiVariantGenerator.multiVariant(DDBlocks.BLUEBERRY_BUSH.get())
                 .with(PropertyDispatch.property(BlockStateProperties.AGE_3).generate((integer) -> Variant.variant()
                         .with(VariantProperties.MODEL, generator.createSuffixedVariant(DDBlocks.BLUEBERRY_BUSH.get(), "_stage" + integer,
+                                ModelTemplates.CROSS, TextureMapping::cross)))));
+
+        //COMPAT
+        generator.blockStateOutput.accept(MultiVariantGenerator.multiVariant(ADBlocks.BLUEBERRYCAT_BUSH.get())
+                .with(PropertyDispatch.property(BlockStateProperties.AGE_3).generate((integer) -> Variant.variant()
+                        .with(VariantProperties.MODEL, generator.createSuffixedVariant(ADBlocks.BLUEBERRYCAT_BUSH.get(), "_stage" + integer,
                                 ModelTemplates.CROSS, TextureMapping::cross)))));
     }
 
@@ -203,5 +209,8 @@ public class DDModelGen extends FabricModelProvider {
         generator.generateFlatItem(DDItems.ROSE_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.BLUEBERRIES.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.BLUEBERRY_PIE.get(), ModelTemplates.FLAT_ITEM);
+
+        //COMPAT
+        generator.generateFlatItem(ADItems.CATBLUEBERRY.get(), ModelTemplates.FLAT_ITEM);
     }
 }

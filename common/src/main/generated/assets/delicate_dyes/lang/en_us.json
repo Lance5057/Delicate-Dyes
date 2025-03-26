@@ -1,4 +1,5 @@
 {
+  "block.appledog.blueberrycat_bush": "Blueberrycat Bush",
   "block.delicate_dyes.blue_rose": "Blue Rose",
   "block.delicate_dyes.blueberry_bush": "Blueberry Bush",
   "block.delicate_dyes.blurple_banner": "Blurple Banner",
@@ -444,6 +445,7 @@
   "color.minecraft.sangria": "Sangria",
   "color.minecraft.sky": "Sky",
   "color.minecraft.wasabi": "Wasabi",
+  "item.appledog.catblueberry": "Catblueberry",
   "item.delicate_dyes.blueberries": "Blueberries",
   "item.delicate_dyes.blueberry_pie": "Blueberry Pie",
   "item.delicate_dyes.blurple_dye": "Blurple Dye",

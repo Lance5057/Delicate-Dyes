@@ -1,5 +1,7 @@
 package net.azurune.delicate_dyes.datagen;
 
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -150,6 +152,17 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDItems.BLURPLE_BANNER.get(), "Blurple Banner");
         build.add(DDItems.SANGRIA_BANNER.get(), "Sangria Banner");
         build.add(DDItems.ROSE_BANNER.get(), "Rose Banner");
+
+        //COMPAT
+        //========================================================================================
+        //APPLEDOG
+
+        //BLOCKS
+        build.add(ADBlocks.BLUEBERRYCAT_BUSH.get(), "Blueberrycat Bush");
+
+        //ITEMS
+        build.add(ADItems.CATBLUEBERRY.get(), "Catblueberry");
+        //========================================================================================
 
         //YAPPING TOOLTIPS COMPAT //TODO ADD
 

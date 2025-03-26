@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.datagen;
 
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.init.DDTags;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
@@ -223,15 +224,15 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
                 .group("coral_dye").save(output, "coral_dye" + "_from_bits");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CORAL_DYE.get(), 3)
-                .requires(Items.RED_DYE).requires(Items.YELLOW_DYE).requires(Items.WHITE_DYE)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CORAL_DYE.get(), 4)
+                .requires(Items.RED_DYE) .requires(Items.RED_DYE).requires(Items.YELLOW_DYE).requires(Items.WHITE_DYE)
                 .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
                 .unlockedBy("has_yellow_dye", VanillaRecipeProvider.has(Items.YELLOW_DYE))
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
                 .group("coral_dye").save(output, "coral_dye" + "_from_bits1");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CANARY_DYE.get(), 2)
-                .requires(Items.RED_DYE).requires(Items.ORANGE_DYE)
+                .requires(Items.YELLOW_DYE).requires(Items.WHITE_DYE)
                 .unlockedBy("has_yellow_dye", VanillaRecipeProvider.has(Items.YELLOW_DYE))
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
                 .group("canary_dye").save(output, "canary_dye" + "_from_bits");
@@ -243,8 +244,8 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .group("wasabi_dye").save(output, "wasabi_dye" + "_from_bits");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.WASABI_DYE.get(), 2)
-                .requires(Items.LIME_DYE).requires(Items.WHITE_DYE)
-                .unlockedBy("has_lime_dye", VanillaRecipeProvider.has(Items.LIME_DYE))
+                .requires(Items.GREEN_DYE).requires(Items.WHITE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_green_dye", VanillaRecipeProvider.has(Items.GREEN_DYE))
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
                 .group("wasabi_dye").save(output, "wasabi_dye" + "_from_bits1");
 
@@ -266,7 +267,7 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
                 .group("sky_dye").save(output, "sky_dye" + "_from_bits");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SKY_DYE.get(), 2)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SKY_DYE.get(), 3)
                 .requires(Items.BLUE_DYE).requires(Items.WHITE_DYE).requires(Items.WHITE_DYE)
                 .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
@@ -344,8 +345,8 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .unlockedBy("has_pink_dye", VanillaRecipeProvider.has(Items.PINK_DYE))
                 .group("rose_dye").save(output, "rose_dye" + "_from_bits");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.ROSE_DYE.get(), 2)
-                .requires(Items.RED_DYE).requires(Items.PINK_DYE)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.ROSE_DYE.get(), 3)
+                .requires(Items.RED_DYE).requires(Items.RED_DYE).requires(Items.WHITE_DYE)
                 .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
                 .group("rose_dye").save(output, "rose_dye" + "_from_bits1");
@@ -362,6 +363,9 @@ public class DDRecipeGen extends FabricRecipeProvider {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DDItems.BLUEBERRY_PIE.get())
                 .requires(DDTags.Items.BLUEBERRIES).requires(DDTags.Items.BLUEBERRIES).requires(Items.SUGAR).requires(Items.EGG)
                 .unlockedBy("has_blueberries", VanillaRecipeProvider.has(DDTags.Items.BLUEBERRIES)).save(output);
+
+        //COMPAT
+        oneToOneConversionRecipe(output, DDItems.SANGRIA_DYE.get(), ADItems.CATBLUEBERRY.get(), "sangria_dye");
     }
 
     //crappy work around for special recipes

@@ -1,6 +1,8 @@
 package net.azurune.delicate_dyes.core.registry;
 
 import net.azurune.delicate_dyes.DelicateDyes;
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.common.integration.common.util.CompatIds;
 import net.azurune.runiclib.core.platform.Services;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -141,6 +143,17 @@ public class DDCreativeTabs {
 
                         entry.accept(DDItems.BLUEBERRIES.get());
                         entry.accept(DDItems.BLUEBERRY_PIE.get());
+                    }
+            ).build());
+
+    public static final Supplier<CreativeModeTab> DELICATE_DYES_COMPAT = Services.REGISTRY.registerCreativeModeTab(DelicateDyes.MOD_ID, "delicate_dyes_compat", () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+            .title(Component.translatable("itemgroup.delicate_dyes"))
+            .icon(() -> new ItemStack(DDItems.ROSE_DYE.get()))
+            .displayItems((displayParameters, entry) -> {
+                //APPLEDOG
+                if (Services.PLATFORM.isModLoaded(CompatIds.APPLEDOG)) {
+                    entry.accept(ADItems.CATBLUEBERRY.get());
+                }
                     }
             ).build());
 

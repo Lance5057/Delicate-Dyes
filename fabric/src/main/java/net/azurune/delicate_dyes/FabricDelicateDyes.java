@@ -24,4 +24,13 @@ public class FabricDelicateDyes implements ModInitializer {
 
         BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_FOREST), GenerationStep.Decoration.VEGETAL_DECORATION, DDFeatures.PlacedFeatures.PATCH_BLUEBERRY_BUSH);
     }
+
+    public static boolean isDatagen() {
+        try {
+            Class.forName("net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint");
+            return System.getProperty("fabric-api.datagen") != null;
+        } catch (ClassNotFoundException e) {
+            return false;
+        }
+    }
 }

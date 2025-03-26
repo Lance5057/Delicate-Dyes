@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.datagen;
 
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.init.DDTags;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
@@ -33,6 +34,7 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendBlueberries() {
         getOrCreateTagBuilder(DDTags.Items.BLUEBERRIES)
                 .add(DDItems.BLUEBERRIES.get())
+                .add(ADItems.CATBLUEBERRY.get())
         ;
     }
 

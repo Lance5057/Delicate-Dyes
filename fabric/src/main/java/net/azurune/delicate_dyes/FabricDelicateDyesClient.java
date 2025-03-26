@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes;
 
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
@@ -40,5 +41,7 @@ public class FabricDelicateDyesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.POTTED_BLUE_ROSE.get(), RenderType.cutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.POTTED_WHITE_ROSE.get(), RenderType.cutout());
         BlockRenderLayerMap.INSTANCE.putBlock(DDBlocks.BLUEBERRY_BUSH.get(), RenderType.cutout());
+        //COMPAT
+        BlockRenderLayerMap.INSTANCE.putBlock(ADBlocks.BLUEBERRYCAT_BUSH.get(), RenderType.cutout());
     }
 }

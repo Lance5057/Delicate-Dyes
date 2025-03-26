@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes;
 
 import net.azurune.delicate_dyes.common.ForgeItemGroupAdditions;
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -52,5 +53,7 @@ public class ForgeDelicateDyes {
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_BLUE_ROSE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_WHITE_ROSE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.BLUEBERRY_BUSH.get(), RenderType.cutout());
+        //COMPAT
+        ItemBlockRenderTypes.setRenderLayer(ADBlocks.BLUEBERRYCAT_BUSH.get(), RenderType.cutout());
     }
 }
