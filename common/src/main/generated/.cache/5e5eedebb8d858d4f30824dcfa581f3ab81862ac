@@ -1,4 +1,4 @@
-// 1.20.1	2025-03-26T02:17:49.0849563	Delicate Dyes/Block Loot Tables
+// 1.20.1	2025-04-03T12:36:15.7239982	Delicate Dyes/Block Loot Tables
 a0e33f8953de469436c609ad892e759e532a3031 data\delicate_dyes\loot_tables\blocks\sky_concrete.json
 e6a1ccf212fe9ab98ceb52782696dc17fac38903 data\delicate_dyes\loot_tables\blocks\coral_stained_glass.json
 44375c7a41d3ca270edb6907c63f1f21a200f8bb data\delicate_dyes\loot_tables\blocks\blurple_concrete.json
@@ -27,8 +27,8 @@ c5748a8ce58d1008af951e7e148257a875dc84c3 data\delicate_dyes\loot_tables\blocks\c
 039ffb13024d54de2c5f9ec7b2b21e69f0bfc9f9 data\delicate_dyes\loot_tables\blocks\coral_candle.json
 4291c27a630245d887f88782cfef865c473ca7c0 data\delicate_dyes\loot_tables\blocks\sky_banner.json
 43e12ccef37c67ad8fd4ac4809d743707bca36cd data\delicate_dyes\loot_tables\blocks\potted_rose.json
-4bc9c58f0d255e42592b1ed0cbdff1a97514e418 data\delicate_dyes\loot_tables\blocks\sangria_concrete.json
 9f14459a045e4701b15292b4613bc86f07ce666d data\delicate_dyes\loot_tables\blocks\coral_concrete_powder.json
+4bc9c58f0d255e42592b1ed0cbdff1a97514e418 data\delicate_dyes\loot_tables\blocks\sangria_concrete.json
 ea6000f1d4c0c772838ff2c5f3b55abfbcfa2c0d data\delicate_dyes\loot_tables\blocks\potted_white_rose.json
 4350ad901af37c28c7c5380049a4896ee98cf723 data\delicate_dyes\loot_tables\blocks\coral_shulker_box.json
 cc053b6efc51c15c37ccff35b79c0baac5c13dd6 data\delicate_dyes\loot_tables\blocks\sacramento_wool.json

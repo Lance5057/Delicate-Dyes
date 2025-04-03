@@ -464,5 +464,6 @@
   "item.minecraft.firework_star.sangria": "Sangria",
   "item.minecraft.firework_star.sky": "Sky",
   "item.minecraft.firework_star.wasabi": "Wasabi",
-  "itemgroup.delicate_dyes": "Delicate Dyes"
+  "itemgroup.delicate_dyes": "Delicate Dyes",
+  "itemgroup.delicate_dyes_compat": "Delicate Dyes Compatibility"
 }

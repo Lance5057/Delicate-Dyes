@@ -16,6 +16,7 @@ public class DDLangGen extends FabricLanguageProvider {
     public void generateTranslations(TranslationBuilder build) {
         //MISC
         build.add("itemgroup.delicate_dyes", "Delicate Dyes");
+        build.add("itemgroup.delicate_dyes_compat", "Delicate Dyes Compatibility");
 
         //BLOCKS
         build.add(DDBlocks.ROSE.get(), "Rose");

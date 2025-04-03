@@ -147,8 +147,8 @@ public class DDCreativeTabs {
             ).build());
 
     public static final Supplier<CreativeModeTab> DELICATE_DYES_COMPAT = Services.REGISTRY.registerCreativeModeTab(DelicateDyes.MOD_ID, "delicate_dyes_compat", () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
-            .title(Component.translatable("itemgroup.delicate_dyes"))
-            .icon(() -> new ItemStack(DDItems.ROSE_DYE.get()))
+            .title(Component.translatable("itemgroup.delicate_dyes_compat"))
+            .icon(() -> new ItemStack(DDItems.BLURPLE_DYE.get()))
             .displayItems((displayParameters, entry) -> {
                 //APPLEDOG
                 if (Services.PLATFORM.isModLoaded(CompatIds.APPLEDOG)) {

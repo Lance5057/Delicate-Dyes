@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes;
 
 import net.azurune.delicate_dyes.common.FabricItemGroupAdditions;
+import net.azurune.delicate_dyes.common.integration.util.IntegrationDatagenUtil;
 import net.azurune.delicate_dyes.core.init.DDFeatures;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -15,6 +16,7 @@ public class FabricDelicateDyes implements ModInitializer {
         DelicateDyes.init();
         FabricItemGroupAdditions.modifyCreativeTabs();
         addBiomeModifiers();
+        IntegrationDatagenUtil.registerDatagenItems();
     }
 
     public void addBiomeModifiers() {
