@@ -34,7 +34,7 @@ public abstract class SheepMixin extends Animal implements Shearable {
 
     @Inject(method = "getDefaultLootTable", at = @At("HEAD"), cancellable = true)
     private void delicateDyes$getDefaultLootTable(CallbackInfoReturnable<ResourceLocation> cir) {
-        if (!this.isSheared() && getColor().getId() > DDUtil.getDyeCount()) {
+        if (!this.isSheared() && (getColor().getId() > 690 || getColor().getId() < 697)) {
             if (this.getColor() == DDDyeValues.CORAL) {
                 cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/coral"));
             }

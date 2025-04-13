@@ -55,14 +55,14 @@ public class DDShulkerBoxBlock extends ShulkerBoxBlock {
             return Blocks.SHULKER_BOX;
         } else {
             return switch (color.getId()) {
-                case 1 -> DDBlocks.CORAL_SHULKER_BOX.get();
-                case 2 -> DDBlocks.CANARY_SHULKER_BOX.get();
-                case 3 -> DDBlocks.WASABI_SHULKER_BOX.get();
-                case 4 -> DDBlocks.SACRAMENTO_SHULKER_BOX.get();
-                case 5 -> DDBlocks.SKY_SHULKER_BOX.get();
-                case 6 -> DDBlocks.BLURPLE_SHULKER_BOX.get();
-                case 7 -> DDBlocks.SANGRIA_SHULKER_BOX.get();
-                case 8 -> DDBlocks.ROSE_SHULKER_BOX.get();
+                case 690 -> DDBlocks.CORAL_SHULKER_BOX.get();
+                case 691 -> DDBlocks.CANARY_SHULKER_BOX.get();
+                case 692 -> DDBlocks.WASABI_SHULKER_BOX.get();
+                case 693 -> DDBlocks.SACRAMENTO_SHULKER_BOX.get();
+                case 694 -> DDBlocks.SKY_SHULKER_BOX.get();
+                case 695 -> DDBlocks.BLURPLE_SHULKER_BOX.get();
+                case 696 -> DDBlocks.SANGRIA_SHULKER_BOX.get();
+                case 697 -> DDBlocks.ROSE_SHULKER_BOX.get();
                 default -> Blocks.SHULKER_BOX;
             };
         }

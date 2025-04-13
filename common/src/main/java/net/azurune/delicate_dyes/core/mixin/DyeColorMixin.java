@@ -26,7 +26,7 @@ public class DyeColorMixin {
 
     @Inject(method = "<clinit>", at = @At(value = "FIELD", target = "Lnet/minecraft/world/item/DyeColor;$VALUES:[Lnet/minecraft/world/item/DyeColor;", shift = At.Shift.AFTER))
     private static void delicateDyes$addDyes(CallbackInfo ci) {
-        ArrayList<DyeColor> dyes = new ArrayList<>(Arrays.asList($VALUES));
+        ArrayList<DyeColor> dyes = new ArrayList<DyeColor>(Arrays.asList($VALUES));
 
         dyes.add(delicateDyes$init("CORAL", DDUtil.getDyeCount() + 1, DDUtil.getDyeCount() + 1, "coral", 0xff6565, MapColor.RAW_IRON, 0xff6565, 0xff6565));
         dyes.add(delicateDyes$init("CANARY", DDUtil.getDyeCount() + 2, DDUtil.getDyeCount() + 2, "canary", 0xf3e37c, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c));
