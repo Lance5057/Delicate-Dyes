@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_mountain",
-  "features": [
-    "delicate_dyes:patch_white_rose"
-  ],
-  "step": "vegetal_decoration"
-}

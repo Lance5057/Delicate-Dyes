@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_jungle",
-  "features": [
-    "delicate_dyes:patch_blue_rose"
-  ],
-  "step": "vegetal_decoration"
-}
