@@ -42,7 +42,6 @@ public class DDProperties {
 
         //FOODS
         public static final Item.Properties BLUEBERRIES = new Item.Properties().food(Food.BLUEBERRIES);
-        public static final Item.Properties BLUEBERRY_PIE = new Item.Properties().food(Food.BLUEBERRY_PIE);
     }
 
     public static class Food {
@@ -51,6 +50,5 @@ public class DDProperties {
 
         //GENERIC FOODS
         public static final FoodProperties BLUEBERRIES = new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build();
-        public static final FoodProperties BLUEBERRY_PIE = new FoodProperties.Builder().nutrition(6).saturationMod(0.7F).build();
     }
 }

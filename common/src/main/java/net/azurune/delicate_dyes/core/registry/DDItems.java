@@ -51,7 +51,6 @@ public class DDItems {
 
     //MISC CONTENT
     public static final Supplier<Item> BLUEBERRIES = register("blueberries", () -> new ItemNameBlockItem(DDBlocks.BLUEBERRY_BUSH.get(), DDProperties.ItemP.BLUEBERRIES));
-    public static final Supplier<Item> BLUEBERRY_PIE = register("blueberry_pie", () -> new Item(DDProperties.ItemP.BLUEBERRY_PIE));
 
     private static Supplier<Item> register(String id, Supplier<Item> item) {
         return Services.REGISTRY.registerItem(DelicateDyes.MOD_ID, id, item);

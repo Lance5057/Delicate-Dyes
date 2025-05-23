@@ -148,15 +148,6 @@ public class DDBlocks {
     public static final Supplier<Block> ROSE = register("rose", () -> new FlowerBlock(MobEffects.REGENERATION, 10, DDProperties.BlockP.ROSE), true);
     public static final Supplier<Block> POTTED_ROSE = register("potted_rose", () -> flowerPot(ROSE), false);
 
-    public static final Supplier<Block> RED_ROSE = register("red_rose", () -> new FlowerBlock(MobEffects.HEALTH_BOOST, 20, DDProperties.BlockP.RED_ROSE), true);
-    public static final Supplier<Block> POTTED_RED_ROSE = register("potted_red_rose", () -> flowerPot(RED_ROSE), false);
-
-    public static final Supplier<Block> BLUE_ROSE = register("blue_rose", () -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 20, DDProperties.BlockP.BLUE_ROSE), true);
-    public static final Supplier<Block> POTTED_BLUE_ROSE = register("potted_blue_rose", () -> flowerPot(BLUE_ROSE), false);
-
-    public static final Supplier<Block> WHITE_ROSE = register("white_rose", () -> new FlowerBlock(MobEffects.INVISIBILITY, 10, DDProperties.BlockP.WHITE_ROSE), true);
-    public static final Supplier<Block> POTTED_WHITE_ROSE = register("potted_white_rose", () -> flowerPot(WHITE_ROSE), false);
-
     public static final Supplier<Block> BLUEBERRY_BUSH = register("blueberry_bush", () -> new BlueberryBushBlock(DDProperties.BlockP.BLUEBERRY_BUSH), false);
 
     private static Supplier<Block> register(String id, Supplier<Block> block, boolean hasItem) {

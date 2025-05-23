@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.common.integration.appledog.block;
 
 import net.azurune.delicate_dyes.common.block.BlueberryBushBlock;
+import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.platform.Services;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.minecraft.core.BlockPos;
@@ -33,7 +34,7 @@ public class BlueberrycatBushBlock extends BlueberryBushBlock {
 
     @Override
     public ItemStack getCloneItemStack(BlockGetter level, BlockPos pos, BlockState state) {
-        return new ItemStack(DDItems.BLUEBERRIES.get());
+        return new ItemStack(ADItems.CATBLUEBERRY.get());
     }
 
     @Override
@@ -44,7 +45,7 @@ public class BlueberrycatBushBlock extends BlueberryBushBlock {
             return InteractionResult.PASS;
         } else if (i > 1) {
             int j = 1 + level.random.nextInt(2);
-            popResource(level, pos, new ItemStack(DDItems.BLUEBERRIES.get(), j + (flag ? 1 : 0)));
+            popResource(level, pos, new ItemStack(ADItems.CATBLUEBERRY.get(), j + (flag ? 1 : 0)));
             level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
             BlockState blockstate = state.setValue(AGE, 1);
             level.setBlock(pos, blockstate, 2);

@@ -55,18 +55,12 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendSmallFlowers() {
         getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
                 .add(DDBlocks.ROSE.get())
-                .add(DDBlocks.RED_ROSE.get())
-                .add(DDBlocks.BLUE_ROSE.get())
-                .add(DDBlocks.WHITE_ROSE.get())
         ;
     }
 
     public void appendFlowerPots() {
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DDBlocks.POTTED_ROSE.get())
-                .add(DDBlocks.POTTED_RED_ROSE.get())
-                .add(DDBlocks.POTTED_BLUE_ROSE.get())
-                .add(DDBlocks.POTTED_WHITE_ROSE.get())
         ;
     }
 

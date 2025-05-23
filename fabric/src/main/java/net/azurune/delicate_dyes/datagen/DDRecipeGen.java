@@ -354,21 +354,29 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
                 .group("rose_dye").save(output, "rose_dye" + "_from_bits1");
 
-        oneToOneConversionRecipe(output, DDItems.SACRAMENTO_DYE.get(), Items.GLOW_INK_SAC, "sacramento_dye");
+        //CORAL
 
-        oneToOneConversionRecipe(output, DDItems.ROSE_DYE.get(), DDBlocks.ROSE.get(), "rose_dye");
-        oneToOneConversionRecipe(output, Items.RED_DYE, DDBlocks.RED_ROSE.get(), "red_dye");
-        oneToOneConversionRecipe(output, DDItems.SKY_DYE.get(), DDBlocks.BLUE_ROSE.get(), "sky_dye");
-        oneToOneConversionRecipe(output, Items.WHITE_DYE, DDBlocks.WHITE_ROSE.get(), "white_dye");
+        //CANARY
 
+        //WASABI
+
+        //SACRAMENTO DYE
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SACRAMENTO_DYE.get(), 1)
+                .requires(Items.GLOW_INK_SAC)
+                .unlockedBy("has_glow_ink_sac", VanillaRecipeProvider.has(Items.GLOW_INK_SAC))
+                .group("sacramento_dye").save(output, "sacramento_dye_from_glow_ink_sac");
+
+        //SKY
+
+        //BLURPLE
+
+        //SANGRIA DYE
         oneToOneConversionRecipe(output, DDItems.SANGRIA_DYE.get(), DDItems.BLUEBERRIES.get(), "sangria_dye");
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DDItems.BLUEBERRY_PIE.get())
-                .requires(DDTags.Items.BLUEBERRIES).requires(DDTags.Items.BLUEBERRIES).requires(Items.SUGAR).requires(Items.EGG)
-                .unlockedBy("has_blueberries", VanillaRecipeProvider.has(DDTags.Items.BLUEBERRIES)).save(output);
-
         //COMPAT
         oneToOneConversionRecipe(output, DDItems.SANGRIA_DYE.get(), ADItems.CATBLUEBERRY.get(), "sangria_dye");
+
+        //ROSE DYE
+        oneToOneConversionRecipe(output, DDItems.ROSE_DYE.get(), DDBlocks.ROSE.get(), "rose_dye");
     }
 
     //crappy work around for special recipes

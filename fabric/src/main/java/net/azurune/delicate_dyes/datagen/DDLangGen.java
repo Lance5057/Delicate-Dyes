@@ -20,14 +20,10 @@ public class DDLangGen extends FabricLanguageProvider {
 
         //BLOCKS
         build.add(DDBlocks.ROSE.get(), "Rose");
-        build.add(DDBlocks.RED_ROSE.get(), "Red Rose");
-        build.add(DDBlocks.BLUE_ROSE.get(), "Blue Rose");
-        build.add(DDBlocks.WHITE_ROSE.get(), "White Rose");
         build.add(DDBlocks.BLUEBERRY_BUSH.get(), "Blueberry Bush");
 
         //ITEMS
         build.add(DDItems.BLUEBERRIES.get(), "Blueberries");
-        build.add(DDItems.BLUEBERRY_PIE.get(), "Blueberry Pie");
 
         //DYED BLOCKS
         build.add(DDBlocks.CORAL_WOOL.get(), "Coral Wool");

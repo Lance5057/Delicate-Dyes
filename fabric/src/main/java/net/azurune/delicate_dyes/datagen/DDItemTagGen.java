@@ -71,16 +71,12 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendFoxFood() {
         getOrCreateTagBuilder(ItemTags.FOX_FOOD)
                 .add(DDItems.BLUEBERRIES.get())
-                .add(DDItems.BLUEBERRY_PIE.get()) //its funny okay
         ;
     }
 
     public void appendSmallFlowers() {
         getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
                 .add(DDBlocks.ROSE.get().asItem())
-                .add(DDBlocks.RED_ROSE.get().asItem())
-                .add(DDBlocks.BLUE_ROSE.get().asItem())
-                .add(DDBlocks.WHITE_ROSE.get().asItem())
         ;
     }
 

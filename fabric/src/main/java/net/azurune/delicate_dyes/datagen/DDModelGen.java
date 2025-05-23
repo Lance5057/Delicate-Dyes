@@ -181,9 +181,6 @@ public class DDModelGen extends FabricModelProvider {
 
         //MISC CONTENT
         generator.createPlant(DDBlocks.ROSE.get(), DDBlocks.POTTED_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
-        generator.createPlant(DDBlocks.RED_ROSE.get(), DDBlocks.POTTED_RED_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
-        generator.createPlant(DDBlocks.BLUE_ROSE.get(), DDBlocks.POTTED_BLUE_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
-        generator.createPlant(DDBlocks.WHITE_ROSE.get(), DDBlocks.POTTED_WHITE_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
 
         generator.blockStateOutput.accept(MultiVariantGenerator.multiVariant(DDBlocks.BLUEBERRY_BUSH.get())
                 .with(PropertyDispatch.property(BlockStateProperties.AGE_3).generate((integer) -> Variant.variant()
@@ -208,7 +205,6 @@ public class DDModelGen extends FabricModelProvider {
         generator.generateFlatItem(DDItems.SANGRIA_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.ROSE_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.BLUEBERRIES.get(), ModelTemplates.FLAT_ITEM);
-        generator.generateFlatItem(DDItems.BLUEBERRY_PIE.get(), ModelTemplates.FLAT_ITEM);
 
         //COMPAT
         generator.generateFlatItem(ADItems.CATBLUEBERRY.get(), ModelTemplates.FLAT_ITEM);

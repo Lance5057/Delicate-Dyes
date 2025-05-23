@@ -157,13 +157,7 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
 
         //MISC CONTENT
         dropSelf(DDBlocks.ROSE.get());
-        dropSelf(DDBlocks.RED_ROSE.get());
-        dropSelf(DDBlocks.BLUE_ROSE.get());
-        dropSelf(DDBlocks.WHITE_ROSE.get());
         dropPottedContents(DDBlocks.POTTED_ROSE.get());
-        dropPottedContents(DDBlocks.POTTED_RED_ROSE.get());
-        dropPottedContents(DDBlocks.POTTED_BLUE_ROSE.get());
-        dropPottedContents(DDBlocks.POTTED_WHITE_ROSE.get());
 
         add(DDBlocks.BLUEBERRY_BUSH.get(), (block) -> applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool()
                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(DDBlocks.BLUEBERRY_BUSH.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3)))

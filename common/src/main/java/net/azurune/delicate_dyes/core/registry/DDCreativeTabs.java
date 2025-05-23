@@ -137,12 +137,8 @@ public class DDCreativeTabs {
 
                         //MISC CONTENT
                         entry.accept(DDBlocks.ROSE.get());
-                        entry.accept(DDBlocks.RED_ROSE.get());
-                        entry.accept(DDBlocks.BLUE_ROSE.get());
-                        entry.accept(DDBlocks.WHITE_ROSE.get());
 
                         entry.accept(DDItems.BLUEBERRIES.get());
-                        entry.accept(DDItems.BLUEBERRY_PIE.get());
                     }
             ).build());
 
