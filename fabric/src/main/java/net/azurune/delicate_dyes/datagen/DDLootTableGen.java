@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.datagen;
 
+import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
@@ -242,6 +243,24 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get()));
         dropSelf(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get());
         dropSelf(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get());
+
+        dropSelf(AlexCBlocks.CORAL_ROCK_CANDY.get());
+        dropSelf(AlexCBlocks.CANARY_ROCK_CANDY.get());
+        dropSelf(AlexCBlocks.WASABI_ROCK_CANDY.get());
+        dropSelf(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get());
+        dropSelf(AlexCBlocks.SKY_ROCK_CANDY.get());
+        dropSelf(AlexCBlocks.BLURPLE_ROCK_CANDY.get());
+        dropSelf(AlexCBlocks.SANGRIA_ROCK_CANDY.get());
+        dropSelf(AlexCBlocks.ROSE_ROCK_CANDY.get());
+
+        dropSelf(AlexCBlocks.CORAL_RADON_LAMP.get());
+        dropSelf(AlexCBlocks.CANARY_RADON_LAMP.get());
+        dropSelf(AlexCBlocks.WASABI_RADON_LAMP.get());
+        dropSelf(AlexCBlocks.SACRAMENTO_RADON_LAMP.get());
+        dropSelf(AlexCBlocks.SKY_RADON_LAMP.get());
+        dropSelf(AlexCBlocks.BLURPLE_RADON_LAMP.get());
+        dropSelf(AlexCBlocks.SANGRIA_RADON_LAMP.get());
+        dropSelf(AlexCBlocks.ROSE_RADON_LAMP.get());
         
         add(ADBlocks.BLUEBERRYCAT_BUSH.get(), (block) -> applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool()
                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ADBlocks.BLUEBERRYCAT_BUSH.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3)))

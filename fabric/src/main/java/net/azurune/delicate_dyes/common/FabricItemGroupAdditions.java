@@ -15,7 +15,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 
 public class FabricItemGroupAdditions {
-    public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog");
+    public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog:appledog");
 
     private static ResourceKey<CreativeModeTab> createKey(String id) {
         return ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(id));

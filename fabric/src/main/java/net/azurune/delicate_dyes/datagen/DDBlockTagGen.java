@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.datagen;
 
 import net.azurune.delicate_dyes.core.init.DDTags;
+import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
 import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -202,6 +203,14 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
                 .add(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get())
                 .add(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get())
                 .add(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get())
+                .add(AlexCBlocks.CORAL_ROCK_CANDY.get())
+                .add(AlexCBlocks.CANARY_ROCK_CANDY.get())
+                .add(AlexCBlocks.WASABI_ROCK_CANDY.get())
+                .add(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get())
+                .add(AlexCBlocks.SKY_ROCK_CANDY.get())
+                .add(AlexCBlocks.BLURPLE_ROCK_CANDY.get())
+                .add(AlexCBlocks.SANGRIA_ROCK_CANDY.get())
+                .add(AlexCBlocks.ROSE_ROCK_CANDY.get())
         ;
     }
 

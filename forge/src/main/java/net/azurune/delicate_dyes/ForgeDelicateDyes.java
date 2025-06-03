@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes;
 
 import net.azurune.delicate_dyes.common.ForgeItemGroupAdditions;
+import net.azurune.delicate_dyes.core.init.DDRegistries;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -9,6 +10,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(DelicateDyes.MOD_ID)
@@ -19,8 +21,14 @@ public class ForgeDelicateDyes {
 
         DelicateDyes.init();
 
+        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::clientSetup);
         modEventBus.addListener(ForgeItemGroupAdditions::buildCreativeTabs);
+    }
+
+    @SubscribeEvent
+    public void commonSetup(FMLCommonSetupEvent event) {
+        DDRegistries.loadRegistries();
     }
 
     @SubscribeEvent

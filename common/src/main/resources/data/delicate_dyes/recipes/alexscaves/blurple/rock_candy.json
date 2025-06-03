@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPS",
+    "PDP",
+    "SPS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "P": {
+      "item": "alexscaves:peppermint_powder"
+    },
+    "D": {
+      "item": "delicate_dyes:blurple_dye"
+    }
+  },
+  "result": {
+    "item": "alexscaves:rock_candy_blurple",
+    "count": 4
+  }
+}

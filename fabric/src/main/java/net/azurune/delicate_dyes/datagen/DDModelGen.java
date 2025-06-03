@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.datagen;
 
+import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
@@ -196,7 +197,7 @@ public class DDModelGen extends FabricModelProvider {
         coralTerracottaBricks.stairs(CWBlocks.CORAL_TERRACOTTA_BRICK_STAIRS.get());
         coralTerracottaBricks.slab(CWBlocks.CORAL_TERRACOTTA_BRICK_SLAB.get());
         coralTerracottaBricks.wall(CWBlocks.CORAL_TERRACOTTA_BRICK_WALL.get());
-        generator.createTrivialCube(CWBlocks.CHISELED_CORAL_TERRACOTTA_BRICKS.get());
+        coralTerracotta.fullBlock(CWBlocks.CHISELED_CORAL_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
 
         BlockModelGenerators.BlockFamilyProvider canaryTerracotta = generator.family(DDBlocks.CANARY_TERRACOTTA.get());
         canaryTerracotta.stairs(CWBlocks.CANARY_TERRACOTTA_STAIRS.get());
@@ -206,7 +207,7 @@ public class DDModelGen extends FabricModelProvider {
         canaryTerracottaBricks.stairs(CWBlocks.CANARY_TERRACOTTA_BRICK_STAIRS.get());
         canaryTerracottaBricks.slab(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get());
         canaryTerracottaBricks.wall(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get());
-        generator.createTrivialCube(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get());
+        canaryTerracotta.fullBlock(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
 
         BlockModelGenerators.BlockFamilyProvider wasabiTerracotta = generator.family(DDBlocks.WASABI_TERRACOTTA.get());
         wasabiTerracotta.stairs(CWBlocks.WASABI_TERRACOTTA_STAIRS.get());
@@ -216,7 +217,7 @@ public class DDModelGen extends FabricModelProvider {
         wasabiTerracottaBricks.stairs(CWBlocks.WASABI_TERRACOTTA_BRICK_STAIRS.get());
         wasabiTerracottaBricks.slab(CWBlocks.WASABI_TERRACOTTA_BRICK_SLAB.get());
         wasabiTerracottaBricks.wall(CWBlocks.WASABI_TERRACOTTA_BRICK_WALL.get());
-        generator.createTrivialCube(CWBlocks.CHISELED_WASABI_TERRACOTTA_BRICKS.get());
+        wasabiTerracotta.fullBlock(CWBlocks.CHISELED_WASABI_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
 
         BlockModelGenerators.BlockFamilyProvider sacramentoTerracotta = generator.family(DDBlocks.SACRAMENTO_TERRACOTTA.get());
         sacramentoTerracotta.stairs(CWBlocks.SACRAMENTO_TERRACOTTA_STAIRS.get());
@@ -226,7 +227,7 @@ public class DDModelGen extends FabricModelProvider {
         sacramentoTerracottaBricks.stairs(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_STAIRS.get());
         sacramentoTerracottaBricks.slab(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_SLAB.get());
         sacramentoTerracottaBricks.wall(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_WALL.get());
-        generator.createTrivialCube(CWBlocks.CHISELED_SACRAMENTO_TERRACOTTA_BRICKS.get());
+        sacramentoTerracotta.fullBlock(CWBlocks.CHISELED_SACRAMENTO_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
 
         BlockModelGenerators.BlockFamilyProvider skyTerracotta = generator.family(DDBlocks.SKY_TERRACOTTA.get());
         skyTerracotta.stairs(CWBlocks.SKY_TERRACOTTA_STAIRS.get());
@@ -236,7 +237,7 @@ public class DDModelGen extends FabricModelProvider {
         skyTerracottaBricks.stairs(CWBlocks.SKY_TERRACOTTA_BRICK_STAIRS.get());
         skyTerracottaBricks.slab(CWBlocks.SKY_TERRACOTTA_BRICK_SLAB.get());
         skyTerracottaBricks.wall(CWBlocks.SKY_TERRACOTTA_BRICK_WALL.get());
-        generator.createTrivialCube(CWBlocks.CHISELED_SKY_TERRACOTTA_BRICKS.get());
+        skyTerracotta.fullBlock(CWBlocks.CHISELED_SKY_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
 
         BlockModelGenerators.BlockFamilyProvider blurpleTerracotta = generator.family(DDBlocks.BLURPLE_TERRACOTTA.get());
         blurpleTerracotta.stairs(CWBlocks.BLURPLE_TERRACOTTA_STAIRS.get());
@@ -246,7 +247,7 @@ public class DDModelGen extends FabricModelProvider {
         blurpleTerracottaBricks.stairs(CWBlocks.BLURPLE_TERRACOTTA_BRICK_STAIRS.get());
         blurpleTerracottaBricks.slab(CWBlocks.BLURPLE_TERRACOTTA_BRICK_SLAB.get());
         blurpleTerracottaBricks.wall(CWBlocks.BLURPLE_TERRACOTTA_BRICK_WALL.get());
-        generator.createTrivialCube(CWBlocks.CHISELED_BLURPLE_TERRACOTTA_BRICKS.get());
+        blurpleTerracotta.fullBlock(CWBlocks.CHISELED_BLURPLE_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
 
         BlockModelGenerators.BlockFamilyProvider sangriaTerracotta = generator.family(DDBlocks.SANGRIA_TERRACOTTA.get());
         sangriaTerracotta.stairs(CWBlocks.SANGRIA_TERRACOTTA_STAIRS.get());
@@ -256,7 +257,7 @@ public class DDModelGen extends FabricModelProvider {
         sangriaTerracottaBricks.stairs(CWBlocks.SANGRIA_TERRACOTTA_BRICK_STAIRS.get());
         sangriaTerracottaBricks.slab(CWBlocks.SANGRIA_TERRACOTTA_BRICK_SLAB.get());
         sangriaTerracottaBricks.wall(CWBlocks.SANGRIA_TERRACOTTA_BRICK_WALL.get());
-        generator.createTrivialCube(CWBlocks.CHISELED_SANGRIA_TERRACOTTA_BRICKS.get());
+        sangriaTerracotta.fullBlock(CWBlocks.CHISELED_SANGRIA_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
 
         BlockModelGenerators.BlockFamilyProvider roseTerracotta = generator.family(DDBlocks.ROSE_TERRACOTTA.get());
         roseTerracotta.stairs(CWBlocks.ROSE_TERRACOTTA_STAIRS.get());
@@ -266,7 +267,24 @@ public class DDModelGen extends FabricModelProvider {
         roseTerracottaBricks.stairs(CWBlocks.ROSE_TERRACOTTA_BRICK_STAIRS.get());
         roseTerracottaBricks.slab(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get());
         roseTerracottaBricks.wall(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get());
-        generator.createTrivialCube(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get());
+        roseTerracotta.fullBlock(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
+        
+        generator.createTrivialCube(AlexCBlocks.CORAL_ROCK_CANDY.get());
+        generator.createTrivialCube(AlexCBlocks.CANARY_ROCK_CANDY.get());
+        generator.createTrivialCube(AlexCBlocks.WASABI_ROCK_CANDY.get());
+        generator.createTrivialCube(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get());
+        generator.createTrivialCube(AlexCBlocks.SKY_ROCK_CANDY.get());
+        generator.createTrivialCube(AlexCBlocks.BLURPLE_ROCK_CANDY.get());
+        generator.createTrivialCube(AlexCBlocks.SANGRIA_ROCK_CANDY.get());
+        generator.createTrivialCube(AlexCBlocks.ROSE_ROCK_CANDY.get());
+        generator.createTrivialCube(AlexCBlocks.CORAL_RADON_LAMP.get());
+        generator.createTrivialCube(AlexCBlocks.CANARY_RADON_LAMP.get());
+        generator.createTrivialCube(AlexCBlocks.WASABI_RADON_LAMP.get());
+        generator.createTrivialCube(AlexCBlocks.SACRAMENTO_RADON_LAMP.get());
+        generator.createTrivialCube(AlexCBlocks.SKY_RADON_LAMP.get());
+        generator.createTrivialCube(AlexCBlocks.BLURPLE_RADON_LAMP.get());
+        generator.createTrivialCube(AlexCBlocks.SANGRIA_RADON_LAMP.get());
+        generator.createTrivialCube(AlexCBlocks.ROSE_RADON_LAMP.get());
     }
 
     @Override

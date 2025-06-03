@@ -8,7 +8,7 @@ fabricApi {
 }
 
 base {
-    archivesName = "${mod_name}-fabric-${minecraft_version}"
+    archivesName = "fabric-${mod_id}-${minecraft_version}"
 }
 
 repositories {

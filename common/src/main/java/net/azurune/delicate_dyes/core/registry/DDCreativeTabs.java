@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.core.registry;
 
 import net.azurune.delicate_dyes.DelicateDyes;
+import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
 import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
@@ -150,123 +151,118 @@ public class DDCreativeTabs {
             .title(Component.translatable("itemgroup.delicate_dyes_compat"))
             .icon(() -> new ItemStack(DDItems.BLUEBERRIES.get()))
             .displayItems((displayParameters, entry) -> {
-                        //APPLEDOG
+                        if (Services.PLATFORM.isModLoaded(CompatIds.ALEXSCAVES)) {
+                            entry.accept(AlexCBlocks.CORAL_RADON_LAMP.get());
+                            entry.accept(AlexCBlocks.CORAL_ROCK_CANDY.get());
+                            entry.accept(AlexCBlocks.CANARY_RADON_LAMP.get());
+                            entry.accept(AlexCBlocks.CANARY_ROCK_CANDY.get());
+                            entry.accept(AlexCBlocks.WASABI_RADON_LAMP.get());
+                            entry.accept(AlexCBlocks.WASABI_ROCK_CANDY.get());
+                            entry.accept(AlexCBlocks.SACRAMENTO_RADON_LAMP.get());
+                            entry.accept(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get());
+                            entry.accept(AlexCBlocks.SKY_RADON_LAMP.get());
+                            entry.accept(AlexCBlocks.SKY_ROCK_CANDY.get());
+                            entry.accept(AlexCBlocks.BLURPLE_RADON_LAMP.get());
+                            entry.accept(AlexCBlocks.BLURPLE_ROCK_CANDY.get());
+                            entry.accept(AlexCBlocks.SANGRIA_RADON_LAMP.get());
+                            entry.accept(AlexCBlocks.SANGRIA_ROCK_CANDY.get());
+                            entry.accept(AlexCBlocks.ROSE_RADON_LAMP.get());
+                            entry.accept(AlexCBlocks.ROSE_ROCK_CANDY.get());
+                        }
+
                         if (Services.PLATFORM.isModLoaded(CompatIds.APPLEDOG)) {
                             entry.accept(ADItems.CATBLUEBERRY.get());
                         }
 
-                        //CLAYWORKS //they do not have their own tabs and i cannot be bothered to use vanilla tabs :skull:
+                        //they do not have their own tabs and i cannot be bothered to use vanilla tabs :skull:
                         if (Services.PLATFORM.isModLoaded(CompatIds.CLAYWORKS)) {
                             //CORAL
                             entry.accept(DDBlocks.CORAL_TERRACOTTA.get());
                             entry.accept(CWBlocks.CORAL_TERRACOTTA_STAIRS.get());
                             entry.accept(CWBlocks.CORAL_TERRACOTTA_SLAB.get());
                             entry.accept(CWBlocks.CORAL_TERRACOTTA_WALL.get());
-
                             entry.accept(CWBlocks.CORAL_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CHISELED_CORAL_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CORAL_TERRACOTTA_BRICK_STAIRS.get());
                             entry.accept(CWBlocks.CORAL_TERRACOTTA_BRICK_SLAB.get());
                             entry.accept(CWBlocks.CORAL_TERRACOTTA_BRICK_WALL.get());
-
                             //entry.accept(CWBlocks.CORAL_DECORATED_POT.get());
 
-                            //CANARY
                             entry.accept(DDBlocks.CANARY_TERRACOTTA.get());
                             entry.accept(CWBlocks.CANARY_TERRACOTTA_STAIRS.get());
                             entry.accept(CWBlocks.CANARY_TERRACOTTA_SLAB.get());
                             entry.accept(CWBlocks.CANARY_TERRACOTTA_WALL.get());
-
                             entry.accept(CWBlocks.CANARY_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CANARY_TERRACOTTA_BRICK_STAIRS.get());
                             entry.accept(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get());
                             entry.accept(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get());
-
                             //entry.accept(CWBlocks.CANARY_DECORATED_POT.get());
 
-                            //WASABI
                             entry.accept(DDBlocks.WASABI_TERRACOTTA.get());
                             entry.accept(CWBlocks.WASABI_TERRACOTTA_STAIRS.get());
                             entry.accept(CWBlocks.WASABI_TERRACOTTA_SLAB.get());
                             entry.accept(CWBlocks.WASABI_TERRACOTTA_WALL.get());
-
                             entry.accept(CWBlocks.WASABI_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CHISELED_WASABI_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.WASABI_TERRACOTTA_BRICK_STAIRS.get());
                             entry.accept(CWBlocks.WASABI_TERRACOTTA_BRICK_SLAB.get());
                             entry.accept(CWBlocks.WASABI_TERRACOTTA_BRICK_WALL.get());
-
                             //entry.accept(CWBlocks.WASABI_DECORATED_POT.get());
 
-                            //SACRAMENTO
                             entry.accept(DDBlocks.SACRAMENTO_TERRACOTTA.get());
                             entry.accept(CWBlocks.SACRAMENTO_TERRACOTTA_STAIRS.get());
                             entry.accept(CWBlocks.SACRAMENTO_TERRACOTTA_SLAB.get());
                             entry.accept(CWBlocks.SACRAMENTO_TERRACOTTA_WALL.get());
-
                             entry.accept(CWBlocks.SACRAMENTO_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CHISELED_SACRAMENTO_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_STAIRS.get());
                             entry.accept(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_SLAB.get());
                             entry.accept(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_WALL.get());
-
                             //entry.accept(CWBlocks.SACRAMENTO_DECORATED_POT.get());
 
-                            //SKY
                             entry.accept(DDBlocks.SKY_TERRACOTTA.get());
                             entry.accept(CWBlocks.SKY_TERRACOTTA_STAIRS.get());
                             entry.accept(CWBlocks.SKY_TERRACOTTA_SLAB.get());
                             entry.accept(CWBlocks.SKY_TERRACOTTA_WALL.get());
-
                             entry.accept(CWBlocks.SKY_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CHISELED_SKY_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.SKY_TERRACOTTA_BRICK_STAIRS.get());
                             entry.accept(CWBlocks.SKY_TERRACOTTA_BRICK_SLAB.get());
                             entry.accept(CWBlocks.SKY_TERRACOTTA_BRICK_WALL.get());
-
                             //entry.accept(CWBlocks.SKY_DECORATED_POT.get());
 
-                            //BLURPLE
                             entry.accept(DDBlocks.BLURPLE_TERRACOTTA.get());
                             entry.accept(CWBlocks.BLURPLE_TERRACOTTA_STAIRS.get());
                             entry.accept(CWBlocks.BLURPLE_TERRACOTTA_SLAB.get());
                             entry.accept(CWBlocks.BLURPLE_TERRACOTTA_WALL.get());
-
                             entry.accept(CWBlocks.BLURPLE_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CHISELED_BLURPLE_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.BLURPLE_TERRACOTTA_BRICK_STAIRS.get());
                             entry.accept(CWBlocks.BLURPLE_TERRACOTTA_BRICK_SLAB.get());
                             entry.accept(CWBlocks.BLURPLE_TERRACOTTA_BRICK_WALL.get());
-
                             //entry.accept(CWBlocks.BLURPLE_DECORATED_POT.get());
 
-                            //SANGRIA
                             entry.accept(DDBlocks.SANGRIA_TERRACOTTA.get());
                             entry.accept(CWBlocks.SANGRIA_TERRACOTTA_STAIRS.get());
                             entry.accept(CWBlocks.SANGRIA_TERRACOTTA_SLAB.get());
                             entry.accept(CWBlocks.SANGRIA_TERRACOTTA_WALL.get());
-
                             entry.accept(CWBlocks.SANGRIA_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CHISELED_SANGRIA_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.SANGRIA_TERRACOTTA_BRICK_STAIRS.get());
                             entry.accept(CWBlocks.SANGRIA_TERRACOTTA_BRICK_SLAB.get());
                             entry.accept(CWBlocks.SANGRIA_TERRACOTTA_BRICK_WALL.get());
-
                             //entry.accept(CWBlocks.SANGRIA_DECORATED_POT.get());
 
-                            //ROSE
                             entry.accept(DDBlocks.ROSE_TERRACOTTA.get());
                             entry.accept(CWBlocks.ROSE_TERRACOTTA_STAIRS.get());
                             entry.accept(CWBlocks.ROSE_TERRACOTTA_SLAB.get());
                             entry.accept(CWBlocks.ROSE_TERRACOTTA_WALL.get());
-
                             entry.accept(CWBlocks.ROSE_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get());
                             entry.accept(CWBlocks.ROSE_TERRACOTTA_BRICK_STAIRS.get());
                             entry.accept(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get());
                             entry.accept(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get());
-
                             //entry.accept(CWBlocks.ROSE_DECORATED_POT.get());
                         }
                     }

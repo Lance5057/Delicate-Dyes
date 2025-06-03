@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/slab",
   "textures": {
-    "bottom": "clayworks:block/sacramento_terracotta_brick",
-    "side": "clayworks:block/sacramento_terracotta_brick",
-    "top": "clayworks:block/sacramento_terracotta_brick"
+    "bottom": "clayworks:block/sacramento_terracotta_bricks",
+    "side": "clayworks:block/sacramento_terracotta_bricks",
+    "top": "clayworks:block/sacramento_terracotta_bricks"
   }
 }

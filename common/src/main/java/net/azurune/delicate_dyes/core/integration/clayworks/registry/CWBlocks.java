@@ -43,14 +43,14 @@ public class CWBlocks {
     public static final Supplier<Block> ROSE_TERRACOTTA_WALL = register("rose_terracotta_wall", () -> new IntegrationWallBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.ROSE.getMapColor()), CompatIds.CLAYWORKS), true);
 
     //TERRACOTTA BRICKS
-    public static final Supplier<Block> CORAL_TERRACOTTA_BRICKS = register("coral_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CORAL.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> CANARY_TERRACOTTA_BRICKS = register("canary_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CANARY.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> WASABI_TERRACOTTA_BRICKS = register("wasabi_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.WASABI.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> SACRAMENTO_TERRACOTTA_BRICKS = register("sacramento_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SACRAMENTO.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> SKY_TERRACOTTA_BRICKS = register("sky_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SKY.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> BLURPLE_TERRACOTTA_BRICKS = register("blurple_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.BLURPLE.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> SANGRIA_TERRACOTTA_BRICKS = register("sangria_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SANGRIA.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> ROSE_TERRACOTTA_BRICKS = register("rose_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.ROSE.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CORAL_TERRACOTTA_BRICKS = register("coral_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CORAL.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CANARY_TERRACOTTA_BRICKS = register("canary_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CANARY.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> WASABI_TERRACOTTA_BRICKS = register("wasabi_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.WASABI.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> SACRAMENTO_TERRACOTTA_BRICKS = register("sacramento_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SACRAMENTO.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> SKY_TERRACOTTA_BRICKS = register("sky_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SKY.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> BLURPLE_TERRACOTTA_BRICKS = register("blurple_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.BLURPLE.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> SANGRIA_TERRACOTTA_BRICKS = register("sangria_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SANGRIA.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> ROSE_TERRACOTTA_BRICKS = register("rose_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.ROSE.getMapColor()), CompatIds.CLAYWORKS), true);
 
     //TERRACOTTA BRICK STAIRS
     public static final Supplier<Block> CORAL_TERRACOTTA_BRICK_STAIRS = register("coral_terracotta_brick_stairs", () -> new IntegrationStairBlock(CWBlocks.CORAL_TERRACOTTA_BRICKS.get().defaultBlockState(), DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CORAL.getMapColor()), CompatIds.CLAYWORKS), true);
@@ -83,14 +83,14 @@ public class CWBlocks {
     public static final Supplier<Block> ROSE_TERRACOTTA_BRICK_WALL = register("rose_terracotta_brick_wall", () -> new IntegrationWallBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.ROSE.getMapColor()), CompatIds.CLAYWORKS), true);
 
     //CHISELED TERRACOTTA BRICKS
-    public static final Supplier<Block> CHISELED_CORAL_TERRACOTTA_BRICKS = register("chiseled_coral_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CORAL.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> CHISELED_CANARY_TERRACOTTA_BRICKS = register("chiseled_canary_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CANARY.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> CHISELED_WASABI_TERRACOTTA_BRICKS = register("chiseled_wasabi_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.WASABI.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> CHISELED_SACRAMENTO_TERRACOTTA_BRICKS = register("chiseled_sacramento_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SACRAMENTO.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> CHISELED_SKY_TERRACOTTA_BRICKS = register("chiseled_sky_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SKY.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> CHISELED_BLURPLE_TERRACOTTA_BRICKS = register("chiseled_blurple_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.BLURPLE.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> CHISELED_SANGRIA_TERRACOTTA_BRICKS = register("chiseled_sangria_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SANGRIA.getMapColor()), CompatIds.CLAYWORKS), true);
-    public static final Supplier<Block> CHISELED_ROSE_TERRACOTTA_BRICKS = register("chiseled_rose_terracotta_brick", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.ROSE.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CHISELED_CORAL_TERRACOTTA_BRICKS = register("chiseled_coral_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CORAL.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CHISELED_CANARY_TERRACOTTA_BRICKS = register("chiseled_canary_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.CANARY.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CHISELED_WASABI_TERRACOTTA_BRICKS = register("chiseled_wasabi_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.WASABI.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CHISELED_SACRAMENTO_TERRACOTTA_BRICKS = register("chiseled_sacramento_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SACRAMENTO.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CHISELED_SKY_TERRACOTTA_BRICKS = register("chiseled_sky_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SKY.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CHISELED_BLURPLE_TERRACOTTA_BRICKS = register("chiseled_blurple_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.BLURPLE.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CHISELED_SANGRIA_TERRACOTTA_BRICKS = register("chiseled_sangria_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.SANGRIA.getMapColor()), CompatIds.CLAYWORKS), true);
+    public static final Supplier<Block> CHISELED_ROSE_TERRACOTTA_BRICKS = register("chiseled_rose_terracotta_bricks", () -> new IntegrationBlock(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.ROSE.getMapColor()), CompatIds.CLAYWORKS), true);
 
     //DECORATED POT
     public static final Supplier<Block> CORAL_DECORATED_POT = register("coral_decorated_pot", () -> new IntegrationDecoratedPotBlock(DDCProperties.BlockP.DECORATED_POT.mapColor(DDDyeValues.CORAL.getMapColor()), CompatIds.CLAYWORKS), true);

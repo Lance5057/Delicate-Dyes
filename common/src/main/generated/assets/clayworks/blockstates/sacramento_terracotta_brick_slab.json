@@ -4,7 +4,7 @@
       "model": "clayworks:block/sacramento_terracotta_brick_slab"
     },
     "type=double": {
-      "model": "clayworks:block/sacramento_terracotta_brick"
+      "model": "clayworks:block/sacramento_terracotta_bricks"
     },
     "type=top": {
       "model": "clayworks:block/sacramento_terracotta_brick_slab_top"

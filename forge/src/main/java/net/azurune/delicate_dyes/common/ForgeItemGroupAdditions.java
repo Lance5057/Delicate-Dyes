@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.common;
 
+import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.delicate_dyes.core.platform.Services;
@@ -17,13 +18,41 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 public class ForgeItemGroupAdditions {
-    public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog");
+    public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog:appledog");
+    public static final ResourceKey<CreativeModeTab> TOXIC_CAVES = createKey("alexscaves:toxic_caves");
+    public static final ResourceKey<CreativeModeTab> CANDY_CAVITY = createKey("alexscaves:candy_cavity");
 
     private static ResourceKey<CreativeModeTab> createKey(String id) {
         return ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(id));
     }
     
     public static void buildCreativeTabs(BuildCreativeModeTabContentsEvent event) {
+        if (Services.PLATFORM.isModLoaded(CompatIds.ALEXSCAVES)) {
+            if (event.getTabKey() == TOXIC_CAVES) {
+                event.accept(AlexCBlocks.CORAL_RADON_LAMP.get());
+                event.accept(AlexCBlocks.CANARY_RADON_LAMP.get());
+                event.accept(AlexCBlocks.WASABI_RADON_LAMP.get());
+                event.accept(AlexCBlocks.SACRAMENTO_RADON_LAMP.get());
+                event.accept(AlexCBlocks.SKY_RADON_LAMP.get());
+                event.accept(AlexCBlocks.BLURPLE_RADON_LAMP.get());
+                event.accept(AlexCBlocks.SANGRIA_RADON_LAMP.get());
+                event.accept(AlexCBlocks.ROSE_RADON_LAMP.get());
+            }
+        }
+
+        if (Services.PLATFORM.isModLoaded(CompatIds.ALEXSCAVES)) {
+            if (event.getTabKey() == CANDY_CAVITY) {
+                event.accept(AlexCBlocks.CORAL_ROCK_CANDY.get());
+                event.accept(AlexCBlocks.CANARY_ROCK_CANDY.get());
+                event.accept(AlexCBlocks.WASABI_ROCK_CANDY.get());
+                event.accept(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get());
+                event.accept(AlexCBlocks.SKY_ROCK_CANDY.get());
+                event.accept(AlexCBlocks.BLURPLE_ROCK_CANDY.get());
+                event.accept(AlexCBlocks.SANGRIA_ROCK_CANDY.get());
+                event.accept(AlexCBlocks.ROSE_ROCK_CANDY.get());
+            }
+        }
+
         if (Services.PLATFORM.isModLoaded(CompatIds.APPLEDOG)) {
             if (event.getTabKey() == APPLEDOG) {
                 event.accept(ADItems.CATBLUEBERRY.get());

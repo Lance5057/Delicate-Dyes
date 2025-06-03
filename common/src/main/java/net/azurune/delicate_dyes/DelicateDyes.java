@@ -17,7 +17,6 @@ public class DelicateDyes {
         DDBlocks.loadBlocks();
         DDItems.loadItems();
         DDCreativeTabs.loadCreativeTabs();
-        DDRegistries.loadRegistries();
 
         IntegrationRegistries.loadIntegration();
     }
@@ -29,7 +28,6 @@ public class DelicateDyes {
     //TODO: POI - Villagers move towards custom beds
 
     //TODO: clayworks decorated pots
-    //TODO: clayworks bleached recipes (lazy asf i wont lie)
 
     //TODO (future)
     //TODO: Proper custom special dye recipes for wool/beds/shulker boxes/shulker dye mixing

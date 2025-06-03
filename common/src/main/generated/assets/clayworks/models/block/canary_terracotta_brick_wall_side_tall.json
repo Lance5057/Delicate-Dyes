@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side_tall",
   "textures": {
-    "wall": "clayworks:block/canary_terracotta_brick"
+    "wall": "clayworks:block/canary_terracotta_bricks"
   }
 }

@@ -14,5 +14,6 @@ public class IntegrationDatagenUtil {
 
     public static void registerDatagenItems() {
         registerDatagenOnlyItem(CompatIds.APPLEDOG, "dogapple");
+        registerDatagenOnlyItem(CompatIds.ALEXSCAVES, "radon_bottle");
     }
 }

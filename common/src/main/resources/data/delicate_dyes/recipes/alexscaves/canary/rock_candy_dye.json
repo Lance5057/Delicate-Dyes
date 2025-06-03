@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LDL",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "tag": "alexscaves:rock_candies"
+    },
+    "D": {
+      "item": "delicate_dyes:canary_dye"
+    }
+  },
+  "result": {
+    "item": "alexscaves:rock_candy_canary",
+    "count": 8
+  }
+}

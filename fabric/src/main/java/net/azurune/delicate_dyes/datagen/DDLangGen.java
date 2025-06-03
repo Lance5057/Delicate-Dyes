@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.datagen;
 
+import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
@@ -156,6 +157,23 @@ public class DDLangGen extends FabricLanguageProvider {
         //INTEGRATION
         //========================================================================================
         //BLOCKS
+        build.add(AlexCBlocks.CORAL_ROCK_CANDY.get(), "Coral Rock Candy");
+        build.add(AlexCBlocks.CANARY_ROCK_CANDY.get(), "Canary Rock Candy");
+        build.add(AlexCBlocks.WASABI_ROCK_CANDY.get(), "Wasabi Rock Candy");
+        build.add(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get(), "Sacramento Rock Candy");
+        build.add(AlexCBlocks.SKY_ROCK_CANDY.get(), "Sky Rock Candy");
+        build.add(AlexCBlocks.BLURPLE_ROCK_CANDY.get(), "Blurple Rock Candy");
+        build.add(AlexCBlocks.SANGRIA_ROCK_CANDY.get(), "Sangria Rock Candy");
+        build.add(AlexCBlocks.ROSE_ROCK_CANDY.get(), "Rose Rock Candy");
+        build.add(AlexCBlocks.CORAL_RADON_LAMP.get(), "Coral Radon Lamp");
+        build.add(AlexCBlocks.CANARY_RADON_LAMP.get(), "Canary Radon Lamp");
+        build.add(AlexCBlocks.WASABI_RADON_LAMP.get(), "Wasabi Radon Lamp");
+        build.add(AlexCBlocks.SACRAMENTO_RADON_LAMP.get(), "Sacramento Radon Lamp");
+        build.add(AlexCBlocks.SKY_RADON_LAMP.get(), "Sky Radon Lamp");
+        build.add(AlexCBlocks.BLURPLE_RADON_LAMP.get(), "Blurple Radon Lamp");
+        build.add(AlexCBlocks.SANGRIA_RADON_LAMP.get(), "Sangria Radon Lamp");
+        build.add(AlexCBlocks.ROSE_RADON_LAMP.get(), "Rose Radon Lamp");
+        
         build.add(ADBlocks.BLUEBERRYCAT_BUSH.get(), "Blueberrycat Bush");
 
         build.add(CWBlocks.CORAL_TERRACOTTA_STAIRS.get(), "Coral Terracotta Stairs");
