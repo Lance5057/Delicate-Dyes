@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:has_swamp_hut",
+  "biomes": [ "minecraft:swamp" ],
   "features": [
     "delicate_dyes:patch_goob_blossom"
   ],

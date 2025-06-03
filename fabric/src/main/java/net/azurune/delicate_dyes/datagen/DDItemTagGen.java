@@ -27,16 +27,8 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
         appendBanners();
         appendSmallFlowers();
         appendFoxFood();
-        appendBlueberries();
         appendShulkerBoxes();
         appendTallFlowers();
-    }
-
-    public void appendBlueberries() {
-        getOrCreateTagBuilder(DDTags.Items.BLUEBERRIES)
-                .add(DDItems.BLUEBERRIES.get())
-                .add(ADItems.CATBLUEBERRY.get())
-        ;
     }
 
     public void appendShulkerBoxes() {

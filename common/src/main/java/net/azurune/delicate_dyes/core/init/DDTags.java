@@ -16,7 +16,6 @@ public class DDTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> BLUEBERRIES = create("blueberries");
         public static final TagKey<Item> SHULKER_BOXES = create("shulker_boxes");
 
         private static TagKey<Item> create(String id) {
