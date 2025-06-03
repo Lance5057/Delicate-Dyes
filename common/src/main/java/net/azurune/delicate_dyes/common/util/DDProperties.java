@@ -12,7 +12,7 @@ public class DDProperties {
 
         //NATURE
         public static final BlockBehaviour.Properties PEACH_BELLFLOWER = BlockBehaviour.Properties.copy(Blocks.ORANGE_TULIP);
-        public static final BlockBehaviour.Properties GOOB_BLOSSOM = BlockBehaviour.Properties.copy(Blocks.SUNFLOWER);
+        public static final BlockBehaviour.Properties GOOB_BLOSSOM = BlockBehaviour.Properties.copy(Blocks.SUNFLOWER).lightLevel(s -> 4);
         public static final BlockBehaviour.Properties BLUEBERRY_BUSH = BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH);
         public static final BlockBehaviour.Properties ROSE = BlockBehaviour.Properties.copy(Blocks.PINK_TULIP);
 
