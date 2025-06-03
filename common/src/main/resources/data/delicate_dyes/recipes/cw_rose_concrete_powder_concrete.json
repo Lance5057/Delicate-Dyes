@@ -1,0 +1,25 @@
+{
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "concrete_powder",
+        "key": {
+          "#": {
+            "item": "clayworks:concrete_powder"
+          },
+          "X": {
+            "item": "delicate_dyes:rose_dye"
+          }
+        },
+        "pattern": [
+          "###",
+          "#X#",
+          "###"
+        ],
+        "result": {
+          "count": 8,
+          "item": "delicate_dyes:rose_concrete_powder"
+        },
+        "show_notification": true
+      }
+    }

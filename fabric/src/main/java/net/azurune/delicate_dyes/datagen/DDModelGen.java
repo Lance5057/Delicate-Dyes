@@ -1,7 +1,8 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -16,7 +17,6 @@ import net.minecraft.data.models.model.ModelLocationUtils;
 import net.minecraft.data.models.model.ModelTemplates;
 import net.minecraft.data.models.model.TextureMapping;
 import net.minecraft.data.models.model.TexturedModel;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
@@ -30,7 +30,6 @@ public class DDModelGen extends FabricModelProvider {
         //CORAL
         generator.createFullAndCarpetBlocks(DDBlocks.CORAL_WOOL.get(), DDBlocks.CORAL_CARPET.get());
         generator.createGlassBlocks(DDBlocks.CORAL_STAINED_GLASS.get(), DDBlocks.CORAL_STAINED_GLASS_PANE.get());
-        generator.createTrivialCube(DDBlocks.CORAL_TERRACOTTA.get());
         generator.createHorizontallyRotatedBlock(DDBlocks.CORAL_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
         generator.createTrivialCube(DDBlocks.CORAL_CONCRETE.get());
         generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.CORAL_CONCRETE_POWDER.get());
@@ -49,7 +48,6 @@ public class DDModelGen extends FabricModelProvider {
         //CANARY
         generator.createFullAndCarpetBlocks(DDBlocks.CANARY_WOOL.get(), DDBlocks.CANARY_CARPET.get());
         generator.createGlassBlocks(DDBlocks.CANARY_STAINED_GLASS.get(), DDBlocks.CANARY_STAINED_GLASS_PANE.get());
-        generator.createTrivialCube(DDBlocks.CANARY_TERRACOTTA.get());
         generator.createHorizontallyRotatedBlock(DDBlocks.CANARY_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
         generator.createTrivialCube(DDBlocks.CANARY_CONCRETE.get());
         generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.CANARY_CONCRETE_POWDER.get());
@@ -68,7 +66,6 @@ public class DDModelGen extends FabricModelProvider {
         //WASABI
         generator.createFullAndCarpetBlocks(DDBlocks.WASABI_WOOL.get(), DDBlocks.WASABI_CARPET.get());
         generator.createGlassBlocks(DDBlocks.WASABI_STAINED_GLASS.get(), DDBlocks.WASABI_STAINED_GLASS_PANE.get());
-        generator.createTrivialCube(DDBlocks.WASABI_TERRACOTTA.get());
         generator.createHorizontallyRotatedBlock(DDBlocks.WASABI_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
         generator.createTrivialCube(DDBlocks.WASABI_CONCRETE.get());
         generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.WASABI_CONCRETE_POWDER.get());
@@ -87,7 +84,6 @@ public class DDModelGen extends FabricModelProvider {
         //SACRAMENTO
         generator.createFullAndCarpetBlocks(DDBlocks.SACRAMENTO_WOOL.get(), DDBlocks.SACRAMENTO_CARPET.get());
         generator.createGlassBlocks(DDBlocks.SACRAMENTO_STAINED_GLASS.get(), DDBlocks.SACRAMENTO_STAINED_GLASS_PANE.get());
-        generator.createTrivialCube(DDBlocks.SACRAMENTO_TERRACOTTA.get());
         generator.createHorizontallyRotatedBlock(DDBlocks.SACRAMENTO_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
         generator.createTrivialCube(DDBlocks.SACRAMENTO_CONCRETE.get());
         generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.SACRAMENTO_CONCRETE_POWDER.get());
@@ -106,7 +102,6 @@ public class DDModelGen extends FabricModelProvider {
         //SKY
         generator.createFullAndCarpetBlocks(DDBlocks.SKY_WOOL.get(), DDBlocks.SKY_CARPET.get());
         generator.createGlassBlocks(DDBlocks.SKY_STAINED_GLASS.get(), DDBlocks.SKY_STAINED_GLASS_PANE.get());
-        generator.createTrivialCube(DDBlocks.SKY_TERRACOTTA.get());
         generator.createHorizontallyRotatedBlock(DDBlocks.SKY_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
         generator.createTrivialCube(DDBlocks.SKY_CONCRETE.get());
         generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.SKY_CONCRETE_POWDER.get());
@@ -125,7 +120,6 @@ public class DDModelGen extends FabricModelProvider {
         //BLURPLE
         generator.createFullAndCarpetBlocks(DDBlocks.BLURPLE_WOOL.get(), DDBlocks.BLURPLE_CARPET.get());
         generator.createGlassBlocks(DDBlocks.BLURPLE_STAINED_GLASS.get(), DDBlocks.BLURPLE_STAINED_GLASS_PANE.get());
-        generator.createTrivialCube(DDBlocks.BLURPLE_TERRACOTTA.get());
         generator.createHorizontallyRotatedBlock(DDBlocks.BLURPLE_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
         generator.createTrivialCube(DDBlocks.BLURPLE_CONCRETE.get());
         generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.BLURPLE_CONCRETE_POWDER.get());
@@ -144,7 +138,6 @@ public class DDModelGen extends FabricModelProvider {
         //SANGRIA
         generator.createFullAndCarpetBlocks(DDBlocks.SANGRIA_WOOL.get(), DDBlocks.SANGRIA_CARPET.get());
         generator.createGlassBlocks(DDBlocks.SANGRIA_STAINED_GLASS.get(), DDBlocks.SANGRIA_STAINED_GLASS_PANE.get());
-        generator.createTrivialCube(DDBlocks.SANGRIA_TERRACOTTA.get());
         generator.createHorizontallyRotatedBlock(DDBlocks.SANGRIA_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
         generator.createTrivialCube(DDBlocks.SANGRIA_CONCRETE.get());
         generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.SANGRIA_CONCRETE_POWDER.get());
@@ -163,7 +156,6 @@ public class DDModelGen extends FabricModelProvider {
         //ROSE
         generator.createFullAndCarpetBlocks(DDBlocks.ROSE_WOOL.get(), DDBlocks.ROSE_CARPET.get());
         generator.createGlassBlocks(DDBlocks.ROSE_STAINED_GLASS.get(), DDBlocks.ROSE_STAINED_GLASS_PANE.get());
-        generator.createTrivialCube(DDBlocks.ROSE_TERRACOTTA.get());
         generator.createHorizontallyRotatedBlock(DDBlocks.ROSE_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
         generator.createTrivialCube(DDBlocks.ROSE_CONCRETE.get());
         generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.ROSE_CONCRETE_POWDER.get());
@@ -195,6 +187,86 @@ public class DDModelGen extends FabricModelProvider {
                 .with(PropertyDispatch.property(BlockStateProperties.AGE_3).generate((integer) -> Variant.variant()
                         .with(VariantProperties.MODEL, generator.createSuffixedVariant(ADBlocks.BLUEBERRYCAT_BUSH.get(), "_stage" + integer,
                                 ModelTemplates.CROSS, TextureMapping::cross)))));
+
+        BlockModelGenerators.BlockFamilyProvider coralTerracotta = generator.family(DDBlocks.CORAL_TERRACOTTA.get());
+        coralTerracotta.stairs(CWBlocks.CORAL_TERRACOTTA_STAIRS.get());
+        coralTerracotta.slab(CWBlocks.CORAL_TERRACOTTA_SLAB.get());
+        coralTerracotta.wall(CWBlocks.CORAL_TERRACOTTA_WALL.get());
+        BlockModelGenerators.BlockFamilyProvider coralTerracottaBricks = generator.family(CWBlocks.CORAL_TERRACOTTA_BRICKS.get());
+        coralTerracottaBricks.stairs(CWBlocks.CORAL_TERRACOTTA_BRICK_STAIRS.get());
+        coralTerracottaBricks.slab(CWBlocks.CORAL_TERRACOTTA_BRICK_SLAB.get());
+        coralTerracottaBricks.wall(CWBlocks.CORAL_TERRACOTTA_BRICK_WALL.get());
+        generator.createTrivialCube(CWBlocks.CHISELED_CORAL_TERRACOTTA_BRICKS.get());
+
+        BlockModelGenerators.BlockFamilyProvider canaryTerracotta = generator.family(DDBlocks.CANARY_TERRACOTTA.get());
+        canaryTerracotta.stairs(CWBlocks.CANARY_TERRACOTTA_STAIRS.get());
+        canaryTerracotta.slab(CWBlocks.CANARY_TERRACOTTA_SLAB.get());
+        canaryTerracotta.wall(CWBlocks.CANARY_TERRACOTTA_WALL.get());
+        BlockModelGenerators.BlockFamilyProvider canaryTerracottaBricks = generator.family(CWBlocks.CANARY_TERRACOTTA_BRICKS.get());
+        canaryTerracottaBricks.stairs(CWBlocks.CANARY_TERRACOTTA_BRICK_STAIRS.get());
+        canaryTerracottaBricks.slab(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get());
+        canaryTerracottaBricks.wall(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get());
+        generator.createTrivialCube(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get());
+
+        BlockModelGenerators.BlockFamilyProvider wasabiTerracotta = generator.family(DDBlocks.WASABI_TERRACOTTA.get());
+        wasabiTerracotta.stairs(CWBlocks.WASABI_TERRACOTTA_STAIRS.get());
+        wasabiTerracotta.slab(CWBlocks.WASABI_TERRACOTTA_SLAB.get());
+        wasabiTerracotta.wall(CWBlocks.WASABI_TERRACOTTA_WALL.get());
+        BlockModelGenerators.BlockFamilyProvider wasabiTerracottaBricks = generator.family(CWBlocks.WASABI_TERRACOTTA_BRICKS.get());
+        wasabiTerracottaBricks.stairs(CWBlocks.WASABI_TERRACOTTA_BRICK_STAIRS.get());
+        wasabiTerracottaBricks.slab(CWBlocks.WASABI_TERRACOTTA_BRICK_SLAB.get());
+        wasabiTerracottaBricks.wall(CWBlocks.WASABI_TERRACOTTA_BRICK_WALL.get());
+        generator.createTrivialCube(CWBlocks.CHISELED_WASABI_TERRACOTTA_BRICKS.get());
+
+        BlockModelGenerators.BlockFamilyProvider sacramentoTerracotta = generator.family(DDBlocks.SACRAMENTO_TERRACOTTA.get());
+        sacramentoTerracotta.stairs(CWBlocks.SACRAMENTO_TERRACOTTA_STAIRS.get());
+        sacramentoTerracotta.slab(CWBlocks.SACRAMENTO_TERRACOTTA_SLAB.get());
+        sacramentoTerracotta.wall(CWBlocks.SACRAMENTO_TERRACOTTA_WALL.get());
+        BlockModelGenerators.BlockFamilyProvider sacramentoTerracottaBricks = generator.family(CWBlocks.SACRAMENTO_TERRACOTTA_BRICKS.get());
+        sacramentoTerracottaBricks.stairs(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_STAIRS.get());
+        sacramentoTerracottaBricks.slab(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_SLAB.get());
+        sacramentoTerracottaBricks.wall(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_WALL.get());
+        generator.createTrivialCube(CWBlocks.CHISELED_SACRAMENTO_TERRACOTTA_BRICKS.get());
+
+        BlockModelGenerators.BlockFamilyProvider skyTerracotta = generator.family(DDBlocks.SKY_TERRACOTTA.get());
+        skyTerracotta.stairs(CWBlocks.SKY_TERRACOTTA_STAIRS.get());
+        skyTerracotta.slab(CWBlocks.SKY_TERRACOTTA_SLAB.get());
+        skyTerracotta.wall(CWBlocks.SKY_TERRACOTTA_WALL.get());
+        BlockModelGenerators.BlockFamilyProvider skyTerracottaBricks = generator.family(CWBlocks.SKY_TERRACOTTA_BRICKS.get());
+        skyTerracottaBricks.stairs(CWBlocks.SKY_TERRACOTTA_BRICK_STAIRS.get());
+        skyTerracottaBricks.slab(CWBlocks.SKY_TERRACOTTA_BRICK_SLAB.get());
+        skyTerracottaBricks.wall(CWBlocks.SKY_TERRACOTTA_BRICK_WALL.get());
+        generator.createTrivialCube(CWBlocks.CHISELED_SKY_TERRACOTTA_BRICKS.get());
+
+        BlockModelGenerators.BlockFamilyProvider blurpleTerracotta = generator.family(DDBlocks.BLURPLE_TERRACOTTA.get());
+        blurpleTerracotta.stairs(CWBlocks.BLURPLE_TERRACOTTA_STAIRS.get());
+        blurpleTerracotta.slab(CWBlocks.BLURPLE_TERRACOTTA_SLAB.get());
+        blurpleTerracotta.wall(CWBlocks.BLURPLE_TERRACOTTA_WALL.get());
+        BlockModelGenerators.BlockFamilyProvider blurpleTerracottaBricks = generator.family(CWBlocks.BLURPLE_TERRACOTTA_BRICKS.get());
+        blurpleTerracottaBricks.stairs(CWBlocks.BLURPLE_TERRACOTTA_BRICK_STAIRS.get());
+        blurpleTerracottaBricks.slab(CWBlocks.BLURPLE_TERRACOTTA_BRICK_SLAB.get());
+        blurpleTerracottaBricks.wall(CWBlocks.BLURPLE_TERRACOTTA_BRICK_WALL.get());
+        generator.createTrivialCube(CWBlocks.CHISELED_BLURPLE_TERRACOTTA_BRICKS.get());
+
+        BlockModelGenerators.BlockFamilyProvider sangriaTerracotta = generator.family(DDBlocks.SANGRIA_TERRACOTTA.get());
+        sangriaTerracotta.stairs(CWBlocks.SANGRIA_TERRACOTTA_STAIRS.get());
+        sangriaTerracotta.slab(CWBlocks.SANGRIA_TERRACOTTA_SLAB.get());
+        sangriaTerracotta.wall(CWBlocks.SANGRIA_TERRACOTTA_WALL.get());
+        BlockModelGenerators.BlockFamilyProvider sangriaTerracottaBricks = generator.family(CWBlocks.SANGRIA_TERRACOTTA_BRICKS.get());
+        sangriaTerracottaBricks.stairs(CWBlocks.SANGRIA_TERRACOTTA_BRICK_STAIRS.get());
+        sangriaTerracottaBricks.slab(CWBlocks.SANGRIA_TERRACOTTA_BRICK_SLAB.get());
+        sangriaTerracottaBricks.wall(CWBlocks.SANGRIA_TERRACOTTA_BRICK_WALL.get());
+        generator.createTrivialCube(CWBlocks.CHISELED_SANGRIA_TERRACOTTA_BRICKS.get());
+
+        BlockModelGenerators.BlockFamilyProvider roseTerracotta = generator.family(DDBlocks.ROSE_TERRACOTTA.get());
+        roseTerracotta.stairs(CWBlocks.ROSE_TERRACOTTA_STAIRS.get());
+        roseTerracotta.slab(CWBlocks.ROSE_TERRACOTTA_SLAB.get());
+        roseTerracotta.wall(CWBlocks.ROSE_TERRACOTTA_WALL.get());
+        BlockModelGenerators.BlockFamilyProvider roseTerracottaBricks = generator.family(CWBlocks.ROSE_TERRACOTTA_BRICKS.get());
+        roseTerracottaBricks.stairs(CWBlocks.ROSE_TERRACOTTA_BRICK_STAIRS.get());
+        roseTerracottaBricks.slab(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get());
+        roseTerracottaBricks.wall(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get());
+        generator.createTrivialCube(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get());
     }
 
     @Override

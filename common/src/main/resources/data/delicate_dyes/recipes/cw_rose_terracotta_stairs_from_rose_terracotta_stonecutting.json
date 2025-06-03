@@ -1,0 +1,10 @@
+{
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "delicate_dyes:rose_terracotta"
+        },
+        "result": "clayworks:rose_terracotta_stairs"
+      }
+    }

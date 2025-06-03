@@ -1,7 +1,8 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -152,12 +153,90 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDItems.SANGRIA_BANNER.get(), "Sangria Banner");
         build.add(DDItems.ROSE_BANNER.get(), "Rose Banner");
 
-        //COMPAT
+        //INTEGRATION
         //========================================================================================
-        //APPLEDOG
-
         //BLOCKS
         build.add(ADBlocks.BLUEBERRYCAT_BUSH.get(), "Blueberrycat Bush");
+
+        build.add(CWBlocks.CORAL_TERRACOTTA_STAIRS.get(), "Coral Terracotta Stairs");
+        build.add(CWBlocks.CORAL_TERRACOTTA_SLAB.get(), "Coral Terracotta Slab");
+        build.add(CWBlocks.CORAL_TERRACOTTA_WALL.get(), "Coral Terracotta Wall");
+        build.add(CWBlocks.CORAL_TERRACOTTA_BRICKS.get(), "Coral Terracotta Bricks");
+        build.add(CWBlocks.CORAL_TERRACOTTA_BRICK_STAIRS.get(), "Coral Terracotta Brick Stairs");
+        build.add(CWBlocks.CORAL_TERRACOTTA_BRICK_SLAB.get(), "Coral Terracotta Brick Slab");
+        build.add(CWBlocks.CORAL_TERRACOTTA_BRICK_WALL.get(), "Coral Terracotta Brick Wall");
+        build.add(CWBlocks.CHISELED_CORAL_TERRACOTTA_BRICKS.get(), "Chiseled Coral Terracotta Bricks");
+        build.add(CWBlocks.CORAL_DECORATED_POT.get(), "Coral Decorated Pot");
+
+        build.add(CWBlocks.CANARY_TERRACOTTA_STAIRS.get(), "Canary Terracotta Stairs");
+        build.add(CWBlocks.CANARY_TERRACOTTA_SLAB.get(), "Canary Terracotta Slab");
+        build.add(CWBlocks.CANARY_TERRACOTTA_WALL.get(), "Canary Terracotta Wall");
+        build.add(CWBlocks.CANARY_TERRACOTTA_BRICKS.get(), "Canary Terracotta Bricks");
+        build.add(CWBlocks.CANARY_TERRACOTTA_BRICK_STAIRS.get(), "Canary Terracotta Brick Stairs");
+        build.add(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get(), "Canary Terracotta Brick Slab");
+        build.add(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get(), "Canary Terracotta Brick Wall");
+        build.add(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get(), "Chiseled Canary Terracotta Bricks");
+        build.add(CWBlocks.CANARY_DECORATED_POT.get(), "Canary Decorated Pot");
+
+        build.add(CWBlocks.WASABI_TERRACOTTA_STAIRS.get(), "Wasabi Terracotta Stairs");
+        build.add(CWBlocks.WASABI_TERRACOTTA_SLAB.get(), "Wasabi Terracotta Slab");
+        build.add(CWBlocks.WASABI_TERRACOTTA_WALL.get(), "Wasabi Terracotta Wall");
+        build.add(CWBlocks.WASABI_TERRACOTTA_BRICKS.get(), "Wasabi Terracotta Bricks");
+        build.add(CWBlocks.WASABI_TERRACOTTA_BRICK_STAIRS.get(), "Wasabi Terracotta Brick Stairs");
+        build.add(CWBlocks.WASABI_TERRACOTTA_BRICK_SLAB.get(), "Wasabi Terracotta Brick Slab");
+        build.add(CWBlocks.WASABI_TERRACOTTA_BRICK_WALL.get(), "Wasabi Terracotta Brick Wall");
+        build.add(CWBlocks.CHISELED_WASABI_TERRACOTTA_BRICKS.get(), "Chiseled Wasabi Terracotta Bricks");
+        build.add(CWBlocks.WASABI_DECORATED_POT.get(), "Wasabi Decorated Pot");
+
+        build.add(CWBlocks.SACRAMENTO_TERRACOTTA_STAIRS.get(), "Sacramento Terracotta Stairs");
+        build.add(CWBlocks.SACRAMENTO_TERRACOTTA_SLAB.get(), "Sacramento Terracotta Slab");
+        build.add(CWBlocks.SACRAMENTO_TERRACOTTA_WALL.get(), "Sacramento Terracotta Wall");
+        build.add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICKS.get(), "Sacramento Terracotta Bricks");
+        build.add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_STAIRS.get(), "Sacramento Terracotta Brick Stairs");
+        build.add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_SLAB.get(), "Sacramento Terracotta Brick Slab");
+        build.add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_WALL.get(), "Sacramento Terracotta Brick Wall");
+        build.add(CWBlocks.CHISELED_SACRAMENTO_TERRACOTTA_BRICKS.get(), "Chiseled Sacramento Terracotta Bricks");
+        build.add(CWBlocks.SACRAMENTO_DECORATED_POT.get(), "Sacramento Decorated Pot");
+
+        build.add(CWBlocks.SKY_TERRACOTTA_STAIRS.get(), "Sky Terracotta Stairs");
+        build.add(CWBlocks.SKY_TERRACOTTA_SLAB.get(), "Sky Terracotta Slab");
+        build.add(CWBlocks.SKY_TERRACOTTA_WALL.get(), "Sky Terracotta Wall");
+        build.add(CWBlocks.SKY_TERRACOTTA_BRICKS.get(), "Sky Terracotta Bricks");
+        build.add(CWBlocks.SKY_TERRACOTTA_BRICK_STAIRS.get(), "Sky Terracotta Brick Stairs");
+        build.add(CWBlocks.SKY_TERRACOTTA_BRICK_SLAB.get(), "Sky Terracotta Brick Slab");
+        build.add(CWBlocks.SKY_TERRACOTTA_BRICK_WALL.get(), "Sky Terracotta Brick Wall");
+        build.add(CWBlocks.CHISELED_SKY_TERRACOTTA_BRICKS.get(), "Chiseled Sky Terracotta Bricks");
+        build.add(CWBlocks.SKY_DECORATED_POT.get(), "Sky Decorated Pot");
+
+        build.add(CWBlocks.BLURPLE_TERRACOTTA_STAIRS.get(), "Blurple Terracotta Stairs");
+        build.add(CWBlocks.BLURPLE_TERRACOTTA_SLAB.get(), "Blurple Terracotta Slab");
+        build.add(CWBlocks.BLURPLE_TERRACOTTA_WALL.get(), "Blurple Terracotta Wall");
+        build.add(CWBlocks.BLURPLE_TERRACOTTA_BRICKS.get(), "Blurple Terracotta Bricks");
+        build.add(CWBlocks.BLURPLE_TERRACOTTA_BRICK_STAIRS.get(), "Blurple Terracotta Brick Stairs");
+        build.add(CWBlocks.BLURPLE_TERRACOTTA_BRICK_SLAB.get(), "Blurple Terracotta Brick Slab");
+        build.add(CWBlocks.BLURPLE_TERRACOTTA_BRICK_WALL.get(), "Blurple Terracotta Brick Wall");
+        build.add(CWBlocks.CHISELED_BLURPLE_TERRACOTTA_BRICKS.get(), "Chiseled Blurple Terracotta Bricks");
+        build.add(CWBlocks.BLURPLE_DECORATED_POT.get(), "Blurple Decorated Pot");
+
+        build.add(CWBlocks.SANGRIA_TERRACOTTA_STAIRS.get(), "Sangria Terracotta Stairs");
+        build.add(CWBlocks.SANGRIA_TERRACOTTA_SLAB.get(), "Sangria Terracotta Slab");
+        build.add(CWBlocks.SANGRIA_TERRACOTTA_WALL.get(), "Sangria Terracotta Wall");
+        build.add(CWBlocks.SANGRIA_TERRACOTTA_BRICKS.get(), "Sangria Terracotta Bricks");
+        build.add(CWBlocks.SANGRIA_TERRACOTTA_BRICK_STAIRS.get(), "Sangria Terracotta Brick Stairs");
+        build.add(CWBlocks.SANGRIA_TERRACOTTA_BRICK_SLAB.get(), "Sangria Terracotta Brick Slab");
+        build.add(CWBlocks.SANGRIA_TERRACOTTA_BRICK_WALL.get(), "Sangria Terracotta Brick Wall");
+        build.add(CWBlocks.CHISELED_SANGRIA_TERRACOTTA_BRICKS.get(), "Chiseled Sangria Terracotta Bricks");
+        build.add(CWBlocks.SANGRIA_DECORATED_POT.get(), "Sangria Decorated Pot");
+
+        build.add(CWBlocks.ROSE_TERRACOTTA_STAIRS.get(), "Rose Terracotta Stairs");
+        build.add(CWBlocks.ROSE_TERRACOTTA_SLAB.get(), "Rose Terracotta Slab");
+        build.add(CWBlocks.ROSE_TERRACOTTA_WALL.get(), "Rose Terracotta Wall");
+        build.add(CWBlocks.ROSE_TERRACOTTA_BRICKS.get(), "Rose Terracotta Bricks");
+        build.add(CWBlocks.ROSE_TERRACOTTA_BRICK_STAIRS.get(), "Rose Terracotta Brick Stairs");
+        build.add(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get(), "Rose Terracotta Brick Slab");
+        build.add(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get(), "Rose Terracotta Brick Wall");
+        build.add(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get(), "Chiseled Rose Terracotta Bricks");
+        build.add(CWBlocks.ROSE_DECORATED_POT.get(), "Rose Decorated Pot");
 
         //ITEMS
         build.add(ADItems.CATBLUEBERRY.get(), "Catblueberry");

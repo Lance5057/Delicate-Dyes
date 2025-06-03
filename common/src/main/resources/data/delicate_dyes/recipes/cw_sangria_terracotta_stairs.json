@@ -1,0 +1,22 @@
+{
+
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "#": {
+            "item": "delicate_dyes:sangria_terracotta"
+          }
+        },
+        "pattern": [
+          "#  ",
+          "## ",
+          "###"
+        ],
+        "result": {
+          "count": 4,
+          "item": "clayworks:sangria_terracotta_stairs"
+        },
+        "show_notification": true
+      }
+    }

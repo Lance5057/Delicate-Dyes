@@ -1,0 +1,12 @@
+{
+  "type": "forge:conditional",
+
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "delicate_dyes:sangria_terracotta"
+        },
+        "result": "clayworks:sangria_terracotta_brick_stairs"
+      }
+    }

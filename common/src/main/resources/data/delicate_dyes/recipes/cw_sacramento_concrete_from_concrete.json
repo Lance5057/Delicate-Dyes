@@ -1,0 +1,25 @@
+{
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "concrete",
+        "key": {
+          "#": {
+            "item": "clayworks:concrete"
+          },
+          "X": {
+            "item": "delicate_dyes:sacramento_dye"
+          }
+        },
+        "pattern": [
+          "###",
+          "#X#",
+          "###"
+        ],
+        "result": {
+          "count": 8,
+          "item": "delicate_dyes:sacramento_concrete"
+        },
+        "show_notification": true
+      }
+  }

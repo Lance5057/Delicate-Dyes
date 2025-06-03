@@ -1,0 +1,10 @@
+{
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "clayworks:canary_terracotta_bricks"
+        },
+        "result": "clayworks:canary_terracotta_brick_wall"
+      }
+    }

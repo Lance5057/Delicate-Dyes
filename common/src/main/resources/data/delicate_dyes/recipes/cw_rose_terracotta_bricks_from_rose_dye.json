@@ -1,0 +1,25 @@
+{
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "stained_terracotta_bricks",
+        "key": {
+          "#": {
+            "item": "clayworks:terracotta_bricks"
+          },
+          "X": {
+            "item": "delicate_dyes:rose_dye"
+          }
+        },
+        "pattern": [
+          "###",
+          "#X#",
+          "###"
+        ],
+        "result": {
+          "count": 8,
+          "item": "clayworks:rose_terracotta_bricks"
+        },
+        "show_notification": true
+      }
+    }

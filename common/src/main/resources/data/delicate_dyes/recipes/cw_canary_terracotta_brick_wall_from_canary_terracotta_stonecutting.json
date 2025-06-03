@@ -1,0 +1,10 @@
+{
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "delicate_dyes:canary_terracotta"
+        },
+        "result": "clayworks:canary_terracotta_brick_wall"
+      }
+    }

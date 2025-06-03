@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "delicate_dyes:block/rose_terracotta",
+    "side": "delicate_dyes:block/rose_terracotta",
+    "top": "delicate_dyes:block/rose_terracotta"
+  }
+}

@@ -1,14 +1,33 @@
 package net.azurune.delicate_dyes.common;
 
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
+import net.azurune.delicate_dyes.core.platform.Services;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 
 public class FabricItemGroupAdditions {
+    public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog");
+
+    private static ResourceKey<CreativeModeTab> createKey(String id) {
+        return ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(id));
+    }
+
     public static void modifyCreativeTabs() {
+        if (Services.PLATFORM.isModLoaded(CompatIds.APPLEDOG)) {
+            ItemGroupEvents.modifyEntriesEvent(APPLEDOG).register(entries -> {
+                entries.accept(ADItems.CATBLUEBERRY.get());
+            });
+        }
+
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COLORED_BLOCKS).register(entries -> {
             //WOOL
             entries.addAfter(Blocks.RED_WOOL, DDBlocks.CORAL_WOOL.get());

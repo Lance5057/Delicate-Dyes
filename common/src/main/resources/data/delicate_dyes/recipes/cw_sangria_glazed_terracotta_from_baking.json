@@ -1,0 +1,13 @@
+{
+
+      "recipe": {
+        "type": "clayworks:baking",
+        "category": "blocks",
+        "cookingtime": 100,
+        "experience": 0.1,
+        "ingredient": {
+          "item": "delicate_dyes:sangria_terracotta"
+        },
+        "result": "delicate_dyes:sangria_glazed_terracotta"
+      }
+    }

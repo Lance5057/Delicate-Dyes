@@ -1,0 +1,10 @@
+{
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "delicate_dyes:wasabi_terracotta"
+        },
+        "result": "clayworks:wasabi_terracotta_bricks"
+      }
+    }

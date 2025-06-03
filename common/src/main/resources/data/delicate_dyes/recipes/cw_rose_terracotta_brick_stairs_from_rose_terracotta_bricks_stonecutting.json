@@ -1,0 +1,11 @@
+{
+
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 1,
+        "ingredient": {
+          "item": "clayworks:rose_terracotta_bricks"
+        },
+        "result": "clayworks:rose_terracotta_brick_stairs"
+      }
+    }

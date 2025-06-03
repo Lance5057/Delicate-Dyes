@@ -1,7 +1,7 @@
 package net.azurune.delicate_dyes.common.integration.util;
 
 import net.azurune.delicate_dyes.FabricDelicateDyes;
-import net.azurune.delicate_dyes.common.integration.common.util.CompatIds;
+import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.runiclib.core.platform.Services;
 import net.minecraft.world.item.Item;
 

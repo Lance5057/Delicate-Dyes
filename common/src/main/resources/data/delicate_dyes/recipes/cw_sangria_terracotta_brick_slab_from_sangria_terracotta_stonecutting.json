@@ -1,0 +1,11 @@
+{
+
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 2,
+        "ingredient": {
+          "item": "delicate_dyes:sangria_terracotta"
+        },
+        "result": "clayworks:sangria_terracotta_brick_slab"
+      }
+    }

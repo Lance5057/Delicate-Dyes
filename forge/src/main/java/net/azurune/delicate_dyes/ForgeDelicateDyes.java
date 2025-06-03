@@ -1,7 +1,7 @@
 package net.azurune.delicate_dyes;
 
 import net.azurune.delicate_dyes.common.ForgeItemGroupAdditions;
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;

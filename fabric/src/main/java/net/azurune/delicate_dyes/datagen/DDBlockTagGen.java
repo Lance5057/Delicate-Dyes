@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.datagen;
 
 import net.azurune.delicate_dyes.core.init.DDTags;
+import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -33,6 +34,7 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
         appendBeeGrowables();
         appendFallDamageResetting();
         appendTallFlowers();
+        appendWalls();
     }
 
     public void appendSwordEfficient() {
@@ -73,47 +75,133 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
         ;
     }
 
+    public void appendWalls() {
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(CWBlocks.CORAL_TERRACOTTA_WALL.get())
+                .add(CWBlocks.CORAL_TERRACOTTA_BRICK_WALL.get())
+
+                .add(CWBlocks.CANARY_TERRACOTTA_WALL.get())
+                .add(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get())
+
+                .add(CWBlocks.WASABI_TERRACOTTA_WALL.get())
+                .add(CWBlocks.WASABI_TERRACOTTA_BRICK_WALL.get())
+
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_WALL.get())
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_WALL.get())
+
+                .add(CWBlocks.SKY_TERRACOTTA_WALL.get())
+                .add(CWBlocks.SKY_TERRACOTTA_BRICK_WALL.get())
+
+                .add(CWBlocks.BLURPLE_TERRACOTTA_WALL.get())
+                .add(CWBlocks.BLURPLE_TERRACOTTA_BRICK_WALL.get())
+
+                .add(CWBlocks.SANGRIA_TERRACOTTA_WALL.get())
+                .add(CWBlocks.SANGRIA_TERRACOTTA_BRICK_WALL.get())
+
+                .add(CWBlocks.ROSE_TERRACOTTA_WALL.get())
+                .add(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get())
+        ;
+    }
+
     public void appendPickaxeMineable() {
         getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(DDBlocks.CORAL_TERRACOTTA.get())
                 .add(DDBlocks.CORAL_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.CORAL_CONCRETE.get())
                 .add(DDBlocks.CORAL_SHULKER_BOX.get())
-
                 .add(DDBlocks.CANARY_TERRACOTTA.get())
                 .add(DDBlocks.CANARY_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.CANARY_CONCRETE.get())
                 .add(DDBlocks.CANARY_SHULKER_BOX.get())
-
                 .add(DDBlocks.WASABI_TERRACOTTA.get())
                 .add(DDBlocks.WASABI_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.WASABI_CONCRETE.get())
                 .add(DDBlocks.WASABI_SHULKER_BOX.get())
-
                 .add(DDBlocks.SACRAMENTO_TERRACOTTA.get())
                 .add(DDBlocks.SACRAMENTO_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.SACRAMENTO_CONCRETE.get())
                 .add(DDBlocks.SACRAMENTO_SHULKER_BOX.get())
-
                 .add(DDBlocks.SKY_TERRACOTTA.get())
                 .add(DDBlocks.SKY_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.SKY_CONCRETE.get())
                 .add(DDBlocks.SKY_SHULKER_BOX.get())
-
                 .add(DDBlocks.BLURPLE_TERRACOTTA.get())
                 .add(DDBlocks.BLURPLE_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.BLURPLE_CONCRETE.get())
                 .add(DDBlocks.BLURPLE_SHULKER_BOX.get())
-
                 .add(DDBlocks.SANGRIA_TERRACOTTA.get())
                 .add(DDBlocks.SANGRIA_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.SANGRIA_CONCRETE.get())
                 .add(DDBlocks.SANGRIA_SHULKER_BOX.get())
-
                 .add(DDBlocks.ROSE_TERRACOTTA.get())
                 .add(DDBlocks.ROSE_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.ROSE_CONCRETE.get())
                 .add(DDBlocks.ROSE_SHULKER_BOX.get())
+                //INTEGRATION
+                .add(CWBlocks.CORAL_TERRACOTTA_STAIRS.get())
+                .add(CWBlocks.CORAL_TERRACOTTA_SLAB.get())
+                .add(CWBlocks.CORAL_TERRACOTTA_WALL.get())
+                .add(CWBlocks.CORAL_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.CORAL_TERRACOTTA_BRICK_STAIRS.get())
+                .add(CWBlocks.CORAL_TERRACOTTA_BRICK_SLAB.get())
+                .add(CWBlocks.CORAL_TERRACOTTA_BRICK_WALL.get())
+                .add(CWBlocks.CHISELED_CORAL_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.CANARY_TERRACOTTA_STAIRS.get())
+                .add(CWBlocks.CANARY_TERRACOTTA_SLAB.get())
+                .add(CWBlocks.CANARY_TERRACOTTA_WALL.get())
+                .add(CWBlocks.CANARY_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.CANARY_TERRACOTTA_BRICK_STAIRS.get())
+                .add(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get())
+                .add(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get())
+                .add(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.WASABI_TERRACOTTA_STAIRS.get())
+                .add(CWBlocks.WASABI_TERRACOTTA_SLAB.get())
+                .add(CWBlocks.WASABI_TERRACOTTA_WALL.get())
+                .add(CWBlocks.WASABI_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.WASABI_TERRACOTTA_BRICK_STAIRS.get())
+                .add(CWBlocks.WASABI_TERRACOTTA_BRICK_SLAB.get())
+                .add(CWBlocks.WASABI_TERRACOTTA_BRICK_WALL.get())
+                .add(CWBlocks.CHISELED_WASABI_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_STAIRS.get())
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_SLAB.get())
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_WALL.get())
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_STAIRS.get())
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_SLAB.get())
+                .add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_WALL.get())
+                .add(CWBlocks.CHISELED_SACRAMENTO_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.SKY_TERRACOTTA_STAIRS.get())
+                .add(CWBlocks.SKY_TERRACOTTA_SLAB.get())
+                .add(CWBlocks.SKY_TERRACOTTA_WALL.get())
+                .add(CWBlocks.SKY_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.SKY_TERRACOTTA_BRICK_STAIRS.get())
+                .add(CWBlocks.SKY_TERRACOTTA_BRICK_SLAB.get())
+                .add(CWBlocks.SKY_TERRACOTTA_BRICK_WALL.get())
+                .add(CWBlocks.CHISELED_SKY_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.BLURPLE_TERRACOTTA_STAIRS.get())
+                .add(CWBlocks.BLURPLE_TERRACOTTA_SLAB.get())
+                .add(CWBlocks.BLURPLE_TERRACOTTA_WALL.get())
+                .add(CWBlocks.BLURPLE_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.BLURPLE_TERRACOTTA_BRICK_STAIRS.get())
+                .add(CWBlocks.BLURPLE_TERRACOTTA_BRICK_SLAB.get())
+                .add(CWBlocks.BLURPLE_TERRACOTTA_BRICK_WALL.get())
+                .add(CWBlocks.CHISELED_BLURPLE_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.SANGRIA_TERRACOTTA_STAIRS.get())
+                .add(CWBlocks.SANGRIA_TERRACOTTA_SLAB.get())
+                .add(CWBlocks.SANGRIA_TERRACOTTA_WALL.get())
+                .add(CWBlocks.SANGRIA_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.SANGRIA_TERRACOTTA_BRICK_STAIRS.get())
+                .add(CWBlocks.SANGRIA_TERRACOTTA_BRICK_SLAB.get())
+                .add(CWBlocks.SANGRIA_TERRACOTTA_BRICK_WALL.get())
+                .add(CWBlocks.CHISELED_SANGRIA_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.ROSE_TERRACOTTA_STAIRS.get())
+                .add(CWBlocks.ROSE_TERRACOTTA_SLAB.get())
+                .add(CWBlocks.ROSE_TERRACOTTA_WALL.get())
+                .add(CWBlocks.ROSE_TERRACOTTA_BRICKS.get())
+                .add(CWBlocks.ROSE_TERRACOTTA_BRICK_STAIRS.get())
+                .add(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get())
+                .add(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get())
+                .add(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get())
         ;
     }
 

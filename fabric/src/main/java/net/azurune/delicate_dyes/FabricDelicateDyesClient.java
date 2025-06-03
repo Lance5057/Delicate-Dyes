@@ -1,6 +1,6 @@
 package net.azurune.delicate_dyes;
 
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;

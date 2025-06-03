@@ -1,0 +1,22 @@
+{
+
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "#": {
+            "item": "delicate_dyes:canary_terracotta"
+          }
+        },
+        "pattern": [
+          "#  ",
+          "## ",
+          "###"
+        ],
+        "result": {
+          "count": 4,
+          "item": "clayworks:canary_terracotta_stairs"
+        },
+        "show_notification": true
+      }
+    }

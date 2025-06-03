@@ -1,7 +1,8 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADBlocks;
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -170,6 +171,78 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
                 .add(LootItem.lootTableItem(DDItems.BLUEBERRIES.get())).apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))));
 
         //COMPAT
+        dropSelf(CWBlocks.CORAL_TERRACOTTA_STAIRS.get());
+        add(CWBlocks.CORAL_TERRACOTTA_SLAB.get(), createSlabItemTable(CWBlocks.CORAL_TERRACOTTA_SLAB.get()));
+        dropSelf(CWBlocks.CORAL_TERRACOTTA_WALL.get());
+        dropSelf(CWBlocks.CORAL_TERRACOTTA_BRICKS.get());
+        dropSelf(CWBlocks.CORAL_TERRACOTTA_BRICK_STAIRS.get());
+        add(CWBlocks.CORAL_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.CORAL_TERRACOTTA_BRICK_SLAB.get()));
+        dropSelf(CWBlocks.CORAL_TERRACOTTA_BRICK_WALL.get());
+        dropSelf(CWBlocks.CHISELED_CORAL_TERRACOTTA_BRICKS.get());
+
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_STAIRS.get());
+        add(CWBlocks.CANARY_TERRACOTTA_SLAB.get(), createSlabItemTable(CWBlocks.CANARY_TERRACOTTA_SLAB.get()));
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_WALL.get());
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_BRICKS.get());
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_BRICK_STAIRS.get());
+        add(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get()));
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get());
+        dropSelf(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get());
+
+        dropSelf(CWBlocks.WASABI_TERRACOTTA_STAIRS.get());
+        add(CWBlocks.WASABI_TERRACOTTA_SLAB.get(), createSlabItemTable(CWBlocks.WASABI_TERRACOTTA_SLAB.get()));
+        dropSelf(CWBlocks.WASABI_TERRACOTTA_WALL.get());
+        dropSelf(CWBlocks.WASABI_TERRACOTTA_BRICKS.get());
+        dropSelf(CWBlocks.WASABI_TERRACOTTA_BRICK_STAIRS.get());
+        add(CWBlocks.WASABI_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.WASABI_TERRACOTTA_BRICK_SLAB.get()));
+        dropSelf(CWBlocks.WASABI_TERRACOTTA_BRICK_WALL.get());
+        dropSelf(CWBlocks.CHISELED_WASABI_TERRACOTTA_BRICKS.get());
+
+        dropSelf(CWBlocks.SACRAMENTO_TERRACOTTA_STAIRS.get());
+        add(CWBlocks.SACRAMENTO_TERRACOTTA_SLAB.get(), createSlabItemTable(CWBlocks.SACRAMENTO_TERRACOTTA_SLAB.get()));
+        dropSelf(CWBlocks.SACRAMENTO_TERRACOTTA_WALL.get());
+        dropSelf(CWBlocks.SACRAMENTO_TERRACOTTA_BRICKS.get());
+        dropSelf(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_STAIRS.get());
+        add(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_SLAB.get()));
+        dropSelf(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_WALL.get());
+        dropSelf(CWBlocks.CHISELED_SACRAMENTO_TERRACOTTA_BRICKS.get());
+
+        dropSelf(CWBlocks.SKY_TERRACOTTA_STAIRS.get());
+        add(CWBlocks.SKY_TERRACOTTA_SLAB.get(), createSlabItemTable(CWBlocks.SKY_TERRACOTTA_SLAB.get()));
+        dropSelf(CWBlocks.SKY_TERRACOTTA_WALL.get());
+        dropSelf(CWBlocks.SKY_TERRACOTTA_BRICKS.get());
+        dropSelf(CWBlocks.SKY_TERRACOTTA_BRICK_STAIRS.get());
+        add(CWBlocks.SKY_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.SKY_TERRACOTTA_BRICK_SLAB.get()));
+        dropSelf(CWBlocks.SKY_TERRACOTTA_BRICK_WALL.get());
+        dropSelf(CWBlocks.CHISELED_SKY_TERRACOTTA_BRICKS.get());
+
+        dropSelf(CWBlocks.BLURPLE_TERRACOTTA_STAIRS.get());
+        add(CWBlocks.BLURPLE_TERRACOTTA_SLAB.get(), createSlabItemTable(CWBlocks.BLURPLE_TERRACOTTA_SLAB.get()));
+        dropSelf(CWBlocks.BLURPLE_TERRACOTTA_WALL.get());
+        dropSelf(CWBlocks.BLURPLE_TERRACOTTA_BRICKS.get());
+        dropSelf(CWBlocks.BLURPLE_TERRACOTTA_BRICK_STAIRS.get());
+        add(CWBlocks.BLURPLE_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.BLURPLE_TERRACOTTA_BRICK_SLAB.get()));
+        dropSelf(CWBlocks.BLURPLE_TERRACOTTA_BRICK_WALL.get());
+        dropSelf(CWBlocks.CHISELED_BLURPLE_TERRACOTTA_BRICKS.get());
+
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_STAIRS.get());
+        add(CWBlocks.CANARY_TERRACOTTA_SLAB.get(), createSlabItemTable(CWBlocks.CANARY_TERRACOTTA_SLAB.get()));
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_WALL.get());
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_BRICKS.get());
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_BRICK_STAIRS.get());
+        add(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get()));
+        dropSelf(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get());
+        dropSelf(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get());
+
+        dropSelf(CWBlocks.ROSE_TERRACOTTA_STAIRS.get());
+        add(CWBlocks.ROSE_TERRACOTTA_SLAB.get(), createSlabItemTable(CWBlocks.ROSE_TERRACOTTA_SLAB.get()));
+        dropSelf(CWBlocks.ROSE_TERRACOTTA_WALL.get());
+        dropSelf(CWBlocks.ROSE_TERRACOTTA_BRICKS.get());
+        dropSelf(CWBlocks.ROSE_TERRACOTTA_BRICK_STAIRS.get());
+        add(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get(), createSlabItemTable(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get()));
+        dropSelf(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get());
+        dropSelf(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get());
+        
         add(ADBlocks.BLUEBERRYCAT_BUSH.get(), (block) -> applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool()
                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(ADBlocks.BLUEBERRYCAT_BUSH.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3)))
                 .add(LootItem.lootTableItem(ADItems.CATBLUEBERRY.get())).apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F))).apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE))).withPool(LootPool.lootPool()

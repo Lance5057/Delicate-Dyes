@@ -1,0 +1,11 @@
+{
+
+      "recipe": {
+        "type": "minecraft:stonecutting",
+        "count": 2,
+        "ingredient": {
+          "item": "clayworks:sky_terracotta_bricks"
+        },
+        "result": "clayworks:sky_terracotta_brick_slab"
+      }
+    }

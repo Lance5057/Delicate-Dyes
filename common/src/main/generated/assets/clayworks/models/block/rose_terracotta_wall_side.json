@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "delicate_dyes:block/rose_terracotta"
+  }
+}

@@ -1,6 +1,5 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.init.DDTags;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;

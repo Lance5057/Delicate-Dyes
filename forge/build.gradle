@@ -56,6 +56,10 @@ dependencies {
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
     //RUNICLIB
     modImplementation "curse.maven:runiclib-880879:6329449"
+
+    //COMPAT TESTING (comment out before releasing)
+    //implementation "curse.maven:clayworks-592162:6321200"
+    //implementation "curse.maven:blueprint-382216:6408581"
 }
 
 jar {

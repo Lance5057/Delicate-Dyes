@@ -1,16 +1,13 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.common.integration.appledog.registry.ADItems;
-import net.azurune.delicate_dyes.common.integration.common.util.CompatIds;
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.init.DDTags;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.*;
 import net.minecraft.data.recipes.packs.VanillaRecipeProvider;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -373,11 +370,15 @@ public class DDRecipeGen extends FabricRecipeProvider {
         //SKY
 
         //BLURPLE
-
-        //SANGRIA DYE
         oneToOneConversionRecipe(output, DDItems.BLURPLE_DYE.get(), DDItems.BLUEBERRIES.get(), "blurple_dye");
         //COMPAT
         oneToOneConversionRecipe(output, DDItems.BLURPLE_DYE.get(), ADItems.CATBLUEBERRY.get(), "blurple_dye");
+
+        //SANGRIA DYE
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 1)
+                .requires(Items.SWEET_BERRIES)
+                .unlockedBy("has_sweet_berries", VanillaRecipeProvider.has(Items.SWEET_BERRIES))
+                .group("sangria_dye").save(output, "sacramento_dye_from_sweet_berries");
 
         //ROSE DYE
         oneToOneConversionRecipe(output, DDItems.ROSE_DYE.get(), DDBlocks.ROSE.get(), "rose_dye");

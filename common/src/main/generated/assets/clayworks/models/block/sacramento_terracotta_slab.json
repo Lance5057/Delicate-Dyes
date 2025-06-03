@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "delicate_dyes:block/sacramento_terracotta",
+    "side": "delicate_dyes:block/sacramento_terracotta",
+    "top": "delicate_dyes:block/sacramento_terracotta"
+  }
+}

@@ -1,7 +1,13 @@
 package net.azurune.delicate_dyes.common;
 
+import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
+import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
+import net.azurune.delicate_dyes.core.platform.Services;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -11,17 +17,19 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 public class ForgeItemGroupAdditions {
-    private static void putItemAfter(BuildCreativeModeTabContentsEvent event, Item itemBefore, Item itemAfter) {
-        event.getEntries().putAfter(itemBefore.getDefaultInstance(),
-                itemAfter.getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-    }
+    public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog");
 
-    private static void putBlockAfter(BuildCreativeModeTabContentsEvent event, Block blockBefore, Block blockAfter) {
-        event.getEntries().putAfter(blockBefore.asItem().getDefaultInstance(),
-                blockAfter.asItem().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+    private static ResourceKey<CreativeModeTab> createKey(String id) {
+        return ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(id));
     }
     
     public static void buildCreativeTabs(BuildCreativeModeTabContentsEvent event) {
+        if (Services.PLATFORM.isModLoaded(CompatIds.APPLEDOG)) {
+            if (event.getTabKey() == APPLEDOG) {
+                event.accept(ADItems.CATBLUEBERRY.get());
+            }
+        }
+
         if (event.getTabKey() == CreativeModeTabs.COLORED_BLOCKS) {
             //WOOL
             putBlockAfter(event, Blocks.RED_WOOL, DDBlocks.CORAL_WOOL.get());
@@ -197,5 +205,15 @@ public class ForgeItemGroupAdditions {
             putItemAfter(event, Items.PURPLE_DYE, DDItems.SANGRIA_DYE.get());
             putItemAfter(event, Items.PINK_DYE, DDItems.ROSE_DYE.get());
         }
+    }
+
+    private static void putItemAfter(BuildCreativeModeTabContentsEvent event, Item itemBefore, Item itemAfter) {
+        event.getEntries().putAfter(itemBefore.getDefaultInstance(),
+                itemAfter.getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+    }
+
+    private static void putBlockAfter(BuildCreativeModeTabContentsEvent event, Block blockBefore, Block blockAfter) {
+        event.getEntries().putAfter(blockBefore.asItem().getDefaultInstance(),
+                blockAfter.asItem().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }
 }
