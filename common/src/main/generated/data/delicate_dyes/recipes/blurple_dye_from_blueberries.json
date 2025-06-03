@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "sangria_dye",
+  "group": "blurple_dye",
   "ingredients": [
     {
-      "item": "appledog:catblueberry"
+      "item": "delicate_dyes:blueberries"
     }
   ],
   "result": {
-    "item": "delicate_dyes:sangria_dye"
+    "item": "delicate_dyes:blurple_dye"
   }
 }

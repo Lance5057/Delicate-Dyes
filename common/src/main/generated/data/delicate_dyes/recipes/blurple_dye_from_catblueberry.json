@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "blurple_dye",
+  "ingredients": [
+    {
+      "item": "appledog:catblueberry"
+    }
+  ],
+  "result": {
+    "item": "delicate_dyes:blurple_dye"
+  }
+}

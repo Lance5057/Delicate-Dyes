@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sangria_dye_from_blueberries"
+        "recipe": "minecraft:blurple_dye_from_blueberries"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sangria_dye_from_blueberries"
+      "minecraft:blurple_dye_from_blueberries"
     ]
   },
   "sends_telemetry_event": false

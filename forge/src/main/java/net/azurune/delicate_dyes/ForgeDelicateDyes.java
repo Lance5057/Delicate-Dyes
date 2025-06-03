@@ -45,14 +45,10 @@ public class ForgeDelicateDyes {
 
         //CUTOUT
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.ROSE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(DDBlocks.RED_ROSE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(DDBlocks.BLUE_ROSE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(DDBlocks.WHITE_ROSE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_ROSE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_RED_ROSE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_BLUE_ROSE.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_WHITE_ROSE.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.BLUEBERRY_BUSH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDBlocks.PEACH_BELLFLOWER.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_PEACH_BELLFLOWER.get(), RenderType.cutout());
         //COMPAT
         ItemBlockRenderTypes.setRenderLayer(ADBlocks.BLUEBERRYCAT_BUSH.get(), RenderType.cutout());
     }

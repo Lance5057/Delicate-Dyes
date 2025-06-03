@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_peach_bellflower": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "delicate_dyes:peach_bellflower"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:coral_dye_from_peach_bellflower"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_peach_bellflower",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:coral_dye_from_peach_bellflower"
+    ]
+  },
+  "sends_telemetry_event": false
+}

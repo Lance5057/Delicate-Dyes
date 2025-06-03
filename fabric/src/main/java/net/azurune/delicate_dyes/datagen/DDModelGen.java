@@ -187,6 +187,9 @@ public class DDModelGen extends FabricModelProvider {
                         .with(VariantProperties.MODEL, generator.createSuffixedVariant(DDBlocks.BLUEBERRY_BUSH.get(), "_stage" + integer,
                                 ModelTemplates.CROSS, TextureMapping::cross)))));
 
+        generator.createPlant(DDBlocks.PEACH_BELLFLOWER.get(), DDBlocks.POTTED_PEACH_BELLFLOWER.get(), BlockModelGenerators.TintState.NOT_TINTED);
+        generator.createDoublePlant(DDBlocks.GOOB_BLOSSOM.get(), BlockModelGenerators.TintState.NOT_TINTED);
+
         //COMPAT
         generator.blockStateOutput.accept(MultiVariantGenerator.multiVariant(ADBlocks.BLUEBERRYCAT_BUSH.get())
                 .with(PropertyDispatch.property(BlockStateProperties.AGE_3).generate((integer) -> Variant.variant()

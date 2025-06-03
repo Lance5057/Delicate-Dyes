@@ -8,10 +8,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.level.block.BedBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.BedPart;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -158,6 +157,11 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         //MISC CONTENT
         dropSelf(DDBlocks.ROSE.get());
         dropPottedContents(DDBlocks.POTTED_ROSE.get());
+
+        dropSelf(DDBlocks.PEACH_BELLFLOWER.get());
+        dropPottedContents(DDBlocks.POTTED_PEACH_BELLFLOWER.get());
+
+        this.add(DDBlocks.GOOB_BLOSSOM.get(), (block) -> this.createSinglePropConditionTable(block, DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
 
         add(DDBlocks.BLUEBERRY_BUSH.get(), (block) -> applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool()
                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(DDBlocks.BLUEBERRY_BUSH.get()).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3)))

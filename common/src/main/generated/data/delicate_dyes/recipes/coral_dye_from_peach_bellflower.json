@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "sangria_dye",
+  "group": "coral_dye",
   "ingredients": [
     {
-      "item": "delicate_dyes:blueberries"
+      "item": "delicate_dyes:peach_bellflower"
     }
   ],
   "result": {
-    "item": "delicate_dyes:sangria_dye"
+    "item": "delicate_dyes:coral_dye"
   }
 }

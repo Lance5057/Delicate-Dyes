@@ -29,6 +29,7 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
         appendFoxFood();
         appendBlueberries();
         appendShulkerBoxes();
+        appendTallFlowers();
     }
 
     public void appendBlueberries() {
@@ -77,6 +78,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendSmallFlowers() {
         getOrCreateTagBuilder(ItemTags.SMALL_FLOWERS)
                 .add(DDBlocks.ROSE.get().asItem())
+                .add(DDBlocks.PEACH_BELLFLOWER.get().asItem())
+        ;
+    }
+
+    public void appendTallFlowers() {
+        getOrCreateTagBuilder(ItemTags.TALL_FLOWERS)
+                .add(DDBlocks.GOOB_BLOSSOM.get().asItem())
         ;
     }
 

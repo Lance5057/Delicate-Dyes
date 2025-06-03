@@ -21,6 +21,8 @@ public class FabricDelicateDyes implements ModInitializer {
 
     public void addBiomeModifiers() {
         BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_FOREST), GenerationStep.Decoration.VEGETAL_DECORATION, DDFeatures.PlacedFeatures.PATCH_ROSE);
+        BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_SAVANNA), GenerationStep.Decoration.VEGETAL_DECORATION, DDFeatures.PlacedFeatures.PATCH_PEACH_BELLFLOWER);
+        BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.HAS_SWAMP_HUT), GenerationStep.Decoration.VEGETAL_DECORATION, DDFeatures.PlacedFeatures.PATCH_GOOB_BLOSSOM);
 
         BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_FOREST), GenerationStep.Decoration.VEGETAL_DECORATION, DDFeatures.PlacedFeatures.PATCH_BLUEBERRY_BUSH);
     }

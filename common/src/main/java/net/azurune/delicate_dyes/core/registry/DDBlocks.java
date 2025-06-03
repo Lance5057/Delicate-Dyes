@@ -145,10 +145,15 @@ public class DDBlocks {
     public static final Supplier<Block> ROSE_SHULKER_BOX = register("rose_shulker_box", () -> new DDShulkerBoxBlock(DDDyeValues.ROSE, DDProperties.BlockP.SHULKER_BOX.mapColor(DDDyeValues.ROSE.getMapColor())), true);
 
     //MISC CONTENT
-    public static final Supplier<Block> ROSE = register("rose", () -> new FlowerBlock(MobEffects.REGENERATION, 10, DDProperties.BlockP.ROSE), true);
-    public static final Supplier<Block> POTTED_ROSE = register("potted_rose", () -> flowerPot(ROSE), false);
+    public static final Supplier<Block> PEACH_BELLFLOWER = register("peach_bellflower", () -> new FlowerBlock(MobEffects.ABSORPTION, 15, DDProperties.BlockP.PEACH_BELLFLOWER), true);
+    public static final Supplier<Block> POTTED_PEACH_BELLFLOWER = register("potted_peach_bellflower", () -> flowerPot(PEACH_BELLFLOWER), false);
+
+    public static final Supplier<Block> GOOB_BLOSSOM = register("goob_blossom", () -> new TallFlowerBlock(DDProperties.BlockP.GOOB_BLOSSOM), true);
 
     public static final Supplier<Block> BLUEBERRY_BUSH = register("blueberry_bush", () -> new BlueberryBushBlock(DDProperties.BlockP.BLUEBERRY_BUSH), false);
+
+    public static final Supplier<Block> ROSE = register("rose", () -> new FlowerBlock(MobEffects.REGENERATION, 10, DDProperties.BlockP.ROSE), true);
+    public static final Supplier<Block> POTTED_ROSE = register("potted_rose", () -> flowerPot(ROSE), false);
 
     private static Supplier<Block> register(String id, Supplier<Block> block, boolean hasItem) {
         return Services.REGISTRY.registerBlock(DelicateDyes.MOD_ID, id, block, hasItem);

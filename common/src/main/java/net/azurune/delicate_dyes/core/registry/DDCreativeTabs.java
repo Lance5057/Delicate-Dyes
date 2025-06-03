@@ -136,7 +136,10 @@ public class DDCreativeTabs {
                         entry.accept(DDItems.ROSE_BANNER.get());
 
                         //MISC CONTENT
+                        entry.accept(DDBlocks.PEACH_BELLFLOWER.get());
                         entry.accept(DDBlocks.ROSE.get());
+
+                        entry.accept(DDBlocks.GOOB_BLOSSOM.get());
 
                         entry.accept(DDItems.BLUEBERRIES.get());
                     }
@@ -146,10 +149,10 @@ public class DDCreativeTabs {
             .title(Component.translatable("itemgroup.delicate_dyes_compat"))
             .icon(() -> new ItemStack(DDItems.BLUEBERRIES.get()))
             .displayItems((displayParameters, entry) -> {
-                //APPLEDOG
-                if (Services.PLATFORM.isModLoaded(CompatIds.APPLEDOG)) {
-                    entry.accept(ADItems.CATBLUEBERRY.get());
-                }
+                        //APPLEDOG
+                        if (Services.PLATFORM.isModLoaded(CompatIds.APPLEDOG)) {
+                            entry.accept(ADItems.CATBLUEBERRY.get());
+                        }
                     }
             ).build());
 

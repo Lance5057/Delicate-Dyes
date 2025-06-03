@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "delicate_dyes:block/goob_blossom_bottom"
+    },
+    "half=upper": {
+      "model": "delicate_dyes:block/goob_blossom_top"
+    }
+  }
+}

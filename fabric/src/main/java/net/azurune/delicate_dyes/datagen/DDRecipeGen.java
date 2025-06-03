@@ -16,6 +16,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Consumer;
 
@@ -355,8 +356,11 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .group("rose_dye").save(output, "rose_dye" + "_from_bits1");
 
         //CORAL
+        oneToOneConversionRecipe(output, DDItems.CORAL_DYE.get(), DDBlocks.PEACH_BELLFLOWER.get(), "coral_dye");
 
         //CANARY
+        oneToTwoConversionRecipe(output, DDItems.CANARY_DYE.get(), DDBlocks.GOOB_BLOSSOM.get(), "canary_dye");
+
 
         //WASABI
 
@@ -371,9 +375,9 @@ public class DDRecipeGen extends FabricRecipeProvider {
         //BLURPLE
 
         //SANGRIA DYE
-        oneToOneConversionRecipe(output, DDItems.SANGRIA_DYE.get(), DDItems.BLUEBERRIES.get(), "sangria_dye");
+        oneToOneConversionRecipe(output, DDItems.BLURPLE_DYE.get(), DDItems.BLUEBERRIES.get(), "blurple_dye");
         //COMPAT
-        oneToOneConversionRecipe(output, DDItems.SANGRIA_DYE.get(), ADItems.CATBLUEBERRY.get(), "sangria_dye");
+        oneToOneConversionRecipe(output, DDItems.BLURPLE_DYE.get(), ADItems.CATBLUEBERRY.get(), "blurple_dye");
 
         //ROSE DYE
         oneToOneConversionRecipe(output, DDItems.ROSE_DYE.get(), DDBlocks.ROSE.get(), "rose_dye");
@@ -396,5 +400,13 @@ public class DDRecipeGen extends FabricRecipeProvider {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, dyedShulker)
                 .requires(dye).requires(DDTags.Items.SHULKER_BOXES)
                 .group("shulker").unlockedBy(RecipeProvider.getHasName(dye), RecipeProvider.has(dye)).save(recipeOutput, id + "_from_dye");
+    }
+
+    public static void oneToTwoConversionRecipe(Consumer<FinishedRecipe> finishedRecipeConsumer, ItemLike result, ItemLike ingredient, @Nullable String group) {
+        oneToTwoConversionRecipe(finishedRecipeConsumer, result, ingredient, group, 2);
+    }
+
+    public static void oneToTwoConversionRecipe(Consumer<FinishedRecipe> finishedRecipeConsumer, ItemLike result, ItemLike ingredient, @Nullable String group, int resultCount) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result, resultCount).requires(ingredient).group(group).unlockedBy(getHasName(ingredient), has(ingredient)).save(finishedRecipeConsumer, getConversionRecipeName(result, ingredient));
     }
 }
