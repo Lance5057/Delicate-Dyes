@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.datagen;
 
 import net.azurune.delicate_dyes.core.init.DDTags;
+import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -28,6 +29,8 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
         appendFoxFood();
         appendShulkerBoxes();
         appendTallFlowers();
+        appendRockCandies();
+        appendRadonLamps();
     }
 
     public void appendShulkerBoxes() {
@@ -57,6 +60,32 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
                 .add(Items.LIGHT_GRAY_SHULKER_BOX)
                 .add(Items.GRAY_SHULKER_BOX)
                 .add(Items.BLACK_SHULKER_BOX)
+        ;
+    }
+
+    public void appendRadonLamps() {
+        getOrCreateTagBuilder(DDTags.Items.RADON_LAMPS)
+                .add(AlexCBlocks.CORAL_RADON_LAMP.get().asItem())
+                .add(AlexCBlocks.CANARY_RADON_LAMP.get().asItem())
+                .add(AlexCBlocks.WASABI_RADON_LAMP.get().asItem())
+                .add(AlexCBlocks.SACRAMENTO_RADON_LAMP.get().asItem())
+                .add(AlexCBlocks.SKY_RADON_LAMP.get().asItem())
+                .add(AlexCBlocks.BLURPLE_RADON_LAMP.get().asItem())
+                .add(AlexCBlocks.SANGRIA_RADON_LAMP.get().asItem())
+                .add(AlexCBlocks.ROSE_RADON_LAMP.get().asItem())
+        ;
+    }
+
+    public void appendRockCandies() {
+        getOrCreateTagBuilder(DDTags.Items.ROCK_CANDIES)
+                .add(AlexCBlocks.CORAL_ROCK_CANDY.get().asItem())
+                .add(AlexCBlocks.CANARY_ROCK_CANDY.get().asItem())
+                .add(AlexCBlocks.WASABI_ROCK_CANDY.get().asItem())
+                .add(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get().asItem())
+                .add(AlexCBlocks.SKY_ROCK_CANDY.get().asItem())
+                .add(AlexCBlocks.BLURPLE_ROCK_CANDY.get().asItem())
+                .add(AlexCBlocks.SANGRIA_ROCK_CANDY.get().asItem())
+                .add(AlexCBlocks.ROSE_ROCK_CANDY.get().asItem())
         ;
     }
 

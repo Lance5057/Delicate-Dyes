@@ -211,6 +211,14 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
                 .add(AlexCBlocks.BLURPLE_ROCK_CANDY.get())
                 .add(AlexCBlocks.SANGRIA_ROCK_CANDY.get())
                 .add(AlexCBlocks.ROSE_ROCK_CANDY.get())
+                .add(AlexCBlocks.CORAL_RADON_LAMP.get())
+                .add(AlexCBlocks.CANARY_RADON_LAMP.get())
+                .add(AlexCBlocks.WASABI_RADON_LAMP.get())
+                .add(AlexCBlocks.SACRAMENTO_RADON_LAMP.get())
+                .add(AlexCBlocks.SKY_RADON_LAMP.get())
+                .add(AlexCBlocks.BLURPLE_RADON_LAMP.get())
+                .add(AlexCBlocks.SANGRIA_RADON_LAMP.get())
+                .add(AlexCBlocks.ROSE_RADON_LAMP.get())
         ;
     }
 
