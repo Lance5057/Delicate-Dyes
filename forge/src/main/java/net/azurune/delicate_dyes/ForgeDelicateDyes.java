@@ -57,6 +57,7 @@ public class ForgeDelicateDyes {
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.BLUEBERRY_BUSH.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.PEACH_BELLFLOWER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_PEACH_BELLFLOWER.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(DDBlocks.GOOB_BLOSSOM.get(), RenderType.cutout());
         //COMPAT
         ItemBlockRenderTypes.setRenderLayer(ADBlocks.BLUEBERRYCAT_BUSH.get(), RenderType.cutout());
     }
