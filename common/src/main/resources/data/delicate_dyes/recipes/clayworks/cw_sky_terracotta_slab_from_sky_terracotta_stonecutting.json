@@ -1,7 +1,9 @@
 {
 
       "recipe": {
-        "type": "minecraft:stonecutting",
+        "type": "runiclib:mod_loaded_condition",
+        "modid": "clayworks",
+        "wrapped_type": "minecraft:stonecutting",
         "count": 2,
         "ingredient": {
           "item": "delicate_dyes:sky_terracotta"

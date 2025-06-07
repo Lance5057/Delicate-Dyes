@@ -1,7 +1,9 @@
 {
 
       "recipe": {
-        "type": "minecraft:stonecutting",
+        "type": "runiclib:mod_loaded_condition",
+        "modid": "clayworks",
+        "wrapped_type": "minecraft:stonecutting",
         "count": 1,
         "ingredient": {
           "item": "clayworks:blurple_terracotta_bricks"

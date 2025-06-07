@@ -1,6 +1,8 @@
 {
       "recipe": {
-        "type": "minecraft:crafting_shaped",
+        "type": "runiclib:mod_loaded_condition",
+        "modid": "clayworks",
+        "wrapped_type": "minecraft:crafting_shaped",
         "category": "building",
         "key": {
           "#": {
