@@ -1,0 +1,17 @@
+{
+  "type": "runiclib:mod_loaded_condition",
+  "modid": "nirvana",
+  "wrapped_type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nirvana:woven_burlap"
+    },
+    {
+     "item": "delicate_dyes:blurple_dye"
+    }
+  ],
+  "result": {
+    "item": "nirvana:blurple_woven_burlap"
+  }
+}

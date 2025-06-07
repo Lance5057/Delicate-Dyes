@@ -1,0 +1,17 @@
+{
+  "type": "runiclib:mod_loaded_condition",
+  "modid": "nirvana",
+  "wrapped_type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "nirvana:hemp_burlap"
+    },
+    {
+     "item": "delicate_dyes:coral_dye"
+    }
+  ],
+  "result": {
+    "item": "nirvana:coral_hemp_burlap"
+  }
+}

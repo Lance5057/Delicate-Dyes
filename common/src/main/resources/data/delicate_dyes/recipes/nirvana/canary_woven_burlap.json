@@ -1,0 +1,20 @@
+{
+  "type": "runiclib:mod_loaded_condition",
+  "modid": "nirvana",
+  "wrapped_type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "nirvana:canary_hemp_burlap"
+    }
+  },
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "result": {
+    "count": 4,
+    "item": "nirvana:canary_woven_burlap"
+  },
+  "show_notification": true
+}
