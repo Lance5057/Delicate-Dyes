@@ -1,6 +1,5 @@
 package net.azurune.delicate_dyes.core.mixin;
 
-import com.google.common.collect.ImmutableList;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.resources.ResourceLocation;
@@ -14,7 +13,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 @Mixin(Sheets.class)
 public class ShulkerBoxRendererMixin {
