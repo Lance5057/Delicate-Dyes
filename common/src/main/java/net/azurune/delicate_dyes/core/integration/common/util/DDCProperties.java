@@ -20,6 +20,7 @@ public class DDCProperties {
         public static final BlockBehaviour.Properties DECORATED_POT = BlockBehaviour.Properties.copy(Blocks.DECORATED_POT);
         public static final BlockBehaviour.Properties ROCK_CANDY = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(1.0F, 1.5F).sound(SoundType.STONE).instrument(NoteBlockInstrument.BASS);
         public static final BlockBehaviour.Properties RADON_LAMP = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).requiresCorrectToolForDrops().lightLevel(state -> 15).strength(2F, 11.0F).sound(SoundType.GLASS);
+        public static final BlockBehaviour.Properties BURLAP = BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.WOOL);
     }
 
     public static class ItemP {

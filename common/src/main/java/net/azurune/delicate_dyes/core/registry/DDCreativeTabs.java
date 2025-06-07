@@ -5,6 +5,7 @@ import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlock
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
 import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
+import net.azurune.delicate_dyes.core.integration.nirvana.registry.NVBlocks;
 import net.azurune.runiclib.core.platform.Services;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -265,6 +266,25 @@ public class DDCreativeTabs {
                             entry.accept(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get());
                             //entry.accept(CWBlocks.ROSE_DECORATED_POT.get());
                         }
+
+                if (Services.PLATFORM.isModLoaded(CompatIds.NIRVANA)) {
+                    entry.accept(NVBlocks.CORAL_HEMP_BURLAP.get());
+                    entry.accept(NVBlocks.CORAL_WOVEN_BURLAP.get());
+                    entry.accept(NVBlocks.CANARY_HEMP_BURLAP.get());
+                    entry.accept(NVBlocks.CANARY_WOVEN_BURLAP.get());
+                    entry.accept(NVBlocks.WASABI_HEMP_BURLAP.get());
+                    entry.accept(NVBlocks.WASABI_WOVEN_BURLAP.get());
+                    entry.accept(NVBlocks.SACRAMENTO_HEMP_BURLAP.get());
+                    entry.accept(NVBlocks.SACRAMENTO_WOVEN_BURLAP.get());
+                    entry.accept(NVBlocks.SKY_HEMP_BURLAP.get());
+                    entry.accept(NVBlocks.SKY_WOVEN_BURLAP.get());
+                    entry.accept(NVBlocks.BLURPLE_HEMP_BURLAP.get());
+                    entry.accept(NVBlocks.BLURPLE_WOVEN_BURLAP.get());
+                    entry.accept(NVBlocks.SANGRIA_HEMP_BURLAP.get());
+                    entry.accept(NVBlocks.SANGRIA_WOVEN_BURLAP.get());
+                    entry.accept(NVBlocks.ROSE_HEMP_BURLAP.get());
+                    entry.accept(NVBlocks.ROSE_WOVEN_BURLAP.get());
+                }
                     }
             ).build());
 
