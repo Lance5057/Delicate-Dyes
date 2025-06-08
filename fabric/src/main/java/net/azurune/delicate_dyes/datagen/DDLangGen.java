@@ -4,6 +4,7 @@ import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlock
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
+import net.azurune.delicate_dyes.core.integration.nirvana.registry.NVBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -157,6 +158,23 @@ public class DDLangGen extends FabricLanguageProvider {
         //INTEGRATION
         //========================================================================================
         //BLOCKS
+        build.add(NVBlocks.CORAL_HEMP_BURLAP.get(), "Coral Hemp Burlap");
+        build.add(NVBlocks.CANARY_HEMP_BURLAP.get(), "Canary Hemp Burlap");
+        build.add(NVBlocks.WASABI_HEMP_BURLAP.get(), "Wasabi Hemp Burlap");
+        build.add(NVBlocks.SACRAMENTO_HEMP_BURLAP.get(), "Sacramento Hemp Burlap");
+        build.add(NVBlocks.SKY_HEMP_BURLAP.get(), "Sky Hemp Burlap");
+        build.add(NVBlocks.BLURPLE_HEMP_BURLAP.get(), "Blurple Hemp Burlap");
+        build.add(NVBlocks.SANGRIA_HEMP_BURLAP.get(), "Sangria Hemp Burlap");
+        build.add(NVBlocks.ROSE_HEMP_BURLAP.get(), "Rose Hemp Burlap");
+        build.add(NVBlocks.CORAL_WOVEN_BURLAP.get(), "Coral Woven Burlap");
+        build.add(NVBlocks.CANARY_WOVEN_BURLAP.get(), "Canary Woven Burlap");
+        build.add(NVBlocks.WASABI_WOVEN_BURLAP.get(), "Wasabi Woven Burlap");
+        build.add(NVBlocks.SACRAMENTO_WOVEN_BURLAP.get(), "Sacramento Woven Burlap");
+        build.add(NVBlocks.SKY_WOVEN_BURLAP.get(), "Sky Woven Burlap");
+        build.add(NVBlocks.BLURPLE_WOVEN_BURLAP.get(), "Blurple Woven Burlap");
+        build.add(NVBlocks.SANGRIA_WOVEN_BURLAP.get(), "Sangria Woven Burlap");
+        build.add(NVBlocks.ROSE_WOVEN_BURLAP.get(), "Rose Woven Burlap");
+        
         build.add(AlexCBlocks.CORAL_ROCK_CANDY.get(), "Coral Rock Candy");
         build.add(AlexCBlocks.CANARY_ROCK_CANDY.get(), "Canary Rock Candy");
         build.add(AlexCBlocks.WASABI_ROCK_CANDY.get(), "Wasabi Rock Candy");
