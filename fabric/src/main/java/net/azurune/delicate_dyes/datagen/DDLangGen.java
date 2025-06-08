@@ -158,14 +158,14 @@ public class DDLangGen extends FabricLanguageProvider {
         //INTEGRATION
         //========================================================================================
         //BLOCKS
-        build.add(NVBlocks.CORAL_HEMP_BURLAP.get(), "Coral Hemp Burlap");
-        build.add(NVBlocks.CANARY_HEMP_BURLAP.get(), "Canary Hemp Burlap");
-        build.add(NVBlocks.WASABI_HEMP_BURLAP.get(), "Wasabi Hemp Burlap");
-        build.add(NVBlocks.SACRAMENTO_HEMP_BURLAP.get(), "Sacramento Hemp Burlap");
-        build.add(NVBlocks.SKY_HEMP_BURLAP.get(), "Sky Hemp Burlap");
-        build.add(NVBlocks.BLURPLE_HEMP_BURLAP.get(), "Blurple Hemp Burlap");
-        build.add(NVBlocks.SANGRIA_HEMP_BURLAP.get(), "Sangria Hemp Burlap");
-        build.add(NVBlocks.ROSE_HEMP_BURLAP.get(), "Rose Hemp Burlap");
+        build.add(NVBlocks.CORAL_HEMP_BURLAP.get(), "Coral Burlap");
+        build.add(NVBlocks.CANARY_HEMP_BURLAP.get(), "Canary Burlap");
+        build.add(NVBlocks.WASABI_HEMP_BURLAP.get(), "Wasabi Burlap");
+        build.add(NVBlocks.SACRAMENTO_HEMP_BURLAP.get(), "Sacramento Burlap");
+        build.add(NVBlocks.SKY_HEMP_BURLAP.get(), "Sky Burlap");
+        build.add(NVBlocks.BLURPLE_HEMP_BURLAP.get(), "Blurple Burlap");
+        build.add(NVBlocks.SANGRIA_HEMP_BURLAP.get(), "Sangria Burlap");
+        build.add(NVBlocks.ROSE_HEMP_BURLAP.get(), "Rose Burlap");
         build.add(NVBlocks.CORAL_WOVEN_BURLAP.get(), "Coral Woven Burlap");
         build.add(NVBlocks.CANARY_WOVEN_BURLAP.get(), "Canary Woven Burlap");
         build.add(NVBlocks.WASABI_WOVEN_BURLAP.get(), "Wasabi Woven Burlap");

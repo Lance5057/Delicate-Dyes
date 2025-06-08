@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-03T20:28:41.509843	Delicate Dyes/Block Loot Tables
+// 1.20.1	2025-06-07T20:23:06.9531303	Delicate Dyes/Block Loot Tables
 a0e33f8953de469436c609ad892e759e532a3031 data\delicate_dyes\loot_tables\blocks\sky_concrete.json
 e6a1ccf212fe9ab98ceb52782696dc17fac38903 data\delicate_dyes\loot_tables\blocks\coral_stained_glass.json
 1c4aef1d0c3237ed9413106f8dd1fd70f49f5dd6 data\alexscaves\loot_tables\blocks\rock_candy_sky.json
@@ -108,8 +108,8 @@ b0f1e6b41a9fe5ad2589b61b3b96f6355c71281a data\delicate_dyes\loot_tables\blocks\w
 705134df55f7301a70f719a7f13bc69397c461cb data\alexscaves\loot_tables\blocks\radon_lamp_sky.json
 b6af1358f71cb400df24daba04c8acc2a1f17b1e data\delicate_dyes\loot_tables\blocks\blurple_concrete_powder.json
 ce5b7e3bf22b8fe3201347c9af97f153364f2170 data\delicate_dyes\loot_tables\blocks\rose_banner.json
-5b526ec991d057f23fd95735415220f106c48cf2 data\delicate_dyes\loot_tables\blocks\sangria_bed.json
 909ddaca8b83caf3eaded9de9393888d10e2789a data\alexscaves\loot_tables\blocks\rock_candy_rose.json
+5b526ec991d057f23fd95735415220f106c48cf2 data\delicate_dyes\loot_tables\blocks\sangria_bed.json
 ff3db93ce472293483d314d784bd48b51b4d8a16 data\delicate_dyes\loot_tables\blocks\wasabi_concrete_powder.json
 708fa2fcc83a9fab6fd29fa355cc3980d1495686 data\delicate_dyes\loot_tables\blocks\sky_stained_glass_pane.json
 97f0a6a36db69915b3adbfd94235b0bb33af8fe5 data\delicate_dyes\loot_tables\blocks\canary_shulker_box.json
