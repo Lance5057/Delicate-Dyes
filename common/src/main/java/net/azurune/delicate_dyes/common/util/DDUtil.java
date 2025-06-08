@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.common.util;
 
+import net.azurune.delicate_dyes.core.platform.Services;
 import net.minecraft.util.ByIdMap;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.DyeColor;
@@ -14,9 +15,13 @@ public class DDUtil {
     //This gets the amount of dyes currently in the game (starting at 15 because vanilla has 16)
     public static int getDyeCount() {
         int dyeCount = 15;
-//        if (Services.PLATFORM.isModLoaded("mint")) {
-//            dyeCount = dyeCount + 20;
-//        }
+        if (Services.PLATFORM.isModLoaded("mint")) {
+            dyeCount = dyeCount + 20;
+        }
+
+        if (Services.PLATFORM.isModLoaded("arids_dyes")) {
+            dyeCount = dyeCount + 20;
+        }
         return dyeCount;
     }
 
