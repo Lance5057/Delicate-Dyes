@@ -1,11 +1,10 @@
 package net.azurune.delicate_dyes.core.integration.nirvana.registry;
 
-import net.azurune.delicate_dyes.core.integration.common.block.IntegrationBlock;
 import net.azurune.delicate_dyes.core.integration.common.block.IntegrationGlazedTerracottaBlock;
 import net.azurune.delicate_dyes.core.integration.common.block.IntegrationRotatedPillarBlock;
 import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.delicate_dyes.core.integration.common.util.DDCProperties;
-import net.azurune.runiclib.core.platform.Services;
+import net.azurune.delicate_dyes.core.platform.Services;
 import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
@@ -44,7 +43,7 @@ public class NVBlocks {
     public static final Supplier<Block> ROSE_WOVEN_BURLAP = register("rose_woven_burlap", () -> new IntegrationRotatedPillarBlock(DDCProperties.BlockP.BURLAP, CompatIds.NIRVANA), true);
 
     private static Supplier<Block> register(String id, Supplier<Block> block, boolean hasItem) {
-        return Services.REGISTRY.registerBlock(CompatIds.NIRVANA, id, block, hasItem);
+        return Services.REGISTRY.registerIntegrationBlock(CompatIds.NIRVANA, id, block, hasItem);
     }
 
     public static void loadNVBlocks() {

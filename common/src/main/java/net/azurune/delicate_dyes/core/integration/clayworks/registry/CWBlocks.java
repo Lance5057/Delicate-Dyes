@@ -5,8 +5,8 @@ import net.azurune.delicate_dyes.common.util.DDProperties;
 import net.azurune.delicate_dyes.core.integration.common.block.*;
 import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.delicate_dyes.core.integration.common.util.DDCProperties;
+import net.azurune.delicate_dyes.core.platform.Services;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
-import net.azurune.runiclib.core.platform.Services;
 import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
@@ -103,7 +103,7 @@ public class CWBlocks {
     public static final Supplier<Block> ROSE_DECORATED_POT = register("rose_decorated_pot", () -> new IntegrationDecoratedPotBlock(DDCProperties.BlockP.DECORATED_POT.mapColor(DDDyeValues.ROSE.getMapColor()), CompatIds.CLAYWORKS), true);
 
     private static Supplier<Block> register(String id, Supplier<Block> block, boolean hasItem) {
-        return Services.REGISTRY.registerBlock(CompatIds.CLAYWORKS, id, block, hasItem);
+        return Services.REGISTRY.registerIntegrationBlock(CompatIds.CLAYWORKS, id, block, hasItem);
     }
 
     public static void loadCWBlocks() {

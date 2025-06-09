@@ -3,7 +3,7 @@ package net.azurune.delicate_dyes.core.integration.alexscaves.registry;
 import net.azurune.delicate_dyes.core.integration.common.block.IntegrationBlock;
 import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.delicate_dyes.core.integration.common.util.DDCProperties;
-import net.azurune.runiclib.core.platform.Services;
+import net.azurune.delicate_dyes.core.platform.Services;
 import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
@@ -42,7 +42,7 @@ public class AlexCBlocks {
     public static final Supplier<Block> ROSE_RADON_LAMP = register("radon_lamp_rose", () -> new IntegrationBlock(DDCProperties.BlockP.RADON_LAMP, CompatIds.ALEXSCAVES), true);
     
     private static Supplier<Block> register(String id, Supplier<Block> block, boolean hasItem) {
-        return Services.REGISTRY.registerBlock(CompatIds.ALEXSCAVES, id, block, hasItem);
+        return Services.REGISTRY.registerIntegrationBlock(CompatIds.ALEXSCAVES, id, block, hasItem);
     }
 
     public static void loadAlexCBlocks() {
