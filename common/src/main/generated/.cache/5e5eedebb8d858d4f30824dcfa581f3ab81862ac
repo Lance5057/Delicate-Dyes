@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-07T20:23:06.9531303	Delicate Dyes/Block Loot Tables
+// 1.20.1	2025-06-25T22:11:19.0830805	Delicate Dyes/Block Loot Tables
 a0e33f8953de469436c609ad892e759e532a3031 data\delicate_dyes\loot_tables\blocks\sky_concrete.json
 e6a1ccf212fe9ab98ceb52782696dc17fac38903 data\delicate_dyes\loot_tables\blocks\coral_stained_glass.json
 1c4aef1d0c3237ed9413106f8dd1fd70f49f5dd6 data\alexscaves\loot_tables\blocks\rock_candy_sky.json
@@ -176,8 +176,8 @@ ff918d13f78c363d9aff0abf709f132bedebeef8 data\alexscaves\loot_tables\blocks\rado
 ab41b4661f69ae947496c9fa89c5d5d47bd3a7ea data\alexscaves\loot_tables\blocks\radon_lamp_rose.json
 db7363b4b29b349f626f39fd713073efd0af6a44 data\alexscaves\loot_tables\blocks\rock_candy_canary.json
 2e4a8e100978f75f6fec463096cf52b73e6ee344 data\delicate_dyes\loot_tables\blocks\canary_concrete_powder.json
-690f6a071084103c144bb1a3c53c69fcdddb3580 data\delicate_dyes\loot_tables\blocks\sangria_candle.json
 9cd623b7e10bffc2be703b7b00ce18b3a9ec0daf data\delicate_dyes\loot_tables\blocks\rose_carpet.json
+690f6a071084103c144bb1a3c53c69fcdddb3580 data\delicate_dyes\loot_tables\blocks\sangria_candle.json
 3f352cd1a3fa0489373b4236d9affdbcd71169f7 data\delicate_dyes\loot_tables\blocks\sacramento_bed.json
 4cf7d6872b173621aac5f78ee416efc966ed35c2 data\delicate_dyes\loot_tables\blocks\sacramento_concrete.json
 74c3b0e24f288230ba8ed5ec4e4b58c4f531d2fc data\clayworks\loot_tables\blocks\sacramento_terracotta_bricks.json

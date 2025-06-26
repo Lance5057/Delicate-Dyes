@@ -23,6 +23,9 @@ dependencies {
     implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
     //RUNICLIB
     modCompileOnly "curse.maven:runiclib-880879:6329449"
+    //TESTING
+    //implementation "curse.maven:supplementaries-412082:6615104"
+    //implementation "curse.maven:selene-499980:6693288"
 }
 
 configurations {

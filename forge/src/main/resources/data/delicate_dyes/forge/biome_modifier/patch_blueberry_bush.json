@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_jungle",
+  "biomes": "#minecraft:is_forest",
   "features": [
     "delicate_dyes:patch_blueberry_bush"
   ],
