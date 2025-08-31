@@ -54,13 +54,19 @@ legacyForge {
 dependencies {
     compileOnly project(":common")
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
+
     //RUNICLIB
     modImplementation "curse.maven:runiclib-880879:6329449"
+
     //TESTING
+    //implementation "curse.maven:quark-243121:6427817"
+    //implementation "curse.maven:zeta-968868:6432578"
     //implementation "curse.maven:supplementaries-412082:6615104"
     //implementation "curse.maven:selene-499980:6693288"
     //implementation "curse.maven:clayworks-592162:6321200"
     //implementation "curse.maven:blueprint-382216:6408581"
+
+    //COMPAT STUFF
 }
 
 jar {

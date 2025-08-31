@@ -339,6 +339,15 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add("block.minecraft.supplementaries.dragon.blurple", "Blurple Dragon Charge");
         build.add("block.minecraft.supplementaries.dragon.sangria", "Sangria Dragon Charge");
         build.add("block.minecraft.supplementaries.dragon.rose", "Rose Dragon Charge");
+
+        build.add("rune.quark.rose", "Rose Runic Etching");
+        build.add("rune.quark.coral", "Coral Runic Etching");
+        build.add("rune.quark.canary", "Canary Runic Etching");
+        build.add("rune.quark.wasabi", "Wasabi Runic Etching");
+        build.add("rune.quark.sacramento", "Sacramento Runic Etching");
+        build.add("rune.quark.sky", "Sky Runic Etching");
+        build.add("rune.quark.blurple", "Blurple Runic Etching");
+        build.add("rune.quark.sangria", "Sangria Runic Etching");
         //========================================================================================
 
         //YAPPING TOOLTIPS COMPAT //TODO ADD

@@ -623,5 +623,13 @@
   "item.supplementaries.bunting_sky": "Sky Bunting",
   "item.supplementaries.bunting_wasabi": "Wasabi Bunting",
   "itemgroup.delicate_dyes": "Delicate Dyes",
-  "itemgroup.delicate_dyes_compat": "Delicate Dyes Compatibility"
+  "itemgroup.delicate_dyes_compat": "Delicate Dyes Compatibility",
+  "rune.quark.blurple": "Blurple Runic Etching",
+  "rune.quark.canary": "Canary Runic Etching",
+  "rune.quark.coral": "Coral Runic Etching",
+  "rune.quark.rose": "Rose Runic Etching",
+  "rune.quark.sacramento": "Sacramento Runic Etching",
+  "rune.quark.sangria": "Sangria Runic Etching",
+  "rune.quark.sky": "Sky Runic Etching",
+  "rune.quark.wasabi": "Wasabi Runic Etching"
 }

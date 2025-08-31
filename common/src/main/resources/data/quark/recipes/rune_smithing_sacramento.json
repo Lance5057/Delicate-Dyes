@@ -1,0 +1,18 @@
+{
+  "type": "runiclib:mod_loaded_condition",
+        "modid": "quark",
+        "wrapped_type": "quark:smithing_rune",
+  "template": {
+    "item": "quark:smithing_template_rune"
+  },
+  "addition": {
+    "item": "delicate_dyes:sacramento_dye"
+  },
+  "color": "sacramento",
+  "conditions": [
+    {
+      "type": "quark:flag",
+      "flag": "color_runes"
+    }
+  ]
+}

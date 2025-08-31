@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-31T07:52:58.9349604	Delicate Dyes/Recipes
+// 1.20.1	2025-08-31T10:04:35.2273782	Delicate Dyes/Recipes
 da62f470ed89f1cf03ac058956353a80debffbea data\delicate_dyes\recipes\sky_dye_from_bits1.json
 e62542ba5a2cac022689f6f85bc829e4f8615fe1 data\delicate_dyes\recipes\sangria_shulker_box_from_dye.json
 9e68bbe2842097a2e5b6ea6a5f5da1f9ca9becf5 data\delicate_dyes\recipes\sky_dye_from_bits.json
@@ -316,8 +316,8 @@ af9dbf04f53f658710790e30ad7215f32dc73a9a data\delicate_dyes\recipes\sangria_conc
 6a50c3114c0bbb0b2ed94b66ada9921422341ec0 data\delicate_dyes\advancements\recipes\building_blocks\light_blue_wool_from_dye.json
 cad2d316ba35d90b8b11fbd3a38b019285b60462 data\delicate_dyes\advancements\recipes\building_blocks\white_bed_from_dye.json
 aff9f45fb5193273088c0f265cf30f860b0599cc data\delicate_dyes\advancements\recipes\decorations\sangria_stained_glass_pane_from_glass_pane.json
-512e1a98a0b30a25c9ce19b050fa66a6be3b8602 data\delicate_dyes\recipes\sacramento_candle.json
 23304ab93c9a4ca356588b7f64807a909c4bc89d data\delicate_dyes\advancements\recipes\building_blocks\sacramento_concrete_powder.json
+512e1a98a0b30a25c9ce19b050fa66a6be3b8602 data\delicate_dyes\recipes\sacramento_candle.json
 9fe4b40f9d707fa7346e94bbe2d729745be46526 data\delicate_dyes\advancements\recipes\building_blocks\rose_terracotta.json
 5bbf957531fcbd3f3ad6e97c670ad14b82f12a74 data\delicate_dyes\recipes\sky_bed_from_dye.json
 71d735f69b97a7b6fa1e1de4b8c63e17bbd7a8ca data\delicate_dyes\recipes\red_wool_from_dye.json
