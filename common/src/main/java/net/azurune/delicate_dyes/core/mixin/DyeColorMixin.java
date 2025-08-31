@@ -20,7 +20,7 @@ public class DyeColorMixin {
     private static DyeColor delicateDyes$init(String dyeId, int ordinal, int id, String name, int entityColor, MapColor mapColor, int fireworkColor, int signColor) {
         throw new AssertionError();
     }
-//@Inject(method = "<clinit>", at = @At("TAIL"))
+
     @Inject(method = "<clinit>", at = @At(value = "FIELD", target = "Lnet/minecraft/world/item/DyeColor;$VALUES:[Lnet/minecraft/world/item/DyeColor;", shift = At.Shift.AFTER))
     private static void delicateDyes$addDyes(CallbackInfo ci) {
         int length = $VALUES.length;

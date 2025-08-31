@@ -1,0 +1,29 @@
+  {
+  "type": "runiclib:mod_loaded_condition",
+        "modid": "supplementaries",
+        "wrapped_type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "candle_holder",
+  "pattern": [
+    " C ",
+    " N "
+  ],
+  "key": {
+    "C": {
+      "item": "delicate_dyes:sacramento_candle"
+    },
+    "N": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "supplementaries:candle_holder_sacramento",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "supplementaries:flag",
+      "flag": "candle_holder"
+    }
+  ]
+}

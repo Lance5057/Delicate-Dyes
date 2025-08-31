@@ -157,7 +157,6 @@ public class DDLangGen extends FabricLanguageProvider {
 
         //INTEGRATION
         //========================================================================================
-        //BLOCKS
         build.add(NVBlocks.CORAL_HEMP_BURLAP.get(), "Coral Burlap");
         build.add(NVBlocks.CANARY_HEMP_BURLAP.get(), "Canary Burlap");
         build.add(NVBlocks.WASABI_HEMP_BURLAP.get(), "Wasabi Burlap");
@@ -274,8 +273,72 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get(), "Chiseled Rose Terracotta Bricks");
         build.add(CWBlocks.ROSE_DECORATED_POT.get(), "Rose Decorated Pot");
 
-        //ITEMS
         build.add(ADItems.CATBLUEBERRY.get(), "Catblueberry");
+
+        build.add("block.supplementaries.present_coral", "Coral Present");
+        build.add("block.supplementaries.trapped_present_coral", "Trapped Coral Present");
+        build.add("block.supplementaries.candle_holder_coral", "Coral Candle Holder");
+        build.add("block.supplementaries.flag_coral", "Coral Flag");
+        build.add("item.supplementaries.bunting_coral", "Coral Bunting");
+        build.add("block.supplementaries.awning_coral", "Coral Awning");
+
+        build.add("block.supplementaries.present_canary", "Canary Present");
+        build.add("block.supplementaries.trapped_present_canary", "Trapped Canary Present");
+        build.add("block.supplementaries.candle_holder_canary", "Canary Candle Holder");
+        build.add("block.supplementaries.flag_canary", "Canary Flag");
+        build.add("item.supplementaries.bunting_canary", "Canary Bunting");
+        build.add("block.supplementaries.awning_canary", "Canary Awning");
+
+        build.add("block.supplementaries.present_wasabi", "Wasabi Present");
+        build.add("block.supplementaries.trapped_present_wasabi", "Trapped Wasabi Present");
+        build.add("block.supplementaries.candle_holder_wasabi", "Wasabi Candle Holder");
+        build.add("block.supplementaries.flag_wasabi", "Wasabi Flag");
+        build.add("item.supplementaries.bunting_wasabi", "Wasabi Bunting");
+        build.add("block.supplementaries.awning_wasabi", "Wasabi Awning");
+
+        build.add("block.supplementaries.present_sacramento", "Sacramento Present");
+        build.add("block.supplementaries.trapped_present_sacramento", "Trapped Sacramento Present");
+        build.add("block.supplementaries.candle_holder_sacramento", "Sacramento Candle Holder");
+        build.add("block.supplementaries.flag_sacramento", "Sacramento Flag");
+        build.add("item.supplementaries.bunting_sacramento", "Sacramento Bunting");
+        build.add("block.supplementaries.awning_sacramento", "Sacramento Awning");
+
+        build.add("block.supplementaries.present_sky", "Sky Present");
+        build.add("block.supplementaries.trapped_present_sky", "Trapped Sky Present");
+        build.add("block.supplementaries.candle_holder_sky", "Sky Candle Holder");
+        build.add("block.supplementaries.flag_sky", "Sky Flag");
+        build.add("item.supplementaries.bunting_sky", "Sky Bunting");
+        build.add("block.supplementaries.awning_sky", "Sky Awning");
+
+        build.add("block.supplementaries.present_blurple", "Blurple Present");
+        build.add("block.supplementaries.trapped_present_blurple", "Trapped Blurple Present");
+        build.add("block.supplementaries.candle_holder_blurple", "Blurple Candle Holder");
+        build.add("block.supplementaries.flag_blurple", "Blurple Flag");
+        build.add("item.supplementaries.bunting_blurple", "Blurple Bunting");
+        build.add("block.supplementaries.awning_blurple", "Blurple Awning");
+
+        build.add("block.supplementaries.present_sangria", "Sangria Present");
+        build.add("block.supplementaries.trapped_present_sangria", "Trapped Sangria Present");
+        build.add("block.supplementaries.candle_holder_sangria", "Sangria Candle Holder");
+        build.add("block.supplementaries.flag_sangria", "Sangria Flag");
+        build.add("item.supplementaries.bunting_sangria", "Sangria Bunting");
+        build.add("block.supplementaries.awning_sangria", "Sangria Awning");
+
+        build.add("block.supplementaries.present_rose", "Rose Present");
+        build.add("block.supplementaries.trapped_present_rose", "Trapped Rose Present");
+        build.add("block.supplementaries.candle_holder_rose", "Rose Candle Holder");
+        build.add("block.supplementaries.flag_rose", "Rose Flag");
+        build.add("item.supplementaries.bunting_rose", "Rose Bunting");
+        build.add("block.supplementaries.awning_rose", "Rose Awning");
+
+        build.add("block.minecraft.supplementaries.dragon.coral", "Coral Dragon Charge");
+        build.add("block.minecraft.supplementaries.dragon.canary", "Canary Dragon Charge");
+        build.add("block.minecraft.supplementaries.dragon.wasabi", "Wasabi Dragon Charge");
+        build.add("block.minecraft.supplementaries.dragon.sacramento", "Sacramento Dragon Charge");
+        build.add("block.minecraft.supplementaries.dragon.sky", "Sky Dragon Charge");
+        build.add("block.minecraft.supplementaries.dragon.blurple", "Blurple Dragon Charge");
+        build.add("block.minecraft.supplementaries.dragon.sangria", "Sangria Dragon Charge");
+        build.add("block.minecraft.supplementaries.dragon.rose", "Rose Dragon Charge");
         //========================================================================================
 
         //YAPPING TOOLTIPS COMPAT //TODO ADD

@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "supplementaries:candle_holder_coral",
+      "required": false
+    },
+    {
+      "id": "supplementaries:candle_holder_canary",
+      "required": false
+    },
+    {
+      "id": "supplementaries:candle_holder_wasabi",
+      "required": false
+    },
+    {
+      "id": "supplementaries:candle_holder_sacramento",
+      "required": false
+    },
+    {
+      "id": "supplementaries:candle_holder_sky",
+      "required": false
+    },
+    {
+      "id": "supplementaries:candle_holder_blurple",
+      "required": false
+    },
+    {
+      "id": "supplementaries:candle_holder_sangria",
+      "required": false
+    },
+    {
+      "id": "supplementaries:candle_holder_rose",
+      "required": false
+    }
+  ]
+}

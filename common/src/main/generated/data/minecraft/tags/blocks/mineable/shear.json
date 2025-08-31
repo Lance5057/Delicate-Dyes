@@ -1,0 +1,101 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "supplementaries:present_coral",
+      "required": false
+    },
+    {
+      "id": "supplementaries:present_canary",
+      "required": false
+    },
+    {
+      "id": "supplementaries:present_wasabi",
+      "required": false
+    },
+    {
+      "id": "supplementaries:present_sacramento",
+      "required": false
+    },
+    {
+      "id": "supplementaries:present_sky",
+      "required": false
+    },
+    {
+      "id": "supplementaries:present_blurple",
+      "required": false
+    },
+    {
+      "id": "supplementaries:present_sangria",
+      "required": false
+    },
+    {
+      "id": "supplementaries:present_rose",
+      "required": false
+    },
+    {
+      "id": "supplementaries:trapped_present_coral",
+      "required": false
+    },
+    {
+      "id": "supplementaries:trapped_present_canary",
+      "required": false
+    },
+    {
+      "id": "supplementaries:trapped_present_wasabi",
+      "required": false
+    },
+    {
+      "id": "supplementaries:trapped_present_sacramento",
+      "required": false
+    },
+    {
+      "id": "supplementaries:trapped_present_sky",
+      "required": false
+    },
+    {
+      "id": "supplementaries:trapped_present_blurple",
+      "required": false
+    },
+    {
+      "id": "supplementaries:trapped_present_sangria",
+      "required": false
+    },
+    {
+      "id": "supplementaries:trapped_present_rose",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_coral",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_canary",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_wasabi",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_sacramento",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_sky",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_blurple",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_sangria",
+      "required": false
+    },
+    {
+      "id": "supplementaries:awning_rose",
+      "required": false
+    }
+  ]
+}

@@ -2,11 +2,13 @@ package net.azurune.delicate_dyes.datagen;
 
 import net.azurune.delicate_dyes.core.init.DDTags;
 import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
+import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 
@@ -31,6 +33,12 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
         appendTallFlowers();
         appendRockCandies();
         appendRadonLamps();
+        appendDyes();
+        appendPresents();
+        appendTrappedPresents();
+        appendAwnings();
+        appendFlags();
+        appendCandleHolders();
     }
 
     public void appendShulkerBoxes() {
@@ -60,6 +68,84 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
                 .add(Items.LIGHT_GRAY_SHULKER_BOX)
                 .add(Items.GRAY_SHULKER_BOX)
                 .add(Items.BLACK_SHULKER_BOX)
+        ;
+    }
+
+    public void appendDyes() {
+        getOrCreateTagBuilder(DDTags.Items.DYES)
+                .add(DDItems.CORAL_DYE.get())
+                .add(DDItems.CANARY_DYE.get())
+                .add(DDItems.WASABI_DYE.get())
+                .add(DDItems.SACRAMENTO_DYE.get())
+                .add(DDItems.SKY_DYE.get())
+                .add(DDItems.BLURPLE_DYE.get())
+                .add(DDItems.SANGRIA_DYE.get())
+                .add(DDItems.ROSE_DYE.get())
+        ;
+    }
+
+    public void appendFlags() {
+        getOrCreateTagBuilder(DDTags.Items.FLAGS)
+                .addOptional(new ResourceLocation(CompatIds.SUPPLEMENTARIES, "flag_coral"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "flag_canary"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "flag_wasabi"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "flag_sacramento"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "flag_sky"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "flag_blurple"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "flag_sangria"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "flag_rose"))
+        ;
+    }
+
+    public void appendAwnings() {
+        getOrCreateTagBuilder(DDTags.Items.AWNINGS)
+                .addOptional(new ResourceLocation(CompatIds.SUPPLEMENTARIES, "awning_coral"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "awning_canary"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "awning_wasabi"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "awning_sacramento"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "awning_sky"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "awning_blurple"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "awning_sangria"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "awning_rose"))
+        ;
+    }
+
+    public void appendCandleHolders() {
+        getOrCreateTagBuilder(DDTags.Items.CANDLE_HOLDERS)
+                .addOptional(new ResourceLocation(CompatIds.SUPPLEMENTARIES, "candle_holder_coral"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "candle_holder_canary"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "candle_holder_wasabi"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "candle_holder_sacramento"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "candle_holder_sky"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "candle_holder_blurple"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "candle_holder_sangria"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "candle_holder_rose"))
+        ;
+    }
+
+    public void appendPresents() {
+        getOrCreateTagBuilder(DDTags.Items.PRESENTS)
+                .addOptional(new ResourceLocation(CompatIds.SUPPLEMENTARIES, "present_coral"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "present_canary"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "present_wasabi"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "present_sacramento"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "present_sky"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "present_blurple"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "present_sangria"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "present_rose"))
+        ;
+    }
+
+    public void appendTrappedPresents() {
+        getOrCreateTagBuilder(DDTags.Items.TRAPPED_PRESENTS)
+                .addOptional(new ResourceLocation(CompatIds.SUPPLEMENTARIES, "trapped_present_coral"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "trapped_present_canary"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "trapped_present_wasabi"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "trapped_present_sacramento"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "trapped_present_sky"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "trapped_present_blurple"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "trapped_present_sangria"))
+                .addOptional(new ResourceLocation (CompatIds.SUPPLEMENTARIES, "trapped_present_rose"))
         ;
     }
 

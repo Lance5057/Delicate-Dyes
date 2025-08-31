@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "supplementaries:flag",
+      "flag": "bunting"
+    }
+  ],
+  "group": "bunting",
+  "type": "runiclib:mod_loaded_condition",
+        "modid": "supplementaries",
+        "wrapped_type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "supplementaries:bunting"
+    },
+    {
+      "item": "delicate_dyes:rose_dye"
+    }
+  ],
+  "result": {
+    "item": "supplementaries:bunting",
+    "count": 1,
+    "nbt": {
+      "Color": "rose"
+    }
+  }
+}

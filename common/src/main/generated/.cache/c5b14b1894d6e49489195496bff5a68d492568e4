@@ -1,13 +1,19 @@
-// 1.20.1	2025-06-25T22:11:19.1229741	Delicate Dyes/Tags for minecraft:item
+// 1.20.1	2025-08-31T07:52:58.948923	Delicate Dyes/Tags for minecraft:item
 d217daf16e0647fb4970268ce104370bc26f7deb data\minecraft\tags\items\fox_food.json
+3f84a7fc79293e93110872ab66847233da88e1d6 data\supplementaries\tags\items\candle_holders.json
 d5155634892e1c8e137831a5fc21d457f91a8460 data\minecraft\tags\items\terracotta.json
 fc5a2b0aa653c2c7c0fdbcd9f233384c84a436c9 data\minecraft\tags\items\tall_flowers.json
 c3ca401e33e6ffc89ce3e4f9815252973c76cbb0 data\minecraft\tags\items\candles.json
+fd4e137279ed90a217e8c4cf1b4f25680dcb6e5d data\supplementaries\tags\items\presents.json
+8e3b1dd3c814e4b59f8862d93fa5874e0b4efbc2 data\supplementaries\tags\items\trapped_presents.json
 70672292157e51db50a513dc98b6316a2fd66e0b data\alexscaves\tags\items\radon_lamps.json
+5057d6e462e548309e4765c2ee9db9069ab7b811 data\c\tags\items\dyes.json
 1038d04a2ab81dc18c7d8cbb8ecf5e21bdb69ffc data\alexscaves\tags\items\rock_candies.json
 48185e32a296e8836c8a482fbd7c939ecb7f94f5 data\minecraft\tags\items\banners.json
+f56e0883dfd95a6d293a2a086d0dcda56d3f8c5d data\supplementaries\tags\items\flags.json
 324b70585848e5292f78dcb8b81d9baf8d36bcac data\minecraft\tags\items\wool_carpets.json
 25073bd46ac954d4c52916542423145605b80de9 data\minecraft\tags\items\beds.json
 d0e0a735029be020b510b23bd6d836015520d3d5 data\delicate_dyes\tags\items\shulker_boxes.json
 be5edae6e9b44f43f302ad3537a10efe7910b918 data\minecraft\tags\items\small_flowers.json
 fdb054a384caea092cdfe425f4f527019b924683 data\minecraft\tags\items\wool.json
+fd680bab71c4f71f15908fd632cbc1ce2fcbdd59 data\supplementaries\tags\items\awnings.json
