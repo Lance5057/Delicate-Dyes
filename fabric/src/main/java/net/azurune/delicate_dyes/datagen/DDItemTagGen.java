@@ -39,6 +39,8 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
         appendAwnings();
         appendFlags();
         appendCandleHolders();
+        appendGlassBlocks();
+        appendGlassPanes();
     }
 
     public void appendShulkerBoxes() {
@@ -81,6 +83,32 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
                 .add(DDItems.BLURPLE_DYE.get())
                 .add(DDItems.SANGRIA_DYE.get())
                 .add(DDItems.ROSE_DYE.get())
+        ;
+    }
+
+    public void appendGlassBlocks() {
+        getOrCreateTagBuilder(DDTags.Items.GLASS_BLOCKS)
+                .add(DDBlocks.CORAL_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.CANARY_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.WASABI_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.SACRAMENTO_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.SKY_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.BLURPLE_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.SANGRIA_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.ROSE_STAINED_GLASS.get().asItem())
+        ;
+    }
+
+    public void appendGlassPanes() {
+        getOrCreateTagBuilder(DDTags.Items.GLASS_PANES)
+                .add(DDBlocks.CORAL_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.CANARY_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.WASABI_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.SACRAMENTO_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.SKY_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.BLURPLE_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.SANGRIA_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.ROSE_STAINED_GLASS_PANE.get().asItem())
         ;
     }
 

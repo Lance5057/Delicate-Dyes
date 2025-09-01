@@ -30,28 +30,28 @@ public class DyeColorMixin {
         System.arraycopy($VALUES, 0, addDye, 0, length);
 
         addDye[length + 0] = delicateDyes$init("CORAL", getDyeCount + 1, getDyeCount + 1, "coral",
-                0xff6565, MapColor.RAW_IRON, 0xff6565, 0xff6565);
+                0xf65151, MapColor.RAW_IRON, 0xff6565, 0xff6565);
 
         addDye[length + 1] = delicateDyes$init("CANARY", getDyeCount + 2, getDyeCount + 2, "canary",
-                0xfff669, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c);
+                0xfbee43, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c);
 
         addDye[length + 2] = delicateDyes$init("WASABI", getDyeCount + 3, getDyeCount + 3, "wasabi",
-                0xbcff66, MapColor.TERRACOTTA_LIGHT_GREEN, 0x8ecc70, 0x8ecc70);
+                0x89c744, MapColor.TERRACOTTA_LIGHT_GREEN, 0x8ecc70, 0x8ecc70);
 
         addDye[length + 3] = delicateDyes$init("SACRAMENTO", getDyeCount + 4, getDyeCount + 4, "sacramento",
-                0x437a6a, MapColor.COLOR_CYAN, 0x437a6a, 0x437a6a);
+                0x287f66, MapColor.COLOR_CYAN, 0x437a6a, 0x437a6a);
 
         addDye[length + 4] = delicateDyes$init("SKY", getDyeCount + 5, getDyeCount + 5, "sky",
-                0x81fcff, MapColor.COLOR_LIGHT_BLUE, 0x97ebf2, 0x97ebf2);
+                0x4bfbff, MapColor.COLOR_LIGHT_BLUE, 0x97ebf2, 0x97ebf2);
 
         addDye[length + 5] = delicateDyes$init("BLURPLE", getDyeCount + 6, getDyeCount + 6, "blurple",
-                0x6640ab, MapColor.TERRACOTTA_BLUE, 0x614495, 0x614495);
+                0x6130c8, MapColor.TERRACOTTA_BLUE, 0x614495, 0x614495);
 
         addDye[length + 6] = delicateDyes$init("SANGRIA", getDyeCount + 7, getDyeCount + 7, "sangria",
-                0x821d5e, MapColor.TERRACOTTA_PURPLE, 0x821d5e, 0x821d5e);
+                0x82125a, MapColor.TERRACOTTA_PURPLE, 0x821d5e, 0x821d5e);
 
         addDye[length + 7] = delicateDyes$init("ROSE", getDyeCount + 8, getDyeCount + 8, "rose",
-                0xcd2b5c, MapColor.CRIMSON_HYPHAE, 0xbe2e59, 0xbe2e59);
+                0xc81b4f, MapColor.CRIMSON_HYPHAE, 0xbe2e59, 0xbe2e59);
 
         $VALUES = addDye;
     }

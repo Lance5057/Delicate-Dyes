@@ -10,6 +10,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.Items;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -45,6 +46,7 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
         appendAwnings();
         appendFlags();
         appendCandleHolders();
+        appendCShulkerBoxes();
     }
 
     public void appendSwordEfficient() {
@@ -292,6 +294,19 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendBeds() {
         getOrCreateTagBuilder(BlockTags.BEDS)
                 .addTag(DDTags.Blocks.DELICATE_BEDS)
+        ;
+    }
+
+    public void appendCShulkerBoxes() {
+        getOrCreateTagBuilder(DDTags.Blocks.SHULKER_BOXES)
+                .add(DDBlocks.CORAL_SHULKER_BOX.get())
+                .add(DDBlocks.CANARY_SHULKER_BOX.get())
+                .add(DDBlocks.WASABI_SHULKER_BOX.get())
+                .add(DDBlocks.SACRAMENTO_SHULKER_BOX.get())
+                .add(DDBlocks.SKY_SHULKER_BOX.get())
+                .add(DDBlocks.BLURPLE_SHULKER_BOX.get())
+                .add(DDBlocks.SANGRIA_SHULKER_BOX.get())
+                .add(DDBlocks.ROSE_SHULKER_BOX.get())
         ;
     }
 

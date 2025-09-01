@@ -13,6 +13,7 @@ public class DDTags {
         public static final TagKey<Block> DELICATE_BEDS = create("delicate_beds", DelicateDyes.MOD_ID);
         //COMMON
         public static final TagKey<Block> MINEABLE_SHEAR = create("mineable/shear", CompatIds.MINECRAFT);
+        public static final TagKey<Block> SHULKER_BOXES = create("shulker_boxes", CompatIds.C);
         //INTEGRATION
         public static final TagKey<Block> PRESENTS = create("presents", CompatIds.SUPPLEMENTARIES);
         public static final TagKey<Block> TRAPPED_PRESENTS = create("trapped_presents", CompatIds.SUPPLEMENTARIES);
@@ -27,9 +28,11 @@ public class DDTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> SHULKER_BOXES = create("shulker_boxes", DelicateDyes.MOD_ID);
         //COMMON
         public static final TagKey<Item> DYES = create("dyes", CompatIds.C);
+        public static final TagKey<Item> GLASS_BLOCKS = create("glass_blocks", CompatIds.C);
+        public static final TagKey<Item> GLASS_PANES = create("glass_panes", CompatIds.C);
+        public static final TagKey<Item> SHULKER_BOXES = create("shulker_boxes", CompatIds.C);
         //INTEGRATION
         public static final TagKey<Item> RADON_LAMPS = create("radon_lamps", CompatIds.ALEXSCAVES);
         public static final TagKey<Item> ROCK_CANDIES = create("rock_candies", CompatIds.ALEXSCAVES);
