@@ -30,13 +30,13 @@ public class DyeColorMixin {
         System.arraycopy($VALUES, 0, addDye, 0, length);
 
         addDye[length + 0] = delicateDyes$init("CORAL", getDyeCount + 1, getDyeCount + 1, "coral",
-                0xf65151, MapColor.RAW_IRON, 0xff6565, 0xff6565);
+                0xf97474, MapColor.RAW_IRON, 0xff6565, 0xff6565);
 
         addDye[length + 1] = delicateDyes$init("CANARY", getDyeCount + 2, getDyeCount + 2, "canary",
-                0xfbee43, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c);
+                0xf6ee7d, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c);
 
         addDye[length + 2] = delicateDyes$init("WASABI", getDyeCount + 3, getDyeCount + 3, "wasabi",
-                0x89c744, MapColor.TERRACOTTA_LIGHT_GREEN, 0x8ecc70, 0x8ecc70);
+                0xbddc79, MapColor.TERRACOTTA_LIGHT_GREEN, 0x8ecc70, 0x8ecc70);
 
         addDye[length + 3] = delicateDyes$init("SACRAMENTO", getDyeCount + 4, getDyeCount + 4, "sacramento",
                 0x287f66, MapColor.COLOR_CYAN, 0x437a6a, 0x437a6a);

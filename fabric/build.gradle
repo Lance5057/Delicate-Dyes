@@ -31,8 +31,8 @@ dependencies {
 
     //TESTING
     modImplementation "curse.maven:urban-decor-1101301:6932038"
-    //modImplementation "curse.maven:supplementaries-412082:6889002"
-    //modImplementation "curse.maven:selene-499980:6935942"
+    modImplementation "curse.maven:supplementaries-412082:6889002"
+    modImplementation "curse.maven:selene-499980:6935942"
     //modImplementation "curse.maven:jei-238222:6075246"
 
     //COMPAT STUFF
