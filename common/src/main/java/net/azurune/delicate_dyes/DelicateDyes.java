@@ -1,7 +1,6 @@
 package net.azurune.delicate_dyes;
 
 import net.azurune.delicate_dyes.core.integration.common.util.IntegrationRegistries;
-import net.azurune.delicate_dyes.core.init.DDRegistries;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDCreativeTabs;
 import net.azurune.delicate_dyes.core.registry.DDItems;
@@ -26,11 +25,8 @@ public class DelicateDyes {
     }
 
     //TODO: POI - Villagers move towards custom beds
+    //TODO: Proper custom special dye recipes for shulker boxes/shulker dye mixing
 
     //TODO: clayworks decorated pots
-    //TODO: mint recipe compat or smthing like that
     //TODO: arts n crafts bleach recipes + paintbrush stuff or smthing like that x2
-
-    //TODO (future)
-    //TODO: Proper custom special dye recipes for shulker boxes/shulker dye mixing
 }
