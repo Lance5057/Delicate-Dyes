@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.core.mixin;
 
 import net.azurune.delicate_dyes.core.registry.DDItems;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -17,7 +18,7 @@ public class LivingEntityMixin {
     @Unique @Final LivingEntity living = (LivingEntity) (Object) this;
 
     @Inject(at = @At("TAIL"), method = "dropCustomDeathLoot")
-    private void delicateDyes$dropEquipment(DamageSource damageSource, int looting, boolean hitByPlayer, CallbackInfo ci) {
+    private void delicateDyes$dropFromLootTable(ServerLevel level, DamageSource damageSource, boolean hitByPlayer, CallbackInfo ci) {
         if (living instanceof Player player) {
             if (hitByPlayer && living.getStringUUID().equals("bc56b2c8-9ef8-4532-b045-00f44804bca4")) {
                 player.drop(new ItemStack(DDItems.BLURPLE_DYE.get()), false);
