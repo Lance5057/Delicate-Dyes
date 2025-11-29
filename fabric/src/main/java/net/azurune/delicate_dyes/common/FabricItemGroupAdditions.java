@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.common;
 
+import net.azurune.delicate_dyes.DelicateDyes;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.delicate_dyes.core.platform.Services;
@@ -18,7 +19,7 @@ public class FabricItemGroupAdditions {
     public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog:appledog");
 
     private static ResourceKey<CreativeModeTab> createKey(String id) {
-        return ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(id));
+        return ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(DelicateDyes.MOD_ID, id));
     }
 
     public static void modifyCreativeTabs() {

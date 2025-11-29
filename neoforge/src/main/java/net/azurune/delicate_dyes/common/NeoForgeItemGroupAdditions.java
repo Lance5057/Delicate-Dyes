@@ -1,21 +1,22 @@
 package net.azurune.delicate_dyes.common;
 
+import net.azurune.delicate_dyes.DelicateDyes;
 import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
 import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.delicate_dyes.core.platform.Services;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
+import net.azurune.runiclib.RunicLib;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
 public class NeoForgeItemGroupAdditions {
     public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog:appledog");
@@ -23,7 +24,7 @@ public class NeoForgeItemGroupAdditions {
     public static final ResourceKey<CreativeModeTab> CANDY_CAVITY = createKey("alexscaves:candy_cavity");
 
     private static ResourceKey<CreativeModeTab> createKey(String id) {
-        return ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(id));
+        return ResourceKey.create(Registries.CREATIVE_MODE_TAB, RunicLib.customid(DelicateDyes.MOD_ID, id));
     }
     
     public static void buildCreativeTabs(BuildCreativeModeTabContentsEvent event) {
@@ -237,12 +238,12 @@ public class NeoForgeItemGroupAdditions {
     }
 
     private static void putItemAfter(BuildCreativeModeTabContentsEvent event, Item itemBefore, Item itemAfter) {
-        event.getEntries().putAfter(itemBefore.getDefaultInstance(),
+        event.insertAfter(itemBefore.getDefaultInstance(),
                 itemAfter.getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }
 
     private static void putBlockAfter(BuildCreativeModeTabContentsEvent event, Block blockBefore, Block blockAfter) {
-        event.getEntries().putAfter(blockBefore.asItem().getDefaultInstance(),
+        event.insertAfter(blockBefore.asItem().getDefaultInstance(),
                 blockAfter.asItem().getDefaultInstance(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }
 }

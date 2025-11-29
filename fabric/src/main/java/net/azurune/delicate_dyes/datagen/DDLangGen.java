@@ -9,14 +9,17 @@ import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.minecraft.core.HolderLookup;
+
+import java.util.concurrent.CompletableFuture;
 
 public class DDLangGen extends FabricLanguageProvider {
-    public DDLangGen(FabricDataOutput dataOutput) {
-        super(dataOutput);
+    public DDLangGen(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override
-    public void generateTranslations(TranslationBuilder build) {
+    public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
         //MISC
         build.add("itemgroup.delicate_dyes", "Delicate Dyes");
         build.add("itemgroup.delicate_dyes_compat", "Delicate Dyes Compatibility");
