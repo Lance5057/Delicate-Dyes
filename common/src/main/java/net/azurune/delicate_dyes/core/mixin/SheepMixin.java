@@ -3,6 +3,7 @@ import net.azurune.delicate_dyes.DelicateDyes;
 import net.azurune.delicate_dyes.common.util.DDUtil;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
+import net.azurune.runiclib.RunicLib;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
@@ -36,28 +37,28 @@ public abstract class SheepMixin extends Animal implements Shearable {
     private void delicateDyes$getDefaultLootTable(CallbackInfoReturnable<ResourceLocation> cir) {
         if (!this.isSheared() && (getColor().getId() > 690 || getColor().getId() < 697)) {
             if (this.getColor() == DDDyeValues.CORAL) {
-                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/coral"));
+                cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID, "entities/sheep/coral"));
             }
             if (this.getColor() == DDDyeValues.CANARY) {
-                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/canary"));
+                cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID,"entities/sheep/canary"));
             }
             if (this.getColor() == DDDyeValues.WASABI) {
-                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/wasabi"));
+                cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID,"entities/sheep/wasabi"));
             }
             if (this.getColor() == DDDyeValues.SACRAMENTO) {
-                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sacramento"));
+                cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID,"entities/sheep/sacramento"));
             }
             if (this.getColor() == DDDyeValues.SKY) {
-                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sky"));
+                cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID,"entities/sheep/sky"));
             }
             if (this.getColor() == DDDyeValues.BLURPLE) {
-                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/blurple"));
+                cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID,"entities/sheep/blurple"));
             }
             if (this.getColor() == DDDyeValues.SANGRIA) {
-                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/sangria"));
+                cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID,"entities/sheep/sangria"));
             }
             if (this.getColor() == DDDyeValues.ROSE) {
-                cir.setReturnValue(new ResourceLocation(DelicateDyes.MOD_ID,"entities/sheep/rose"));
+                cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID,"entities/sheep/rose"));
             }
         }
     }

@@ -4,6 +4,7 @@ import net.azurune.delicate_dyes.core.integration.common.util.IntegrationRegistr
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDCreativeTabs;
 import net.azurune.delicate_dyes.core.registry.DDItems;
+import net.azurune.runiclib.RunicLib;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +22,7 @@ public class DelicateDyes {
     }
 
     public static ResourceLocation modid(String id) {
-        return new ResourceLocation(MOD_ID, id);
+        return RunicLib.customid(MOD_ID, id);
     }
 
     //TODO: POI - Villagers move towards custom beds

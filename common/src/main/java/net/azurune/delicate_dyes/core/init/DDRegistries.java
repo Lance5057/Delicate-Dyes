@@ -49,22 +49,22 @@ public class DDRegistries {
     }
 
     public static void registerCauldronBehavior() {
-        CauldronInteraction.WATER.put(DDItems.CORAL_BANNER.get(), CauldronInteraction.BANNER);
-        CauldronInteraction.WATER.put(DDItems.CANARY_BANNER.get(), CauldronInteraction.BANNER);
-        CauldronInteraction.WATER.put(DDItems.WASABI_BANNER.get(), CauldronInteraction.BANNER);
-        CauldronInteraction.WATER.put(DDItems.SACRAMENTO_BANNER.get(), CauldronInteraction.BANNER);
-        CauldronInteraction.WATER.put(DDItems.SKY_BANNER.get(), CauldronInteraction.BANNER);
-        CauldronInteraction.WATER.put(DDItems.BLURPLE_BANNER.get(), CauldronInteraction.BANNER);
-        CauldronInteraction.WATER.put(DDItems.SANGRIA_BANNER.get(), CauldronInteraction.BANNER);
-        CauldronInteraction.WATER.put(DDItems.ROSE_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.CORAL_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.CANARY_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.WASABI_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.SACRAMENTO_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.SKY_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.BLURPLE_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.SANGRIA_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.ROSE_BANNER.get(), CauldronInteraction.BANNER);
 
-        CauldronInteraction.WATER.put(DDBlocks.CORAL_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
-        CauldronInteraction.WATER.put(DDBlocks.CANARY_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
-        CauldronInteraction.WATER.put(DDBlocks.WASABI_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
-        CauldronInteraction.WATER.put(DDBlocks.SACRAMENTO_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
-        CauldronInteraction.WATER.put(DDBlocks.SKY_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
-        CauldronInteraction.WATER.put(DDBlocks.BLURPLE_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
-        CauldronInteraction.WATER.put(DDBlocks.SANGRIA_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
-        CauldronInteraction.WATER.put(DDBlocks.ROSE_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.CORAL_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.CANARY_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.WASABI_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.SACRAMENTO_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.SKY_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.BLURPLE_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.SANGRIA_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.ROSE_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
     }
 }
