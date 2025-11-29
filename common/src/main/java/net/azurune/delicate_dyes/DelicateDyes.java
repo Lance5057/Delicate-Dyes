@@ -18,7 +18,7 @@ public class DelicateDyes {
         DDItems.loadItems();
         DDCreativeTabs.loadCreativeTabs();
 
-        IntegrationRegistries.loadIntegration();
+        //IntegrationRegistries.loadIntegration();
     }
 
     public static ResourceLocation modid(String id) {
