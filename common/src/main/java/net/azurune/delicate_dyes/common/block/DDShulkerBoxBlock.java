@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.common.block;
 
+import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
@@ -16,6 +17,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.ShulkerBoxBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class DDShulkerBoxBlock extends ShulkerBoxBlock {
@@ -24,7 +26,7 @@ public class DDShulkerBoxBlock extends ShulkerBoxBlock {
     }
 
     @Override
-    public BlockState playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+    public @NotNull BlockState playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
         BlockEntity blockentity = level.getBlockEntity(pos);
         if (blockentity instanceof ShulkerBoxBlockEntity shulkerboxblockentity) {
             if (!level.isClientSide && player.isCreative() && !shulkerboxblockentity.isEmpty()) {
@@ -41,30 +43,6 @@ public class DDShulkerBoxBlock extends ShulkerBoxBlock {
         return super.playerWillDestroy(level, pos, state, player);
     }
 
-    //@Override
-    //public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
-    //    BlockEntity blockentity = level.getBlockEntity(pos);
-    //    if (blockentity instanceof ShulkerBoxBlockEntity shulkerboxblockentity) {
-    //        if (!level.isClientSide && player.isCreative() && !shulkerboxblockentity.isEmpty()) {
-    //            ItemStack itemstack = getColoredItemStack(this.getColor());
-    //            blockentity.saveToItem(itemstack);
-    //            if (shulkerboxblockentity.hasCustomName()) {
-    //                itemstack.setHoverName(shulkerboxblockentity.getCustomName());
-    //            }
-    //            ItemEntity itementity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, itemstack);
-    //            itementity.setDefaultPickUpDelay();
-    //            level.addFreshEntity(itementity);
-    //        } else {
-    //            shulkerboxblockentity.unpackLootTable(player);
-    //        }
-    //    }
-    //    this.spawnDestroyParticles(level, player, pos, state);
-    //    if (state.is(BlockTags.GUARDED_BY_PIGLINS)) {
-    //        PiglinAi.angerNearbyPiglins(player, false);
-    //    }
-    //    level.gameEvent(GameEvent.BLOCK_DESTROY, pos, GameEvent.Context.of(player, state));
-    //}
-
     public static ItemStack getColoredItemStack(@Nullable DyeColor color) {
         return new ItemStack(getBlockByColor(color));
     }
@@ -74,15 +52,15 @@ public class DDShulkerBoxBlock extends ShulkerBoxBlock {
             return Blocks.SHULKER_BOX;
         } else {
             return switch (color.getId()) {
-                case 690 -> DDBlocks.CORAL_SHULKER_BOX.get();
-                case 691 -> DDBlocks.CANARY_SHULKER_BOX.get();
-                case 692 -> DDBlocks.WASABI_SHULKER_BOX.get();
-                case 693 -> DDBlocks.SACRAMENTO_SHULKER_BOX.get();
-                case 694 -> DDBlocks.SKY_SHULKER_BOX.get();
-                case 695 -> DDBlocks.BLURPLE_SHULKER_BOX.get();
-                case 696 -> DDBlocks.SANGRIA_SHULKER_BOX.get();
-                case 697 -> DDBlocks.ROSE_SHULKER_BOX.get();
-                default -> ShulkerBoxBlock.getBlockByColor(color);
+                case 16 -> DDBlocks.CORAL_SHULKER_BOX.get();
+                case 17 -> DDBlocks.CANARY_SHULKER_BOX.get();
+                case 18 -> DDBlocks.WASABI_SHULKER_BOX.get();
+                case 19 -> DDBlocks.SACRAMENTO_SHULKER_BOX.get();
+                case 20 -> DDBlocks.SKY_SHULKER_BOX.get();
+                case 21 -> DDBlocks.BLURPLE_SHULKER_BOX.get();
+                case 22 -> DDBlocks.SANGRIA_SHULKER_BOX.get();
+                case 23 -> DDBlocks.ROSE_SHULKER_BOX.get();
+                default -> Blocks.SHULKER_BOX;
             };
         }
     }

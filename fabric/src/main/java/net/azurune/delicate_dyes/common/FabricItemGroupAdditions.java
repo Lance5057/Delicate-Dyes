@@ -16,10 +16,10 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 
 public class FabricItemGroupAdditions {
-    public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey("appledog:appledog");
+    public static final ResourceKey<CreativeModeTab> APPLEDOG = createKey(CompatIds.APPLEDOG, "appledog");
 
-    private static ResourceKey<CreativeModeTab> createKey(String id) {
-        return ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(DelicateDyes.MOD_ID, id));
+    private static ResourceKey<CreativeModeTab> createKey(String mod, String id) {
+        return ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(mod, id));
     }
 
     public static void modifyCreativeTabs() {
