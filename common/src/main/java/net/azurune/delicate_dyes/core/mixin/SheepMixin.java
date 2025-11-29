@@ -1,8 +1,8 @@
 package net.azurune.delicate_dyes.core.mixin;
+
 import net.azurune.delicate_dyes.DelicateDyes;
-import net.azurune.delicate_dyes.common.util.DDUtil;
-import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
+import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.runiclib.RunicLib;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.resources.ResourceLocation;
@@ -35,7 +35,7 @@ public abstract class SheepMixin extends Animal implements Shearable {
 
     @Inject(method = "getDefaultLootTable", at = @At("HEAD"), cancellable = true)
     private void delicateDyes$getDefaultLootTable(CallbackInfoReturnable<ResourceLocation> cir) {
-        if (!this.isSheared() && (getColor().getId() > 690 || getColor().getId() < 697)) {
+        if (!this.isSheared() && (getColor().getId() >= DDDyeValues.CORAL.getId() || getColor().getId() <= DDDyeValues.ROSE.getId())) {
             if (this.getColor() == DDDyeValues.CORAL) {
                 cir.setReturnValue(RunicLib.customid(DelicateDyes.MOD_ID, "entities/sheep/coral"));
             }
@@ -85,7 +85,7 @@ public abstract class SheepMixin extends Animal implements Shearable {
 //     * @reason Allowing >16 unique dye colors (128)
 //     * @author ADudeCalledLeo
 //     */
-    @Overwrite
+@Overwrite
     public DyeColor getColor() {
         byte b = entityData.get(DATA_WOOL_ID);
         return DyeColor.byId(b & 0x7F);
