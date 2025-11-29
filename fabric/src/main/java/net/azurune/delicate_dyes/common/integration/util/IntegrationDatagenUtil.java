@@ -11,21 +11,21 @@ import net.minecraft.world.level.block.Block;
 import java.util.function.Supplier;
 
 public class IntegrationDatagenUtil {
-    private static void registerDatagenOnlyItem(String modid, String id) {
-        if (FabricDelicateDyes.isDatagen()) {
-            Services.REGISTRY.registerItem(modid, id, () -> new Item(new Item.Properties()));
-        }
-    }
-
-    private static void registerDatagenOnlyBlock(String modid, String id) {
-        if (FabricDelicateDyes.isDatagen()) {
-            Services.REGISTRY.registerBlock(modid, id, () -> new Block(DDProperties.BlockP.WOOL), true);
-        }
-    }
-
-    public static void registerDatagenItems() {
-        //MISC
-        registerDatagenOnlyItem(CompatIds.APPLEDOG, "dogapple");
-        registerDatagenOnlyItem(CompatIds.ALEXSCAVES, "radon_bottle");
-    }
+//    private static void registerDatagenOnlyItem(String modid, String id) {
+//        if (FabricDelicateDyes.isDatagen()) {
+//            Services.REGISTRY.registerItem(modid, id, () -> new Item(new Item.Properties()));
+//        }
+//    }
+//
+//    private static void registerDatagenOnlyBlock(String modid, String id) {
+//        if (FabricDelicateDyes.isDatagen()) {
+//            Services.REGISTRY.registerBlock(modid, id, () -> new Block(DDProperties.BlockP.WOOL), true);
+//        }
+//    }
+//
+//    public static void registerDatagenItems() {
+//        //MISC
+//        registerDatagenOnlyItem(CompatIds.APPLEDOG, "dogapple");
+//        registerDatagenOnlyItem(CompatIds.ALEXSCAVES, "radon_bottle");
+//    }
 }

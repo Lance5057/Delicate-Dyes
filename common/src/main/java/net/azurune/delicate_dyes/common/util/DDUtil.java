@@ -4,22 +4,22 @@ import net.azurune.delicate_dyes.core.platform.Services;
 
 public class DDUtil {
     //This gets the amount of dyes currently in the game (starting at 15 because vanilla has 16)
-    public static int getDyeCount() {
-        boolean isforge;
-        int dyeCount = 15;
-
-        try {
-            Class.forName("net.minecraftforge.fml.loading.FMLEnvironment");
-            isforge = true;
-        } catch (ClassNotFoundException e) {
-            isforge = false;
-        }
-
-        if (!isforge && Services.PLATFORM.isModLoaded("mint")) {
-            dyeCount = dyeCount + 20;
-        }
-        return dyeCount;
-    }
+//    public static int getDyeCount() {
+//        boolean isforge;
+//        int dyeCount = 15;
+//
+//        try {
+//            Class.forName("net.minecraftforge.fml.loading.FMLEnvironment");
+//            isforge = true;
+//        } catch (ClassNotFoundException e) {
+//            isforge = false;
+//        }
+//
+//        if (!isforge && Services.PLATFORM.isModLoaded("mint")) {
+//            dyeCount = dyeCount + 20;
+//        }
+//        return dyeCount;
+//    }
 
 //    public static <T> IntFunction<T> createIdToValueFunctionButBetterLmao(ToIntFunction<T> valueToIdFunction, T[] values, ByIdMap.OutOfBoundsStrategy outOfBoundsHandling) {
 //        T[] objects = (T[]) validateButBetterLmao(valueToIdFunction, values);

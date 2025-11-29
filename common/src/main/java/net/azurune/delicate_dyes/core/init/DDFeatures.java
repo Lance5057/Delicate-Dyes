@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.core.init;
 
 import net.azurune.delicate_dyes.DelicateDyes;
+import net.azurune.runiclib.RunicLib;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -26,7 +27,7 @@ public class DDFeatures {
         public static final ResourceKey<PlacedFeature> PATCH_BLUEBERRY_BUSH = createKey("patch_blueberry_bush");
 
         public static ResourceKey<PlacedFeature> createKey(String id) {
-            return ResourceKey.create(Registries.PLACED_FEATURE, DelicateDyes.modid(id));
+            return ResourceKey.create(Registries.PLACED_FEATURE, RunicLib.customid(DelicateDyes.MOD_ID, id));
         }
     }
 }

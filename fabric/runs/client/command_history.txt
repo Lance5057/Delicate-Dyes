@@ -1,0 +1,9 @@
+/time set day
+/give Player140 delicate_dyes:coral_wool
+/setblock ~ ~ ~ delicate_dyes:blurple_terracotta
+/setblock ~ ~ ~ delicate_dyes:mossy_sandstone
+/setblock ~ ~ ~ delicate_dyes:tcoral_candle
+/setblock ~ ~ ~ delicate_dyes:mossy_sandstone
+/setblock ~ ~ ~ delicate_dyes:roseaaaaaaaaaaaaa
+/setblock ~ ~ ~ delicate_dyes:potted_roseaaaaaaaaaaaa
+/setblock ~ ~ ~ delicate_dyes:coral_wool
