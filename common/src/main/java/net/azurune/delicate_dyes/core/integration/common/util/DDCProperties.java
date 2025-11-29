@@ -1,6 +1,8 @@
 package net.azurune.delicate_dyes.core.integration.common.util;
 
 import net.azurune.delicate_dyes.core.platform.Services;
+import net.azurune.runiclib.RunicLib;
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
@@ -14,15 +16,18 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 
+import java.util.Optional;
+
 public class DDCProperties {
     public static class BlockP {
         //MISC
-        public static final BlockBehaviour.Properties DECORATED_POT = BlockBehaviour.Properties.copy(Blocks.DECORATED_POT);
+        public static final BlockBehaviour.Properties DECORATED_POT = BlockBehaviour.Properties.ofFullCopy(Blocks.DECORATED_POT);
         public static final BlockBehaviour.Properties ROCK_CANDY = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(1.0F, 1.5F).sound(SoundType.STONE).instrument(NoteBlockInstrument.BASS);
         public static final BlockBehaviour.Properties RADON_LAMP = BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).requiresCorrectToolForDrops().lightLevel(state -> 15).strength(2F, 11.0F).sound(SoundType.GLASS);
-        public static final BlockBehaviour.Properties BURLAP = BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.WOOL);
+        public static final BlockBehaviour.Properties BURLAP = BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).sound(SoundType.WOOL);
     }
 
+    // do this when alex moves to 1.21 lololololol
     public static class ItemP {
         //MISC
         public static final Item.Properties GENERIC = new Item.Properties();
@@ -30,10 +35,10 @@ public class DDCProperties {
     }
 
     public static class FoodP {
-        public static final MobEffect ALEXSCAVES_SUGAR_RUSH = Services.PLATFORM.isModLoaded(CompatIds.ALEXSCAVES)
-                ? BuiltInRegistries.MOB_EFFECT.get(new ResourceLocation(CompatIds.ALEXSCAVES, "sugar_rush")) : MobEffects.MOVEMENT_SPEED;
+        public static final Optional<MobEffect> ALEXSCAVES_SUGAR_RUSH = BuiltInRegistries.MOB_EFFECT.getOptional(RunicLib.customid(CompatIds.ALEXSCAVES, "sugar_rush"));
 
-        public static final FoodProperties ROCK_CANDY = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F)
-                .effect(new MobEffectInstance(ALEXSCAVES_SUGAR_RUSH, 200), 0.01F).build();
+        public static final FoodProperties ROCK_CANDY = (new FoodProperties.Builder()).nutrition(2).saturationModifier(0.1F)
+                .effect(new MobEffectInstance((Services.PLATFORM.isModLoaded(CompatIds.ALEXSCAVES) && ALEXSCAVES_SUGAR_RUSH.isPresent())
+                        ? BuiltInRegistries.MOB_EFFECT.wrapAsHolder(ALEXSCAVES_SUGAR_RUSH.get()) : MobEffects.MOVEMENT_SPEED, 200), 0.01F).build();
     }
 }

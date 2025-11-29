@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.core.mixin;
 
+import net.azurune.runiclib.RunicLib;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.resources.ResourceLocation;
@@ -25,14 +26,14 @@ public class ShulkerBoxRendererMixin {
         var loc = new ArrayList<>(SHULKER_TEXTURE_LOCATION);
         String shulker_path = "entity/shulker/shulker_";
 
-        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "coral")));
-        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "canary")));
-        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "wasabi")));
-        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "sacramento")));
-        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "sky")));
-        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "blurple")));
-        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "sangria")));
-        loc.add(new Material(SHULKER_SHEET, new ResourceLocation(shulker_path + "rose")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid("minecraft", shulker_path + "coral")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid("minecraft", shulker_path + "canary")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid("minecraft", shulker_path + "wasabi")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid("minecraft", shulker_path + "sacramento")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid("minecraft", shulker_path + "sky")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid("minecraft", shulker_path + "blurple")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid("minecraft", shulker_path + "sangria")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid("minecraft", shulker_path + "rose")));
 
         SHULKER_TEXTURE_LOCATION = List.copyOf(loc);
     }
