@@ -14,8 +14,6 @@ public class DelicateDyes {
         DDItems.loadItems();
         DDBlocks.loadBlocks();
         DDCreativeTabs.loadCreativeTabs();
-
-        //IntegrationRegistries.loadIntegration();
     }
 
     //TODO: POI - Villagers move towards custom beds

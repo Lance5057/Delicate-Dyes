@@ -1,9 +1,5 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
-import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
-import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
-import net.azurune.delicate_dyes.core.integration.clayworks.registry.CWBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -182,109 +178,6 @@ public class DDModelGen extends FabricModelProvider {
 
         generator.createPlant(DDBlocks.PEACH_BELLFLOWER.get(), DDBlocks.POTTED_PEACH_BELLFLOWER.get(), BlockModelGenerators.TintState.NOT_TINTED);
         generator.createDoublePlant(DDBlocks.GOOB_BLOSSOM.get(), BlockModelGenerators.TintState.NOT_TINTED);
-
-        //COMPAT
-        generator.blockStateOutput.accept(MultiVariantGenerator.multiVariant(ADBlocks.BLUEBERRYCAT_BUSH.get())
-                .with(PropertyDispatch.property(BlockStateProperties.AGE_3).generate((integer) -> Variant.variant()
-                        .with(VariantProperties.MODEL, generator.createSuffixedVariant(ADBlocks.BLUEBERRYCAT_BUSH.get(), "_stage" + integer,
-                                ModelTemplates.CROSS, TextureMapping::cross)))));
-
-        BlockModelGenerators.BlockFamilyProvider coralTerracotta = generator.family(DDBlocks.CORAL_TERRACOTTA.get());
-        coralTerracotta.stairs(CWBlocks.CORAL_TERRACOTTA_STAIRS.get());
-        coralTerracotta.slab(CWBlocks.CORAL_TERRACOTTA_SLAB.get());
-        coralTerracotta.wall(CWBlocks.CORAL_TERRACOTTA_WALL.get());
-        BlockModelGenerators.BlockFamilyProvider coralTerracottaBricks = generator.family(CWBlocks.CORAL_TERRACOTTA_BRICKS.get());
-        coralTerracottaBricks.stairs(CWBlocks.CORAL_TERRACOTTA_BRICK_STAIRS.get());
-        coralTerracottaBricks.slab(CWBlocks.CORAL_TERRACOTTA_BRICK_SLAB.get());
-        coralTerracottaBricks.wall(CWBlocks.CORAL_TERRACOTTA_BRICK_WALL.get());
-        coralTerracotta.fullBlock(CWBlocks.CHISELED_CORAL_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
-
-        BlockModelGenerators.BlockFamilyProvider canaryTerracotta = generator.family(DDBlocks.CANARY_TERRACOTTA.get());
-        canaryTerracotta.stairs(CWBlocks.CANARY_TERRACOTTA_STAIRS.get());
-        canaryTerracotta.slab(CWBlocks.CANARY_TERRACOTTA_SLAB.get());
-        canaryTerracotta.wall(CWBlocks.CANARY_TERRACOTTA_WALL.get());
-        BlockModelGenerators.BlockFamilyProvider canaryTerracottaBricks = generator.family(CWBlocks.CANARY_TERRACOTTA_BRICKS.get());
-        canaryTerracottaBricks.stairs(CWBlocks.CANARY_TERRACOTTA_BRICK_STAIRS.get());
-        canaryTerracottaBricks.slab(CWBlocks.CANARY_TERRACOTTA_BRICK_SLAB.get());
-        canaryTerracottaBricks.wall(CWBlocks.CANARY_TERRACOTTA_BRICK_WALL.get());
-        canaryTerracotta.fullBlock(CWBlocks.CHISELED_CANARY_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
-
-        BlockModelGenerators.BlockFamilyProvider wasabiTerracotta = generator.family(DDBlocks.WASABI_TERRACOTTA.get());
-        wasabiTerracotta.stairs(CWBlocks.WASABI_TERRACOTTA_STAIRS.get());
-        wasabiTerracotta.slab(CWBlocks.WASABI_TERRACOTTA_SLAB.get());
-        wasabiTerracotta.wall(CWBlocks.WASABI_TERRACOTTA_WALL.get());
-        BlockModelGenerators.BlockFamilyProvider wasabiTerracottaBricks = generator.family(CWBlocks.WASABI_TERRACOTTA_BRICKS.get());
-        wasabiTerracottaBricks.stairs(CWBlocks.WASABI_TERRACOTTA_BRICK_STAIRS.get());
-        wasabiTerracottaBricks.slab(CWBlocks.WASABI_TERRACOTTA_BRICK_SLAB.get());
-        wasabiTerracottaBricks.wall(CWBlocks.WASABI_TERRACOTTA_BRICK_WALL.get());
-        wasabiTerracotta.fullBlock(CWBlocks.CHISELED_WASABI_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
-
-        BlockModelGenerators.BlockFamilyProvider sacramentoTerracotta = generator.family(DDBlocks.SACRAMENTO_TERRACOTTA.get());
-        sacramentoTerracotta.stairs(CWBlocks.SACRAMENTO_TERRACOTTA_STAIRS.get());
-        sacramentoTerracotta.slab(CWBlocks.SACRAMENTO_TERRACOTTA_SLAB.get());
-        sacramentoTerracotta.wall(CWBlocks.SACRAMENTO_TERRACOTTA_WALL.get());
-        BlockModelGenerators.BlockFamilyProvider sacramentoTerracottaBricks = generator.family(CWBlocks.SACRAMENTO_TERRACOTTA_BRICKS.get());
-        sacramentoTerracottaBricks.stairs(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_STAIRS.get());
-        sacramentoTerracottaBricks.slab(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_SLAB.get());
-        sacramentoTerracottaBricks.wall(CWBlocks.SACRAMENTO_TERRACOTTA_BRICK_WALL.get());
-        sacramentoTerracotta.fullBlock(CWBlocks.CHISELED_SACRAMENTO_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
-
-        BlockModelGenerators.BlockFamilyProvider skyTerracotta = generator.family(DDBlocks.SKY_TERRACOTTA.get());
-        skyTerracotta.stairs(CWBlocks.SKY_TERRACOTTA_STAIRS.get());
-        skyTerracotta.slab(CWBlocks.SKY_TERRACOTTA_SLAB.get());
-        skyTerracotta.wall(CWBlocks.SKY_TERRACOTTA_WALL.get());
-        BlockModelGenerators.BlockFamilyProvider skyTerracottaBricks = generator.family(CWBlocks.SKY_TERRACOTTA_BRICKS.get());
-        skyTerracottaBricks.stairs(CWBlocks.SKY_TERRACOTTA_BRICK_STAIRS.get());
-        skyTerracottaBricks.slab(CWBlocks.SKY_TERRACOTTA_BRICK_SLAB.get());
-        skyTerracottaBricks.wall(CWBlocks.SKY_TERRACOTTA_BRICK_WALL.get());
-        skyTerracotta.fullBlock(CWBlocks.CHISELED_SKY_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
-
-        BlockModelGenerators.BlockFamilyProvider blurpleTerracotta = generator.family(DDBlocks.BLURPLE_TERRACOTTA.get());
-        blurpleTerracotta.stairs(CWBlocks.BLURPLE_TERRACOTTA_STAIRS.get());
-        blurpleTerracotta.slab(CWBlocks.BLURPLE_TERRACOTTA_SLAB.get());
-        blurpleTerracotta.wall(CWBlocks.BLURPLE_TERRACOTTA_WALL.get());
-        BlockModelGenerators.BlockFamilyProvider blurpleTerracottaBricks = generator.family(CWBlocks.BLURPLE_TERRACOTTA_BRICKS.get());
-        blurpleTerracottaBricks.stairs(CWBlocks.BLURPLE_TERRACOTTA_BRICK_STAIRS.get());
-        blurpleTerracottaBricks.slab(CWBlocks.BLURPLE_TERRACOTTA_BRICK_SLAB.get());
-        blurpleTerracottaBricks.wall(CWBlocks.BLURPLE_TERRACOTTA_BRICK_WALL.get());
-        blurpleTerracotta.fullBlock(CWBlocks.CHISELED_BLURPLE_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
-
-        BlockModelGenerators.BlockFamilyProvider sangriaTerracotta = generator.family(DDBlocks.SANGRIA_TERRACOTTA.get());
-        sangriaTerracotta.stairs(CWBlocks.SANGRIA_TERRACOTTA_STAIRS.get());
-        sangriaTerracotta.slab(CWBlocks.SANGRIA_TERRACOTTA_SLAB.get());
-        sangriaTerracotta.wall(CWBlocks.SANGRIA_TERRACOTTA_WALL.get());
-        BlockModelGenerators.BlockFamilyProvider sangriaTerracottaBricks = generator.family(CWBlocks.SANGRIA_TERRACOTTA_BRICKS.get());
-        sangriaTerracottaBricks.stairs(CWBlocks.SANGRIA_TERRACOTTA_BRICK_STAIRS.get());
-        sangriaTerracottaBricks.slab(CWBlocks.SANGRIA_TERRACOTTA_BRICK_SLAB.get());
-        sangriaTerracottaBricks.wall(CWBlocks.SANGRIA_TERRACOTTA_BRICK_WALL.get());
-        sangriaTerracotta.fullBlock(CWBlocks.CHISELED_SANGRIA_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
-
-        BlockModelGenerators.BlockFamilyProvider roseTerracotta = generator.family(DDBlocks.ROSE_TERRACOTTA.get());
-        roseTerracotta.stairs(CWBlocks.ROSE_TERRACOTTA_STAIRS.get());
-        roseTerracotta.slab(CWBlocks.ROSE_TERRACOTTA_SLAB.get());
-        roseTerracotta.wall(CWBlocks.ROSE_TERRACOTTA_WALL.get());
-        BlockModelGenerators.BlockFamilyProvider roseTerracottaBricks = generator.family(CWBlocks.ROSE_TERRACOTTA_BRICKS.get());
-        roseTerracottaBricks.stairs(CWBlocks.ROSE_TERRACOTTA_BRICK_STAIRS.get());
-        roseTerracottaBricks.slab(CWBlocks.ROSE_TERRACOTTA_BRICK_SLAB.get());
-        roseTerracottaBricks.wall(CWBlocks.ROSE_TERRACOTTA_BRICK_WALL.get());
-        roseTerracotta.fullBlock(CWBlocks.CHISELED_ROSE_TERRACOTTA_BRICKS.get(), ModelTemplates.CUBE_ALL);
-        
-        generator.createTrivialCube(AlexCBlocks.CORAL_ROCK_CANDY.get());
-        generator.createTrivialCube(AlexCBlocks.CANARY_ROCK_CANDY.get());
-        generator.createTrivialCube(AlexCBlocks.WASABI_ROCK_CANDY.get());
-        generator.createTrivialCube(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get());
-        generator.createTrivialCube(AlexCBlocks.SKY_ROCK_CANDY.get());
-        generator.createTrivialCube(AlexCBlocks.BLURPLE_ROCK_CANDY.get());
-        generator.createTrivialCube(AlexCBlocks.SANGRIA_ROCK_CANDY.get());
-        generator.createTrivialCube(AlexCBlocks.ROSE_ROCK_CANDY.get());
-        generator.createTrivialCube(AlexCBlocks.CORAL_RADON_LAMP.get());
-        generator.createTrivialCube(AlexCBlocks.CANARY_RADON_LAMP.get());
-        generator.createTrivialCube(AlexCBlocks.WASABI_RADON_LAMP.get());
-        generator.createTrivialCube(AlexCBlocks.SACRAMENTO_RADON_LAMP.get());
-        generator.createTrivialCube(AlexCBlocks.SKY_RADON_LAMP.get());
-        generator.createTrivialCube(AlexCBlocks.BLURPLE_RADON_LAMP.get());
-        generator.createTrivialCube(AlexCBlocks.SANGRIA_RADON_LAMP.get());
-        generator.createTrivialCube(AlexCBlocks.ROSE_RADON_LAMP.get());
     }
 
     @Override
@@ -298,8 +191,5 @@ public class DDModelGen extends FabricModelProvider {
         generator.generateFlatItem(DDItems.SANGRIA_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.ROSE_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.BLUEBERRIES.get(), ModelTemplates.FLAT_ITEM);
-
-        //COMPAT
-        generator.generateFlatItem(ADItems.CATBLUEBERRY.get(), ModelTemplates.FLAT_ITEM);
     }
 }

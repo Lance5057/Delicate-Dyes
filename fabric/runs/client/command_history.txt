@@ -7,3 +7,13 @@
 /setblock ~ ~ ~ delicate_dyes:roseaaaaaaaaaaaaa
 /setblock ~ ~ ~ delicate_dyes:potted_roseaaaaaaaaaaaa
 /setblock ~ ~ ~ delicate_dyes:coral_wool
+/setblock ~ ~ ~ delicate_dyes:blurple_carpet
+/setblock ~ ~ ~ delicate_dyes:blurple_concrete
+/setblock ~ ~ ~ delicate_dyes:coral_wool_t
+/setblock ~ ~ ~ delicate_dyes:blurple_carpet
+/give Player831 delicate_dyes:blurple_candle
+/give Player831 delicate_dyes:blurple_shulker_box
+/give Player831 delicate_dyes:blurple_banner
+/give Player831 delicate_dyes:canary_bed
+/setblock ~ ~ ~ delicate_dyes:blurple_bed
+/setblock ~ ~ ~ delicate_dyes:test

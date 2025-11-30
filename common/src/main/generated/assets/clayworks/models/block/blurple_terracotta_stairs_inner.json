@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "delicate_dyes:block/blurple_terracotta",
-    "side": "delicate_dyes:block/blurple_terracotta",
-    "top": "delicate_dyes:block/blurple_terracotta"
-  }
-}

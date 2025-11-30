@@ -2,7 +2,6 @@ package net.azurune.delicate_dyes;
 
 import net.azurune.delicate_dyes.common.NeoForgeItemGroupAdditions;
 import net.azurune.delicate_dyes.core.init.DDRegistries;
-import net.azurune.delicate_dyes.core.integration.appledog.registry.ADBlocks;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -58,7 +57,5 @@ public class NeoForgeDelicateDyes {
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.PEACH_BELLFLOWER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.POTTED_PEACH_BELLFLOWER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(DDBlocks.GOOB_BLOSSOM.get(), RenderType.cutout());
-        //COMPAT
-        ItemBlockRenderTypes.setRenderLayer(ADBlocks.BLUEBERRYCAT_BUSH.get(), RenderType.cutout());
     }
 }

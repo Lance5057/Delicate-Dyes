@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "clayworks:block/wasabi_terracotta_bricks",
-    "side": "clayworks:block/wasabi_terracotta_bricks",
-    "top": "clayworks:block/wasabi_terracotta_bricks"
-  }
-}

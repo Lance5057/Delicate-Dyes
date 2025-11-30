@@ -1,7 +1,6 @@
 package net.azurune.delicate_dyes.core.mixin;
 
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
-import net.azurune.delicate_dyes.common.util.DDUtil;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.material.MapColor;
 import org.spongepowered.asm.mixin.Final;

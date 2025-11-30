@@ -1,6 +1,5 @@
 package net.azurune.delicate_dyes.datagen;
 
-import net.azurune.delicate_dyes.core.integration.appledog.registry.ADItems;
 import net.azurune.delicate_dyes.core.init.DDTags;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
@@ -17,7 +16,6 @@ import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Consumer;
 
 public class DDRecipeGen extends FabricRecipeProvider {
     public DDRecipeGen(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -373,8 +371,6 @@ public class DDRecipeGen extends FabricRecipeProvider {
 
         //BLURPLE
         oneToOneConversionRecipe(output, DDItems.BLURPLE_DYE.get(), DDItems.BLUEBERRIES.get(), "blurple_dye");
-        //COMPAT
-        oneToOneConversionRecipe(output, DDItems.BLURPLE_DYE.get(), ADItems.CATBLUEBERRY.get(), "blurple_dye");
 
         //SANGRIA DYE
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 1)

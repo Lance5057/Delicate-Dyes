@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "clayworks:block/canary_terracotta_bricks",
-    "side": "clayworks:block/canary_terracotta_bricks",
-    "top": "clayworks:block/canary_terracotta_bricks"
-  }
-}

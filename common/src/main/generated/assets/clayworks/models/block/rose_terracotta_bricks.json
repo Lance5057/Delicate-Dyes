@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "clayworks:block/rose_terracotta_bricks"
-  }
-}

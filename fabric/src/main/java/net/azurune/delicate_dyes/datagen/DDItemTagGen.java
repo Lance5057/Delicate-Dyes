@@ -1,8 +1,6 @@
 package net.azurune.delicate_dyes.datagen;
 
 import net.azurune.delicate_dyes.core.init.DDTags;
-import net.azurune.delicate_dyes.core.integration.alexscaves.registry.AlexCBlocks;
-import net.azurune.delicate_dyes.core.integration.common.util.CompatIds;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.azurune.runiclib.RunicLib;
@@ -32,14 +30,7 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
         appendFoxFood();
         appendShulkerBoxes();
         appendTallFlowers();
-        appendRockCandies();
-        appendRadonLamps();
         appendDyes();
-        appendPresents();
-        appendTrappedPresents();
-        appendAwnings();
-        appendFlags();
-        appendCandleHolders();
         appendGlassBlocks();
         appendGlassPanes();
     }
@@ -110,97 +101,6 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
                 .add(DDBlocks.BLURPLE_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.SANGRIA_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.ROSE_STAINED_GLASS_PANE.get().asItem())
-        ;
-    }
-
-    public void appendFlags() {
-        getOrCreateTagBuilder(DDTags.Items.FLAGS)
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "flag_coral"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "flag_canary"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "flag_wasabi"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "flag_sacramento"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "flag_sky"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "flag_blurple"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "flag_sangria"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "flag_rose"))
-        ;
-    }
-
-    public void appendAwnings() {
-        getOrCreateTagBuilder(DDTags.Items.AWNINGS)
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "awning_coral"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "awning_canary"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "awning_wasabi"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "awning_sacramento"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "awning_sky"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "awning_blurple"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "awning_sangria"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "awning_rose"))
-        ;
-    }
-
-    public void appendCandleHolders() {
-        getOrCreateTagBuilder(DDTags.Items.CANDLE_HOLDERS)
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "candle_holder_coral"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "candle_holder_canary"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "candle_holder_wasabi"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "candle_holder_sacramento"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "candle_holder_sky"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "candle_holder_blurple"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "candle_holder_sangria"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "candle_holder_rose"))
-        ;
-    }
-
-    public void appendPresents() {
-        getOrCreateTagBuilder(DDTags.Items.PRESENTS)
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "present_coral"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "present_canary"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "present_wasabi"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "present_sacramento"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "present_sky"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "present_blurple"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "present_sangria"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "present_rose"))
-        ;
-    }
-
-    public void appendTrappedPresents() {
-        getOrCreateTagBuilder(DDTags.Items.TRAPPED_PRESENTS)
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "trapped_present_coral"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "trapped_present_canary"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "trapped_present_wasabi"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "trapped_present_sacramento"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "trapped_present_sky"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "trapped_present_blurple"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "trapped_present_sangria"))
-                .addOptional(RunicLib.customid(CompatIds.SUPPLEMENTARIES, "trapped_present_rose"))
-        ;
-    }
-
-    public void appendRadonLamps() {
-        getOrCreateTagBuilder(DDTags.Items.RADON_LAMPS)
-                .add(AlexCBlocks.CORAL_RADON_LAMP.get().asItem())
-                .add(AlexCBlocks.CANARY_RADON_LAMP.get().asItem())
-                .add(AlexCBlocks.WASABI_RADON_LAMP.get().asItem())
-                .add(AlexCBlocks.SACRAMENTO_RADON_LAMP.get().asItem())
-                .add(AlexCBlocks.SKY_RADON_LAMP.get().asItem())
-                .add(AlexCBlocks.BLURPLE_RADON_LAMP.get().asItem())
-                .add(AlexCBlocks.SANGRIA_RADON_LAMP.get().asItem())
-                .add(AlexCBlocks.ROSE_RADON_LAMP.get().asItem())
-        ;
-    }
-
-    public void appendRockCandies() {
-        getOrCreateTagBuilder(DDTags.Items.ROCK_CANDIES)
-                .add(AlexCBlocks.CORAL_ROCK_CANDY.get().asItem())
-                .add(AlexCBlocks.CANARY_ROCK_CANDY.get().asItem())
-                .add(AlexCBlocks.WASABI_ROCK_CANDY.get().asItem())
-                .add(AlexCBlocks.SACRAMENTO_ROCK_CANDY.get().asItem())
-                .add(AlexCBlocks.SKY_ROCK_CANDY.get().asItem())
-                .add(AlexCBlocks.BLURPLE_ROCK_CANDY.get().asItem())
-                .add(AlexCBlocks.SANGRIA_ROCK_CANDY.get().asItem())
-                .add(AlexCBlocks.ROSE_ROCK_CANDY.get().asItem())
         ;
     }
 

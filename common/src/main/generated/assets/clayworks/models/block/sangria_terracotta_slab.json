@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "delicate_dyes:block/sangria_terracotta",
-    "side": "delicate_dyes:block/sangria_terracotta",
-    "top": "delicate_dyes:block/sangria_terracotta"
-  }
-}

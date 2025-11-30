@@ -11,8 +11,8 @@ public class FabricDelicateDyesDatagen implements DataGeneratorEntrypoint {
         pack.addProvider(DDLangGen::new);
         pack.addProvider(DDBlockTagGen::new);
         pack.addProvider(DDItemTagGen::new);
-        pack.addProvider(DDRecipeGen::new);
+        //pack.addProvider(DDRecipeGen::new);
         pack.addProvider(DDLootTableGen::new);
-        pack.addProvider(DDModelGen::new);
+        //pack.addProvider(DDModelGen::new);
     }
 }

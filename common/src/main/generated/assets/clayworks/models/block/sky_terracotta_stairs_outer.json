@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "delicate_dyes:block/sky_terracotta",
-    "side": "delicate_dyes:block/sky_terracotta",
-    "top": "delicate_dyes:block/sky_terracotta"
-  }
-}

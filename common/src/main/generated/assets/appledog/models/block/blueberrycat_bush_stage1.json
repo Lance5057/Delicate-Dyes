@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "appledog:block/blueberrycat_bush_stage1"
-  }
-}

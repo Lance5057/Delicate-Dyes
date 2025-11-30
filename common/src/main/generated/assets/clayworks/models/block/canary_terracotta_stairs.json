@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "delicate_dyes:block/canary_terracotta",
-    "side": "delicate_dyes:block/canary_terracotta",
-    "top": "delicate_dyes:block/canary_terracotta"
-  }
-}
