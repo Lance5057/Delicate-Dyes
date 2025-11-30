@@ -3,6 +3,10 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
+repositories {
+    maven { url = "https://cursemaven.com" }
+}
+
 neoForge {
     version = neoforge_version
     // Automatically enable neoforge AccessTransformers if the file exists
@@ -41,4 +45,9 @@ neoForge {
     }
 }
 
-sourceSets.main.resources { srcDir 'src/generated/resources' }
+dependencies {
+    //RUNICLIB
+    implementation("curse.maven:runiclib-880879:${neoforge_runiclib}")
+}
+
+sourceSets.main.resources { srcDir project(":common").file('src/main/generated/').getAbsolutePath() }
