@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.core.registry;
 
 import net.azurune.delicate_dyes.DelicateDyes;
+import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.azurune.delicate_dyes.common.util.DDProperties;
 import net.azurune.runiclib.core.platform.Services;
 import net.minecraft.world.item.DyeColor;
@@ -11,7 +12,7 @@ import java.util.function.Supplier;
 
 public class DDItems {
     // CORAL
-    public static final Supplier<Item> CORAL_DYE = register("coral_dye", () -> new DyeItem(DyeColor.WHITE, DDProperties.ItemP.GENERIC));
+    public static final Supplier<Item> CORAL_DYE = register("coral_dye", () -> new DyeItem(DDDyeValues.CORAL, DDProperties.ItemP.GENERIC));
     // CANARY
 
     // WASABI
@@ -25,6 +26,7 @@ public class DDItems {
     // SANGRIA
 
     // ROSE
+    public static final Supplier<Item> ROSE_DYE = register("rose_dye", () -> new DyeItem(DDDyeValues.ROSE, DDProperties.ItemP.GENERIC));
 
     // MISC
 

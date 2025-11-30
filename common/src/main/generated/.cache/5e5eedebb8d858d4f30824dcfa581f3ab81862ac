@@ -1,0 +1,5 @@
+// 1.21.1	2025-11-30T01:37:47.4714538	Delicate Dyes/Block Loot Tables
+1f4a8bb9c76e79414653237a31bd51e314aec98a data\delicate_dyes\loot_table\blocks\rose.json
+735c25c5bbc54a66901dbd3101399a73b0e156e3 data\delicate_dyes\loot_table\blocks\potted_peach_bellflower.json
+43e12ccef37c67ad8fd4ac4809d743707bca36cd data\delicate_dyes\loot_table\blocks\potted_rose.json
+c5ce7cb7f5cbe1c442bdd49cdfb9471638bb20cd data\delicate_dyes\loot_table\blocks\peach_bellflower.json
