@@ -21,12 +21,11 @@ public class DDModelGen extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators generator) {
-        // SINGLE FLOWERS
         generator.createPlant(DDBlocks.ROSE.get(), DDBlocks.POTTED_ROSE.get(), BlockModelGenerators.TintState.NOT_TINTED);
         generator.createPlant(DDBlocks.PEACH_BELLFLOWER.get(), DDBlocks.POTTED_PEACH_BELLFLOWER.get(), BlockModelGenerators.TintState.NOT_TINTED);
-        // DOUBLE FLOWERS
+
         generator.createDoublePlant(DDBlocks.GOOB_BLOSSOM.get(), BlockModelGenerators.TintState.NOT_TINTED);
-        // BLUEBERRIES
+
         generator.blockStateOutput.accept(MultiVariantGenerator.multiVariant(DDBlocks.BLUEBERRY_BUSH.get())
                 .with(PropertyDispatch.property(BlockStateProperties.AGE_3).generate((integer) -> Variant.variant()
                         .with(VariantProperties.MODEL, generator.createSuffixedVariant(DDBlocks.BLUEBERRY_BUSH.get(), "_stage" + integer,
@@ -38,12 +37,11 @@ public class DDModelGen extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators generator) {
-        // DYE
+        //FLAT ITEM
         generator.generateFlatItem(DDItems.CORAL_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.CANARY_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.BLURPLE_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.ROSE_DYE.get(), ModelTemplates.FLAT_ITEM);
-        // MISC
         generator.generateFlatItem(DDItems.BLUEBERRIES.get(), ModelTemplates.FLAT_ITEM);
     }
 }

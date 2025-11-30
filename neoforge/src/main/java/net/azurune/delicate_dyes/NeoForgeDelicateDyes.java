@@ -1,6 +1,5 @@
 package net.azurune.delicate_dyes;
 
-
 import net.azurune.delicate_dyes.core.init.DDRegistries;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;

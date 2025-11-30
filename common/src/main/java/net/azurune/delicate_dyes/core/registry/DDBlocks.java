@@ -13,23 +13,23 @@ import net.minecraft.world.level.block.TallFlowerBlock;
 import java.util.function.Supplier;
 
 public class DDBlocks {
-    // CORAL
+    //CORAL
 
-    // CANARY
+    //CANARY
 
-    // WASABI
+    //WASABI
 
-    // SACRAMENTO
+    //SACRAMENTO
 
-    // SKY
+    //SKY
 
-    // BLURPLE
+    //BLURPLE
 
-    // SANGRIA
+    //SANGRIA
 
-    // ROSE
+    //ROSE
 
-    // MISC
+    //MISC
     public static final Supplier<Block> PEACH_BELLFLOWER = register("peach_bellflower", () -> new FlowerBlock(MobEffects.ABSORPTION, 15, DDProperties.BlockP.PEACH_BELLFLOWER), true);
     public static final Supplier<Block> POTTED_PEACH_BELLFLOWER = register("potted_peach_bellflower", () -> new FlowerPotBlock(PEACH_BELLFLOWER.get(), DDProperties.BlockP.FLOWER_POT), false);
 
@@ -45,6 +45,5 @@ public class DDBlocks {
     }
 
     public static void loadBlocks() {
-        //DelicateDyes.LOGGER.info("reg blocks");
     }
 }

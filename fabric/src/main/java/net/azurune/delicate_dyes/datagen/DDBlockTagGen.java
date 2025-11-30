@@ -25,6 +25,12 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
         appendFallDamageResetting();
     }
 
+    public void appendAxeMineable() {
+        getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_AXE)
+                .add(DDBlocks.BLUEBERRY_BUSH.get())
+        ;
+    }
+
     public void appendSmallFlowers() {
         getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
                 .add(DDBlocks.ROSE.get())
@@ -59,12 +65,6 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
 
     public void appendFallDamageResetting() {
         getOrCreateTagBuilder(BlockTags.FALL_DAMAGE_RESETTING)
-                .add(DDBlocks.BLUEBERRY_BUSH.get())
-        ;
-    }
-
-    public void appendAxeMineable() {
-        getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_AXE)
                 .add(DDBlocks.BLUEBERRY_BUSH.get())
         ;
     }

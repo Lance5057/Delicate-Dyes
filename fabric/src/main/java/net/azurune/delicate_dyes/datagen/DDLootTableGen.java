@@ -31,10 +31,9 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        // ENCHANTMENT REGISTRY
+        //ENCHANTMENT REGISTRY
         HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
 
-        // FLOWERS
         dropSelf(DDBlocks.ROSE.get());
         dropPottedContents(DDBlocks.POTTED_ROSE.get());
 
@@ -44,20 +43,18 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         this.add(DDBlocks.GOOB_BLOSSOM.get(), (block) ->
                 this.createSinglePropConditionTable(block, DoublePlantBlock.HALF, DoubleBlockHalf.LOWER));
 
-        this.add(DDBlocks.BLUEBERRY_BUSH.get(), (block) -> {
-            return this.applyExplosionDecay(block, LootTable.lootTable()
-                            .withPool(LootPool.lootPool()
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3)))
-                                    .add(LootItem.lootTableItem(DDItems.BLUEBERRIES.get())).apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
-                                    .apply(ApplyBonusCount.addUniformBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE))))
-                            .withPool(LootPool.lootPool()
-                                    .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
-                                            .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2)))
-                                    .add(LootItem.lootTableItem(DDItems.BLUEBERRIES.get()))
-                                    .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
-                                    .apply(ApplyBonusCount.addUniformBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE))))
-            );
-        });
+        this.add(DDBlocks.BLUEBERRY_BUSH.get(), (block) -> this.applyExplosionDecay(block, LootTable.lootTable()
+                        .withPool(LootPool.lootPool()
+                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 3)))
+                                .add(LootItem.lootTableItem(DDItems.BLUEBERRIES.get())).apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE))))
+                        .withPool(LootPool.lootPool()
+                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SweetBerryBushBlock.AGE, 2)))
+                                .add(LootItem.lootTableItem(DDItems.BLUEBERRIES.get()))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                .apply(ApplyBonusCount.addUniformBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE))))
+        ));
     }
 }

@@ -32,7 +32,7 @@ public class DDRecipeGen extends FabricRecipeProvider {
     }
 
     private void crafting(RecipeOutput output) {
-        // CORAL
+        //CORAL
         RecipeHelper.modBasedOneToTwo(output, DDItems.CORAL_DYE.get(), DDBlocks.PEACH_BELLFLOWER.get(), "coral_dye", 1);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CORAL_DYE.get(), 3)
@@ -51,7 +51,7 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .group("coral_dye")
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "coral_dye_from_bits_2"));
 
-        // CANARY
+        //CANARY
         RecipeHelper.modBasedOneToTwo(output, DDItems.CANARY_DYE.get(), DDBlocks.GOOB_BLOSSOM.get(), "canary_dye");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CANARY_DYE.get(), 2)
@@ -60,7 +60,8 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
                 .group("canary_dye")
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "canary_dye_from_bits"));
-        // BLURPLE
+
+        //BLURPLE
         RecipeHelper.modBasedOneToTwo(output, DDItems.BLURPLE_DYE.get(), DDItems.BLUEBERRIES.get(), "blurple_dye", 1);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.BLURPLE_DYE.get(), 2)
@@ -76,7 +77,8 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
                 .group("blurple_dye")
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "blurple_dye_from_bits_2"));
-        // ROSE
+
+        //ROSE
         RecipeHelper.modBasedOneToTwo(output, DDItems.ROSE_DYE.get(), DDBlocks.ROSE.get(), "rose_dye", 1);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.ROSE_DYE.get(), 2)
