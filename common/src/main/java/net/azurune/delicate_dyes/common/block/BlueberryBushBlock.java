@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes.common.block;
 
 import com.mojang.serialization.MapCodec;
+import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -50,8 +51,7 @@ public class BlueberryBushBlock extends BushBlock implements BonemealableBlock {
     }
 
     public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
-        //return new ItemStack(DDItems.BLUEBERRIES.get());
-        return super.getCloneItemStack(level, pos, state); //remove this return
+        return new ItemStack(DDItems.BLUEBERRIES.get());
     }
 
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -113,7 +113,7 @@ public class BlueberryBushBlock extends BushBlock implements BonemealableBlock {
     }
 
     protected void popItem(Level level, BlockPos pos, int j, boolean flag) {
-        //popResource(level, pos, new ItemStack(DDItems.BLUEBERRIES.get(), j + (flag ? 1 : 0)));
+        popResource(level, pos, new ItemStack(DDItems.BLUEBERRIES.get(), j + (flag ? 1 : 0)));
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {

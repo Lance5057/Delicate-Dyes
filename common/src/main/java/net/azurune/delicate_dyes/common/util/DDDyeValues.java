@@ -9,5 +9,7 @@ public class DDDyeValues
     }
 
     public static DyeColor CORAL = DyeColor.RED;
+    public static DyeColor CANARY = DyeColor.YELLOW;
+    public static DyeColor BLURPLE = DyeColor.BLUE;
     public static DyeColor ROSE = DyeColor.PURPLE;
 }

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -16,7 +17,12 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         appendSmallFlowers();
+        appendTallFlowers();
         appendFlowerPots();
+        appendAxeMineable();
+        appendSwordEfficient();
+        appendBeeGrowables();
+        appendFallDamageResetting();
     }
 
     public void appendSmallFlowers() {
@@ -26,10 +32,40 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
         ;
     }
 
+    public void appendTallFlowers() {
+        getOrCreateTagBuilder(BlockTags.TALL_FLOWERS)
+                .add(DDBlocks.GOOB_BLOSSOM.get())
+        ;
+    }
+
     public void appendFlowerPots() {
         getOrCreateTagBuilder(BlockTags.FLOWER_POTS)
                 .add(DDBlocks.POTTED_ROSE.get())
                 .add(DDBlocks.POTTED_PEACH_BELLFLOWER.get())
+        ;
+    }
+
+    public void appendSwordEfficient() {
+        getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT)
+                .add(DDBlocks.BLUEBERRY_BUSH.get())
+        ;
+    }
+
+    public void appendBeeGrowables() {
+        getOrCreateTagBuilder(BlockTags.BEE_GROWABLES)
+                .add(DDBlocks.BLUEBERRY_BUSH.get())
+        ;
+    }
+
+    public void appendFallDamageResetting() {
+        getOrCreateTagBuilder(BlockTags.FALL_DAMAGE_RESETTING)
+                .add(DDBlocks.BLUEBERRY_BUSH.get())
+        ;
+    }
+
+    public void appendAxeMineable() {
+        getOrCreateTagBuilder(BlockTags.MINEABLE_WITH_AXE)
+                .add(DDBlocks.BLUEBERRY_BUSH.get())
         ;
     }
 }
