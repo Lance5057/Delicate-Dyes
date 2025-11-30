@@ -3,8 +3,16 @@ plugins {
     id 'fabric-loom'
 }
 
+fabricApi {
+    configureDataGeneration()
+}
+
 repositories {
     maven { url = "https://cursemaven.com" }
+}
+
+base {
+    archivesName = "fabric-${mod_id}-${minecraft_version}"
 }
 
 dependencies {

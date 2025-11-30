@@ -7,6 +7,10 @@ repositories {
     maven { url = "https://cursemaven.com" }
 }
 
+base {
+    archivesName = "neoforge-${mod_id}-${minecraft_version}"
+}
+
 neoForge {
     version = neoforge_version
     // Automatically enable neoforge AccessTransformers if the file exists

@@ -13,11 +13,17 @@
       "issues": ""
     },
     "license": "${license}",
-    "icon": "${mod_id}.png",
+    "icon": "icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
           "net.azurune.delicate_dyes.FabricDelicateDyes"
+        ],
+        "client": [
+          "net.azurune.delicate_dyes.FabricDelicateDyesClient"
+        ],
+        "fabric-datagen": [
+          "net.azurune.delicate_dyes.FabricDelicateDyesDatagen"
         ]
     },
     "mixins": [
