@@ -1,8 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_forest",
-  "features": [
-    "delicate_dyes:patch_rose"
-  ],
-  "step": "vegetal_decoration"
-}

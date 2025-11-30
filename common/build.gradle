@@ -3,10 +3,6 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
-repositories {
-    maven { url = "https://cursemaven.com" }
-}
-
 neoForge {
     neoFormVersion = neo_form_version
     // Automatically enable AccessTransformers if the file exists
@@ -25,8 +21,6 @@ dependencies {
     // fabric and neoforge both bundle mixinextras, so it is safe to use it in common
     compileOnly group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
     annotationProcessor group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
-    //RUNICLIB
-    implementation("curse.maven:runiclib-880879:${neoforge_runiclib}")
 }
 
 configurations {
@@ -45,4 +39,3 @@ artifacts {
     commonResources sourceSets.main.resources.sourceDirectories.singleFile
 }
 
-sourceSets.main.resources { srcDir project(":common").file('src/main/generated/').getAbsolutePath() }

@@ -3,14 +3,6 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
-repositories {
-    maven { url = "https://cursemaven.com" }
-}
-
-base {
-    archivesName = "neoforge-${mod_id}-${minecraft_version}"
-}
-
 neoForge {
     version = neoforge_version
     // Automatically enable neoforge AccessTransformers if the file exists
@@ -32,6 +24,11 @@ neoForge {
         }
         data {
             data()
+
+            // DataGen can be run by - "./gradlew :neoforge:runData" in Terminal.
+            // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+
         }
         server {
             server()
@@ -44,9 +41,4 @@ neoForge {
     }
 }
 
-dependencies {
-    //RUNICLIB
-    implementation("curse.maven:runiclib-880879:${neoforge_runiclib}")
-}
-
-sourceSets.main.resources { srcDir project(":common").file('src/main/generated/').getAbsolutePath() }
+sourceSets.main.resources { srcDir 'src/generated/resources' }
