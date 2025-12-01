@@ -7,7 +7,7 @@ public class DDDyeValues {
         DyeColor.values();
     }
 
-    public static DyeColor CORAL = DyeColor.RED;
+    public static DyeColor CORAL = DyeColor.byName("DD_CORAL", DyeColor.valueOf("DD_CORAL"));
     public static DyeColor CANARY = DyeColor.YELLOW;
     public static DyeColor WASABI = DyeColor.LIME;
     public static DyeColor SACRAMENTO = DyeColor.GREEN;

@@ -4,8 +4,15 @@
   "package": "net.azurune.delicate_dyes.core.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_18",
-  "mixins": [],
+  "mixins": [
+    "BlockEntityTypeMixin",
+    "DyeColorMixin",
+    "LivingEntityMixin",
+    "SheepMixin",
+    "ShulkerBoxMixin"
+  ],
   "client": [
+    "ShulkerBoxRendererMixin"
   ],
   "server": [],
   "injectors": {
