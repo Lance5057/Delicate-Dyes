@@ -2,8 +2,7 @@ package net.azurune.delicate_dyes.common.util;
 
 import net.minecraft.world.item.DyeColor;
 
-public class DDDyeValues
-{
+public class DDDyeValues {
     static {
         DyeColor.values();
     }

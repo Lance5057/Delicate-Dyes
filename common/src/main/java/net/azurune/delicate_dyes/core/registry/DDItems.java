@@ -26,7 +26,7 @@ public class DDItems {
     public static final Supplier<Item> BLURPLE_DYE = register("blurple_dye", () -> new DyeItem(DDDyeValues.BLURPLE, DDProperties.ItemP.GENERIC));
     // SANGRIA
     public static final Supplier<Item> SANGRIA_DYE = register("sangria_dye", () -> new DyeItem(DDDyeValues.SANGRIA, DDProperties.ItemP.GENERIC));
-    // ROSE
+	// ROSE
     public static final Supplier<Item> ROSE_DYE = register("rose_dye", () -> new DyeItem(DDDyeValues.ROSE, DDProperties.ItemP.GENERIC));
 
     // MISC

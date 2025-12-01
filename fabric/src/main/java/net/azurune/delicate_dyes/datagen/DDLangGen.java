@@ -15,12 +15,20 @@ public class DDLangGen extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
-        itemTranslation(provider, build);
-        blockTranslation(provider, build);
+        blockTranslations(provider, build);
+        itemTranslations(provider, build);
     }
 
-    private void itemTranslation(HolderLookup.Provider provider, TranslationBuilder build) {
-        // DYE
+    private void blockTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
+        //NATURE
+        build.add(DDBlocks.ROSE.get(), "Rose");
+        build.add(DDBlocks.PEACH_BELLFLOWER.get(), "Peach Bellflower");
+        build.add(DDBlocks.GOOB_BLOSSOM.get(), "Goob Blossom");
+        build.add(DDBlocks.BLUEBERRY_BUSH.get(), "Blueberry Bush");
+    }
+
+    private void itemTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
+        //DYE
         build.add(DDItems.CORAL_DYE.get(), "Coral Dye");
         build.add(DDItems.CANARY_DYE.get(), "Canary Dye");
         build.add(DDItems.WASABI_DYE.get(), "Wasabi Dye");
@@ -29,17 +37,8 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDItems.BLURPLE_DYE.get(), "Blurple Dye");
         build.add(DDItems.SANGRIA_DYE.get(), "Sangria Dye");
         build.add(DDItems.ROSE_DYE.get(), "Rose Dye");
-        // MISC
-        build.add(DDItems.BLUEBERRIES.get(), "Blueberries");
-    }
 
-    private void blockTranslation(HolderLookup.Provider provider, TranslationBuilder build) {
-        // SMALL FLOWERS
-        build.add(DDBlocks.ROSE.get(), "Rose");
-        build.add(DDBlocks.PEACH_BELLFLOWER.get(), "Peach Bellflower");
-        // TALL FLOWERS
-        build.add(DDBlocks.GOOB_BLOSSOM.get(), "Goob Blossom");
-        // MISC
-        build.add(DDBlocks.BLUEBERRY_BUSH.get(), "Blueberry Bush");
+        //MISC
+        build.add(DDItems.BLUEBERRIES.get(), "Blueberries");
     }
 }
