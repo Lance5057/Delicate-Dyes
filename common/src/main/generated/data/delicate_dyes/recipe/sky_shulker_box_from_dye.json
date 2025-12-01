@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "shulker",
+  "ingredients": [
+    {
+      "item": "delicate_dyes:sky_dye"
+    },
+    {
+      "tag": "c:shulker_boxes"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "delicate_dyes:sky_shulker_box"
+  }
+}

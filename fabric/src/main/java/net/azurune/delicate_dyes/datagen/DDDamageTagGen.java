@@ -11,14 +11,12 @@ import net.minecraft.world.damagesource.DamageType;
 import java.util.concurrent.CompletableFuture;
 
 public class DDDamageTagGen extends FabricTagProvider<DamageType> {
-    public DDDamageTagGen(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> future)
-    {
+    public DDDamageTagGen(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> future) {
         super(output, Registries.DAMAGE_TYPE, future);
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider)
-    {
+    protected void addTags(HolderLookup.Provider provider) {
         this.tag(DamageTypeTags.NO_KNOCKBACK)
                 .add(DDDamageTypes.BLUEBERRY_BUSH);
     }

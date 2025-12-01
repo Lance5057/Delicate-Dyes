@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "shulker",
+  "ingredients": [
+    {
+      "item": "delicate_dyes:wasabi_dye"
+    },
+    {
+      "tag": "c:shulker_boxes"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "delicate_dyes:wasabi_shulker_box"
+  }
+}

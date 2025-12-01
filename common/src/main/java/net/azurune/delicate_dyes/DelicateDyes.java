@@ -1,6 +1,7 @@
 package net.azurune.delicate_dyes;
 
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
+import net.azurune.delicate_dyes.core.registry.DDCreativeTabs;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,5 +14,6 @@ public class DelicateDyes {
     public static void init() {
         DDItems.loadItems();
         DDBlocks.loadBlocks();
+        DDCreativeTabs.loadCreativeTabs();
     }
 }

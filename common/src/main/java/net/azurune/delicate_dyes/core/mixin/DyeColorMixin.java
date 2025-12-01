@@ -36,10 +36,53 @@ public abstract class DyeColorMixin {
         var last = dyes.get(dyes.size() - 1);
         int i = 1;
 
-        // CORAL
+        //CORAL
         var DD_CORAL = delicateDyes$init("DD_CORAL", last.ordinal() + i, last.ordinal() + i, "coral",
                 0xf97474, MapColor.RAW_IRON, 0xff6565, 0xff6565);
         dyes.add(DD_CORAL);
+        i++;
+
+        //CANARY
+        var DD_CANARY = delicateDyes$init("DD_CANARY", last.ordinal() + i, last.ordinal() + i, "canary",
+                0xf6ee7d, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c);
+        dyes.add(DD_CANARY);
+        i++;
+
+        //WASABI
+        var DD_WASABI = delicateDyes$init("DD_WASABI", last.ordinal() + i, last.ordinal() + i, "wasabi",
+                0xbddc79, MapColor.TERRACOTTA_LIGHT_GREEN, 0x8ecc70, 0x8ecc70);
+        dyes.add(DD_WASABI);
+        i++;
+
+        //SACRAMENTO
+        var DD_SACRAMENTO = delicateDyes$init("DD_SACRAMENTO", last.ordinal() + i, last.ordinal() + i, "sacramento",
+                0x287f66, MapColor.COLOR_CYAN, 0x437a6a, 0x437a6a);
+        dyes.add(DD_SACRAMENTO);
+        i++;
+
+        //SKY
+        var DD_SKY = delicateDyes$init("DD_SKY", last.ordinal() + i, last.ordinal() + i, "sky",
+                0x4bfbff, MapColor.COLOR_LIGHT_BLUE, 0x97ebf2, 0x97ebf2);
+        dyes.add(DD_SKY);
+        i++;
+
+        //BLURPLE
+        var DD_BLURPLE = delicateDyes$init("DD_BLURPLE", last.ordinal() + i, last.ordinal() + i, "blurple",
+                0x6130c8, MapColor.TERRACOTTA_BLUE, 0x614495, 0x614495);
+        dyes.add(DD_BLURPLE);
+        i++;
+
+        //SANGRIA
+        var DD_SANGRIA = delicateDyes$init("DD_SANGRIA", last.ordinal() + i, last.ordinal() + i, "sangria",
+                0x82125a, MapColor.TERRACOTTA_PURPLE, 0x821d5e, 0x821d5e);
+        dyes.add(DD_SANGRIA);
+        i++;
+
+
+        //ROSE
+        var DD_ROSE = delicateDyes$init("DD_ROSE", last.ordinal() + i, last.ordinal() + i, "rose",
+                0xc81b4f, MapColor.CRIMSON_HYPHAE, 0xbe2e59, 0xbe2e59);
+        dyes.add(DD_ROSE);
         i++;
 
         $VALUES = dyes.toArray(new DyeColor[0]);

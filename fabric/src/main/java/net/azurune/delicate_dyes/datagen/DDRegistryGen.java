@@ -7,8 +7,7 @@ import net.minecraft.core.registries.Registries;
 
 import java.util.concurrent.CompletableFuture;
 
-public class DDRegistryGen extends FabricDynamicRegistryProvider
-{
+public class DDRegistryGen extends FabricDynamicRegistryProvider {
     public DDRegistryGen(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
     }
@@ -21,5 +20,7 @@ public class DDRegistryGen extends FabricDynamicRegistryProvider
     }
 
     @Override
-    public String getName() { return "Registry Generator (World + Dmg)"; }
+    public String getName() {
+        return "Registry Generator (World + Dmg)";
+    }
 }

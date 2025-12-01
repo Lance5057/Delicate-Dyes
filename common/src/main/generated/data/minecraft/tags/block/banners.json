@@ -1,3 +1,20 @@
 {
-  "values": []
+  "values": [
+    "delicate_dyes:coral_banner",
+    "delicate_dyes:coral_wall_banner",
+    "delicate_dyes:canary_banner",
+    "delicate_dyes:canary_wall_banner",
+    "delicate_dyes:wasabi_banner",
+    "delicate_dyes:wasabi_wall_banner",
+    "delicate_dyes:sacramento_banner",
+    "delicate_dyes:sacramento_wall_banner",
+    "delicate_dyes:sky_banner",
+    "delicate_dyes:sky_wall_banner",
+    "delicate_dyes:blurple_banner",
+    "delicate_dyes:blurple_wall_banner",
+    "delicate_dyes:sangria_banner",
+    "delicate_dyes:sangria_wall_banner",
+    "delicate_dyes:rose_banner",
+    "delicate_dyes:rose_wall_banner"
+  ]
 }
