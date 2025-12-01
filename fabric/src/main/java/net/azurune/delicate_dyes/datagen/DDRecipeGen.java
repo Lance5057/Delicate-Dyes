@@ -32,7 +32,7 @@ public class DDRecipeGen extends FabricRecipeProvider {
     }
 
     private void crafting(RecipeOutput output) {
-        //CORAL
+        // CORAL
         RecipeHelper.modBasedOneToTwo(output, DDItems.CORAL_DYE.get(), DDBlocks.PEACH_BELLFLOWER.get(), "coral_dye", 1);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CORAL_DYE.get(), 3)
@@ -51,7 +51,7 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .group("coral_dye")
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "coral_dye_from_bits_2"));
 
-        //CANARY
+        // CANARY
         RecipeHelper.modBasedOneToTwo(output, DDItems.CANARY_DYE.get(), DDBlocks.GOOB_BLOSSOM.get(), "canary_dye");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.CANARY_DYE.get(), 2)
@@ -61,7 +61,58 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .group("canary_dye")
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "canary_dye_from_bits"));
 
-        //BLURPLE
+        // WASABI
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.WASABI_DYE.get(), 2)
+                .requires(Items.LIME_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_lime_dye", VanillaRecipeProvider.has(Items.LIME_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("wasabi_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "wasabi_dye_from_bits_1"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.WASABI_DYE.get(), 3)
+                .requires(Items.GREEN_DYE).requires(Items.WHITE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_green_dye", VanillaRecipeProvider.has(Items.GREEN_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("wasabi_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "wasabi_dye_from_bits_2"));
+
+        // SACRAMENTO
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SACRAMENTO_DYE.get(), 1)
+                .requires(Items.GLOW_INK_SAC)
+                .unlockedBy("has_glow_ink_sac", VanillaRecipeProvider.has(Items.GLOW_INK_SAC))
+                .group("sacramento_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sacramento_dye_from_glow_ink_sac"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SACRAMENTO_DYE.get(), 2)
+                .requires(Items.GREEN_DYE).requires(Items.CYAN_DYE)
+                .unlockedBy("has_green_dye", VanillaRecipeProvider.has(Items.GREEN_DYE))
+                .unlockedBy("has_cyan_dye", VanillaRecipeProvider.has(Items.CYAN_DYE))
+                .group("sacramento_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sacramento_dye_from_bits_1"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SACRAMENTO_DYE.get(), 3)
+                .requires(Items.BLUE_DYE).requires(Items.GREEN_DYE).requires(Items.GREEN_DYE)
+                .unlockedBy("has_green_dye", VanillaRecipeProvider.has(Items.GREEN_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .group("sacramento_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sacramento_dye_from_bits_2"));
+
+        // SKY
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SKY_DYE.get(), 2)
+                .requires(Items.LIGHT_BLUE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_light_blue_dye", VanillaRecipeProvider.has(Items.LIGHT_BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("sky_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sky_dye_from_bits_1"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SKY_DYE.get(), 3)
+                .requires(Items.BLUE_DYE).requires(Items.WHITE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("sky_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sky_dye_from_bits_2"));
+
+        // BLURPLE
         RecipeHelper.modBasedOneToTwo(output, DDItems.BLURPLE_DYE.get(), DDItems.BLUEBERRIES.get(), "blurple_dye", 1);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.BLURPLE_DYE.get(), 2)
@@ -78,7 +129,74 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .group("blurple_dye")
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "blurple_dye_from_bits_2"));
 
-        //ROSE
+        // SANGRIA
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 1)
+                .requires(Items.SWEET_BERRIES)
+                .unlockedBy("has_sweet_berries", VanillaRecipeProvider.has(Items.SWEET_BERRIES))
+                .group("sangria_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sangria_dye_from_sweet_berries"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 3)
+                .requires(Items.PURPLE_DYE).requires(Items.MAGENTA_DYE).requires(Items.BLACK_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_black_dye", VanillaRecipeProvider.has(Items.BLACK_DYE))
+                .group("sangria_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sangria_dye_from_bits_1"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 4)
+                .requires(Items.BLUE_DYE).requires(Items.RED_DYE).requires(Items.MAGENTA_DYE).requires(Items.BLACK_DYE)
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_black_dye", VanillaRecipeProvider.has(Items.BLACK_DYE))
+                .group("sangria_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sangria_dye_from_bits_2"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 5)
+                .requires(Items.PURPLE_DYE).requires(Items.BLACK_DYE)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.PINK_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_pink_dye", VanillaRecipeProvider.has(Items.PINK_DYE))
+                .group("sangria_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sangria_dye_from_bits_3"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 6)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.BLACK_DYE)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.PINK_DYE)
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_pink_dye", VanillaRecipeProvider.has(Items.PINK_DYE))
+                .group("sangria_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sangria_dye_from_bits_4"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 6)
+                .requires(Items.PURPLE_DYE).requires(Items.BLACK_DYE)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.WHITE_DYE).requires(Items.RED_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("sangria_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sangria_dye_from_bits_5"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 7)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.BLACK_DYE)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.WHITE_DYE).requires(Items.RED_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_magenta_dye", VanillaRecipeProvider.has(Items.MAGENTA_DYE))
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("sangria_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sangria_dye_from_bits_7"));
+
+        // ROSE
         RecipeHelper.modBasedOneToTwo(output, DDItems.ROSE_DYE.get(), DDBlocks.ROSE.get(), "rose_dye", 1);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.ROSE_DYE.get(), 2)
