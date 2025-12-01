@@ -41,7 +41,11 @@ public class DDModelGen extends FabricModelProvider {
         // DYE
         generator.generateFlatItem(DDItems.CORAL_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.CANARY_DYE.get(), ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(DDItems.WASABI_DYE.get(), ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(DDItems.SACRAMENTO_DYE.get(), ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(DDItems.SKY_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.BLURPLE_DYE.get(), ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(DDItems.SANGRIA_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.ROSE_DYE.get(), ModelTemplates.FLAT_ITEM);
         // MISC
         generator.generateFlatItem(DDItems.BLUEBERRIES.get(), ModelTemplates.FLAT_ITEM);

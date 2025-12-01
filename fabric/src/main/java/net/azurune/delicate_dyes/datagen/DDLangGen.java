@@ -23,7 +23,11 @@ public class DDLangGen extends FabricLanguageProvider {
         // DYE
         build.add(DDItems.CORAL_DYE.get(), "Coral Dye");
         build.add(DDItems.CANARY_DYE.get(), "Canary Dye");
+        build.add(DDItems.WASABI_DYE.get(), "Wasabi Dye");
+        build.add(DDItems.SACRAMENTO_DYE.get(), "Sacramento Dye");
+        build.add(DDItems.SKY_DYE.get(), "Sky Dye");
         build.add(DDItems.BLURPLE_DYE.get(), "Blurple Dye");
+        build.add(DDItems.SANGRIA_DYE.get(), "Sangria Dye");
         build.add(DDItems.ROSE_DYE.get(), "Rose Dye");
         // MISC
         build.add(DDItems.BLUEBERRIES.get(), "Blueberries");

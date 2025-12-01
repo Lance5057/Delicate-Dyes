@@ -17,6 +17,22 @@ public class DDProperties {
         public static final BlockBehaviour.Properties ROSE = BlockBehaviour.Properties.ofLegacyCopy(Blocks.PINK_TULIP);
         public static final BlockBehaviour.Properties BLUEBERRY_BUSH = BlockBehaviour.Properties.ofLegacyCopy(Blocks.SWEET_BERRY_BUSH);
         public static final BlockBehaviour.Properties GOOB_BLOSSOM = BlockBehaviour.Properties.ofLegacyCopy(Blocks.SUNFLOWER).lightLevel(s -> 4);
+
+        // DYEABLE BLOCKS
+        public static final BlockBehaviour.Properties WOOL = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_WOOL);
+        public static final BlockBehaviour.Properties CARPET = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_CARPET);
+        public static final BlockBehaviour.Properties GLASS = BlockBehaviour.Properties.ofLegacyCopy(Blocks.GLASS);
+        public static final BlockBehaviour.Properties GLASS_PANE = BlockBehaviour.Properties.ofLegacyCopy(Blocks.GLASS_PANE);
+        public static final BlockBehaviour.Properties TERRACOTTA = BlockBehaviour.Properties.ofLegacyCopy(Blocks.TERRACOTTA);
+        public static final BlockBehaviour.Properties GLAZED_TERRACOTTA = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_GLAZED_TERRACOTTA);
+        public static final BlockBehaviour.Properties CONCRETE = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_CONCRETE);
+        public static final BlockBehaviour.Properties CONCRETE_POWDER = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_CONCRETE_POWDER);
+        public static final BlockBehaviour.Properties CANDLE = BlockBehaviour.Properties.ofLegacyCopy(Blocks.CANDLE);
+        public static final BlockBehaviour.Properties CANDLE_CAKE = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_CANDLE_CAKE);
+        public static final BlockBehaviour.Properties BANNER = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_BANNER);
+        public static final BlockBehaviour.Properties WALL_BANNER = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_WALL_BANNER);
+        public static final BlockBehaviour.Properties BED = BlockBehaviour.Properties.ofLegacyCopy(Blocks.WHITE_BED);
+        public static final BlockBehaviour.Properties SHULKER_BOX = BlockBehaviour.Properties.ofLegacyCopy(Blocks.SHULKER_BOX);
     }
 
     public static class ItemP {
