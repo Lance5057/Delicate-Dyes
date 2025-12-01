@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes;
 
+import net.azurune.delicate_dyes.core.init.DDDamageTypes;
 import net.azurune.delicate_dyes.core.init.DDFeatures;
 import net.azurune.delicate_dyes.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -14,10 +15,11 @@ public class FabricDelicateDyesDatagen implements DataGeneratorEntrypoint {
         pack.addProvider(DDLangGen::new);
         pack.addProvider(DDBlockTagGen::new);
         pack.addProvider(DDItemTagGen::new);
+        pack.addProvider(DDDamageTagGen::new);
         pack.addProvider(DDRecipeGen::new);
         pack.addProvider(DDLootTableGen::new);
         pack.addProvider(DDModelGen::new);
-        pack.addProvider(DDWorldGen::new);
+        pack.addProvider(DDRegistryGen::new);
     }
 
     @Override
@@ -25,5 +27,6 @@ public class FabricDelicateDyesDatagen implements DataGeneratorEntrypoint {
     {
         registryBuilder.add(Registries.CONFIGURED_FEATURE, DDFeatures.ConfiguredFeatures::bootstrap);
         registryBuilder.add(Registries.PLACED_FEATURE, DDFeatures.PlacedFeatures::bootstrap);
+        registryBuilder.add(Registries.DAMAGE_TYPE, DDDamageTypes::bootstrap);
     }
 }

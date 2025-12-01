@@ -3,6 +3,8 @@
   "block.delicate_dyes.goob_blossom": "Goob Blossom",
   "block.delicate_dyes.peach_bellflower": "Peach Bellflower",
   "block.delicate_dyes.rose": "Rose",
+  "death.attack.blueberryBush": "%1$s was poked to death by a blueberry bush",
+  "death.attack.blueberryBush.player": "%1$s was poked to death by a blueberry bush while trying to escape %2$s",
   "item.delicate_dyes.blueberries": "Blueberries",
   "item.delicate_dyes.blurple_dye": "Blurple Dye",
   "item.delicate_dyes.canary_dye": "Canary Dye",

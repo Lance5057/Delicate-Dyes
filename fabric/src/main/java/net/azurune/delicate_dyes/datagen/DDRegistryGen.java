@@ -7,9 +7,9 @@ import net.minecraft.core.registries.Registries;
 
 import java.util.concurrent.CompletableFuture;
 
-public class DDWorldGen extends FabricDynamicRegistryProvider
+public class DDRegistryGen extends FabricDynamicRegistryProvider
 {
-    public DDWorldGen(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
+    public DDRegistryGen(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, registriesFuture);
     }
 
@@ -17,8 +17,9 @@ public class DDWorldGen extends FabricDynamicRegistryProvider
     protected void configure(HolderLookup.Provider provider, Entries entries) {
         entries.addAll(provider.lookupOrThrow(Registries.CONFIGURED_FEATURE));
         entries.addAll(provider.lookupOrThrow(Registries.PLACED_FEATURE));
+        entries.addAll(provider.lookupOrThrow(Registries.DAMAGE_TYPE));
     }
 
     @Override
-    public String getName() { return "World Gen"; }
+    public String getName() { return "Registry Generator (World + Dmg)"; }
 }

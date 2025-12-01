@@ -17,6 +17,7 @@ public class DDLangGen extends FabricLanguageProvider {
     public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
         blockTranslations(provider, build);
         itemTranslations(provider, build);
+        miscTranslations(provider, build);
     }
 
     private void blockTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
@@ -40,5 +41,11 @@ public class DDLangGen extends FabricLanguageProvider {
 
         //MISC
         build.add(DDItems.BLUEBERRIES.get(), "Blueberries");
+    }
+
+    private void miscTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
+        // DEATHS
+        build.add("death.attack.blueberryBush", "%1$s was poked to death by a blueberry bush");
+        build.add("death.attack.blueberryBush.player", "%1$s was poked to death by a blueberry bush while trying to escape %2$s");
     }
 }

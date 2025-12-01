@@ -1,8 +1,10 @@
 package net.azurune.delicate_dyes.common.block;
 
 import com.mojang.serialization.MapCodec;
+import net.azurune.delicate_dyes.core.init.DDDamageTypes;
 import net.azurune.delicate_dyes.core.registry.DDItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -10,6 +12,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -83,7 +86,7 @@ public class BlueberryBushBlock extends BushBlock implements BonemealableBlock {
                 double d0 = Math.abs(entity.getX() - entity.xOld);
                 double d1 = Math.abs(entity.getZ() - entity.zOld);
                 if (d0 >= 0.003000000026077032 || d1 >= 0.003000000026077032) {
-                    entity.hurt(level.damageSources().sweetBerryBush(), 1.0F);
+                    entity.hurt(DDDamageTypes.of(level, DDDamageTypes.BLUEBERRY_BUSH), 1.0F);
                 }
             }
         }
