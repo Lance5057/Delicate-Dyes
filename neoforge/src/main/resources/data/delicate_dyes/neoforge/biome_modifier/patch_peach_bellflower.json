@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_savanna",
+  "features": [
+    "delicate_dyes:patch_peach_bellflower"
+  ],
+  "step": "vegetal_decoration"
+}

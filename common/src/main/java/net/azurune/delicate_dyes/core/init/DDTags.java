@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 public class DDTags {
     public static class Blocks {
         public static final TagKey<Block> DELICATE_BEDS = create("delicate_beds", DelicateDyes.MOD_ID);
-        //COMMON
+        // COMMON
         public static final TagKey<Block> MINEABLE_SHEAR = create("mineable/shear", IntegrationIds.MINECRAFT);
         public static final TagKey<Block> SHULKER_BOXES = create("shulker_boxes", IntegrationIds.C);
 
@@ -21,7 +21,7 @@ public class DDTags {
     }
 
     public static class Items {
-        //COMMON
+        // COMMON
         public static final TagKey<Item> DYES = create("dyes", IntegrationIds.C);
         public static final TagKey<Item> GLASS_BLOCKS = create("glass_blocks", IntegrationIds.C);
         public static final TagKey<Item> GLASS_PANES = create("glass_panes", IntegrationIds.C);

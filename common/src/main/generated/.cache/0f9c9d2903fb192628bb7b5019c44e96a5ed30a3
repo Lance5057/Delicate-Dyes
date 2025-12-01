@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-30T23:08:58.2743848	Delicate Dyes/Recipes
+// 1.21.1	2025-12-01T00:27:10.2025351	Delicate Dyes/Recipes
 df896c266feccf1caafd2de031499107f679b7c5 data\delicate_dyes\advancement\recipes\misc\sangria_dye_from_sweet_berries.json
 430c7e7f19fe893c25ca756b3fc793b85edf9bf6 data\delicate_dyes\advancement\recipes\misc\sangria_dye_from_bits_2.json
 79ff85c6a7b7ab7b59c1682b1a40c390e650ba52 data\delicate_dyes\advancement\recipes\misc\sacramento_dye_from_glow_ink_sac.json
@@ -44,8 +44,8 @@ f34acfb8156618451c0db1308bc7dc6f598e27fd data\delicate_dyes\recipe\rose_dye_from
 b426dbbdf6c0d1350a209449437412eac098332f data\delicate_dyes\advancement\recipes\misc\sangria_dye_from_bits_3.json
 dbae68efe5fadc2bb245b6822e4b04d1ee3d72e9 data\delicate_dyes\advancement\recipes\misc\wasabi_dye_from_bits_1.json
 71c7504e6d571d5022d6bf2516bf47cea22ace14 data\delicate_dyes\advancement\recipes\misc\sacramento_dye_from_bits_2.json
-5419b5c43ddf5e1474f7af72a72b9822fb26ece6 data\delicate_dyes\recipe\blurple_dye_from_blueberries.json
 1fc17af4b25229b24a041408f3dc2aa9c1c017d5 data\delicate_dyes\recipe\sacramento_dye_from_bits_1.json
+5419b5c43ddf5e1474f7af72a72b9822fb26ece6 data\delicate_dyes\recipe\blurple_dye_from_blueberries.json
 95550dbddf357a3f334786b0339bfd1eb5f6732d data\delicate_dyes\recipe\sangria_dye_from_sweet_berries.json
 fec65bdc769e2b875e7d72f7b5d3c4d93e72f402 data\delicate_dyes\recipe\sky_dye_from_bits_1.json
 1a054c30a7dfc126344c0085e88bbc985ff51107 data\delicate_dyes\advancement\recipes\misc\canary_dye_from_goob_blossom.json

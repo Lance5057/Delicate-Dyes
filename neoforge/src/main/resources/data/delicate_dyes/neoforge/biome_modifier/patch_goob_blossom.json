@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [ "minecraft:swamp" ],
+  "features": [
+    "delicate_dyes:patch_goob_blossom"
+  ],
+  "step": "vegetal_decoration"
+}
