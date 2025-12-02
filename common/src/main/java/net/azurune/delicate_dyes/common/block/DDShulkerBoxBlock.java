@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes.common.block;
 
+import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -46,18 +47,18 @@ public class DDShulkerBoxBlock extends ShulkerBoxBlock {
     public static Block getBlockByColor(@Nullable DyeColor color) {
         if (color == null) {
             return Blocks.SHULKER_BOX;
-        } else {
-            return switch (color.getId()) {
-                case 16 -> DDBlocks.CORAL_SHULKER_BOX.get();
-                case 17 -> DDBlocks.CANARY_SHULKER_BOX.get();
-                case 18 -> DDBlocks.WASABI_SHULKER_BOX.get();
-                case 19 -> DDBlocks.SACRAMENTO_SHULKER_BOX.get();
-                case 20 -> DDBlocks.SKY_SHULKER_BOX.get();
-                case 21 -> DDBlocks.BLURPLE_SHULKER_BOX.get();
-                case 22 -> DDBlocks.SANGRIA_SHULKER_BOX.get();
-                case 23 -> DDBlocks.ROSE_SHULKER_BOX.get();
-                default -> Blocks.SHULKER_BOX;
-            };
+        } else if (color.getId() >= DDDyeValues.CORAL.getId() || color.getId() <= DDDyeValues.ROSE.getId()) {
+            if (color == DDDyeValues.CORAL) return DDBlocks.CORAL_SHULKER_BOX.get();
+            else if (color == DDDyeValues.UMBER) return DDBlocks.UMBER_SHULKER_BOX.get();
+            else if (color == DDDyeValues.CANARY) return DDBlocks.CANARY_SHULKER_BOX.get();
+            else if (color == DDDyeValues.WASABI) return DDBlocks.WASABI_SHULKER_BOX.get();
+            else if (color == DDDyeValues.SACRAMENTO) return DDBlocks.SACRAMENTO_SHULKER_BOX.get();
+            else if (color == DDDyeValues.SKY) return DDBlocks.SKY_SHULKER_BOX.get();
+            else if (color == DDDyeValues.BLURPLE) return DDBlocks.BLURPLE_SHULKER_BOX.get();
+            else if (color == DDDyeValues.LAVENDER) return DDBlocks.LAVENDER_SHULKER_BOX.get();
+            else if (color == DDDyeValues.SANGRIA) return DDBlocks.SANGRIA_SHULKER_BOX.get();
+            else if (color == DDDyeValues.ROSE) return DDBlocks.ROSE_SHULKER_BOX.get();
         }
+        return Blocks.SHULKER_BOX;
     }
 }

@@ -50,6 +50,14 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .group("coral_dye")
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "coral_dye_from_bits_2"));
 
+        //UMBER
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.UMBER_DYE.get(), 2)
+                .requires(Items.RED_DYE).requires(Items.BROWN_DYE)
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_brown_dye", VanillaRecipeProvider.has(Items.BROWN_DYE))
+                .group("umber_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "umber_dye_from_bits"));
+
         //CANARY
         RecipeHelper.modBasedOneToTwo(output, DDItems.CANARY_DYE.get(), DDBlocks.GOOB_BLOSSOM.get(), "canary_dye");
 
@@ -128,6 +136,22 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .group("blurple_dye")
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "blurple_dye_from_bits_2"));
 
+        //LAVENDER
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.LAVENDER_DYE.get(), 2)
+                .requires(Items.PURPLE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_purple_dye", VanillaRecipeProvider.has(Items.PURPLE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("lavender_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "lavender_dye_from_bits"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.LAVENDER_DYE.get(), 3)
+                .requires(Items.RED_DYE).requires(Items.BLUE_DYE).requires(Items.WHITE_DYE)
+                .unlockedBy("has_red_dye", VanillaRecipeProvider.has(Items.RED_DYE))
+                .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))
+                .unlockedBy("has_white_dye", VanillaRecipeProvider.has(Items.WHITE_DYE))
+                .group("lavender_dye")
+                .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "lavender_dye_from_bits_3"));
+
         //SANGRIA
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.SANGRIA_DYE.get(), 1)
                 .requires(Items.SWEET_BERRIES)
@@ -202,6 +226,23 @@ public class DDRecipeGen extends FabricRecipeProvider {
 
         banner(output, DDItems.CORAL_BANNER.get(), DDBlocks.CORAL_WOOL.get().asItem());
         bedFromPlanksAndWool(output, DDItems.CORAL_BED.get(), DDBlocks.CORAL_WOOL.get().asItem());
+
+        //UMBER
+        carpet(output, DDBlocks.UMBER_CARPET.get(), DDBlocks.UMBER_WOOL.get());
+        stainedGlassFromGlassAndDye(output, DDBlocks.UMBER_STAINED_GLASS.get(), DDItems.UMBER_DYE.get());
+        stainedGlassPaneFromStainedGlass(output, DDBlocks.UMBER_STAINED_GLASS_PANE.get(), DDBlocks.UMBER_STAINED_GLASS.get());
+        stainedGlassPaneFromGlassPaneAndDye(output, DDBlocks.UMBER_STAINED_GLASS_PANE.get(), DDItems.UMBER_DYE.get());
+        coloredTerracottaFromTerracottaAndDye(output, DDBlocks.UMBER_TERRACOTTA.get(), DDItems.UMBER_DYE.get());
+        concretePowder(output, DDBlocks.UMBER_CONCRETE_POWDER.get(), DDItems.UMBER_DYE.get());
+        candle(output, DDBlocks.UMBER_CANDLE.get(), DDItems.UMBER_DYE.get());
+        RecipeHelper.woolFromTag(output, DDBlocks.UMBER_WOOL.get(), DDItems.UMBER_DYE.get(), "umber_wool");
+        RecipeHelper.bedFromTag(output, DDBlocks.UMBER_BED.get(), DDItems.UMBER_DYE.get(), "umber_bed");
+
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(DDBlocks.UMBER_TERRACOTTA.get()), RecipeCategory.DECORATIONS, DDBlocks.UMBER_GLAZED_TERRACOTTA.get().asItem(),
+                0.1F, 200).unlockedBy("has_umber_terracotta", has(DDBlocks.UMBER_TERRACOTTA.get())).save(output);
+
+        banner(output, DDItems.UMBER_BANNER.get(), DDBlocks.UMBER_WOOL.get().asItem());
+        bedFromPlanksAndWool(output, DDItems.UMBER_BED.get(), DDBlocks.UMBER_WOOL.get().asItem());
 
         //CANARY
         carpet(output, DDBlocks.CANARY_CARPET.get(), DDBlocks.CANARY_WOOL.get());
@@ -288,6 +329,23 @@ public class DDRecipeGen extends FabricRecipeProvider {
         banner(output, DDItems.BLURPLE_BANNER.get(), DDBlocks.BLURPLE_WOOL.get().asItem());
         bedFromPlanksAndWool(output, DDItems.BLURPLE_BED.get(), DDBlocks.BLURPLE_WOOL.get().asItem());
 
+        //LAVENDER
+        carpet(output, DDBlocks.LAVENDER_CARPET.get(), DDBlocks.LAVENDER_WOOL.get());
+        stainedGlassFromGlassAndDye(output, DDBlocks.LAVENDER_STAINED_GLASS.get(), DDItems.LAVENDER_DYE.get());
+        stainedGlassPaneFromStainedGlass(output, DDBlocks.LAVENDER_STAINED_GLASS_PANE.get(), DDBlocks.LAVENDER_STAINED_GLASS.get());
+        stainedGlassPaneFromGlassPaneAndDye(output, DDBlocks.LAVENDER_STAINED_GLASS_PANE.get(), DDItems.LAVENDER_DYE.get());
+        coloredTerracottaFromTerracottaAndDye(output, DDBlocks.LAVENDER_TERRACOTTA.get(), DDItems.LAVENDER_DYE.get());
+        concretePowder(output, DDBlocks.LAVENDER_CONCRETE_POWDER.get(), DDItems.LAVENDER_DYE.get());
+        candle(output, DDBlocks.LAVENDER_CANDLE.get(), DDItems.LAVENDER_DYE.get());
+        RecipeHelper.woolFromTag(output, DDBlocks.LAVENDER_WOOL.get(), DDItems.LAVENDER_DYE.get(), "lavender_wool");
+        RecipeHelper.bedFromTag(output, DDBlocks.LAVENDER_BED.get(), DDItems.LAVENDER_DYE.get(), "lavender_bed");
+
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(DDBlocks.LAVENDER_TERRACOTTA.get()), RecipeCategory.DECORATIONS, DDBlocks.LAVENDER_GLAZED_TERRACOTTA.get().asItem(),
+                0.1F, 200).unlockedBy("has_lavender_terracotta", has(DDBlocks.LAVENDER_TERRACOTTA.get())).save(output);
+
+        banner(output, DDItems.LAVENDER_BANNER.get(), DDBlocks.LAVENDER_WOOL.get().asItem());
+        bedFromPlanksAndWool(output, DDItems.LAVENDER_BED.get(), DDBlocks.LAVENDER_WOOL.get().asItem());
+
         //SANGRIA
         carpet(output, DDBlocks.SANGRIA_CARPET.get(), DDBlocks.SANGRIA_WOOL.get());
         stainedGlassFromGlassAndDye(output, DDBlocks.SANGRIA_STAINED_GLASS.get(), DDItems.SANGRIA_DYE.get());
@@ -372,11 +430,13 @@ public class DDRecipeGen extends FabricRecipeProvider {
         RecipeHelper.bedFromTag(output, Blocks.PINK_BED, Items.PINK_DYE, "pink_bed");
 
         RecipeHelper.shulkerFromTag(output, DDBlocks.CORAL_SHULKER_BOX.get(), DDItems.CORAL_DYE.get(), "coral_shulker_box");
+        RecipeHelper.shulkerFromTag(output, DDBlocks.UMBER_SHULKER_BOX.get(), DDItems.UMBER_DYE.get(), "umber_shulker_box");
         RecipeHelper.shulkerFromTag(output, DDBlocks.CANARY_SHULKER_BOX.get(), DDItems.CANARY_DYE.get(), "canary_shulker_box");
         RecipeHelper.shulkerFromTag(output, DDBlocks.WASABI_SHULKER_BOX.get(), DDItems.WASABI_DYE.get(), "wasabi_shulker_box");
         RecipeHelper.shulkerFromTag(output, DDBlocks.SACRAMENTO_SHULKER_BOX.get(), DDItems.SACRAMENTO_DYE.get(), "sacramento_shulker_box");
         RecipeHelper.shulkerFromTag(output, DDBlocks.SKY_SHULKER_BOX.get(), DDItems.SKY_DYE.get(), "sky_shulker_box");
         RecipeHelper.shulkerFromTag(output, DDBlocks.BLURPLE_SHULKER_BOX.get(), DDItems.BLURPLE_DYE.get(), "blurple_shulker_box");
+        RecipeHelper.shulkerFromTag(output, DDBlocks.LAVENDER_SHULKER_BOX.get(), DDItems.LAVENDER_DYE.get(), "lavender_shulker_box");
         RecipeHelper.shulkerFromTag(output, DDBlocks.SANGRIA_SHULKER_BOX.get(), DDItems.SANGRIA_DYE.get(), "sangria_shulker_box");
         RecipeHelper.shulkerFromTag(output, DDBlocks.ROSE_SHULKER_BOX.get(), DDItems.ROSE_DYE.get(), "rose_shulker_box");
     }

@@ -29,8 +29,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.Map;
 
 @Mixin(Sheep.class)
-public abstract class SheepMixin extends Animal implements Shearable
-{
+public abstract class SheepMixin extends Animal implements Shearable {
     protected SheepMixin(EntityType<? extends Animal> entityType, Level level) {
         super(entityType, level);
     }
@@ -44,6 +43,9 @@ public abstract class SheepMixin extends Animal implements Shearable
         if (!this.isSheared() && (getColor().getId() >= DDDyeValues.CORAL.getId() || getColor().getId() <= DDDyeValues.ROSE.getId())) {
             if (this.getColor() == DDDyeValues.CORAL) {
                 cir.setReturnValue(DDLootTables.SHEEP_CORAL);
+            }
+            if (this.getColor() == DDDyeValues.UMBER) {
+                cir.setReturnValue(DDLootTables.SHEEP_UMBER);
             }
             if (this.getColor() == DDDyeValues.CANARY) {
                 cir.setReturnValue(DDLootTables.SHEEP_CANARY);
@@ -60,6 +62,9 @@ public abstract class SheepMixin extends Animal implements Shearable
             if (this.getColor() == DDDyeValues.BLURPLE) {
                 cir.setReturnValue(DDLootTables.SHEEP_BLURPLE);
             }
+            if (this.getColor() == DDDyeValues.LAVENDER) {
+                cir.setReturnValue(DDLootTables.SHEEP_LAVENDER);
+            }
             if (this.getColor() == DDDyeValues.SANGRIA) {
                 cir.setReturnValue(DDLootTables.SHEEP_SANGRIA);
             }
@@ -71,11 +76,13 @@ public abstract class SheepMixin extends Animal implements Shearable
 
     static {
         ITEM_BY_DYE.put(DDDyeValues.CORAL, DDBlocks.CORAL_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.UMBER, DDBlocks.UMBER_WOOL.get());
         ITEM_BY_DYE.put(DDDyeValues.CANARY, DDBlocks.CANARY_WOOL.get());
         ITEM_BY_DYE.put(DDDyeValues.WASABI, DDBlocks.WASABI_WOOL.get());
         ITEM_BY_DYE.put(DDDyeValues.SACRAMENTO, DDBlocks.SACRAMENTO_WOOL.get());
         ITEM_BY_DYE.put(DDDyeValues.SKY, DDBlocks.SKY_WOOL.get());
         ITEM_BY_DYE.put(DDDyeValues.BLURPLE, DDBlocks.BLURPLE_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.LAVENDER, DDBlocks.LAVENDER_WOOL.get());
         ITEM_BY_DYE.put(DDDyeValues.SANGRIA, DDBlocks.SANGRIA_WOOL.get());
         ITEM_BY_DYE.put(DDDyeValues.ROSE, DDBlocks.ROSE_WOOL.get());
     }

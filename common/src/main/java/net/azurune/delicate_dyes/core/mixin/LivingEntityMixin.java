@@ -19,9 +19,9 @@ public class LivingEntityMixin {
     LivingEntity living = (LivingEntity) (Object) this;
 
     @Inject(at = @At("TAIL"), method = "dropCustomDeathLoot")
-    private void delicateDyes$dropFromLootTable(ServerLevel level, DamageSource damageSource, boolean hitByPlayer, CallbackInfo ci) {
+    private void delicateDyes$dropFromLootTable(ServerLevel level, DamageSource damageSource, boolean hitRecently, CallbackInfo ci) {
         if (living instanceof Player player) {
-            if (hitByPlayer && living.getStringUUID().equals("bc56b2c8-9ef8-4532-b045-00f44804bca4")) {
+            if (damageSource.getEntity() instanceof Player && living.getStringUUID().equals("bc56b2c8-9ef8-4532-b045-00f44804bca4")) {
                 player.drop(new ItemStack(DDItems.BLURPLE_DYE.get()), false);
             }
         }

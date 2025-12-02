@@ -91,7 +91,6 @@ public class BlueberryBushBlock extends BushBlock implements BonemealableBlock {
                 }
             }
         }
-
     }
 
     protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
@@ -120,6 +119,7 @@ public class BlueberryBushBlock extends BushBlock implements BonemealableBlock {
         popResource(level, pos, new ItemStack(DDItems.BLUEBERRIES.get(), j + (flag ? 1 : 0)));
     }
 
+    @Override
     protected boolean isPathfindable(BlockState state, PathComputationType pathComputationType) {
         return false;
     }

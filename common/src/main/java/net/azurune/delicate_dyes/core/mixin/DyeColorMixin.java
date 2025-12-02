@@ -42,6 +42,12 @@ public abstract class DyeColorMixin {
         dyes.add(DD_CORAL);
         i++;
 
+        //UMBER
+        var DD_UMBER = delicateDyes$init("DD_UMBER", last.ordinal() + i, last.ordinal() + i, "umber",
+                0x883225, MapColor.COLOR_BROWN, 0x883225, 0x883225);
+        dyes.add(DD_UMBER);
+        i++;
+
         //CANARY
         var DD_CANARY = delicateDyes$init("DD_CANARY", last.ordinal() + i, last.ordinal() + i, "canary",
                 0xf0e76c, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c);
@@ -70,6 +76,12 @@ public abstract class DyeColorMixin {
         var DD_BLURPLE = delicateDyes$init("DD_BLURPLE", last.ordinal() + i, last.ordinal() + i, "blurple",
                 0x6130c8, MapColor.TERRACOTTA_BLUE, 0x614495, 0x614495);
         dyes.add(DD_BLURPLE);
+        i++;
+
+        //LAVENDER
+        var DD_LAVENDER = delicateDyes$init("DD_LAVENDER", last.ordinal() + i, last.ordinal() + i, "lavender",
+                0xcd75df, MapColor.TERRACOTTA_MAGENTA, 0xd98fe8, 0xd98fe8);
+        dyes.add(DD_LAVENDER);
         i++;
 
         //SANGRIA

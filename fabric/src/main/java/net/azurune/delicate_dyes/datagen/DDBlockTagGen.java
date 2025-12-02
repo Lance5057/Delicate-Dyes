@@ -83,6 +83,10 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
                 .add(DDBlocks.CORAL_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.CORAL_CONCRETE.get())
                 .add(DDBlocks.CORAL_SHULKER_BOX.get())
+                .add(DDBlocks.UMBER_TERRACOTTA.get())
+                .add(DDBlocks.UMBER_GLAZED_TERRACOTTA.get())
+                .add(DDBlocks.UMBER_CONCRETE.get())
+                .add(DDBlocks.UMBER_SHULKER_BOX.get())
                 .add(DDBlocks.CANARY_TERRACOTTA.get())
                 .add(DDBlocks.CANARY_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.CANARY_CONCRETE.get())
@@ -103,6 +107,10 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
                 .add(DDBlocks.BLURPLE_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.BLURPLE_CONCRETE.get())
                 .add(DDBlocks.BLURPLE_SHULKER_BOX.get())
+                .add(DDBlocks.LAVENDER_TERRACOTTA.get())
+                .add(DDBlocks.LAVENDER_GLAZED_TERRACOTTA.get())
+                .add(DDBlocks.LAVENDER_CONCRETE.get())
+                .add(DDBlocks.LAVENDER_SHULKER_BOX.get())
                 .add(DDBlocks.SANGRIA_TERRACOTTA.get())
                 .add(DDBlocks.SANGRIA_GLAZED_TERRACOTTA.get())
                 .add(DDBlocks.SANGRIA_CONCRETE.get())
@@ -121,6 +129,9 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
                 .add(DDBlocks.CORAL_BANNER.get())
                 .add(DDBlocks.CORAL_WALL_BANNER.get())
 
+                .add(DDBlocks.UMBER_BANNER.get())
+                .add(DDBlocks.UMBER_WALL_BANNER.get())
+
                 .add(DDBlocks.CANARY_BANNER.get())
                 .add(DDBlocks.CANARY_WALL_BANNER.get())
 
@@ -135,6 +146,9 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
 
                 .add(DDBlocks.BLURPLE_BANNER.get())
                 .add(DDBlocks.BLURPLE_WALL_BANNER.get())
+
+                .add(DDBlocks.LAVENDER_BANNER.get())
+                .add(DDBlocks.LAVENDER_WALL_BANNER.get())
 
                 .add(DDBlocks.SANGRIA_BANNER.get())
                 .add(DDBlocks.SANGRIA_WALL_BANNER.get())
@@ -149,11 +163,13 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendDelicateBeds() {
         getOrCreateTagBuilder(DDTags.Blocks.DELICATE_BEDS)
                 .add(DDBlocks.CORAL_BED.get())
+                .add(DDBlocks.UMBER_BED.get())
                 .add(DDBlocks.CANARY_BED.get())
                 .add(DDBlocks.WASABI_BED.get())
                 .add(DDBlocks.SACRAMENTO_BED.get())
                 .add(DDBlocks.SKY_BED.get())
                 .add(DDBlocks.BLURPLE_BED.get())
+                .add(DDBlocks.LAVENDER_BED.get())
                 .add(DDBlocks.SANGRIA_BED.get())
                 .add(DDBlocks.ROSE_BED.get())
         ;
@@ -162,11 +178,13 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendShulkerBoxes() {
         getOrCreateTagBuilder(BlockTags.SHULKER_BOXES)
                 .add(DDBlocks.CORAL_SHULKER_BOX.get())
+                .add(DDBlocks.UMBER_SHULKER_BOX.get())
                 .add(DDBlocks.CANARY_SHULKER_BOX.get())
                 .add(DDBlocks.WASABI_SHULKER_BOX.get())
                 .add(DDBlocks.SACRAMENTO_SHULKER_BOX.get())
                 .add(DDBlocks.SKY_SHULKER_BOX.get())
                 .add(DDBlocks.BLURPLE_SHULKER_BOX.get())
+                .add(DDBlocks.LAVENDER_SHULKER_BOX.get())
                 .add(DDBlocks.SANGRIA_SHULKER_BOX.get())
                 .add(DDBlocks.ROSE_SHULKER_BOX.get())
         ;
@@ -181,11 +199,13 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendCShulkerBoxes() {
         getOrCreateTagBuilder(DDTags.Blocks.SHULKER_BOXES)
                 .add(DDBlocks.CORAL_SHULKER_BOX.get())
+                .add(DDBlocks.UMBER_SHULKER_BOX.get())
                 .add(DDBlocks.CANARY_SHULKER_BOX.get())
                 .add(DDBlocks.WASABI_SHULKER_BOX.get())
                 .add(DDBlocks.SACRAMENTO_SHULKER_BOX.get())
                 .add(DDBlocks.SKY_SHULKER_BOX.get())
                 .add(DDBlocks.BLURPLE_SHULKER_BOX.get())
+                .add(DDBlocks.LAVENDER_SHULKER_BOX.get())
                 .add(DDBlocks.SANGRIA_SHULKER_BOX.get())
                 .add(DDBlocks.ROSE_SHULKER_BOX.get())
         ;
@@ -194,11 +214,13 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendWool() {
         getOrCreateTagBuilder(BlockTags.WOOL)
                 .add(DDBlocks.CORAL_WOOL.get())
+                .add(DDBlocks.UMBER_WOOL.get())
                 .add(DDBlocks.CANARY_WOOL.get())
                 .add(DDBlocks.WASABI_WOOL.get())
                 .add(DDBlocks.SACRAMENTO_WOOL.get())
                 .add(DDBlocks.SKY_WOOL.get())
                 .add(DDBlocks.BLURPLE_WOOL.get())
+                .add(DDBlocks.LAVENDER_WOOL.get())
                 .add(DDBlocks.SANGRIA_WOOL.get())
                 .add(DDBlocks.ROSE_WOOL.get())
         ;
@@ -207,11 +229,13 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendWoolCarpets() {
         getOrCreateTagBuilder(BlockTags.WOOL_CARPETS)
                 .add(DDBlocks.CORAL_CARPET.get())
+                .add(DDBlocks.UMBER_CARPET.get())
                 .add(DDBlocks.CANARY_CARPET.get())
                 .add(DDBlocks.WASABI_CARPET.get())
                 .add(DDBlocks.SACRAMENTO_CARPET.get())
                 .add(DDBlocks.SKY_CARPET.get())
                 .add(DDBlocks.BLURPLE_CARPET.get())
+                .add(DDBlocks.LAVENDER_CARPET.get())
                 .add(DDBlocks.SANGRIA_CARPET.get())
                 .add(DDBlocks.ROSE_CARPET.get())
         ;
@@ -220,11 +244,13 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendTerracotta() {
         getOrCreateTagBuilder(BlockTags.TERRACOTTA)
                 .add(DDBlocks.CORAL_TERRACOTTA.get())
+                .add(DDBlocks.UMBER_TERRACOTTA.get())
                 .add(DDBlocks.CANARY_TERRACOTTA.get())
                 .add(DDBlocks.WASABI_TERRACOTTA.get())
                 .add(DDBlocks.SACRAMENTO_TERRACOTTA.get())
                 .add(DDBlocks.SKY_TERRACOTTA.get())
                 .add(DDBlocks.BLURPLE_TERRACOTTA.get())
+                .add(DDBlocks.LAVENDER_TERRACOTTA.get())
                 .add(DDBlocks.SANGRIA_TERRACOTTA.get())
                 .add(DDBlocks.ROSE_TERRACOTTA.get())
         ;
@@ -233,11 +259,13 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendCandles() {
         getOrCreateTagBuilder(BlockTags.CANDLES)
                 .add(DDBlocks.CORAL_CANDLE.get())
+                .add(DDBlocks.UMBER_CANDLE.get())
                 .add(DDBlocks.CANARY_CANDLE.get())
                 .add(DDBlocks.WASABI_CANDLE.get())
                 .add(DDBlocks.SACRAMENTO_CANDLE.get())
                 .add(DDBlocks.SKY_CANDLE.get())
                 .add(DDBlocks.BLURPLE_CANDLE.get())
+                .add(DDBlocks.LAVENDER_CANDLE.get())
                 .add(DDBlocks.SANGRIA_CANDLE.get())
                 .add(DDBlocks.ROSE_CANDLE.get())
         ;
@@ -246,11 +274,13 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
     public void appendCandleCakes() {
         getOrCreateTagBuilder(BlockTags.CANDLE_CAKES)
                 .add(DDBlocks.CORAL_CANDLE_CAKE.get())
+                .add(DDBlocks.UMBER_CANDLE_CAKE.get())
                 .add(DDBlocks.CANARY_CANDLE_CAKE.get())
                 .add(DDBlocks.WASABI_CANDLE_CAKE.get())
                 .add(DDBlocks.SACRAMENTO_CANDLE_CAKE.get())
                 .add(DDBlocks.SKY_CANDLE_CAKE.get())
                 .add(DDBlocks.BLURPLE_CANDLE_CAKE.get())
+                .add(DDBlocks.LAVENDER_CANDLE_CAKE.get())
                 .add(DDBlocks.SANGRIA_CANDLE_CAKE.get())
                 .add(DDBlocks.ROSE_CANDLE_CAKE.get())
         ;
@@ -260,6 +290,9 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.BANNERS)
                 .add(DDBlocks.CORAL_BANNER.get())
                 .add(DDBlocks.CORAL_WALL_BANNER.get())
+
+                .add(DDBlocks.UMBER_BANNER.get())
+                .add(DDBlocks.UMBER_WALL_BANNER.get())
 
                 .add(DDBlocks.CANARY_BANNER.get())
                 .add(DDBlocks.CANARY_WALL_BANNER.get())
@@ -275,6 +308,9 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
 
                 .add(DDBlocks.BLURPLE_BANNER.get())
                 .add(DDBlocks.BLURPLE_WALL_BANNER.get())
+
+                .add(DDBlocks.LAVENDER_BANNER.get())
+                .add(DDBlocks.LAVENDER_WALL_BANNER.get())
 
                 .add(DDBlocks.SANGRIA_BANNER.get())
                 .add(DDBlocks.SANGRIA_WALL_BANNER.get())

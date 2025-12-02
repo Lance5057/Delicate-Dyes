@@ -49,6 +49,22 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.CORAL_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
         add(DDBlocks.CORAL_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.CORAL_SHULKER_BOX.get()));
 
+        //UMBER
+        dropSelf(DDBlocks.UMBER_WOOL.get());
+        dropSelf(DDBlocks.UMBER_CARPET.get());
+        dropWhenSilkTouch(DDBlocks.UMBER_STAINED_GLASS.get());
+        dropWhenSilkTouch(DDBlocks.UMBER_STAINED_GLASS_PANE.get());
+        dropSelf(DDBlocks.UMBER_TERRACOTTA.get());
+        dropSelf(DDBlocks.UMBER_GLAZED_TERRACOTTA.get());
+        add(DDBlocks.UMBER_CANDLE.get(), createCandleDrops(DDBlocks.UMBER_CANDLE.get()));
+        dropSelf(DDBlocks.UMBER_CONCRETE.get());
+        dropSelf(DDBlocks.UMBER_CONCRETE_POWDER.get());
+        add(DDBlocks.UMBER_CANDLE_CAKE.get(), createCandleCakeDrops(DDBlocks.UMBER_CANDLE.get()));
+        add(DDBlocks.UMBER_BANNER.get(), createBannerDrop(DDBlocks.UMBER_BANNER.get()));
+        add(DDBlocks.UMBER_WALL_BANNER.get(), createBannerDrop(DDBlocks.UMBER_WALL_BANNER.get()));
+        add(DDBlocks.UMBER_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
+        add(DDBlocks.UMBER_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.UMBER_SHULKER_BOX.get()));
+
         //CANARY
         dropSelf(DDBlocks.CANARY_WOOL.get());
         dropSelf(DDBlocks.CANARY_CARPET.get());
@@ -128,6 +144,22 @@ public class DDLootTableGen extends FabricBlockLootTableProvider {
         add(DDBlocks.BLURPLE_WALL_BANNER.get(), createBannerDrop(DDBlocks.BLURPLE_WALL_BANNER.get()));
         add(DDBlocks.BLURPLE_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
         add(DDBlocks.BLURPLE_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.BLURPLE_SHULKER_BOX.get()));
+
+        //LAVENDER
+        dropSelf(DDBlocks.LAVENDER_WOOL.get());
+        dropSelf(DDBlocks.LAVENDER_CARPET.get());
+        dropWhenSilkTouch(DDBlocks.LAVENDER_STAINED_GLASS.get());
+        dropWhenSilkTouch(DDBlocks.LAVENDER_STAINED_GLASS_PANE.get());
+        dropSelf(DDBlocks.LAVENDER_TERRACOTTA.get());
+        dropSelf(DDBlocks.LAVENDER_GLAZED_TERRACOTTA.get());
+        add(DDBlocks.LAVENDER_CANDLE.get(), createCandleDrops(DDBlocks.LAVENDER_CANDLE.get()));
+        dropSelf(DDBlocks.LAVENDER_CONCRETE.get());
+        dropSelf(DDBlocks.LAVENDER_CONCRETE_POWDER.get());
+        add(DDBlocks.LAVENDER_CANDLE_CAKE.get(), createCandleCakeDrops(DDBlocks.LAVENDER_CANDLE.get()));
+        add(DDBlocks.LAVENDER_BANNER.get(), createBannerDrop(DDBlocks.LAVENDER_BANNER.get()));
+        add(DDBlocks.LAVENDER_WALL_BANNER.get(), createBannerDrop(DDBlocks.LAVENDER_WALL_BANNER.get()));
+        add(DDBlocks.LAVENDER_BED.get(), (Block b) -> createSinglePropConditionTable(b, BedBlock.PART, BedPart.HEAD));
+        add(DDBlocks.LAVENDER_SHULKER_BOX.get(), createShulkerBoxDrop(DDBlocks.LAVENDER_SHULKER_BOX.get()));
 
         //SANGRIA
         dropSelf(DDBlocks.SANGRIA_WOOL.get());

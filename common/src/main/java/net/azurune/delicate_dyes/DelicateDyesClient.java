@@ -10,6 +10,8 @@ public class DelicateDyesClient {
         //TRANSLUCENT
         Services.loadClient().registerBlockRenderType(DDBlocks.CORAL_STAINED_GLASS.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.CORAL_STAINED_GLASS_PANE.get(), RenderType.translucent());
+        Services.loadClient().registerBlockRenderType(DDBlocks.UMBER_STAINED_GLASS.get(), RenderType.translucent());
+        Services.loadClient().registerBlockRenderType(DDBlocks.UMBER_STAINED_GLASS_PANE.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.CANARY_STAINED_GLASS.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.CANARY_STAINED_GLASS_PANE.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.WASABI_STAINED_GLASS.get(), RenderType.translucent());
@@ -20,6 +22,8 @@ public class DelicateDyesClient {
         Services.loadClient().registerBlockRenderType(DDBlocks.SKY_STAINED_GLASS_PANE.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.BLURPLE_STAINED_GLASS.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.BLURPLE_STAINED_GLASS_PANE.get(), RenderType.translucent());
+        Services.loadClient().registerBlockRenderType(DDBlocks.LAVENDER_STAINED_GLASS.get(), RenderType.translucent());
+        Services.loadClient().registerBlockRenderType(DDBlocks.LAVENDER_STAINED_GLASS_PANE.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.SANGRIA_STAINED_GLASS.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.SANGRIA_STAINED_GLASS_PANE.get(), RenderType.translucent());
         Services.loadClient().registerBlockRenderType(DDBlocks.ROSE_STAINED_GLASS.get(), RenderType.translucent());

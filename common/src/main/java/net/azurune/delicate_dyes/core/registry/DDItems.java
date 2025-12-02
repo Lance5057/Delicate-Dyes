@@ -14,7 +14,13 @@ public class DDItems {
     public static final Supplier<Item> CORAL_BANNER = register("coral_banner", () -> new BannerItem(DDBlocks.CORAL_BANNER.get(), DDBlocks.CORAL_WALL_BANNER.get(), DDProperties.ItemP.GENERIC_16));
     public static final Supplier<Item> CORAL_BED = register("coral_bed", () -> new BedItem(DDBlocks.CORAL_BED.get(), DDProperties.ItemP.GENERIC_1));
     public static final Supplier<Item> CORAL_SHULKER_BOX = register("coral_shulker_box", () -> new BedItem(DDBlocks.CORAL_SHULKER_BOX.get(), DDProperties.ItemP.GENERIC_1));
-    
+
+    //UMBER
+    public static final Supplier<Item> UMBER_DYE = register("umber_dye", () -> new DyeItem(DDDyeValues.UMBER, DDProperties.ItemP.GENERIC));
+    public static final Supplier<Item> UMBER_BANNER = register("umber_banner", () -> new BannerItem(DDBlocks.UMBER_BANNER.get(), DDBlocks.UMBER_WALL_BANNER.get(), DDProperties.ItemP.GENERIC_16));
+    public static final Supplier<Item> UMBER_BED = register("umber_bed", () -> new BedItem(DDBlocks.UMBER_BED.get(), DDProperties.ItemP.GENERIC_1));
+    public static final Supplier<Item> UMBER_SHULKER_BOX = register("umber_shulker_box", () -> new BedItem(DDBlocks.UMBER_SHULKER_BOX.get(), DDProperties.ItemP.GENERIC_1));
+
     //CANARY
     public static final Supplier<Item> CANARY_DYE = register("canary_dye", () -> new DyeItem(DDDyeValues.CANARY, DDProperties.ItemP.GENERIC));
     public static final Supplier<Item> CANARY_BANNER = register("canary_banner", () -> new BannerItem(DDBlocks.CANARY_BANNER.get(), DDBlocks.CANARY_WALL_BANNER.get(), DDProperties.ItemP.GENERIC_16));
@@ -44,7 +50,13 @@ public class DDItems {
     public static final Supplier<Item> BLURPLE_BANNER = register("blurple_banner", () -> new BannerItem(DDBlocks.BLURPLE_BANNER.get(), DDBlocks.BLURPLE_WALL_BANNER.get(), DDProperties.ItemP.GENERIC_16));
     public static final Supplier<Item> BLURPLE_BED = register("blurple_bed", () -> new BedItem(DDBlocks.BLURPLE_BED.get(), DDProperties.ItemP.GENERIC_1));
     public static final Supplier<Item> BLURPLE_SHULKER_BOX = register("blurple_shulker_box", () -> new BedItem(DDBlocks.BLURPLE_SHULKER_BOX.get(), DDProperties.ItemP.GENERIC_1));
-    
+
+    //LAVENDER
+    public static final Supplier<Item> LAVENDER_DYE = register("lavender_dye", () -> new DyeItem(DDDyeValues.LAVENDER, DDProperties.ItemP.GENERIC));
+    public static final Supplier<Item> LAVENDER_BANNER = register("lavender_banner", () -> new BannerItem(DDBlocks.LAVENDER_BANNER.get(), DDBlocks.LAVENDER_WALL_BANNER.get(), DDProperties.ItemP.GENERIC_16));
+    public static final Supplier<Item> LAVENDER_BED = register("lavender_bed", () -> new BedItem(DDBlocks.LAVENDER_BED.get(), DDProperties.ItemP.GENERIC_1));
+    public static final Supplier<Item> LAVENDER_SHULKER_BOX = register("lavender_shulker_box", () -> new BedItem(DDBlocks.LAVENDER_SHULKER_BOX.get(), DDProperties.ItemP.GENERIC_1));
+
     //SANGRIA
     public static final Supplier<Item> SANGRIA_DYE = register("sangria_dye", () -> new DyeItem(DDDyeValues.SANGRIA, DDProperties.ItemP.GENERIC));
     public static final Supplier<Item> SANGRIA_BANNER = register("sangria_banner", () -> new BannerItem(DDBlocks.SANGRIA_BANNER.get(), DDBlocks.SANGRIA_WALL_BANNER.get(), DDProperties.ItemP.GENERIC_16));

@@ -1,6 +1,8 @@
-// 1.21.1	2025-12-02T02:07:19.951224	Delicate Dyes/minecraft:entity Loot Table
+// 1.21.1	2025-12-02T04:24:00.6614689	Delicate Dyes/minecraft:entity Loot Table
 659111cd4f11f6906d3e9ee9eb0805d9f1298e68 data\delicate_dyes\loot_table\entities\sheep\sangria.json
+41ed0058dc4a438690d9f615b79b69ec47daa929 data\delicate_dyes\loot_table\entities\sheep\lavender.json
 ad786c7408e95244ffb225530786b25a50268c8b data\delicate_dyes\loot_table\entities\sheep\canary.json
+432e14d3156ee5790fa8618ebc7a88e622450cc1 data\delicate_dyes\loot_table\entities\sheep\umber.json
 635390630a2a686e6bc35c27d9a372b577699e99 data\delicate_dyes\loot_table\entities\sheep\blurple.json
 2dd0109d57a8c17f6878370cfbd5fd1c02436aeb data\delicate_dyes\loot_table\entities\sheep\coral.json
 b78ce51c39ce3805d6bb41e70b21167b20056937 data\delicate_dyes\loot_table\entities\sheep\rose.json

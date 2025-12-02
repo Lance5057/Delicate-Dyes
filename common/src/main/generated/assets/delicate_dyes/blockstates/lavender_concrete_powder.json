@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "delicate_dyes:block/lavender_concrete_powder"
+      },
+      {
+        "model": "delicate_dyes:block/lavender_concrete_powder",
+        "y": 90
+      },
+      {
+        "model": "delicate_dyes:block/lavender_concrete_powder",
+        "y": 180
+      },
+      {
+        "model": "delicate_dyes:block/lavender_concrete_powder",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -19,11 +19,8 @@ public class DelicateDyes {
 }
 
 //TODO
-//Mobs to avoid blueberry bushes
 //Llama carpets
 //Villagers use modded beds
 
 //TODO (CONTENT)
-//Umber/Arid dye set
-//Lavender dye set
 //New misc features LIKE WINTERGREEN TREE LETS GOOLO WE ARE READDING WINTERGREEN

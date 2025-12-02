@@ -22,6 +22,9 @@ public class DDRegistries {
         RLRegistryHelper.createFlammable(DDBlocks.CORAL_WOOL.get(), 30, 60);
         RLRegistryHelper.createFlammable(DDBlocks.CORAL_CARPET.get(), 60, 20);
 
+        RLRegistryHelper.createFlammable(DDBlocks.UMBER_WOOL.get(), 30, 60);
+        RLRegistryHelper.createFlammable(DDBlocks.UMBER_CARPET.get(), 60, 20);
+
         RLRegistryHelper.createFlammable(DDBlocks.CANARY_WOOL.get(), 30, 60);
         RLRegistryHelper.createFlammable(DDBlocks.CANARY_CARPET.get(), 60, 20);
 
@@ -36,6 +39,9 @@ public class DDRegistries {
 
         RLRegistryHelper.createFlammable(DDBlocks.BLURPLE_WOOL.get(), 30, 60);
         RLRegistryHelper.createFlammable(DDBlocks.BLURPLE_CARPET.get(), 60, 20);
+
+        RLRegistryHelper.createFlammable(DDBlocks.LAVENDER_WOOL.get(), 30, 60);
+        RLRegistryHelper.createFlammable(DDBlocks.LAVENDER_CARPET.get(), 60, 20);
 
         RLRegistryHelper.createFlammable(DDBlocks.SANGRIA_WOOL.get(), 30, 60);
         RLRegistryHelper.createFlammable(DDBlocks.SANGRIA_CARPET.get(), 60, 20);
@@ -54,31 +60,37 @@ public class DDRegistries {
 
     public static void registerCauldronBehavior() {
         CauldronInteraction.WATER.map().put(DDItems.CORAL_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.UMBER_BANNER.get(), CauldronInteraction.BANNER);
         CauldronInteraction.WATER.map().put(DDItems.CANARY_BANNER.get(), CauldronInteraction.BANNER);
         CauldronInteraction.WATER.map().put(DDItems.WASABI_BANNER.get(), CauldronInteraction.BANNER);
         CauldronInteraction.WATER.map().put(DDItems.SACRAMENTO_BANNER.get(), CauldronInteraction.BANNER);
         CauldronInteraction.WATER.map().put(DDItems.SKY_BANNER.get(), CauldronInteraction.BANNER);
         CauldronInteraction.WATER.map().put(DDItems.BLURPLE_BANNER.get(), CauldronInteraction.BANNER);
+        CauldronInteraction.WATER.map().put(DDItems.LAVENDER_BANNER.get(), CauldronInteraction.BANNER);
         CauldronInteraction.WATER.map().put(DDItems.SANGRIA_BANNER.get(), CauldronInteraction.BANNER);
         CauldronInteraction.WATER.map().put(DDItems.ROSE_BANNER.get(), CauldronInteraction.BANNER);
 
         CauldronInteraction.WATER.map().put(DDBlocks.CORAL_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.UMBER_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
         CauldronInteraction.WATER.map().put(DDBlocks.CANARY_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
         CauldronInteraction.WATER.map().put(DDBlocks.WASABI_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
         CauldronInteraction.WATER.map().put(DDBlocks.SACRAMENTO_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
         CauldronInteraction.WATER.map().put(DDBlocks.SKY_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
         CauldronInteraction.WATER.map().put(DDBlocks.BLURPLE_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
+        CauldronInteraction.WATER.map().put(DDBlocks.LAVENDER_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
         CauldronInteraction.WATER.map().put(DDBlocks.SANGRIA_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
         CauldronInteraction.WATER.map().put(DDBlocks.ROSE_SHULKER_BOX.get().asItem(), CauldronInteraction.SHULKER_BOX);
     }
 
     public static void registerDispenserBehavior() {
         DispenserBlock.registerBehavior(DDBlocks.CORAL_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
+        DispenserBlock.registerBehavior(DDBlocks.UMBER_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
         DispenserBlock.registerBehavior(DDBlocks.CANARY_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
         DispenserBlock.registerBehavior(DDBlocks.WASABI_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
         DispenserBlock.registerBehavior(DDBlocks.SACRAMENTO_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
         DispenserBlock.registerBehavior(DDBlocks.SKY_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
         DispenserBlock.registerBehavior(DDBlocks.BLURPLE_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
+        DispenserBlock.registerBehavior(DDBlocks.LAVENDER_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
         DispenserBlock.registerBehavior(DDBlocks.SANGRIA_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
         DispenserBlock.registerBehavior(DDBlocks.ROSE_SHULKER_BOX.get().asItem(), new ShulkerBoxDispenseBehavior());
     }

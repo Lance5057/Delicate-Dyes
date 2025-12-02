@@ -28,11 +28,13 @@ public class ShulkerBoxRendererMixin {
         String shulker_path = "entity/shulker/shulker_";
 
         loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "coral")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "umber")));
         loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "canary")));
         loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "wasabi")));
         loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "sacramento")));
         loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "sky")));
         loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "blurple")));
+        loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "lavender")));
         loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "sangria")));
         loc.add(new Material(SHULKER_SHEET, RunicLib.customid(IntegrationIds.MINECRAFT, shulker_path + "rose")));
 

@@ -38,6 +38,18 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.CORAL_CANDLE_CAKE.get(), "Coral Candle Cake");
         build.add(DDBlocks.CORAL_SHULKER_BOX.get(), "Coral Shulker Box");
 
+        build.add(DDBlocks.UMBER_WOOL.get(), "Umber Wool");
+        build.add(DDBlocks.UMBER_CARPET.get(), "Umber Carpet");
+        build.add(DDBlocks.UMBER_STAINED_GLASS.get(), "Umber Stained Glass");
+        build.add(DDBlocks.UMBER_STAINED_GLASS_PANE.get(), "Umber Stained Glass Pane");
+        build.add(DDBlocks.UMBER_TERRACOTTA.get(), "Umber Terracotta");
+        build.add(DDBlocks.UMBER_GLAZED_TERRACOTTA.get(), "Umber Glazed Terracotta");
+        build.add(DDBlocks.UMBER_CONCRETE.get(), "Umber Concrete");
+        build.add(DDBlocks.UMBER_CONCRETE_POWDER.get(), "Umber Concrete Powder");
+        build.add(DDBlocks.UMBER_CANDLE.get(), "Umber Candle");
+        build.add(DDBlocks.UMBER_CANDLE_CAKE.get(), "Umber Candle Cake");
+        build.add(DDBlocks.UMBER_SHULKER_BOX.get(), "Umber Shulker Box");
+
         build.add(DDBlocks.CANARY_WOOL.get(), "Canary Wool");
         build.add(DDBlocks.CANARY_CARPET.get(), "Canary Carpet");
         build.add(DDBlocks.CANARY_STAINED_GLASS.get(), "Canary Stained Glass");
@@ -98,6 +110,18 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.BLURPLE_CANDLE_CAKE.get(), "Blurple Candle Cake");
         build.add(DDBlocks.BLURPLE_SHULKER_BOX.get(), "Blurple Shulker Box");
 
+        build.add(DDBlocks.LAVENDER_WOOL.get(), "Lavender Wool");
+        build.add(DDBlocks.LAVENDER_CARPET.get(), "Lavender Carpet");
+        build.add(DDBlocks.LAVENDER_STAINED_GLASS.get(), "Lavender Stained Glass");
+        build.add(DDBlocks.LAVENDER_STAINED_GLASS_PANE.get(), "Lavender Stained Glass Pane");
+        build.add(DDBlocks.LAVENDER_TERRACOTTA.get(), "Lavender Terracotta");
+        build.add(DDBlocks.LAVENDER_GLAZED_TERRACOTTA.get(), "Lavender Glazed Terracotta");
+        build.add(DDBlocks.LAVENDER_CONCRETE.get(), "Lavender Concrete");
+        build.add(DDBlocks.LAVENDER_CONCRETE_POWDER.get(), "Lavender Concrete Powder");
+        build.add(DDBlocks.LAVENDER_CANDLE.get(), "Lavender Candle");
+        build.add(DDBlocks.LAVENDER_CANDLE_CAKE.get(), "Lavender Candle Cake");
+        build.add(DDBlocks.LAVENDER_SHULKER_BOX.get(), "Lavender Shulker Box");
+
         build.add(DDBlocks.SANGRIA_WOOL.get(), "Sangria Wool");
         build.add(DDBlocks.SANGRIA_CARPET.get(), "Sangria Carpet");
         build.add(DDBlocks.SANGRIA_STAINED_GLASS.get(), "Sangria Stained Glass");
@@ -132,29 +156,35 @@ public class DDLangGen extends FabricLanguageProvider {
     private void itemTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
         //DYED ITEMS
         build.add(DDItems.CORAL_DYE.get(), "Coral Dye");
+        build.add(DDItems.UMBER_DYE.get(), "Umber Dye");
         build.add(DDItems.CANARY_DYE.get(), "Canary Dye");
         build.add(DDItems.WASABI_DYE.get(), "Wasabi Dye");
         build.add(DDItems.SACRAMENTO_DYE.get(), "Sacramento Dye");
         build.add(DDItems.SKY_DYE.get(), "Sky Dye");
         build.add(DDItems.BLURPLE_DYE.get(), "Blurple Dye");
+        build.add(DDItems.LAVENDER_DYE.get(), "Lavender Dye");
         build.add(DDItems.SANGRIA_DYE.get(), "Sangria Dye");
         build.add(DDItems.ROSE_DYE.get(), "Rose Dye");
 
         build.add(DDItems.CORAL_BED.get(), "Coral Bed");
+        build.add(DDItems.UMBER_BED.get(), "Umber Bed");
         build.add(DDItems.CANARY_BED.get(), "Canary Bed");
         build.add(DDItems.WASABI_BED.get(), "Wasabi Bed");
         build.add(DDItems.SACRAMENTO_BED.get(), "Sacramento Bed");
         build.add(DDItems.SKY_BED.get(), "Sky Bed");
         build.add(DDItems.BLURPLE_BED.get(), "Blurple Bed");
+        build.add(DDItems.LAVENDER_BED.get(), "Lavender Bed");
         build.add(DDItems.SANGRIA_BED.get(), "Sangria Bed");
         build.add(DDItems.ROSE_BED.get(), "Rose Bed");
 
         build.add(DDItems.CORAL_BANNER.get(), "Coral Banner");
+        build.add(DDItems.UMBER_BANNER.get(), "Umber Banner");
         build.add(DDItems.CANARY_BANNER.get(), "Canary Banner");
         build.add(DDItems.WASABI_BANNER.get(), "Wasabi Banner");
         build.add(DDItems.SACRAMENTO_BANNER.get(), "Sacramento Banner");
         build.add(DDItems.SKY_BANNER.get(), "Sky Banner");
         build.add(DDItems.BLURPLE_BANNER.get(), "Blurple Banner");
+        build.add(DDItems.LAVENDER_BANNER.get(), "Lavender Banner");
         build.add(DDItems.SANGRIA_BANNER.get(), "Sangria Banner");
         build.add(DDItems.ROSE_BANNER.get(), "Rose Banner");
 
@@ -174,21 +204,25 @@ public class DDLangGen extends FabricLanguageProvider {
     private void dyedMiscTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
         //COLOR
         build.add("color.minecraft.coral", "Coral");
+        build.add("color.minecraft.umber", "Umber");
         build.add("color.minecraft.canary", "Canary");
         build.add("color.minecraft.wasabi", "Wasabi");
         build.add("color.minecraft.sacramento", "Sacramento");
         build.add("color.minecraft.sky", "Sky");
         build.add("color.minecraft.blurple", "Blurple");
+        build.add("color.minecraft.lavender", "Lavender");
         build.add("color.minecraft.sangria", "Sangria");
         build.add("color.minecraft.rose", "Rose");
 
         //FIREWORK STARS
         build.add("item.minecraft.firework_star.coral", "Coral");
+        build.add("item.minecraft.firework_star.umber", "Umber");
         build.add("item.minecraft.firework_star.canary", "Canary");
         build.add("item.minecraft.firework_star.wasabi", "Wasabi");
         build.add("item.minecraft.firework_star.sacramento", "Sacramento");
         build.add("item.minecraft.firework_star.sky", "Sky");
         build.add("item.minecraft.firework_star.blurple", "Blurple");
+        build.add("item.minecraft.firework_star.lavender", "Lavender");
         build.add("item.minecraft.firework_star.sangria", "Sangria");
         build.add("item.minecraft.firework_star.rose", "Rose");
 
@@ -234,6 +268,48 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add("block.minecraft.banner.triangle_top.coral", "Coral Inverted Chevron");
         build.add("block.minecraft.banner.triangles_bottom.coral", "Coral Base Indented");
         build.add("block.minecraft.banner.triangles_top.coral", "Coral Chief Indented");
+
+        build.add("block.minecraft.banner.base.umber", "Fully Umber Field");
+        build.add("block.minecraft.banner.border.umber", "Umber Bordure");
+        build.add("block.minecraft.banner.bricks.umber", "Umber Field Masoned");
+        build.add("block.minecraft.banner.circle.umber", "Umber Roundel");
+        build.add("block.minecraft.banner.creeper.umber", "Umber Creeper Charge");
+        build.add("block.minecraft.banner.cross.umber", "Umber Saltire");
+        build.add("block.minecraft.banner.curly_border.umber", "Umber Bordure Indented");
+        build.add("block.minecraft.banner.diagonal_left.umber", "Umber Per Bend Sinister");
+        build.add("block.minecraft.banner.diagonal_right.umber", "Umber Per Bend");
+        build.add("block.minecraft.banner.diagonal_up_left.umber", "Umber Per Bend Inverted");
+        build.add("block.minecraft.banner.diagonal_up_right.umber", "Umber Per Bend Sinister Inverted");
+        build.add("block.minecraft.banner.flower.umber", "Umber Flower Charge");
+        build.add("block.minecraft.banner.globe.umber", "Umber Globe");
+        build.add("block.minecraft.banner.gradient_up.umber", "Umber Base Gradient");
+        build.add("block.minecraft.banner.gradient.umber", "Umber Gradient");
+        build.add("block.minecraft.banner.half_horizontal_bottom.umber", "Umber Per Fess Inverted");
+        build.add("block.minecraft.banner.half_horizontal.umber", "Umber Per Fess");
+        build.add("block.minecraft.banner.half_vertical_right.umber", "Umber Per Pale Inverted");
+        build.add("block.minecraft.banner.half_vertical.umber", "Umber Per Pale");
+        build.add("block.minecraft.banner.mojang.umber", "Umber Thing");
+        build.add("block.minecraft.banner.piglin.umber", "Umber Snout");
+        build.add("block.minecraft.banner.rhombus.umber", "Umber Lozenge");
+        build.add("block.minecraft.banner.skull.umber", "Umber Skull Charge");
+        build.add("block.minecraft.banner.small_stripes.umber", "Umber Paly");
+        build.add("block.minecraft.banner.square_bottom_left.umber", "Umber Base Dexter Canton");
+        build.add("block.minecraft.banner.square_bottom_right.umber", "Umber Base Sinister Canton");
+        build.add("block.minecraft.banner.square_top_left.umber", "Umber Chief Dexter Canton");
+        build.add("block.minecraft.banner.square_top_right.umber", "Umber Chief Sinister Canton");
+        build.add("block.minecraft.banner.straight_cross.umber", "Umber Cross");
+        build.add("block.minecraft.banner.stripe_bottom.umber", "Umber Base");
+        build.add("block.minecraft.banner.stripe_center.umber", "Umber Pale");
+        build.add("block.minecraft.banner.stripe_downleft.umber", "Umber Bend Sinister");
+        build.add("block.minecraft.banner.stripe_downright.umber", "Umber Bend");
+        build.add("block.minecraft.banner.stripe_left.umber", "Umber Pale Dexter");
+        build.add("block.minecraft.banner.stripe_middle.umber", "Umber Fess");
+        build.add("block.minecraft.banner.stripe_right.umber", "Umber Pale Sinister");
+        build.add("block.minecraft.banner.stripe_top.umber", "Umber Chief");
+        build.add("block.minecraft.banner.triangle_bottom.umber", "Umber Chevron");
+        build.add("block.minecraft.banner.triangle_top.umber", "Umber Inverted Chevron");
+        build.add("block.minecraft.banner.triangles_bottom.umber", "Umber Base Indented");
+        build.add("block.minecraft.banner.triangles_top.umber", "Umber Chief Indented");
 
         build.add("block.minecraft.banner.base.canary", "Fully Canary Field");
         build.add("block.minecraft.banner.border.canary", "Canary Bordure");
@@ -444,6 +520,48 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add("block.minecraft.banner.triangle_top.blurple", "Blurple Inverted Chevron");
         build.add("block.minecraft.banner.triangles_bottom.blurple", "Blurple Base Indented");
         build.add("block.minecraft.banner.triangles_top.blurple", "Blurple Chief Indented");
+
+        build.add("block.minecraft.banner.base.lavender", "Fully Lavender Field");
+        build.add("block.minecraft.banner.border.lavender", "Lavender Bordure");
+        build.add("block.minecraft.banner.bricks.lavender", "Lavender Field Masoned");
+        build.add("block.minecraft.banner.circle.lavender", "Lavender Roundel");
+        build.add("block.minecraft.banner.creeper.lavender", "Lavender Creeper Charge");
+        build.add("block.minecraft.banner.cross.lavender", "Lavender Saltire");
+        build.add("block.minecraft.banner.curly_border.lavender", "Lavender Bordure Indented");
+        build.add("block.minecraft.banner.diagonal_left.lavender", "Lavender Per Bend Sinister");
+        build.add("block.minecraft.banner.diagonal_right.lavender", "Lavender Per Bend");
+        build.add("block.minecraft.banner.diagonal_up_left.lavender", "Lavender Per Bend Inverted");
+        build.add("block.minecraft.banner.diagonal_up_right.lavender", "Lavender Per Bend Sinister Inverted");
+        build.add("block.minecraft.banner.flower.lavender", "Lavender Flower Charge");
+        build.add("block.minecraft.banner.globe.lavender", "Lavender Globe");
+        build.add("block.minecraft.banner.gradient_up.lavender", "Lavender Base Gradient");
+        build.add("block.minecraft.banner.gradient.lavender", "Lavender Gradient");
+        build.add("block.minecraft.banner.half_horizontal_bottom.lavender", "Lavender Per Fess Inverted");
+        build.add("block.minecraft.banner.half_horizontal.lavender", "Lavender Per Fess");
+        build.add("block.minecraft.banner.half_vertical_right.lavender", "Lavender Per Pale Inverted");
+        build.add("block.minecraft.banner.half_vertical.lavender", "Lavender Per Pale");
+        build.add("block.minecraft.banner.mojang.lavender", "Lavender Thing");
+        build.add("block.minecraft.banner.piglin.lavender", "Lavender Snout");
+        build.add("block.minecraft.banner.rhombus.lavender", "Lavender Lozenge");
+        build.add("block.minecraft.banner.skull.lavender", "Lavender Skull Charge");
+        build.add("block.minecraft.banner.small_stripes.lavender", "Lavender Paly");
+        build.add("block.minecraft.banner.square_bottom_left.lavender", "Lavender Base Dexter Canton");
+        build.add("block.minecraft.banner.square_bottom_right.lavender", "Lavender Base Sinister Canton");
+        build.add("block.minecraft.banner.square_top_left.lavender", "Lavender Chief Dexter Canton");
+        build.add("block.minecraft.banner.square_top_right.lavender", "Lavender Chief Sinister Canton");
+        build.add("block.minecraft.banner.straight_cross.lavender", "Lavender Cross");
+        build.add("block.minecraft.banner.stripe_bottom.lavender", "Lavender Base");
+        build.add("block.minecraft.banner.stripe_center.lavender", "Lavender Pale");
+        build.add("block.minecraft.banner.stripe_downleft.lavender", "Lavender Bend Sinister");
+        build.add("block.minecraft.banner.stripe_downright.lavender", "Lavender Bend");
+        build.add("block.minecraft.banner.stripe_left.lavender", "Lavender Pale Dexter");
+        build.add("block.minecraft.banner.stripe_middle.lavender", "Lavender Fess");
+        build.add("block.minecraft.banner.stripe_right.lavender", "Lavender Pale Sinister");
+        build.add("block.minecraft.banner.stripe_top.lavender", "Lavender Chief");
+        build.add("block.minecraft.banner.triangle_bottom.lavender", "Lavender Chevron");
+        build.add("block.minecraft.banner.triangle_top.lavender", "Lavender Inverted Chevron");
+        build.add("block.minecraft.banner.triangles_bottom.lavender", "Lavender Base Indented");
+        build.add("block.minecraft.banner.triangles_top.lavender", "Lavender Chief Indented");
 
         build.add("block.minecraft.banner.base.sangria", "Fully Sangria Field");
         build.add("block.minecraft.banner.border.sangria", "Sangria Bordure");

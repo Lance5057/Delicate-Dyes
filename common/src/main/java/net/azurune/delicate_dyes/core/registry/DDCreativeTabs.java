@@ -28,6 +28,21 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.CORAL_CANDLE.get());
                         entry.accept(DDItems.CORAL_BANNER.get());
 
+                        //UMBER
+                        entry.accept(DDItems.UMBER_DYE.get());
+                        entry.accept(DDBlocks.UMBER_WOOL.get());
+                        entry.accept(DDBlocks.UMBER_CARPET.get());
+                        entry.accept(DDBlocks.UMBER_TERRACOTTA.get());
+                        entry.accept(DDBlocks.UMBER_CONCRETE.get());
+                        entry.accept(DDBlocks.UMBER_CONCRETE_POWDER.get());
+                        entry.accept(DDBlocks.UMBER_GLAZED_TERRACOTTA.get());
+                        entry.accept(DDBlocks.UMBER_STAINED_GLASS.get());
+                        entry.accept(DDBlocks.UMBER_STAINED_GLASS_PANE.get());
+                        entry.accept(DDBlocks.UMBER_SHULKER_BOX.get());
+                        entry.accept(DDItems.UMBER_BED.get());
+                        entry.accept(DDBlocks.UMBER_CANDLE.get());
+                        entry.accept(DDItems.UMBER_BANNER.get());
+
                         //CANARY
                         entry.accept(DDItems.CANARY_DYE.get());
                         entry.accept(DDBlocks.CANARY_WOOL.get());
@@ -102,6 +117,21 @@ public class DDCreativeTabs {
                         entry.accept(DDItems.BLURPLE_BED.get());
                         entry.accept(DDBlocks.BLURPLE_CANDLE.get());
                         entry.accept(DDItems.BLURPLE_BANNER.get());
+
+                        //LAVENDER
+                        entry.accept(DDItems.LAVENDER_DYE.get());
+                        entry.accept(DDBlocks.LAVENDER_WOOL.get());
+                        entry.accept(DDBlocks.LAVENDER_CARPET.get());
+                        entry.accept(DDBlocks.LAVENDER_TERRACOTTA.get());
+                        entry.accept(DDBlocks.LAVENDER_CONCRETE.get());
+                        entry.accept(DDBlocks.LAVENDER_CONCRETE_POWDER.get());
+                        entry.accept(DDBlocks.LAVENDER_GLAZED_TERRACOTTA.get());
+                        entry.accept(DDBlocks.LAVENDER_STAINED_GLASS.get());
+                        entry.accept(DDBlocks.LAVENDER_STAINED_GLASS_PANE.get());
+                        entry.accept(DDBlocks.LAVENDER_SHULKER_BOX.get());
+                        entry.accept(DDItems.LAVENDER_BED.get());
+                        entry.accept(DDBlocks.LAVENDER_CANDLE.get());
+                        entry.accept(DDItems.LAVENDER_BANNER.get());
 
                         //SANGRIA
                         entry.accept(DDItems.SANGRIA_DYE.get());

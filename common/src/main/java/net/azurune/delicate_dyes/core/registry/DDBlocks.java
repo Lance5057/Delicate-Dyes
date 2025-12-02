@@ -29,6 +29,22 @@ public class DDBlocks {
     public static final Supplier<Block> CORAL_BED = register("coral_bed", () -> new BedBlock(DDDyeValues.CORAL, DDProperties.BlockP.BED.mapColor(DDDyeValues.CORAL.getMapColor())), false);
     public static final Supplier<Block> CORAL_SHULKER_BOX = register("coral_shulker_box", () -> new ShulkerBoxBlock(DDDyeValues.CORAL, DDProperties.BlockP.SHULKER_BOX.mapColor(DDDyeValues.CORAL.getMapColor())), false);
 
+    //UMBER
+    public static final Supplier<Block> UMBER_WOOL = register("umber_wool", () -> new Block(DDProperties.BlockP.WOOL.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_CARPET = register("umber_carpet", () -> new CarpetBlock(DDProperties.BlockP.CARPET.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_STAINED_GLASS = register("umber_stained_glass", () -> new StainedGlassBlock(DDDyeValues.UMBER, DDProperties.BlockP.GLASS.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_STAINED_GLASS_PANE = register("umber_stained_glass_pane", () -> new StainedGlassPaneBlock(DDDyeValues.UMBER, DDProperties.BlockP.GLASS_PANE.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_TERRACOTTA = register("umber_terracotta", () -> new Block(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_GLAZED_TERRACOTTA = register("umber_glazed_terracotta", () -> new GlazedTerracottaBlock(DDProperties.BlockP.GLAZED_TERRACOTTA.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_CONCRETE = register("umber_concrete", () -> new Block(DDProperties.BlockP.CONCRETE.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_CONCRETE_POWDER = register("umber_concrete_powder", () -> new ConcretePowderBlock(UMBER_CONCRETE.get(), DDProperties.BlockP.CONCRETE_POWDER.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_CANDLE = register("umber_candle", () -> new CandleBlock(DDProperties.BlockP.CANDLE.mapColor(DDDyeValues.UMBER.getMapColor())), true);
+    public static final Supplier<Block> UMBER_CANDLE_CAKE = register("umber_candle_cake", () -> new DDCandleCakeBlock(UMBER_CANDLE.get(), DDProperties.BlockP.CANDLE_CAKE.mapColor(DDDyeValues.UMBER.getMapColor())), false);
+    public static final Supplier<Block> UMBER_BANNER = register("umber_banner", () -> new BannerBlock(DDDyeValues.UMBER, DDProperties.BlockP.BANNER.mapColor(DDDyeValues.UMBER.getMapColor())), false);
+    public static final Supplier<Block> UMBER_WALL_BANNER = register("umber_wall_banner", () -> new WallBannerBlock(DDDyeValues.UMBER, DDProperties.BlockP.WALL_BANNER.mapColor(DDDyeValues.UMBER.getMapColor())), false);
+    public static final Supplier<Block> UMBER_BED = register("umber_bed", () -> new BedBlock(DDDyeValues.UMBER, DDProperties.BlockP.BED.mapColor(DDDyeValues.UMBER.getMapColor())), false);
+    public static final Supplier<Block> UMBER_SHULKER_BOX = register("umber_shulker_box", () -> new ShulkerBoxBlock(DDDyeValues.UMBER, DDProperties.BlockP.SHULKER_BOX.mapColor(DDDyeValues.UMBER.getMapColor())), false);
+
     //CANARY
     public static final Supplier<Block> CANARY_WOOL = register("canary_wool", () -> new Block(DDProperties.BlockP.WOOL.mapColor(DDDyeValues.CANARY.getMapColor())), true);
     public static final Supplier<Block> CANARY_CARPET = register("canary_carpet", () -> new CarpetBlock(DDProperties.BlockP.CARPET.mapColor(DDDyeValues.CANARY.getMapColor())), true);
@@ -108,6 +124,22 @@ public class DDBlocks {
     public static final Supplier<Block> BLURPLE_WALL_BANNER = register("blurple_wall_banner", () -> new WallBannerBlock(DDDyeValues.BLURPLE, DDProperties.BlockP.WALL_BANNER.mapColor(DDDyeValues.BLURPLE.getMapColor())), false);
     public static final Supplier<Block> BLURPLE_BED = register("blurple_bed", () -> new BedBlock(DDDyeValues.BLURPLE, DDProperties.BlockP.BED.mapColor(DDDyeValues.BLURPLE.getMapColor())), false);
     public static final Supplier<Block> BLURPLE_SHULKER_BOX = register("blurple_shulker_box", () -> new ShulkerBoxBlock(DDDyeValues.BLURPLE, DDProperties.BlockP.SHULKER_BOX.mapColor(DDDyeValues.BLURPLE.getMapColor())), false);
+
+    //LAVENDER
+    public static final Supplier<Block> LAVENDER_WOOL = register("lavender_wool", () -> new Block(DDProperties.BlockP.WOOL.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_CARPET = register("lavender_carpet", () -> new CarpetBlock(DDProperties.BlockP.CARPET.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_STAINED_GLASS = register("lavender_stained_glass", () -> new StainedGlassBlock(DDDyeValues.LAVENDER, DDProperties.BlockP.GLASS.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_STAINED_GLASS_PANE = register("lavender_stained_glass_pane", () -> new StainedGlassPaneBlock(DDDyeValues.LAVENDER, DDProperties.BlockP.GLASS_PANE.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_TERRACOTTA = register("lavender_terracotta", () -> new Block(DDProperties.BlockP.TERRACOTTA.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_GLAZED_TERRACOTTA = register("lavender_glazed_terracotta", () -> new GlazedTerracottaBlock(DDProperties.BlockP.GLAZED_TERRACOTTA.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_CONCRETE = register("lavender_concrete", () -> new Block(DDProperties.BlockP.CONCRETE.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_CONCRETE_POWDER = register("lavender_concrete_powder", () -> new ConcretePowderBlock(LAVENDER_CONCRETE.get(), DDProperties.BlockP.CONCRETE_POWDER.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_CANDLE = register("lavender_candle", () -> new CandleBlock(DDProperties.BlockP.CANDLE.mapColor(DDDyeValues.LAVENDER.getMapColor())), true);
+    public static final Supplier<Block> LAVENDER_CANDLE_CAKE = register("lavender_candle_cake", () -> new DDCandleCakeBlock(LAVENDER_CANDLE.get(), DDProperties.BlockP.CANDLE_CAKE.mapColor(DDDyeValues.LAVENDER.getMapColor())), false);
+    public static final Supplier<Block> LAVENDER_BANNER = register("lavender_banner", () -> new BannerBlock(DDDyeValues.LAVENDER, DDProperties.BlockP.BANNER.mapColor(DDDyeValues.LAVENDER.getMapColor())), false);
+    public static final Supplier<Block> LAVENDER_WALL_BANNER = register("lavender_wall_banner", () -> new WallBannerBlock(DDDyeValues.LAVENDER, DDProperties.BlockP.WALL_BANNER.mapColor(DDDyeValues.LAVENDER.getMapColor())), false);
+    public static final Supplier<Block> LAVENDER_BED = register("lavender_bed", () -> new BedBlock(DDDyeValues.LAVENDER, DDProperties.BlockP.BED.mapColor(DDDyeValues.LAVENDER.getMapColor())), false);
+    public static final Supplier<Block> LAVENDER_SHULKER_BOX = register("lavender_shulker_box", () -> new ShulkerBoxBlock(DDDyeValues.LAVENDER, DDProperties.BlockP.SHULKER_BOX.mapColor(DDDyeValues.LAVENDER.getMapColor())), false);
 
     //SANGRIA
     public static final Supplier<Block> SANGRIA_WOOL = register("sangria_wool", () -> new Block(DDProperties.BlockP.WOOL.mapColor(DDDyeValues.SANGRIA.getMapColor())), true);

@@ -35,11 +35,13 @@ public class DDEntityLootGen extends SimpleFabricLootTableProvider {
     @Override
     public void generate(BiConsumer<ResourceKey<LootTable>, LootTable.Builder> output) {
         output.accept(DDLootTables.SHEEP_CORAL, createSheepTable(DDBlocks.CORAL_WOOL.get()));
+        output.accept(DDLootTables.SHEEP_UMBER, createSheepTable(DDBlocks.UMBER_WOOL.get()));
         output.accept(DDLootTables.SHEEP_CANARY, createSheepTable(DDBlocks.CANARY_WOOL.get()));
         output.accept(DDLootTables.SHEEP_WASABI, createSheepTable(DDBlocks.WASABI_WOOL.get()));
         output.accept(DDLootTables.SHEEP_SACRAMENTO, createSheepTable(DDBlocks.SACRAMENTO_WOOL.get()));
         output.accept(DDLootTables.SHEEP_SKY, createSheepTable(DDBlocks.SKY_WOOL.get()));
         output.accept(DDLootTables.SHEEP_BLURPLE, createSheepTable(DDBlocks.BLURPLE_WOOL.get()));
+        output.accept(DDLootTables.SHEEP_LAVENDER, createSheepTable(DDBlocks.LAVENDER_WOOL.get()));
         output.accept(DDLootTables.SHEEP_SANGRIA, createSheepTable(DDBlocks.SANGRIA_WOOL.get()));
         output.accept(DDLootTables.SHEEP_ROSE, createSheepTable(DDBlocks.ROSE_WOOL.get()));
     }

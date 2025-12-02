@@ -38,14 +38,16 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendShulkerBoxes() {
         getOrCreateTagBuilder(DDTags.Items.SHULKER_BOXES)
                 .add(DDBlocks.CORAL_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.UMBER_SHULKER_BOX.get().asItem())
                 .add(DDBlocks.CANARY_SHULKER_BOX.get().asItem())
                 .add(DDBlocks.WASABI_SHULKER_BOX.get().asItem())
                 .add(DDBlocks.SACRAMENTO_SHULKER_BOX.get().asItem())
                 .add(DDBlocks.SKY_SHULKER_BOX.get().asItem())
                 .add(DDBlocks.BLURPLE_SHULKER_BOX.get().asItem())
+                .add(DDBlocks.LAVENDER_SHULKER_BOX.get().asItem())
                 .add(DDBlocks.SANGRIA_SHULKER_BOX.get().asItem())
                 .add(DDBlocks.ROSE_SHULKER_BOX.get().asItem())
-
+//why are vanilla shulkers here
                 .add(Items.RED_SHULKER_BOX)
                 .add(Items.ORANGE_SHULKER_BOX)
                 .add(Items.YELLOW_SHULKER_BOX)
@@ -68,11 +70,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendDyes() {
         getOrCreateTagBuilder(DDTags.Items.DYES)
                 .add(DDItems.CORAL_DYE.get())
+                .add(DDItems.UMBER_DYE.get())
                 .add(DDItems.CANARY_DYE.get())
                 .add(DDItems.WASABI_DYE.get())
                 .add(DDItems.SACRAMENTO_DYE.get())
                 .add(DDItems.SKY_DYE.get())
                 .add(DDItems.BLURPLE_DYE.get())
+                .add(DDItems.LAVENDER_DYE.get())
                 .add(DDItems.SANGRIA_DYE.get())
                 .add(DDItems.ROSE_DYE.get())
         ;
@@ -81,11 +85,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendGlassBlocks() {
         getOrCreateTagBuilder(DDTags.Items.GLASS_BLOCKS)
                 .add(DDBlocks.CORAL_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.UMBER_STAINED_GLASS.get().asItem())
                 .add(DDBlocks.CANARY_STAINED_GLASS.get().asItem())
                 .add(DDBlocks.WASABI_STAINED_GLASS.get().asItem())
                 .add(DDBlocks.SACRAMENTO_STAINED_GLASS.get().asItem())
                 .add(DDBlocks.SKY_STAINED_GLASS.get().asItem())
                 .add(DDBlocks.BLURPLE_STAINED_GLASS.get().asItem())
+                .add(DDBlocks.LAVENDER_STAINED_GLASS.get().asItem())
                 .add(DDBlocks.SANGRIA_STAINED_GLASS.get().asItem())
                 .add(DDBlocks.ROSE_STAINED_GLASS.get().asItem())
         ;
@@ -94,11 +100,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendGlassPanes() {
         getOrCreateTagBuilder(DDTags.Items.GLASS_PANES)
                 .add(DDBlocks.CORAL_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.UMBER_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.CANARY_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.WASABI_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.SACRAMENTO_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.SKY_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.BLURPLE_STAINED_GLASS_PANE.get().asItem())
+                .add(DDBlocks.LAVENDER_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.SANGRIA_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.ROSE_STAINED_GLASS_PANE.get().asItem())
         ;
@@ -126,11 +134,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendWool() {
         getOrCreateTagBuilder(ItemTags.WOOL)
                 .add(DDBlocks.CORAL_WOOL.get().asItem())
+                .add(DDBlocks.UMBER_WOOL.get().asItem())
                 .add(DDBlocks.CANARY_WOOL.get().asItem())
                 .add(DDBlocks.WASABI_WOOL.get().asItem())
                 .add(DDBlocks.SACRAMENTO_WOOL.get().asItem())
                 .add(DDBlocks.SKY_WOOL.get().asItem())
                 .add(DDBlocks.BLURPLE_WOOL.get().asItem())
+                .add(DDBlocks.LAVENDER_WOOL.get().asItem())
                 .add(DDBlocks.SANGRIA_WOOL.get().asItem())
                 .add(DDBlocks.ROSE_WOOL.get().asItem())
         ;
@@ -139,11 +149,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendWoolCarpets() {
         getOrCreateTagBuilder(ItemTags.WOOL_CARPETS)
                 .add(DDBlocks.CORAL_CARPET.get().asItem())
+                .add(DDBlocks.UMBER_CARPET.get().asItem())
                 .add(DDBlocks.CANARY_CARPET.get().asItem())
                 .add(DDBlocks.WASABI_CARPET.get().asItem())
                 .add(DDBlocks.SACRAMENTO_CARPET.get().asItem())
                 .add(DDBlocks.SKY_CARPET.get().asItem())
                 .add(DDBlocks.BLURPLE_CARPET.get().asItem())
+                .add(DDBlocks.LAVENDER_CARPET.get().asItem())
                 .add(DDBlocks.SANGRIA_CARPET.get().asItem())
                 .add(DDBlocks.ROSE_CARPET.get().asItem())
         ;
@@ -152,11 +164,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendTerracotta() {
         getOrCreateTagBuilder(ItemTags.TERRACOTTA)
                 .add(DDBlocks.CORAL_TERRACOTTA.get().asItem())
+                .add(DDBlocks.UMBER_TERRACOTTA.get().asItem())
                 .add(DDBlocks.CANARY_TERRACOTTA.get().asItem())
                 .add(DDBlocks.WASABI_TERRACOTTA.get().asItem())
                 .add(DDBlocks.SACRAMENTO_TERRACOTTA.get().asItem())
                 .add(DDBlocks.SKY_TERRACOTTA.get().asItem())
                 .add(DDBlocks.BLURPLE_TERRACOTTA.get().asItem())
+                .add(DDBlocks.LAVENDER_TERRACOTTA.get().asItem())
                 .add(DDBlocks.SANGRIA_TERRACOTTA.get().asItem())
                 .add(DDBlocks.ROSE_TERRACOTTA.get().asItem())
         ;
@@ -165,11 +179,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendCandles() {
         getOrCreateTagBuilder(ItemTags.CANDLES)
                 .add(DDBlocks.CORAL_CANDLE.get().asItem())
+                .add(DDBlocks.UMBER_CANDLE.get().asItem())
                 .add(DDBlocks.CANARY_CANDLE.get().asItem())
                 .add(DDBlocks.WASABI_CANDLE.get().asItem())
                 .add(DDBlocks.SACRAMENTO_CANDLE.get().asItem())
                 .add(DDBlocks.SKY_CANDLE.get().asItem())
                 .add(DDBlocks.BLURPLE_CANDLE.get().asItem())
+                .add(DDBlocks.LAVENDER_CANDLE.get().asItem())
                 .add(DDBlocks.SANGRIA_CANDLE.get().asItem())
                 .add(DDBlocks.ROSE_CANDLE.get().asItem())
         ;
@@ -178,11 +194,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendBeds() {
         getOrCreateTagBuilder(ItemTags.BEDS)
                 .add(DDItems.CORAL_BED.get())
+                .add(DDItems.UMBER_BED.get())
                 .add(DDItems.CANARY_BED.get())
                 .add(DDItems.WASABI_BED.get())
                 .add(DDItems.SACRAMENTO_BED.get())
                 .add(DDItems.SKY_BED.get())
                 .add(DDItems.BLURPLE_BED.get())
+                .add(DDItems.LAVENDER_BED.get())
                 .add(DDItems.SANGRIA_BED.get())
                 .add(DDItems.ROSE_BED.get())
         ;
@@ -191,11 +209,13 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
     public void appendBanners() {
         getOrCreateTagBuilder(ItemTags.BANNERS)
                 .add(DDItems.CORAL_BANNER.get())
+                .add(DDItems.UMBER_BANNER.get())
                 .add(DDItems.CANARY_BANNER.get())
                 .add(DDItems.WASABI_BANNER.get())
                 .add(DDItems.SACRAMENTO_BANNER.get())
                 .add(DDItems.SKY_BANNER.get())
                 .add(DDItems.BLURPLE_BANNER.get())
+                .add(DDItems.LAVENDER_BANNER.get())
                 .add(DDItems.SANGRIA_BANNER.get())
                 .add(DDItems.ROSE_BANNER.get())
         ;

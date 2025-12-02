@@ -56,6 +56,25 @@ public class DDModelGen extends FabricModelProvider {
         generator.createBedItem(DDBlocks.CORAL_BED.get(), DDBlocks.CORAL_WOOL.get());
         generator.createShulkerBox(DDBlocks.CORAL_SHULKER_BOX.get());
 
+        //UMBER
+        generator.createFullAndCarpetBlocks(DDBlocks.UMBER_WOOL.get(), DDBlocks.UMBER_CARPET.get());
+        generator.createGlassBlocks(DDBlocks.UMBER_STAINED_GLASS.get(), DDBlocks.UMBER_STAINED_GLASS_PANE.get());
+        generator.createHorizontallyRotatedBlock(DDBlocks.UMBER_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
+        generator.createTrivialCube(DDBlocks.UMBER_CONCRETE.get());
+        generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.UMBER_CONCRETE_POWDER.get());
+        generator.createCandleAndCandleCake(DDBlocks.UMBER_CANDLE.get(), DDBlocks.UMBER_CANDLE_CAKE.get());
+        generator.createTrivialCube(DDBlocks.UMBER_TERRACOTTA.get());
+
+        generator.blockEntityModels(ModelLocationUtils.getModelLocation(DDBlocks.UMBER_BANNER.get()), Blocks.OAK_PLANKS)
+                .createWithCustomBlockItemModel(ModelTemplates.BANNER_INVENTORY, DDBlocks.UMBER_BANNER.get())
+                .createWithoutBlockItem(DDBlocks.UMBER_WALL_BANNER.get());
+
+        generator.blockEntityModels(ModelLocationUtils.getModelLocation(DDBlocks.UMBER_BED.get()), Blocks.OAK_PLANKS)
+                .createWithoutBlockItem(DDBlocks.UMBER_BED.get());
+
+        generator.createBedItem(DDBlocks.UMBER_BED.get(), DDBlocks.UMBER_WOOL.get());
+        generator.createShulkerBox(DDBlocks.UMBER_SHULKER_BOX.get());
+
         //CANARY
         generator.createFullAndCarpetBlocks(DDBlocks.CANARY_WOOL.get(), DDBlocks.CANARY_CARPET.get());
         generator.createGlassBlocks(DDBlocks.CANARY_STAINED_GLASS.get(), DDBlocks.CANARY_STAINED_GLASS_PANE.get());
@@ -151,6 +170,25 @@ public class DDModelGen extends FabricModelProvider {
         generator.createBedItem(DDBlocks.BLURPLE_BED.get(), DDBlocks.BLURPLE_WOOL.get());
         generator.createShulkerBox(DDBlocks.BLURPLE_SHULKER_BOX.get());
 
+        //LAVENDER
+        generator.createFullAndCarpetBlocks(DDBlocks.LAVENDER_WOOL.get(), DDBlocks.LAVENDER_CARPET.get());
+        generator.createGlassBlocks(DDBlocks.LAVENDER_STAINED_GLASS.get(), DDBlocks.LAVENDER_STAINED_GLASS_PANE.get());
+        generator.createHorizontallyRotatedBlock(DDBlocks.LAVENDER_GLAZED_TERRACOTTA.get(), TexturedModel.GLAZED_TERRACOTTA);
+        generator.createTrivialCube(DDBlocks.LAVENDER_CONCRETE.get());
+        generator.createColoredBlockWithRandomRotations(TexturedModel.CUBE, DDBlocks.LAVENDER_CONCRETE_POWDER.get());
+        generator.createCandleAndCandleCake(DDBlocks.LAVENDER_CANDLE.get(), DDBlocks.LAVENDER_CANDLE_CAKE.get());
+        generator.createTrivialCube(DDBlocks.LAVENDER_TERRACOTTA.get());
+
+        generator.blockEntityModels(ModelLocationUtils.getModelLocation(DDBlocks.LAVENDER_BANNER.get()), Blocks.OAK_PLANKS)
+                .createWithCustomBlockItemModel(ModelTemplates.BANNER_INVENTORY, DDBlocks.LAVENDER_BANNER.get())
+                .createWithoutBlockItem(DDBlocks.LAVENDER_WALL_BANNER.get());
+
+        generator.blockEntityModels(ModelLocationUtils.getModelLocation(DDBlocks.LAVENDER_BED.get()), Blocks.OAK_PLANKS)
+                .createWithoutBlockItem(DDBlocks.LAVENDER_BED.get());
+
+        generator.createBedItem(DDBlocks.LAVENDER_BED.get(), DDBlocks.LAVENDER_WOOL.get());
+        generator.createShulkerBox(DDBlocks.LAVENDER_SHULKER_BOX.get());
+
         //SANGRIA
         generator.createFullAndCarpetBlocks(DDBlocks.SANGRIA_WOOL.get(), DDBlocks.SANGRIA_CARPET.get());
         generator.createGlassBlocks(DDBlocks.SANGRIA_STAINED_GLASS.get(), DDBlocks.SANGRIA_STAINED_GLASS_PANE.get());
@@ -194,11 +232,13 @@ public class DDModelGen extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators generator) {
         //FLAT ITEM
         generator.generateFlatItem(DDItems.CORAL_DYE.get(), ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(DDItems.UMBER_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.CANARY_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.WASABI_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.SACRAMENTO_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.SKY_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.BLURPLE_DYE.get(), ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(DDItems.LAVENDER_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.SANGRIA_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.ROSE_DYE.get(), ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(DDItems.BLUEBERRIES.get(), ModelTemplates.FLAT_ITEM);
