@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes;
 
+import net.azurune.delicate_dyes.common.FabricItemGroupAdditions;
 import net.azurune.delicate_dyes.core.init.DDDamageTypes;
 import net.azurune.delicate_dyes.core.init.DDFeatures;
 import net.azurune.delicate_dyes.core.init.DDLootTables;
@@ -16,9 +17,11 @@ public class FabricDelicateDyes implements ModInitializer {
     @Override
     public void onInitialize() {
         DelicateDyes.init();
+        FabricItemGroupAdditions.modifyCreativeTabs();
+
         DDRegistries.loadRegistries();
-        DDDamageTypes.loadDmgs();
-        DDLootTables.loadTables();
+        DDDamageTypes.loadDamageTypes();
+        DDLootTables.loadLootTables();
 
         addBiomeModifiers();
     }

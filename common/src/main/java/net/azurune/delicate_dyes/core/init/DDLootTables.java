@@ -4,7 +4,6 @@ import net.azurune.delicate_dyes.DelicateDyes;
 import net.azurune.runiclib.RunicLib;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootTable;
 
 public class DDLootTables {
@@ -21,6 +20,6 @@ public class DDLootTables {
         return ResourceKey.create(Registries.LOOT_TABLE, RunicLib.customid(DelicateDyes.MOD_ID, name));
     }
 
-    public static void loadTables() {
+    public static void loadLootTables() {
     }
 }

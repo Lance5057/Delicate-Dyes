@@ -9,7 +9,6 @@ import net.minecraft.world.damagesource.DamageEffects;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 public class DDDamageTypes {
 
@@ -23,7 +22,7 @@ public class DDDamageTypes {
         return ResourceKey.create(Registries.DAMAGE_TYPE, RunicLib.customid(DelicateDyes.MOD_ID, id));
     }
 
-    public static void loadDmgs() {
+    public static void loadDamageTypes() {
     }
 
     public static void bootstrap(BootstrapContext<DamageType> context) {

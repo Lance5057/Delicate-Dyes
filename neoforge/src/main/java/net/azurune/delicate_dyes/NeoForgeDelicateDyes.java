@@ -1,5 +1,6 @@
 package net.azurune.delicate_dyes;
 
+import net.azurune.delicate_dyes.common.NeoForgeItemGroupAdditions;
 import net.azurune.delicate_dyes.core.init.DDDamageTypes;
 import net.azurune.delicate_dyes.core.init.DDLootTables;
 import net.azurune.delicate_dyes.core.init.DDRegistries;
@@ -13,6 +14,7 @@ public class NeoForgeDelicateDyes {
 
     public NeoForgeDelicateDyes(IEventBus eventBus) {
         DelicateDyes.init();
+        eventBus.addListener(NeoForgeItemGroupAdditions::buildCreativeTabs);
 
         eventBus.addListener(this::commonSetup);
     }
@@ -20,7 +22,7 @@ public class NeoForgeDelicateDyes {
     @SubscribeEvent
     public void commonSetup(FMLCommonSetupEvent event) {
         DDRegistries.loadRegistries();
-        DDDamageTypes.loadDmgs();
-        DDLootTables.loadTables();
+        DDDamageTypes.loadDamageTypes();
+        DDLootTables.loadLootTables();
     }
 }
