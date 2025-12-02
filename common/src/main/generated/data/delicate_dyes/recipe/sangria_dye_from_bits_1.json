@@ -4,9 +4,6 @@
   "group": "sangria_dye",
   "ingredients": [
     {
-      "item": "minecraft:purple_dye"
-    },
-    {
       "item": "minecraft:magenta_dye"
     },
     {
@@ -14,7 +11,7 @@
     }
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "id": "delicate_dyes:sangria_dye"
   }
 }

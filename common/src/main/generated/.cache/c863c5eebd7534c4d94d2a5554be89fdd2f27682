@@ -1,9 +1,9 @@
-// 1.21.1	2025-12-01T21:55:15.3586722	Delicate Dyes/minecraft:entity Loot Table
-b78ce51c39ce3805d6bb41e70b21167b20056937 data\delicate_dyes\loot_table\entities\sheep\rose.json
-ad786c7408e95244ffb225530786b25a50268c8b data\delicate_dyes\loot_table\entities\sheep\canary.json
-469347b72ebbccfd00dff0cd69a5a4cc7e07707c data\delicate_dyes\loot_table\entities\sheep\sky.json
-f4f2f3e574bb8531bc8ab2e50a9f606ea405e419 data\delicate_dyes\loot_table\entities\sheep\sacramento.json
-2dd0109d57a8c17f6878370cfbd5fd1c02436aeb data\delicate_dyes\loot_table\entities\sheep\coral.json
-bf7072a9977f91e8e2b8e819ca412dabcec58e20 data\delicate_dyes\loot_table\entities\sheep\wasabi.json
-635390630a2a686e6bc35c27d9a372b577699e99 data\delicate_dyes\loot_table\entities\sheep\blurple.json
+// 1.21.1	2025-12-02T02:07:19.951224	Delicate Dyes/minecraft:entity Loot Table
 659111cd4f11f6906d3e9ee9eb0805d9f1298e68 data\delicate_dyes\loot_table\entities\sheep\sangria.json
+ad786c7408e95244ffb225530786b25a50268c8b data\delicate_dyes\loot_table\entities\sheep\canary.json
+635390630a2a686e6bc35c27d9a372b577699e99 data\delicate_dyes\loot_table\entities\sheep\blurple.json
+2dd0109d57a8c17f6878370cfbd5fd1c02436aeb data\delicate_dyes\loot_table\entities\sheep\coral.json
+b78ce51c39ce3805d6bb41e70b21167b20056937 data\delicate_dyes\loot_table\entities\sheep\rose.json
+bf7072a9977f91e8e2b8e819ca412dabcec58e20 data\delicate_dyes\loot_table\entities\sheep\wasabi.json
+f4f2f3e574bb8531bc8ab2e50a9f606ea405e419 data\delicate_dyes\loot_table\entities\sheep\sacramento.json
+469347b72ebbccfd00dff0cd69a5a4cc7e07707c data\delicate_dyes\loot_table\entities\sheep\sky.json

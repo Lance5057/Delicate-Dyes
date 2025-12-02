@@ -44,13 +44,13 @@ public abstract class DyeColorMixin {
 
         //CANARY
         var DD_CANARY = delicateDyes$init("DD_CANARY", last.ordinal() + i, last.ordinal() + i, "canary",
-                0xf6ee7d, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c);
+                0xf0e76c, MapColor.COLOR_YELLOW, 0xf3e37c, 0xf3e37c);
         dyes.add(DD_CANARY);
         i++;
 
         //WASABI
         var DD_WASABI = delicateDyes$init("DD_WASABI", last.ordinal() + i, last.ordinal() + i, "wasabi",
-                0xbddc79, MapColor.TERRACOTTA_LIGHT_GREEN, 0x8ecc70, 0x8ecc70);
+                0x99c351, MapColor.TERRACOTTA_LIGHT_GREEN, 0x8ecc70, 0x8ecc70);
         dyes.add(DD_WASABI);
         i++;
 
