@@ -2,6 +2,7 @@ package net.azurune.delicate_dyes;
 
 import net.azurune.delicate_dyes.core.init.DDDamageTypes;
 import net.azurune.delicate_dyes.core.init.DDFeatures;
+import net.azurune.delicate_dyes.core.init.DDLootTables;
 import net.azurune.delicate_dyes.core.init.DDRegistries;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -17,6 +18,7 @@ public class FabricDelicateDyes implements ModInitializer {
         DelicateDyes.init();
         DDRegistries.loadRegistries();
         DDDamageTypes.loadDmgs();
+        DDLootTables.loadTables();
 
         addBiomeModifiers();
     }

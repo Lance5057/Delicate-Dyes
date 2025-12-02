@@ -32,15 +32,7 @@ public abstract class ShulkerBoxMixin {
     private static void delicateDyes$getBlockByColor(DyeColor dyeColor, CallbackInfoReturnable<Block> cir) {
         if (dyeColor != null)
         {
-            //if (dyeColor == DDDyeValues.CORAL) cir.setReturnValue(DDBlocks.CORAL_SHULKER_BOX.get());
-            //else if (dyeColor == DDDyeValues.CANARY) cir.setReturnValue(DDBlocks.CANARY_SHULKER_BOX.get());
-            //else if (dyeColor == DDDyeValues.WASABI) cir.setReturnValue(DDBlocks.WASABI_SHULKER_BOX.get());
-            //else if (dyeColor == DDDyeValues.SACRAMENTO) cir.setReturnValue(DDBlocks.SACRAMENTO_SHULKER_BOX.get());
-            //else if (dyeColor == DDDyeValues.SKY) cir.setReturnValue(DDBlocks.SKY_SHULKER_BOX.get());
-            //else if (dyeColor == DDDyeValues.BLURPLE) cir.setReturnValue(DDBlocks.BLURPLE_SHULKER_BOX.get());
-            //else if (dyeColor == DDDyeValues.SANGRIA) cir.setReturnValue(DDBlocks.SANGRIA_SHULKER_BOX.get());
-            //else if (dyeColor == DDDyeValues.ROSE) cir.setReturnValue(DDBlocks.ROSE_SHULKER_BOX.get());
-
+            // NOTE: THIS CODE SHOULD NEVER BE REACHED - LEFT HERE TO PREVENT A MATCHEXCEPTION!
             if (dyeColor == DDDyeValues.CORAL) cir.setReturnValue(Blocks.SHULKER_BOX);
             else if (dyeColor == DDDyeValues.CANARY) cir.setReturnValue(Blocks.SHULKER_BOX);
             else if (dyeColor == DDDyeValues.WASABI) cir.setReturnValue(Blocks.SHULKER_BOX);
