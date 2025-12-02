@@ -2,6 +2,7 @@ package net.azurune.delicate_dyes.core.mixin;
 
 import net.azurune.delicate_dyes.DelicateDyes;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
+import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.runiclib.RunicLib;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.resources.ResourceLocation;
@@ -66,23 +67,14 @@ public abstract class SheepMixin extends Animal implements Shearable
     }
 
     static {
-        //ITEM_BY_DYE.put(DDDyeValues.CORAL, DDBlocks.CORAL_WOOL.get());
-        //ITEM_BY_DYE.put(DDDyeValues.CANARY, DDBlocks.CANARY_WOOL.get());
-        //ITEM_BY_DYE.put(DDDyeValues.WASABI, DDBlocks.WASABI_WOOL.get());
-        //ITEM_BY_DYE.put(DDDyeValues.SACRAMENTO, DDBlocks.SACRAMENTO_WOOL.get());
-        //ITEM_BY_DYE.put(DDDyeValues.SKY, DDBlocks.SKY_WOOL.get());
-        //ITEM_BY_DYE.put(DDDyeValues.BLURPLE, DDBlocks.BLURPLE_WOOL.get());
-        //ITEM_BY_DYE.put(DDDyeValues.SANGRIA, DDBlocks.SANGRIA_WOOL.get());
-        //ITEM_BY_DYE.put(DDDyeValues.ROSE, DDBlocks.ROSE_WOOL.get());
-
-        ITEM_BY_DYE.put(DDDyeValues.CORAL, Blocks.WHITE_WOOL);
-        ITEM_BY_DYE.put(DDDyeValues.CANARY, Blocks.WHITE_WOOL);
-        ITEM_BY_DYE.put(DDDyeValues.WASABI, Blocks.WHITE_WOOL);
-        ITEM_BY_DYE.put(DDDyeValues.SACRAMENTO, Blocks.WHITE_WOOL);
-        ITEM_BY_DYE.put(DDDyeValues.SKY, Blocks.WHITE_WOOL);
-        ITEM_BY_DYE.put(DDDyeValues.BLURPLE, Blocks.WHITE_WOOL);
-        ITEM_BY_DYE.put(DDDyeValues.SANGRIA, Blocks.WHITE_WOOL);
-        ITEM_BY_DYE.put(DDDyeValues.ROSE, Blocks.WHITE_WOOL);
+        ITEM_BY_DYE.put(DDDyeValues.CORAL, DDBlocks.CORAL_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.CANARY, DDBlocks.CANARY_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.WASABI, DDBlocks.WASABI_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.SACRAMENTO, DDBlocks.SACRAMENTO_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.SKY, DDBlocks.SKY_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.BLURPLE, DDBlocks.BLURPLE_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.SANGRIA, DDBlocks.SANGRIA_WOOL.get());
+        ITEM_BY_DYE.put(DDDyeValues.ROSE, DDBlocks.ROSE_WOOL.get());
     }
 
     @Inject(method = "getRandomSheepColor", at = @At("HEAD"), cancellable = true)
