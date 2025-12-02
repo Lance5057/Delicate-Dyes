@@ -167,7 +167,7 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add("itemgroup.delicate_dyes", "Delicate Dyes");
 
         //DEATH
-        addDamage(build, DDDamageTypes.BLUEBERRY_BUSH, "%1$s was poked to death by a blueberry bush",
+        addDamage(build, "blueberryBush", "%1$s was poked to death by a blueberry bush",
         "%1$s was poked to death by a blueberry bush while trying to escape %2$s");
     }
 
@@ -531,8 +531,12 @@ public class DDLangGen extends FabricLanguageProvider {
     }
 
     private void addDamage(TranslationBuilder build, ResourceKey<DamageType> type, String deathMsg, String killMsg) {
-        build.add(type.location().toLanguageKey(), deathMsg);
         build.add("death.attack." + type.location().toLanguageKey(), deathMsg);
         build.add("death.attack." + type.location().toLanguageKey() + ".player", killMsg);
+    }
+
+    private void addDamage(TranslationBuilder build, String type, String deathMsg, String killMsg) {
+        build.add("death.attack." + type, deathMsg);
+        build.add("death.attack." + type + ".player", killMsg);
     }
 }
