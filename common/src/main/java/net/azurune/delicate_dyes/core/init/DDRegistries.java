@@ -48,6 +48,8 @@ public class DDRegistries {
 
         RLRegistryHelper.createFlammable(DDBlocks.ROSE_WOOL.get(), 30, 60);
         RLRegistryHelper.createFlammable(DDBlocks.ROSE_CARPET.get(), 60, 20);
+
+        RLRegistryHelper.createFlammable(DDBlocks.BLUEBERRY_BUSH.get(), 60, 100);
     }
 
     public static void registerCompostables() {

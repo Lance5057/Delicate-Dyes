@@ -7,9 +7,11 @@
   "mixins": [
     "BlockEntityTypeMixin",
     "DyeColorMixin",
+    "EntityTypeMixin",
     "LivingEntityMixin",
     "SheepMixin",
-    "ShulkerBoxMixin"
+    "ShulkerBoxMixin",
+    "WalkNodeEvalMixin"
   ],
   "client": [
     "ShulkerBoxRendererMixin"

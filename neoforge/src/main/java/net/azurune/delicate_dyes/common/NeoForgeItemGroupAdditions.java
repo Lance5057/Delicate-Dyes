@@ -75,16 +75,16 @@ public class NeoForgeItemGroupAdditions {
             putBlockAfter(event, Blocks.PINK_CONCRETE_POWDER, DDBlocks.ROSE_CONCRETE_POWDER.get());
 
             //GLAZED TERRACOTTA
-            putBlockAfter(event, Blocks.RED_TERRACOTTA, DDBlocks.CORAL_TERRACOTTA.get());
-            putBlockAfter(event, DDBlocks.CORAL_TERRACOTTA.get(), DDBlocks.UMBER_TERRACOTTA.get());
-            putBlockAfter(event, Blocks.YELLOW_TERRACOTTA, DDBlocks.CANARY_TERRACOTTA.get());
-            putBlockAfter(event, DDBlocks.CANARY_TERRACOTTA.get(), DDBlocks.WASABI_TERRACOTTA.get());
-            putBlockAfter(event, Blocks.GREEN_TERRACOTTA, DDBlocks.SACRAMENTO_TERRACOTTA.get());
-            putBlockAfter(event, Blocks.CYAN_TERRACOTTA, DDBlocks.SKY_TERRACOTTA.get());
-            putBlockAfter(event, Blocks.BLUE_TERRACOTTA, DDBlocks.BLURPLE_TERRACOTTA.get());
-            putBlockAfter(event, Blocks.PURPLE_TERRACOTTA, DDBlocks.LAVENDER_TERRACOTTA.get());
-            putBlockAfter(event, Blocks.MAGENTA_TERRACOTTA, DDBlocks.SANGRIA_TERRACOTTA.get());
-            putBlockAfter(event, Blocks.PINK_TERRACOTTA, DDBlocks.ROSE_TERRACOTTA.get());
+            putBlockAfter(event, Blocks.RED_GLAZED_TERRACOTTA, DDBlocks.CORAL_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, DDBlocks.CORAL_GLAZED_TERRACOTTA.get(), DDBlocks.UMBER_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, Blocks.YELLOW_GLAZED_TERRACOTTA, DDBlocks.CANARY_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, DDBlocks.CANARY_GLAZED_TERRACOTTA.get(), DDBlocks.WASABI_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, Blocks.GREEN_GLAZED_TERRACOTTA, DDBlocks.SACRAMENTO_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, Blocks.CYAN_GLAZED_TERRACOTTA, DDBlocks.SKY_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, Blocks.BLUE_GLAZED_TERRACOTTA, DDBlocks.BLURPLE_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, Blocks.PURPLE_GLAZED_TERRACOTTA, DDBlocks.LAVENDER_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, Blocks.MAGENTA_GLAZED_TERRACOTTA, DDBlocks.SANGRIA_GLAZED_TERRACOTTA.get());
+            putBlockAfter(event, Blocks.PINK_GLAZED_TERRACOTTA, DDBlocks.ROSE_GLAZED_TERRACOTTA.get());
 
             //STAINED GLASS
             putBlockAfter(event, Blocks.RED_STAINED_GLASS, DDBlocks.CORAL_STAINED_GLASS.get());
