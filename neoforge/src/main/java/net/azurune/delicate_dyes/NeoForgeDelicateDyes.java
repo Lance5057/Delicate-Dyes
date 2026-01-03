@@ -14,7 +14,7 @@ public class NeoForgeDelicateDyes {
 
     public NeoForgeDelicateDyes(IEventBus eventBus) {
         DelicateDyes.init();
-        eventBus.addListener(NeoForgeItemGroupAdditions::buildCreativeTabs);
+        //eventBus.addListener(NeoForgeItemGroupAdditions::buildCreativeTabs); //todo fix
 
         eventBus.addListener(this::commonSetup);
     }

@@ -33,3 +33,10 @@ type="required" #mandatory (Can be one of "required", "optional", "incompatible"
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "runiclib"
+mandatory = true
+versionRange = "5.0.0,"
+ordering = "NONE"
+side = "BOTH"

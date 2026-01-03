@@ -6,7 +6,7 @@ import net.azurune.delicate_dyes.common.block.DDCandleCakeBlock;
 import net.azurune.delicate_dyes.common.block.DDShulkerBoxBlock;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.azurune.delicate_dyes.common.util.DDProperties;
-import net.azurune.runiclib.core.platform.Services;
+import net.azurune.runiclib.core.platform.RLServices;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
 
@@ -185,7 +185,7 @@ public class DDBlocks {
     public static final Supplier<Block> POTTED_ROSE = register("potted_rose", () -> new FlowerPotBlock(ROSE.get(), DDProperties.BlockP.FLOWER_POT), false);
 
     private static Supplier<Block> register(String id, Supplier<Block> block, boolean hasItem) {
-        return Services.REGISTRY.registerBlock(DelicateDyes.MOD_ID, id, block, hasItem);
+        return RLServices.REGISTRY.registerBlock(DelicateDyes.MOD_ID, id, block, hasItem);
     }
 
     public static void loadBlocks() {

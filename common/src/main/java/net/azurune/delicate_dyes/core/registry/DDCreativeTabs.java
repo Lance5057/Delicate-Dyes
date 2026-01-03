@@ -1,7 +1,7 @@
 package net.azurune.delicate_dyes.core.registry;
 
 import net.azurune.delicate_dyes.DelicateDyes;
-import net.azurune.runiclib.core.platform.Services;
+import net.azurune.runiclib.core.platform.RLServices;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import java.util.function.Supplier;
 
 public class DDCreativeTabs {
-    public static final Supplier<CreativeModeTab> DELICATE_DYES = Services.REGISTRY.registerCreativeModeTab(DelicateDyes.MOD_ID, "delicate_dyes", () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+    public static final Supplier<CreativeModeTab> DELICATE_DYES = RLServices.REGISTRY.registerCreativeModeTab(DelicateDyes.MOD_ID, "delicate_dyes", () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
             .title(Component.translatable("itemgroup.delicate_dyes"))
             .icon(() -> new ItemStack(DDItems.ROSE_DYE.get()))
             .displayItems((displayParameters, entry) -> {

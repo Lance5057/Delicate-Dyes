@@ -3,7 +3,7 @@ package net.azurune.delicate_dyes.core.registry;
 import net.azurune.delicate_dyes.DelicateDyes;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.azurune.delicate_dyes.common.util.DDProperties;
-import net.azurune.runiclib.core.platform.Services;
+import net.azurune.runiclib.core.platform.RLServices;
 import net.minecraft.world.item.*;
 
 import java.util.function.Supplier;
@@ -73,7 +73,7 @@ public class DDItems {
     public static final Supplier<Item> BLUEBERRIES = register("blueberries", () -> new ItemNameBlockItem(DDBlocks.BLUEBERRY_BUSH.get(), DDProperties.ItemP.BLUEBERRIES));
 
     private static Supplier<Item> register(String id, Supplier<Item> item) {
-        return Services.REGISTRY.registerItem(DelicateDyes.MOD_ID, id, item);
+        return RLServices.REGISTRY.registerItem(DelicateDyes.MOD_ID, id, item);
     }
 
     public static void loadItems() {
