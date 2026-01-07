@@ -1,7 +1,6 @@
 package net.azurune.delicate_dyes.core.init;
 
 import net.azurune.delicate_dyes.DelicateDyes;
-import net.azurune.delicate_dyes.common.block.BlueberryBushBlock;
 import net.azurune.delicate_dyes.core.registry.DDBlocks;
 import net.azurune.runiclib.RunicLib;
 import net.minecraft.core.HolderGetter;
@@ -63,19 +62,6 @@ public class DDFeatures {
                             64, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(DDBlocks.GOOB_BLOSSOM.get())))
                     )
             );
-            // BLUEBERRY
-            FeatureUtils.register(
-                    context,
-                    PATCH_BLUEBERRY_BUSH,
-                    Feature.RANDOM_PATCH,
-                    FeatureUtils.simplePatchConfiguration(
-                            Feature.SIMPLE_BLOCK,
-                            new SimpleBlockConfiguration(
-                                    BlockStateProvider.simple(DDBlocks.BLUEBERRY_BUSH.get().defaultBlockState().setValue(BlueberryBushBlock.AGE, 3))
-                            ),
-                            List.of(Blocks.GRASS_BLOCK)
-                    )
-            );
         }
     }
 
@@ -83,8 +69,6 @@ public class DDFeatures {
         public static final ResourceKey<PlacedFeature> PATCH_ROSE = createKey("patch_rose");
         public static final ResourceKey<PlacedFeature> PATCH_PEACH_BELLFLOWER = createKey("patch_peach_bellflower");
         public static final ResourceKey<PlacedFeature> PATCH_GOOB_BLOSSOM = createKey("patch_goob_blossom");
-
-        public static final ResourceKey<PlacedFeature> PATCH_BLUEBERRY_BUSH = createKey("patch_blueberry_bush");
 
         public static ResourceKey<PlacedFeature> createKey(String id) {
             return ResourceKey.create(Registries.PLACED_FEATURE, RunicLib.customid(DelicateDyes.MOD_ID, id));
@@ -121,16 +105,6 @@ public class DDFeatures {
                     RarityFilter.onAverageOnceEvery(16),
                     InSquarePlacement.spread(),
                     PlacementUtils.HEIGHTMAP,
-                    BiomeFilter.biome()
-            );
-            // BLUEBERRY
-            PlacementUtils.register(
-                    context,
-                    PATCH_BLUEBERRY_BUSH,
-                    holdergetter.getOrThrow(ConfiguredFeatures.PATCH_BLUEBERRY_BUSH),
-                    RarityFilter.onAverageOnceEvery(6),
-                    InSquarePlacement.spread(),
-                    PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                     BiomeFilter.biome()
             );
         }

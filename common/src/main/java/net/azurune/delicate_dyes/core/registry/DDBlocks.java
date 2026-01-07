@@ -1,9 +1,7 @@
 package net.azurune.delicate_dyes.core.registry;
 
 import net.azurune.delicate_dyes.DelicateDyes;
-import net.azurune.delicate_dyes.common.block.BlueberryBushBlock;
 import net.azurune.delicate_dyes.common.block.DDCandleCakeBlock;
-import net.azurune.delicate_dyes.common.block.DDShulkerBoxBlock;
 import net.azurune.delicate_dyes.common.util.DDDyeValues;
 import net.azurune.delicate_dyes.common.util.DDProperties;
 import net.azurune.runiclib.core.platform.RLServices;
@@ -178,8 +176,6 @@ public class DDBlocks {
     public static final Supplier<Block> POTTED_PEACH_BELLFLOWER = register("potted_peach_bellflower", () -> new FlowerPotBlock(PEACH_BELLFLOWER.get(), DDProperties.BlockP.FLOWER_POT), false);
 
     public static final Supplier<Block> GOOB_BLOSSOM = register("goob_blossom", () -> new TallFlowerBlock(DDProperties.BlockP.GOOB_BLOSSOM), true);
-
-    public static final Supplier<Block> BLUEBERRY_BUSH = register("blueberry_bush", () -> new BlueberryBushBlock(DDProperties.BlockP.BLUEBERRY_BUSH), false);
 
     public static final Supplier<Block> ROSE = register("rose", () -> new FlowerBlock(MobEffects.REGENERATION, 10, DDProperties.BlockP.ROSE), true);
     public static final Supplier<Block> POTTED_ROSE = register("potted_rose", () -> new FlowerPotBlock(ROSE.get(), DDProperties.BlockP.FLOWER_POT), false);

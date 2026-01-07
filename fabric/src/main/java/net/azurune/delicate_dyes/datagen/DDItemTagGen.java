@@ -27,7 +27,6 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
         appendBeds();
         appendBanners();
         appendSmallFlowers();
-        appendFoxFood();
         appendShulkerBoxes();
         appendTallFlowers();
         appendDyes();
@@ -109,12 +108,6 @@ public class DDItemTagGen extends FabricTagProvider.ItemTagProvider {
                 .add(DDBlocks.LAVENDER_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.SANGRIA_STAINED_GLASS_PANE.get().asItem())
                 .add(DDBlocks.ROSE_STAINED_GLASS_PANE.get().asItem())
-        ;
-    }
-
-    public void appendFoxFood() {
-        getOrCreateTagBuilder(ItemTags.FOX_FOOD)
-                .add(DDItems.BLUEBERRIES.get())
         ;
     }
 

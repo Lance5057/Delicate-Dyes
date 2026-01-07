@@ -16,8 +16,8 @@ public class WalkNodeEvalMixin {
     @Inject(method = "getPathTypeFromState", at = @At("HEAD"), cancellable = true)
     private static void delicateDyes$blueberryPathIntercept(BlockGetter level, BlockPos pos, CallbackInfoReturnable<PathType> cir) {
         BlockState blockstate = level.getBlockState(pos);
-        if (blockstate.is(DDBlocks.BLUEBERRY_BUSH.get())) {
-            cir.setReturnValue(PathType.DAMAGE_OTHER);
-        }
+//        if (blockstate.is(DDBlocks.BLUEBERRY_BUSH.get())) {
+//            cir.setReturnValue(PathType.DAMAGE_OTHER);
+//        }
     }
 }

@@ -32,29 +32,8 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
         appendShulkerBoxes();
         appendSmallFlowers();
         appendFlowerPots();
-        appendSwordEfficient();
-        appendBeeGrowables();
-        appendFallDamageResetting();
         appendTallFlowers();
         appendCShulkerBoxes();
-    }
-
-    public void appendSwordEfficient() {
-        getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT)
-                .add(DDBlocks.BLUEBERRY_BUSH.get())
-        ;
-    }
-
-    public void appendBeeGrowables() {
-        getOrCreateTagBuilder(BlockTags.BEE_GROWABLES)
-                .add(DDBlocks.BLUEBERRY_BUSH.get())
-        ;
-    }
-
-    public void appendFallDamageResetting() {
-        getOrCreateTagBuilder(BlockTags.FALL_DAMAGE_RESETTING)
-                .add(DDBlocks.BLUEBERRY_BUSH.get())
-        ;
     }
 
     public void appendTallFlowers() {
@@ -155,8 +134,6 @@ public class DDBlockTagGen extends FabricTagProvider.BlockTagProvider {
 
                 .add(DDBlocks.ROSE_BANNER.get())
                 .add(DDBlocks.ROSE_WALL_BANNER.get())
-
-                .add(DDBlocks.BLUEBERRY_BUSH.get())
         ;
     }
 

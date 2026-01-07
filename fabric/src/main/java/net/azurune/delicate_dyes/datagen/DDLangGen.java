@@ -150,7 +150,6 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDBlocks.ROSE.get(), "Rose");
         build.add(DDBlocks.PEACH_BELLFLOWER.get(), "Peach Bellflower");
         build.add(DDBlocks.GOOB_BLOSSOM.get(), "Goob Blossom");
-        build.add(DDBlocks.BLUEBERRY_BUSH.get(), "Blueberry Bush");
     }
 
     private void itemTranslations(HolderLookup.Provider provider, TranslationBuilder build) {
@@ -187,9 +186,6 @@ public class DDLangGen extends FabricLanguageProvider {
         build.add(DDItems.LAVENDER_BANNER.get(), "Lavender Banner");
         build.add(DDItems.SANGRIA_BANNER.get(), "Sangria Banner");
         build.add(DDItems.ROSE_BANNER.get(), "Rose Banner");
-
-        //MISC
-        build.add(DDItems.BLUEBERRIES.get(), "Blueberries");
     }
 
     private void miscTranslations(HolderLookup.Provider provider, TranslationBuilder build) {

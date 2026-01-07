@@ -37,7 +37,5 @@ public class DelicateDyesClient {
         RLServices.loadClient().registerBlockRenderType(DDBlocks.POTTED_ROSE.get(), RenderType.cutout());
 
         RLServices.loadClient().registerBlockRenderType(DDBlocks.GOOB_BLOSSOM.get(), RenderType.cutout());
-
-        RLServices.loadClient().registerBlockRenderType(DDBlocks.BLUEBERRY_BUSH.get(), RenderType.cutout());
     }
 }

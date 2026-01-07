@@ -21,7 +21,7 @@ public class EntityTypeMixin {
     @Inject(method = "isBlockDangerous", at = @At("HEAD"), cancellable = true)
     private void delicateDyes$blockDangerousInject(BlockState state, CallbackInfoReturnable<Boolean> cir) {
         if (!this.immuneTo.contains(state.getBlock()) && !NodeEvaluator.isBurningBlock(state)) {
-            if (state.is(DDBlocks.BLUEBERRY_BUSH.get())) cir.setReturnValue(true);
+            //if (state.is(DDBlocks.BLUEBERRY_BUSH.get())) cir.setReturnValue(true);
         }
     }
 }

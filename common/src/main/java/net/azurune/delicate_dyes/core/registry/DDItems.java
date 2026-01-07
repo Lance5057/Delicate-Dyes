@@ -69,9 +69,6 @@ public class DDItems {
     public static final Supplier<Item> ROSE_BED = register("rose_bed", () -> new BedItem(DDBlocks.ROSE_BED.get(), DDProperties.ItemP.GENERIC_1));
     public static final Supplier<Item> ROSE_SHULKER_BOX = register("rose_shulker_box", () -> new BedItem(DDBlocks.ROSE_SHULKER_BOX.get(), DDProperties.ItemP.GENERIC_1));
 
-    //MISC
-    public static final Supplier<Item> BLUEBERRIES = register("blueberries", () -> new ItemNameBlockItem(DDBlocks.BLUEBERRY_BUSH.get(), DDProperties.ItemP.BLUEBERRIES));
-
     private static Supplier<Item> register(String id, Supplier<Item> item) {
         return RLServices.REGISTRY.registerItem(DelicateDyes.MOD_ID, id, item);
     }

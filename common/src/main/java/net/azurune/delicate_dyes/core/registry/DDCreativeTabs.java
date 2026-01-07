@@ -168,8 +168,6 @@ public class DDCreativeTabs {
                         entry.accept(DDBlocks.ROSE.get());
 
                         entry.accept(DDBlocks.GOOB_BLOSSOM.get());
-
-                        entry.accept(DDItems.BLUEBERRIES.get());
                     }
             ).build());
 

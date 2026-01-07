@@ -120,8 +120,6 @@ public class DDRecipeGen extends FabricRecipeProvider {
                 .save(output, RunicLib.customid(DelicateDyes.MOD_ID, "sky_dye_from_bits_2"));
 
         //BLURPLE
-        RecipeHelper.modBasedOneToTwo(output, DDItems.BLURPLE_DYE.get(), DDItems.BLUEBERRIES.get(), "blurple_dye", 1);
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DDItems.BLURPLE_DYE.get(), 2)
                 .requires(Items.BLUE_DYE).requires(Items.PURPLE_DYE)
                 .unlockedBy("has_blue_dye", VanillaRecipeProvider.has(Items.BLUE_DYE))

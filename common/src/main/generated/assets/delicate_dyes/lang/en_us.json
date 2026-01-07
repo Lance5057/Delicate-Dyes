@@ -1,5 +1,4 @@
 {
-  "block.delicate_dyes.blueberry_bush": "Blueberry Bush",
   "block.delicate_dyes.blurple_banner": "Blurple Banner",
   "block.delicate_dyes.blurple_bed": "Blurple Bed",
   "block.delicate_dyes.blurple_candle": "Blurple Candle",
@@ -555,7 +554,6 @@
   "color.minecraft.wasabi": "Wasabi",
   "death.attack.blueberryBush": "%1$s was poked to death by a blueberry bush",
   "death.attack.blueberryBush.player": "%1$s was poked to death by a blueberry bush while trying to escape %2$s",
-  "item.delicate_dyes.blueberries": "Blueberries",
   "item.delicate_dyes.blurple_dye": "Blurple Dye",
   "item.delicate_dyes.canary_dye": "Canary Dye",
   "item.delicate_dyes.coral_dye": "Coral Dye",

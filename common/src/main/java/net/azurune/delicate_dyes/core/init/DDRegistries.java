@@ -48,13 +48,9 @@ public class DDRegistries {
 
         RLRegistryHelper.createFlammable(DDBlocks.ROSE_WOOL.get(), 30, 60);
         RLRegistryHelper.createFlammable(DDBlocks.ROSE_CARPET.get(), 60, 20);
-
-        RLRegistryHelper.createFlammable(DDBlocks.BLUEBERRY_BUSH.get(), 60, 100);
     }
 
     public static void registerCompostables() {
-        COMPOSTABLES.put(DDItems.BLUEBERRIES.get(), 0.3F);
-
         COMPOSTABLES.put(DDBlocks.ROSE.get().asItem(), 0.65F);
         COMPOSTABLES.put(DDBlocks.GOOB_BLOSSOM.get().asItem(), 0.65F);
         COMPOSTABLES.put(DDBlocks.PEACH_BELLFLOWER.get().asItem(), 0.65F);
